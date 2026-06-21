@@ -24,18 +24,20 @@ def _load_stores():
         return json.load(f)["stores"]
 
 
-def fetch_reviews(place_id, limit=50):
+def fetch_reviews(query, limit=50):
     """
-    用 Outscraper 抓單一 place 的評論。回傳 (rating, reviews_count, [reviews]).
+    用 Outscraper 抓單一商家的評論。query 可為 Google place_id、店名或地址，
+    Outscraper 會自行解析（place_id 最精準，店名/地址次之）。
+    回傳 (rating, reviews_count, [reviews], resolved_place_id).
     reviews 每筆：{stars, text, author, ts(epoch)}
     若你既有 collect.py 已有 Outscraper 呼叫，可直接改用你的版本。
     """
     api_key = os.environ["OUTSCRAPER_API_KEY"]  # 缺金鑰就直接報錯，不靜默
     from outscraper import ApiClient  # pip install outscraper
     client = ApiClient(api_key=api_key)
-    res = client.google_maps_reviews([place_id], reviews_limit=limit, language="zh-TW")
+    res = client.google_maps_reviews([query], reviews_limit=limit, language="zh-TW")
     if not res:
-        return None, 0, []
+        return None, 0, [], None
     place = res[0]
     reviews = []
     for r in place.get("reviews_data", []) or []:
@@ -45,7 +47,7 @@ def fetch_reviews(place_id, limit=50):
             "author": r.get("author_title") or "匿名",
             "ts": int(r.get("review_timestamp") or 0),
         })
-    return place.get("rating"), place.get("reviews"), reviews
+    return place.get("rating"), place.get("reviews"), reviews, place.get("place_id") or query
 
 
 def _today():

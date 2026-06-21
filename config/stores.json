@@ -1,0 +1,9 @@
+{
+  "_說明": "門市白名單。query 可填 Google place_id（最精準）或『店名＋地區』搜尋詞；排程會交給 Outscraper 解析後抓評論。建議日後把 query 換成各店的 place_id 以避免同名誤抓。",
+  "stores": [
+    {"name": "UG信義永吉店",            "query": "UG信義永吉店 台北市信義區"},
+    {"name": "UG信義虎林店",            "query": "UG信義虎林店 台北市信義區"},
+    {"name": "UG遠東GARDEN CITY大巨蛋店", "query": "UG 遠東Garden City 大巨蛋店 台北市信義區"},
+    {"name": "UG信義通化店",            "query": "UG信義通化店 台北市大安區"}
+  ]
+}
