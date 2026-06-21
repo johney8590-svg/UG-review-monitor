@@ -1,0 +1,8 @@
+{
+  "_說明": "白名單門市：用 Google place_id 比對最準，不要只靠店名。複製成 stores.json 後填入你的門市。",
+  "stores": [
+    {"name": "UG 中山店", "place_id": "ChIJxxxxxxxxxxxxxxxxxxxxxxx1"},
+    {"name": "UG 板橋店", "place_id": "ChIJxxxxxxxxxxxxxxxxxxxxxxx2"},
+    {"name": "UG 信義店", "place_id": "ChIJxxxxxxxxxxxxxxxxxxxxxxx3"}
+  ]
+}

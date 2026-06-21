@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>聯發國際 UG · 輿情監測（Demo）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#2D5016; --green2:#3A6B20; --green-soft:#8DB87A;
+    --bg:#F8F5F0; --card:#FFFFFF; --ink:#2C2C2C; --muted:#6B6B6B;
+    --line:#E8E8E8; --line2:#EBEBEB; --th:#F5F5F5;
+    --up:#28A745; --down:#DC3545; --warn:#FFC107;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:'Noto Sans TC','微軟正黑體','PingFang TC',sans-serif;
+    background:var(--bg); color:var(--ink); line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .num{font-family:'Inter',system-ui,sans-serif;font-variant-numeric:tabular-nums}
+  .wrap{max-width:880px;margin:0 auto;padding:20px 16px 64px}
+
+  /* header */
+  header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+    padding-bottom:14px;border-bottom:2px solid var(--green);flex-wrap:wrap}
+  .brand{display:flex;align-items:baseline;gap:10px}
+  .logo{width:22px;height:22px;border-radius:4px;background:var(--green);
+    display:inline-block;position:relative;top:3px}
+  h1{font-size:22px;font-weight:600;color:var(--green);letter-spacing:.5px}
+  .sub{font-size:13px;color:var(--muted)}
+  .demo-tag{font-size:11px;font-weight:600;color:var(--green);border:1px solid var(--green-soft);
+    border-radius:4px;padding:2px 7px;background:#F0F5EC}
+
+  /* kpi row */
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0 24px}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:14px 14px}
+  .kpi .label{font-size:12px;color:var(--muted);margin-bottom:6px}
+  .kpi .val{font-size:24px;font-weight:700}
+  .kpi .delta{font-size:12px;font-weight:600;margin-top:2px}
+  .up{color:var(--up)} .down{color:var(--down)} .warnc{color:#B8860B}
+
+  section{margin-bottom:26px}
+  .sec-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+  h2{font-size:17px;font-weight:600}
+  h2 .hint{font-size:12px;font-weight:400;color:var(--muted);margin-left:8px}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:16px 18px}
+
+  /* heat board (signature) */
+  .heat-row{border-bottom:1px solid var(--line2);padding:12px 0;cursor:pointer}
+  .heat-row:last-child{border-bottom:none}
+  .heat-top{display:flex;align-items:center;gap:12px}
+  .rank{font-family:'Inter';font-weight:700;color:var(--muted);width:20px;font-size:14px}
+  .bname{font-weight:600;min-width:120px}
+  .bname .self{font-size:11px;color:#fff;background:var(--green);border-radius:3px;padding:1px 6px;margin-left:6px;font-weight:600}
+  .bar-wrap{flex:1;height:8px;background:#EEE9E1;border-radius:4px;overflow:hidden}
+  .bar{height:100%;background:var(--green-soft)}
+  .heat-row.is-self .bar{background:var(--green)}
+  .score{font-family:'Inter';font-weight:700;font-size:18px;width:42px;text-align:right}
+  .rdelta{font-family:'Inter';font-size:12px;font-weight:600;width:52px;text-align:right}
+  .breakdown{display:none;margin-top:10px;padding:12px 14px;background:#FAFAF7;border:1px solid var(--line2);border-radius:6px}
+  .heat-row.open .breakdown{display:block}
+  .sig{display:flex;align-items:center;gap:10px;margin:6px 0;font-size:13px}
+  .sig .sn{width:128px;color:var(--muted)}
+  .sig .sb{flex:1;height:6px;background:#ECECEC;border-radius:3px;overflow:hidden}
+  .sig .sf{height:100%;background:var(--green-soft)}
+  .sig .sv{width:32px;text-align:right;font-family:'Inter';font-weight:600}
+  .sent{font-size:12px;color:var(--muted);margin-top:8px}
+  .sent b.p{color:var(--up)} .sent b.n{color:var(--down)}
+
+  /* AI report */
+  .ai-card{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--green);border-radius:6px;padding:16px 18px}
+  .ai-out{white-space:pre-wrap;font-size:14px;line-height:1.7;margin-top:12px;color:var(--ink)}
+  .ai-empty{color:var(--muted);font-size:13px;margin-top:10px}
+
+  /* keywords */
+  .kw-group{margin-bottom:12px}
+  .kw-label{font-size:13px;color:var(--muted);margin-bottom:6px}
+  .chips{display:flex;flex-wrap:wrap;gap:7px}
+  .chip{display:inline-flex;align-items:center;gap:6px;font-size:13px;
+    background:#F0F5EC;border:1px solid var(--green-soft);color:var(--green);
+    border-radius:4px;padding:4px 8px}
+  .chip.comp{background:#FBF1E8;border-color:#E2B98A;color:#9A5B1E}
+  .chip.promo{background:#F3F0F8;border-color:#C3B2DC;color:#5B3E86}
+  .chip x{cursor:pointer;font-weight:700;font-style:normal;opacity:.55}
+  .chip x:hover{opacity:1}
+  .kw-add{display:flex;gap:8px;margin-top:6px}
+  input,select{font-family:inherit;font-size:13px;border:1px solid var(--line);border-radius:4px;padding:7px 9px;color:var(--ink);background:#fff}
+  input{flex:1;min-width:0}
+
+  .btn{background:var(--green);color:#fff;border:none;border-radius:4px;
+    padding:8px 16px;font-weight:600;font-size:14px;cursor:pointer;font-family:inherit}
+  .btn:hover{background:var(--green2)}
+  .btn:disabled{opacity:.5;cursor:not-allowed}
+  .btn.ghost{background:transparent;border:1px solid var(--green);color:var(--green)}
+  .btn.sm{padding:7px 11px;font-size:13px}
+
+  /* alerts */
+  .alert{display:flex;gap:10px;padding:11px 0;border-bottom:1px solid var(--line2);font-size:14px}
+  .alert:last-child{border-bottom:none}
+  .dot{width:9px;height:9px;border-radius:50%;margin-top:6px;flex-shrink:0}
+  .dot.r{background:var(--down)} .dot.y{background:var(--warn)} .dot.g{background:var(--up)}
+  .alert .at{font-size:12px;color:var(--muted);margin-top:2px}
+
+  /* watchlist */
+  .wl{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;
+    padding:11px 0;border-bottom:1px solid var(--line2)}
+  .wl:last-child{border-bottom:none}
+  .wl a{color:var(--green);text-decoration:none;font-weight:600;font-size:14px}
+  .wl a:hover{text-decoration:underline}
+  .wl .meta{font-size:12px;color:var(--muted);margin-top:2px}
+  .wl-rm{cursor:pointer;color:var(--muted);font-size:13px;border:none;background:none}
+  .wl-rm:hover{color:var(--down)}
+  .wl-add{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+  .wl-add input{flex:1 1 160px}
+
+  /* SOV */
+  .sov-bar{display:flex;height:30px;border-radius:4px;overflow:hidden;border:1px solid var(--line)}
+  .sov-seg{display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;font-weight:600;min-width:0;overflow:hidden;white-space:nowrap}
+  .sov-legend{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px;font-size:12px;color:var(--muted)}
+  .sov-legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:middle}
+
+  /* trace timeline */
+  .trace{margin-top:6px;border-left:2px solid var(--green-soft);padding-left:14px}
+  .trace-item{position:relative;padding:8px 0}
+  .trace-item::before{content:'';position:absolute;left:-21px;top:13px;width:9px;height:9px;border-radius:50%;background:var(--green-soft);border:2px solid #fff}
+  .trace-item.origin::before{background:var(--down)}
+  .trace-t{font-size:12px;color:var(--muted)}
+  .trace-x{font-size:13px}
+  .trace-x b{color:var(--green)}
+  .badge{font-size:11px;font-weight:600;border-radius:3px;padding:1px 6px;margin-left:6px}
+  .badge.org{background:#FBE9E9;color:var(--down)} .badge.amp{background:#F0F5EC;color:var(--green)}
+
+  /* VOC themes */
+  .voc-item{display:flex;align-items:flex-start;gap:12px;padding:11px 0;border-bottom:1px solid var(--line2)}
+  .voc-item:last-child{border-bottom:none}
+  .voc-cnt{font-family:'Inter';font-weight:700;font-size:18px;color:var(--down);min-width:34px;text-align:right}
+  .voc-name{font-weight:600;font-size:14px}
+  .voc-sample{font-size:12px;color:var(--muted);margin-top:2px}
+  .voc-share{font-size:11px;color:var(--muted)}
+
+  /* crisis reply */
+  .neg-item{padding:12px 0;border-bottom:1px solid var(--line2)}
+  .neg-item:last-child{border-bottom:none}
+  .neg-q{font-size:14px}
+  .neg-meta{font-size:12px;color:var(--muted);margin:3px 0 8px}
+  .reply-box{background:#FAFAF7;border:1px solid var(--line2);border-radius:6px;padding:11px 13px;margin-top:8px;font-size:13px;line-height:1.7;white-space:pre-wrap;display:none}
+
+  /* image recog */
+  .img-up{display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap}
+  .img-prev{width:120px;height:120px;border:1px solid var(--line);border-radius:6px;object-fit:cover;background:#FAFAF7;display:none}
+  .img-res{flex:1;min-width:200px;font-size:13px;line-height:1.7;white-space:pre-wrap;color:var(--ink)}
+  .file-lbl{display:inline-block;border:1px solid var(--green);color:var(--green);border-radius:4px;padding:8px 14px;font-size:13px;font-weight:600;cursor:pointer}
+
+  /* GEO */
+  .geo-list{margin-top:10px}
+  .geo-row{display:flex;gap:10px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line2);font-size:14px}
+  .geo-row:last-child{border-bottom:none}
+  .geo-rank{font-family:'Inter';font-weight:700;color:var(--muted);width:22px}
+  .geo-hit{color:var(--green);font-weight:700}
+  .geo-verdict{margin-top:10px;font-weight:600}
+
+  /* tabs */
+  .tabs{display:flex;gap:4px;margin:16px 0 4px;border-bottom:1px solid var(--line)}
+  .tab{background:none;border:none;font-family:inherit;font-size:15px;font-weight:600;
+    color:var(--muted);padding:9px 16px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
+  .tab.active{color:var(--green);border-bottom-color:var(--green)}
+  .tab-panel[hidden]{display:none}
+  .note-g{font-size:12px;color:var(--muted);margin:14px 0 4px}
+
+  /* google table */
+  .gtable{width:100%;border-collapse:collapse;font-size:13px}
+  .gtable th{background:#F5F5F5;font-weight:600;color:#444;text-align:left;padding:10px 12px;white-space:nowrap}
+  .gtable td{padding:10px 12px;border-top:1px solid var(--line2)}
+  .gtable tbody tr:nth-child(even){background:#FAFAFA}
+  .gtable .st{font-weight:600}
+  .gtable .rt{font-family:'Inter';font-weight:700}
+  .stars{color:#E0A800;letter-spacing:1px;font-size:13px}
+  .stars .e{color:#DDD}
+
+  .sort-bar,.filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;align-items:center}
+  .filter-bar{justify-content:space-between}
+  .fgroup{display:flex;gap:6px;flex-wrap:wrap}
+  .sort-btn,.fbtn{font-family:inherit;font-size:12px;border:1px solid var(--line);background:#fff;
+    color:var(--muted);border-radius:4px;padding:5px 10px;cursor:pointer}
+  .sort-btn.active,.fbtn.active{border-color:var(--green);color:var(--green);background:#F0F5EC;font-weight:600}
+
+  /* review feed */
+  .rev{padding:13px 2px;border-bottom:1px solid var(--line2)}
+  .rev:last-child{border-bottom:none}
+  .rev.neg{border-left:3px solid var(--down);padding-left:11px;background:#FDF7F7}
+  .rev-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .rev-store{font-weight:600;font-size:13px}
+  .rev-date{font-size:12px;color:var(--muted)}
+  .rev-text{font-size:14px;margin-top:5px}
+  .rev-author{font-size:12px;color:var(--muted);margin-top:3px}
+  .neg-flag{font-size:11px;font-weight:600;color:#fff;background:var(--down);border-radius:3px;padding:1px 6px}
+
+  .foot{font-size:12px;color:var(--muted);line-height:1.7;border-top:1px solid var(--line);padding-top:16px;margin-top:8px}
+  .foot b{color:var(--ink)}
+
+  @media (max-width:600px){
+    .kpis{grid-template-columns:repeat(2,1fr)}
+    .bname{min-width:84px;font-size:14px}
+    .heat-top{gap:8px}
+    .rdelta{width:44px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <span class="logo"></span>
+      <div>
+        <h1>UG 輿情監測</h1>
+        <div class="sub">聯發國際 · 手搖飲品牌與競品聲量觀測</div>
+      </div>
+    </div>
+    <div style="text-align:right">
+      <span class="demo-tag">每日自動更新</span>
+      <div class="sub" id="today" style="margin-top:6px"></div>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="buzz">輿情總覽</button>
+    <button class="tab" data-tab="google">Google 商家</button>
+  </nav>
+
+  <div id="tab-buzz" class="tab-panel">
+
+  <div class="kpis">
+    <div class="kpi"><div class="label">UG 聲量熱度</div><div class="val num">63</div><div class="delta up">▲ +7 較昨日</div></div>
+    <div class="kpi"><div class="label">同業排名</div><div class="val num">3<span style="font-size:14px;color:var(--muted)"> / 6</span></div><div class="delta up">▲ 升 1 名</div></div>
+    <div class="kpi"><div class="label">淨情緒 P/N</div><div class="val num">1.8</div><div class="delta down">▼ 負評升溫</div></div>
+    <div class="kpi"><div class="label">今日預警</div><div class="val num">3</div><div class="delta warnc">─ 1 紅 1 黃 1 綠</div></div>
+  </div>
+
+  <!-- 1. 綜合熱度指數（signature） -->
+  <section>
+    <div class="sec-head">
+      <h2>綜合聲量熱度榜<span class="hint">點任一品牌看指數怎麼算出來的</span></h2>
+    </div>
+    <div class="card" id="heatBoard"></div>
+    <div class="sub" style="margin-top:8px">
+      熱度 = 各來源訊號各自正規化 0–100 後加權合成（新聞 30% · 搜尋趨勢 25% · 評論增量 25% · 社群互動 20%）。
+      拿不到原始數字的平台給較低權重並標「估計」——這才是務實版的跨平台比較。
+    </div>
+  </section>
+
+  <!-- 2. AI 日報 -->
+  <section>
+    <div class="sec-head"><h2>AI 營運日報<span class="hint">用今天的資料即時產出</span></h2></div>
+    <div class="ai-card">
+      <button class="btn" id="genBtn">產生今日 AI 日報</button>
+      <div class="ai-empty" id="aiEmpty">按上面按鈕，Claude 會用上方熱度榜＋預警資料，寫一份營運總監視角的 BLUF 日報。</div>
+      <div class="ai-out" id="aiOut" style="display:none"></div>
+    </div>
+  </section>
+
+  <!-- 3. 關鍵字監測 -->
+  <section>
+    <div class="sec-head"><h2>監測關鍵字<span class="hint">隨時增刪 · 上線後存進 config</span></h2></div>
+    <div class="card" id="kwCard"></div>
+  </section>
+
+  <!-- 4. 預警 -->
+  <section>
+    <div class="sec-head"><h2>即時預警<span class="hint">命中門檻就推 LINE</span></h2></div>
+    <div class="card" id="alertCard"></div>
+  </section>
+
+  <!-- 5. 我的觀測清單 -->
+  <section>
+    <div class="sec-head"><h2>我的觀測清單<span class="hint">釘選重要文章／連結</span></h2></div>
+    <div class="card">
+      <div id="wlList"></div>
+      <div class="wl-add">
+        <input id="wlTitle" placeholder="標題（例：競品 Threads 爆文）">
+        <input id="wlUrl" placeholder="連結 URL">
+        <button class="btn sm" id="wlAdd">釘選</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. 競品聲量份額 SOV + 傳播溯源 -->
+  <section>
+    <div class="sec-head"><h2>競品聲量份額（SOV）<span class="hint">誰占走了今天的注意力</span></h2></div>
+    <div class="card">
+      <div class="sov-bar" id="sovBar"></div>
+      <div class="sov-legend" id="sovLegend"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>傳播溯源<span class="hint">競品爆紅那篇，從哪裡開始</span></h2></div>
+    <div class="card">
+      <div class="sub" style="margin-bottom:6px">事件：<b>迷客夏「買一送一」</b>近 6 小時聲量 +210%</div>
+      <div class="trace" id="traceList"></div>
+    </div>
+  </section>
+
+  <!-- 7. VOC 負評主題聚類 -->
+  <section>
+    <div class="sec-head"><h2>UG 負評主題聚類（VOC）<span class="hint">負評自動分群 → 餵門市改善</span></h2></div>
+    <div class="card">
+      <div id="vocList"></div>
+      <button class="btn ghost sm" id="vocBtn" style="margin-top:12px">用 Claude 重新分群</button>
+    </div>
+  </section>
+
+  <!-- 8. 危機應對話術 -->
+  <section>
+    <div class="sec-head"><h2>應對話術產生器<span class="hint">店長一鍵生成回覆草稿</span></h2></div>
+    <div class="card" id="negCard"></div>
+  </section>
+
+  <!-- 9. 圖像／Logo 識別 -->
+  <section>
+    <div class="sec-head"><h2>圖像／品牌識別<span class="hint">只貼飲料照、沒寫品牌也認得出</span></h2></div>
+    <div class="card">
+      <div class="img-up">
+        <div>
+          <label class="file-lbl" for="imgFile">選一張飲料照片</label>
+          <input type="file" id="imgFile" accept="image/*" style="display:none">
+          <img class="img-prev" id="imgPrev">
+        </div>
+        <div class="img-res" id="imgRes">上傳一張手搖飲照片，Claude 會試著判斷品牌、品項與杯身特徵——這就是大廠「多模態識別」的概念，用在你最常見的「只貼照片不寫字」貼文上。</div>
+      </div>
+      <button class="btn sm" id="imgBtn" style="margin-top:12px" disabled>辨識品牌</button>
+    </div>
+  </section>
+
+  <!-- 10. 週報 + GEO -->
+  <section>
+    <div class="sec-head"><h2>自動週報<span class="hint">把七天濃縮成一頁</span></h2></div>
+    <div class="ai-card">
+      <button class="btn" id="weekBtn">產生本週週報</button>
+      <div class="ai-out" id="weekOut" style="display:none"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>AI 搜尋可見度（GEO）<span class="hint">有人問 AI「推薦手搖飲」，UG 上榜嗎</span></h2></div>
+    <div class="ai-card">
+      <button class="btn" id="geoBtn">檢查 AI 是否推薦 UG</button>
+      <div id="geoOut" style="display:none">
+        <div class="sub" style="margin-top:12px">問題：<b id="geoQ"></b></div>
+        <div class="geo-list" id="geoList"></div>
+        <div class="geo-verdict" id="geoVerdict"></div>
+      </div>
+    </div>
+  </section>
+
+  </div><!-- /tab-buzz -->
+
+  <!-- ===== Google 商家分頁 ===== -->
+  <div id="tab-google" class="tab-panel" hidden>
+
+    <div class="note-g">自動納入所有「UG＋分店名」的 Google 商家（示意 12 家）。資料來自你的 Outscraper 收集器；每日快照相減算出星數變化。</div>
+
+    <div class="kpis">
+      <div class="kpi"><div class="label">監測門市</div><div class="val num" id="gStoreCount">—</div><div class="delta">UG ⬩⬩店</div></div>
+      <div class="kpi"><div class="label">平均星等</div><div class="val num" id="gAvg">—</div><div class="delta" id="gAvgD"></div></div>
+      <div class="kpi"><div class="label">今日新增評論</div><div class="val num" id="gNew">—</div><div class="delta">全門市合計</div></div>
+      <div class="kpi"><div class="label">今日新增負評</div><div class="val num down" id="gNeg">—</div><div class="delta">≤ 2★</div></div>
+    </div>
+
+    <section>
+      <div class="sec-head"><h2>各門市星等與每日變化<span class="hint">點按鈕排序</span></h2></div>
+      <div class="sort-bar" id="storeSort"></div>
+      <div class="card" style="padding:0;overflow-x:auto">
+        <table class="gtable">
+          <thead><tr><th>門市</th><th>星等</th><th>評論數</th><th>今日★變化</th><th>今日新增</th><th>近 30 天負評</th></tr></thead>
+          <tbody id="storeBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="sec-head"><h2>評論動態<span class="hint">篩星級 · 排序 · 看負評</span></h2></div>
+      <div class="filter-bar">
+        <div class="fgroup" id="starFilter"></div>
+        <div class="fgroup" id="reviewSort"></div>
+      </div>
+      <div class="card" id="reviewFeed"></div>
+    </section>
+
+  </div><!-- /tab-google -->
+
+  <div class="foot">
+    <b>架構說明：</b><br>
+    ① <b>前端</b>：本頁是純靜態，只讀 <b>docs/data/dashboard.json</b>，由 GitHub Pages 服務。<br>
+    ② <b>資料更新</b>：<b>collector/</b> 在 GitHub Action 內每天跑，抓 Google 商家評論＋競品聲量，算出熱度／VOC／快照差異，寫回 dashboard.json 並 commit。<br>
+    ③ <b>金鑰</b>：OUTSCRAPER_API_KEY 與 ANTHROPIC_API_KEY 都存成 GitHub Secret，只在 Action 內使用，<b>絕不進瀏覽器</b>。AI 日報／週報／VOC／GEO 皆由排程預先產生、寫入 json，前端只顯示。<br>
+    ④ <b>互動式 AI</b>（即時圖像識別、店長即時生成回覆）需持有金鑰的小後端（GAS／Cloud Function）；本頁預留位置，設定後端網址即可啟用。
+  </div>
+
+</div>
+
+<script>
+// 內建種子＝離線後備；正式資料由 data/dashboard.json 覆蓋（見檔尾 init()）
+const SEED = {
+  today: new Date().toLocaleDateString('zh-TW',{year:'numeric',month:'long',day:'numeric',weekday:'long'}),
+  brands: [
+    {name:'迷客夏', self:false, score:81, d:+4, news:88, trends:84, reviews:70, social:82, pos:62, neg:24},
+    {name:'50嵐',   self:false, score:74, d:-2, news:70, trends:80, reviews:72, social:74, pos:58, neg:22},
+    {name:'UG 聯發', self:true,  score:63, d:+7, news:52, trends:58, reviews:78, social:64, pos:55, neg:31},
+    {name:'可不可熟成紅茶', self:false, score:59, d:+1, news:56, trends:60, reviews:64, social:55, pos:60, neg:18},
+    {name:'一沐日', self:false, score:48, d:+5, news:44, trends:52, reviews:50, social:46, pos:57, neg:20},
+    {name:'清心福全', self:false, score:41, d:-3, news:40, trends:42, reviews:46, social:38, pos:52, neg:25},
+  ],
+  keywords: {
+    brand:['UG','聯發','Unigreen','聯發國際'],
+    competitor:['迷客夏','50嵐','可不可','一沐日','清心'],
+    promo:['買一送一','第二杯','新品','聯名','加價購'],
+  },
+  alerts: [
+    {lv:'r', txt:'競品「迷客夏」優惠詞「買一送一」命中暴增 +210%（近 6 小時），來源集中 Threads。', at:'今天 13:20'},
+    {lv:'y', txt:'UG 負面聲量較昨日 +35%，關鍵字集中在「等太久」「出餐慢」。', at:'今天 11:05'},
+    {lv:'g', txt:'UG 聲量熱度升至同業第 3（昨日第 4），帶動詞為新品「桂花烏龍」。', at:'今天 09:40'},
+  ],
+  watchlist: [
+    {title:'Dcard 美食板：手搖飲新品討論串', url:'https://www.dcard.tw/f/food', meta:'論壇 · 38 則回應'},
+    {title:'競品「迷客夏」買一送一 Threads 爆文', url:'https://www.threads.net', meta:'Threads · 估互動高'},
+  ],
+  // 近 30 天 UG 負評（示意），給 VOC 分群用
+  vocReviews: [
+    '尖峰時段等超過 20 分鐘，前面才 5 杯','現場只有一個人在做，出餐有夠慢','排隊排到天荒地老，下次不來了',
+    '正常甜喝起來超甜，根本不準','說微糖結果甜到不行','甜度完全沒按我點的',
+    '比別家貴 5 塊，料卻比較少','一杯快 70 真的偏貴','CP 值不如隔壁迷客夏',
+    '珍珠是冷的、不 Q','茶味很淡像在喝糖水','新品桂花烏龍香氣不錯但偏甜',
+    '店員臉很臭，問個問題還被白眼','態度可以再好一點','點錯還怪客人',
+  ],
+  // 需要回覆的負面貼文／評論（示意）
+  negPosts: [
+    {src:'Google 評論 · 中山店 ★2', txt:'等了快半小時才拿到，店員忙到沒空回應，飲料還做錯口味，體驗很差。'},
+    {src:'Threads · 公開貼文', txt:'UG 桂花烏龍甜到爆，說了微糖也沒用，這糖度標示根本參考用的吧。'},
+  ],
+  // 傳播溯源（示意）
+  trace: [
+    {t:'今天 07:42', x:'競品官方 IG 限動首發「買一送一」', tag:'origin'},
+    {t:'今天 08:15', x:'美食帳 @drink_taipei 轉成貼文', tag:'amp'},
+    {t:'今天 09:50', x:'Threads 用戶實拍排隊照，引爆討論串', tag:'amp'},
+    {t:'今天 11:30', x:'Dcard 美食板出現比較文', tag:'amp'},
+  ],
+  // Google 商家：各門市（示意 12 家）。dRating＝今日平均星等變化
+  stores: [
+    {name:'UG 中山店', rating:4.3, reviews:842, dRating:+0.02, newToday:6, neg:11},
+    {name:'UG 板橋店', rating:3.9, reviews:1203, dRating:-0.05, newToday:9, neg:23},
+    {name:'UG 信義店', rating:4.6, reviews:567, dRating:+0.01, newToday:3, neg:5},
+    {name:'UG 西門店', rating:4.1, reviews:1580, dRating:+0.04, newToday:12, neg:18},
+    {name:'UG 士林店', rating:4.4, reviews:733, dRating:0.0, newToday:4, neg:8},
+    {name:'UG 永和店', rating:3.7, reviews:498, dRating:-0.08, newToday:5, neg:19},
+    {name:'UG 新莊店', rating:4.2, reviews:611, dRating:+0.03, newToday:4, neg:9},
+    {name:'UG 三重店', rating:4.0, reviews:455, dRating:-0.02, newToday:2, neg:12},
+    {name:'UG 松山店', rating:4.5, reviews:690, dRating:+0.05, newToday:7, neg:6},
+    {name:'UG 大安店', rating:4.7, reviews:521, dRating:+0.02, newToday:3, neg:4},
+    {name:'UG 中和店', rating:3.8, reviews:402, dRating:-0.06, newToday:4, neg:16},
+    {name:'UG 蘆洲店', rating:4.2, reviews:377, dRating:+0.01, newToday:2, neg:7},
+  ],
+  // Google 評論（示意）
+  gReviews: [
+    {store:'UG 永和店', stars:1, date:'今天', author:'A.Lin', text:'等了快半小時，店員忙到沒空理人，飲料還做錯口味，太誇張。'},
+    {store:'UG 板橋店', stars:2, date:'今天', author:'小魚', text:'說微糖結果甜到不行，甜度標示根本參考用的。'},
+    {store:'UG 信義店', stars:5, date:'今天', author:'Kevin C.', text:'桂花烏龍很香，店員服務也親切，會再來。'},
+    {store:'UG 西門店', stars:4, date:'昨天', author:'婷婷', text:'整體不錯，尖峰時段要等一下但可接受。'},
+    {store:'UG 中和店', stars:1, date:'昨天', author:'阿德', text:'珍珠是冷的不 Q，茶味很淡，價格又不便宜。'},
+    {store:'UG 大安店', stars:5, date:'昨天', author:'Wei', text:'這家品質很穩，每次來都不踩雷。'},
+    {store:'UG 板橋店', stars:2, date:'2 天前', author:'J.H.', text:'點錯飲料還被店員白眼，態度需要加強。'},
+    {store:'UG 松山店', stars:4, date:'2 天前', author:'Mei', text:'新品好喝，包裝也用心，扣一星是排隊有點久。'},
+    {store:'UG 士林店', stars:3, date:'2 天前', author:'Tony', text:'中規中矩，沒有特別驚艷也沒地雷。'},
+    {store:'UG 中山店', stars:5, date:'3 天前', author:'Sandy', text:'店員記得我常點的，很有溫度，推。'},
+    {store:'UG 三重店', stars:2, date:'3 天前', author:'阿凱', text:'比隔壁貴五塊料卻比較少，CP 值偏低。'},
+    {store:'UG 新莊店', stars:4, date:'3 天前', author:'Lily', text:'好喝，但希望甜度能做更準一點。'},
+    {store:'UG 永和店', stars:1, date:'4 天前', author:'Ben', text:'現場只有一個人做，出餐有夠慢，下次不來了。'},
+    {store:'UG 信義店', stars:5, date:'4 天前', author:'Grace', text:'乾淨明亮，飲料穩定，值得這個星等。'},
+  ],
+};
+
+let STATE = SEED;
+const WEIGHTS = {news:.30, trends:.25, reviews:.25, social:.20};
+const SIGNAMES = {news:'Google 新聞命中', trends:'Google 搜尋趨勢', reviews:'Google 評論增量', social:'社群互動（估計）'};
+const $ = s => document.querySelector(s);
+
+document.getElementById('today').textContent = STATE.today;
+
+function deltaTag(d){
+  if(d>0) return `<span class="up">▲ +${d}</span>`;
+  if(d<0) return `<span class="down">▼ ${d}</span>`;
+  return `<span class="warnc">─ 0</span>`;
+}
+
+function renderHeat(){
+  const sorted=[...STATE.brands].sort((a,b)=>b.score-a.score);
+  const max=Math.max(...sorted.map(b=>b.score));
+  $('#heatBoard').innerHTML = sorted.map((b,i)=>{
+    const sigs=['news','trends','reviews','social'].map(k=>`
+      <div class="sig"><span class="sn">${SIGNAMES[k]}</span>
+        <span class="sb"><span class="sf" style="width:${b[k]}%"></span></span>
+        <span class="sv num">${b[k]}</span></div>`).join('');
+    return `<div class="heat-row ${b.self?'is-self':''}" data-i="${i}">
+      <div class="heat-top">
+        <span class="rank num">${i+1}</span>
+        <span class="bname">${b.name}${b.self?'<span class="self">自家</span>':''}</span>
+        <span class="bar-wrap"><span class="bar" style="width:${b.score/max*100}%"></span></span>
+        <span class="score num">${b.score}</span>
+        <span class="rdelta">${deltaTag(b.d)}</span>
+      </div>
+      <div class="breakdown">
+        ${sigs}
+        <div class="sent">情緒 · 正面 <b class="p">${b.pos}%</b> ／ 負面 <b class="n">${b.neg}%</b>
+        ｜加權合成熱度 <b class="num">${b.score}</b></div>
+      </div>
+    </div>`;
+  }).join('');
+  document.querySelectorAll('.heat-row').forEach(r=>{
+    r.addEventListener('click',()=>r.classList.toggle('open'));
+  });
+}
+
+function renderKw(){
+  const cls={brand:'',competitor:'comp',promo:'promo'};
+  const label={brand:'品牌詞（自家）',competitor:'競品詞',promo:'優惠／活動詞'};
+  $('#kwCard').innerHTML = Object.keys(STATE.keywords).map(g=>`
+    <div class="kw-group">
+      <div class="kw-label">${label[g]}</div>
+      <div class="chips">
+        ${STATE.keywords[g].map(k=>`<span class="chip ${cls[g]}">${k}<x data-g="${g}" data-k="${k}">×</x></span>`).join('')}
+      </div>
+      <div class="kw-add">
+        <input placeholder="新增${label[g]}…" data-add="${g}">
+        <button class="btn ghost sm" data-addbtn="${g}">加入</button>
+      </div>
+    </div>`).join('');
+  document.querySelectorAll('.chip x').forEach(x=>x.addEventListener('click',e=>{
+    const {g,k}=e.target.dataset;
+    STATE.keywords[g]=STATE.keywords[g].filter(v=>v!==k); renderKw();
+  }));
+  document.querySelectorAll('[data-addbtn]').forEach(btn=>btn.addEventListener('click',e=>{
+    const g=e.target.dataset.addbtn;
+    const inp=document.querySelector(`[data-add="${g}"]`);
+    const v=inp.value.trim();
+    if(v && !STATE.keywords[g].includes(v)){STATE.keywords[g].push(v); renderKw();}
+  }));
+}
+
+function renderAlerts(){
+  $('#alertCard').innerHTML = STATE.alerts.map(a=>`
+    <div class="alert"><span class="dot ${a.lv}"></span>
+      <div><div>${a.txt}</div><div class="at">${a.at}</div></div></div>`).join('');
+}
+
+function renderWatch(){
+  $('#wlList').innerHTML = STATE.watchlist.length? STATE.watchlist.map((w,i)=>`
+    <div class="wl"><div><a href="${w.url}" target="_blank" rel="noopener">${w.title}</a>
+      <div class="meta">${w.meta||w.url}</div></div>
+      <button class="wl-rm" data-i="${i}">移除</button></div>`).join('')
+    : '<div class="sub">還沒有釘選任何連結。</div>';
+  document.querySelectorAll('.wl-rm').forEach(b=>b.addEventListener('click',e=>{
+    STATE.watchlist.splice(+e.target.dataset.i,1); renderWatch();
+  }));
+}
+$('#wlAdd').addEventListener('click',()=>{
+  const t=$('#wlTitle').value.trim(), u=$('#wlUrl').value.trim();
+  if(!t) return;
+  STATE.watchlist.push({title:t,url:u||'#',meta:u||'自訂'});
+  $('#wlTitle').value=''; $('#wlUrl').value=''; renderWatch();
+});
+
+// ---- AI 日報：呼叫 Claude（demo 用，瀏覽器端；上線移到 GitHub Action）----
+function buildContext(){
+  const b=[...STATE.brands].sort((x,y)=>y.score-x.score)
+    .map((x,i)=>`${i+1}. ${x.name}${x.self?'(自家)':''} 熱度${x.score}(較昨日${x.d>0?'+':''}${x.d}) 正${x.pos}%/負${x.neg}%`).join('\n');
+  const al=STATE.alerts.map(a=>`[${a.lv==='r'?'高':a.lv==='y'?'中':'低'}] ${a.txt}`).join('\n');
+  return `今日手搖飲品牌聲量熱度榜（0-100）：\n${b}\n\n今日預警：\n${al}\n\n監測競品詞：${STATE.keywords.competitor.join('、')}`;
+}
+
+$('#genBtn').addEventListener('click', ()=>{
+  const out=$('#aiOut'), empty=$('#aiEmpty');
+  empty.style.display='none'; out.style.display='block';
+  out.textContent = (STATE.ai && STATE.ai.daily) ? STATE.ai.daily
+    : '（今日尚無 AI 日報——由每日排程在 GitHub Action 內以 ANTHROPIC_API_KEY 產生並寫入 dashboard.json）';
+});
+
+// ===== 上線版不在瀏覽器呼叫模型（金鑰絕不進前端）=====
+// AI 內容（日報／週報／VOC 分群／應對話術／GEO）由 GitHub Action 內的 collector 預先產生，寫入 dashboard.json。
+async function callClaude(){ return '（此內容由每日排程產生，請見 dashboard.json 的 ai 欄位）'; }
+
+// ----- 6. SOV -----
+const SOVCOL=['#8DB87A','#B7C9A8','#C9B79C','#D8C4A0','#BFC2BA','#A9B6A0'];
+function renderSOV(){
+  const total=STATE.brands.reduce((s,b)=>s+b.score,0);
+  const sorted=[...STATE.brands].sort((a,b)=>b.score-a.score);
+  let ci=0;
+  $('#sovBar').innerHTML=sorted.map(b=>{
+    const pct=b.score/total*100, col=b.self?'#2D5016':SOVCOL[ci++%SOVCOL.length];
+    return `<span class="sov-seg" style="width:${pct}%;background:${col}" title="${b.name} ${pct.toFixed(1)}%">${pct>9?b.name.slice(0,3):''}</span>`;
+  }).join('');
+  ci=0;
+  $('#sovLegend').innerHTML=sorted.map(b=>{
+    const pct=(b.score/total*100).toFixed(1), col=b.self?'#2D5016':SOVCOL[ci++%SOVCOL.length];
+    return `<span><i style="background:${col}"></i>${b.name} ${pct}%</span>`;
+  }).join('');
+}
+
+// ----- 傳播溯源 -----
+function renderTrace(){
+  $('#traceList').innerHTML=STATE.trace.map(t=>`
+    <div class="trace-item ${t.tag==='origin'?'origin':''}">
+      <div class="trace-t">${t.t}</div>
+      <div class="trace-x">${t.x}<span class="badge ${t.tag==='origin'?'org':'amp'}">${t.tag==='origin'?'首發源頭':'放大節點'}</span></div>
+    </div>`).join('');
+}
+
+// ----- 7. VOC 聚類 -----
+let vocClusters=[
+  {name:'出餐慢／等待過久', count:3, sample:'等了快半小時才拿到，前面沒幾杯'},
+  {name:'甜度不準', count:3, sample:'點微糖卻甜到不行，標示像參考用'},
+  {name:'價格偏高／CP 值', count:3, sample:'比隔壁貴，料卻比較少'},
+  {name:'產品口感（珍珠冷、茶味淡）', count:3, sample:'珍珠是冷的不 Q，茶味淡像糖水'},
+  {name:'服務態度', count:3, sample:'店員臉臭，問問題被白眼'},
+];
+function renderVOC(){
+  const data=(STATE.voc_clusters && STATE.voc_clusters.length)? STATE.voc_clusters : vocClusters;
+  const total=data.reduce((s,c)=>s+(c.count||0),0)||1;
+  $('#vocList').innerHTML=data.map(c=>`
+    <div class="voc-item">
+      <span class="voc-cnt num">${c.count}</span>
+      <div><div class="voc-name">${c.name} <span class="voc-share">· ${(c.count/total*100).toFixed(0)}%</span></div>
+      <div class="voc-sample">代表：「${c.sample}」</div></div>
+    </div>`).join('');
+}
+// 分群由每日排程在 Action 內產生，前端不重算
+(function(){ const b=$('#vocBtn'); if(b) b.style.display='none'; })();
+
+// ----- 8. 應對話術 -----
+function renderNeg(){
+  $('#negCard').innerHTML=STATE.negPosts.map((p,i)=>`
+    <div class="neg-item">
+      <div class="neg-q">「${p.txt}」</div>
+      <div class="neg-meta">${p.src}</div>
+      <button class="btn ghost sm" data-reply="${i}">產生回覆草稿</button>
+      <div class="reply-box" id="reply${i}"></div>
+    </div>`).join('');
+  document.querySelectorAll('[data-reply]').forEach(b=>b.addEventListener('click',e=>{
+    const i=e.target.dataset.reply, box=$('#reply'+i), p=STATE.negPosts[i];
+    box.style.display='block';
+    box.textContent = (p && p.reply) ? p.reply
+      : '（回覆草稿由每日排程在 Action 內產生並寫入 dashboard.json；若要店長即時生成，需接一支小後端 GAS／Cloud Function）';
+  }));
+}
+
+// ----- 9. 圖像識別 -----
+let imgData=null, imgMime=null;
+$('#imgFile').addEventListener('change',e=>{
+  const f=e.target.files[0]; if(!f) return;
+  imgMime=f.type;
+  const r=new FileReader();
+  r.onload=()=>{ $('#imgPrev').src=r.result; $('#imgPrev').style.display='block'; imgData=r.result.split(',')[1]; $('#imgBtn').disabled=false; };
+  r.readAsDataURL(f);
+});
+$('#imgBtn').addEventListener('click',()=>{
+  const res=$('#imgRes');
+  res.textContent='圖像識別需要呼叫視覺模型＝需要金鑰，不能放在純前端。建議接一支小後端（GAS／Cloud Function）持有金鑰，前端把圖片送過去、拿回結果。設定後端網址後即可啟用。';
+});
+
+// ----- 10. 週報 -----
+$('#weekBtn').addEventListener('click',()=>{
+  const out=$('#weekOut'); out.style.display='block';
+  out.textContent = (STATE.ai && STATE.ai.weekly) ? STATE.ai.weekly
+    : '（本週尚無週報——由每週排程在 GitHub Action 內產生並寫入 dashboard.json）';
+});
+
+// ----- GEO 可見度 -----
+$('#geoBtn').addEventListener('click',()=>{
+  const g=STATE.ai && STATE.ai.geo;
+  $('#geoOut').style.display='block';
+  const re=/UG|聯發|unigreen/i;
+  if(g && Array.isArray(g.list)){
+    $('#geoQ').textContent=g.q||'推薦台北手搖飲品牌';
+    const hit=g.list.findIndex(n=>re.test(n));
+    $('#geoList').innerHTML=g.list.map((n,i)=>`<div class="geo-row"><span class="geo-rank num">${i+1}</span><span class="${re.test(n)?'geo-hit':''}">${n}</span></div>`).join('');
+    $('#geoVerdict').innerHTML = hit>=0?`<span class="up">✓ UG 有上榜（第 ${hit+1} 名）</span>`:`<span class="down">✗ UG 未被 AI 提到——這就是 GEO 要追的缺口</span>`;
+  }else{
+    $('#geoQ').textContent='—';
+    $('#geoList').innerHTML='';
+    $('#geoVerdict').textContent='（GEO 結果由每日排程輪詢多個 AI 引擎後寫入 dashboard.json）';
+  }
+});
+
+// ===== 分頁切換 =====
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+  t.classList.add('active');
+  const id=t.dataset.tab;
+  document.getElementById('tab-buzz').hidden   = id!=='buzz';
+  document.getElementById('tab-google').hidden = id!=='google';
+  window.scrollTo({top:0,behavior:'smooth'});
+}));
+
+// ===== Google 商家分頁 =====
+function starStr(n){let s='';for(let i=1;i<=5;i++)s+=i<=n?'★':'<span class="e">★</span>';return s;}
+
+function gKpis(){
+  const s=STATE.stores;
+  $('#gStoreCount').textContent=s.length;
+  const avg=s.reduce((a,b)=>a+b.rating*b.reviews,0)/s.reduce((a,b)=>a+b.reviews,0);
+  $('#gAvg').textContent=avg.toFixed(2);
+  const dAvg=s.reduce((a,b)=>a+b.dRating,0)/s.length;
+  $('#gAvgD').innerHTML = dAvg>0?`<span class="up">▲ +${dAvg.toFixed(3)} 今日</span>`
+    : dAvg<0?`<span class="down">▼ ${dAvg.toFixed(3)} 今日</span>`:'<span class="warnc">─ 持平</span>';
+  $('#gNew').textContent=s.reduce((a,b)=>a+b.newToday,0);
+  $('#gNeg').textContent=STATE.gReviews.filter(r=>r.stars<=2 && r.date==='今天').length;
+}
+
+const storeSorts=[{k:'rating',label:'依星等'},{k:'reviews',label:'依評論數'},{k:'dRating',label:'依今日變化'},{k:'neg',label:'依負評數'}];
+let storeSortK='rating', storeSortDir='desc';
+function renderStoreSort(){
+  $('#storeSort').innerHTML=storeSorts.map(s=>{
+    const active=s.k===storeSortK, arrow=active?(storeSortDir==='desc'?' ↓':' ↑'):'';
+    return `<button class="sort-btn ${active?'active':''}" data-k="${s.k}">${s.label}${arrow}</button>`;
+  }).join('');
+  document.querySelectorAll('#storeSort .sort-btn').forEach(b=>b.addEventListener('click',()=>{
+    const k=b.dataset.k;
+    if(k===storeSortK) storeSortDir=storeSortDir==='desc'?'asc':'desc';
+    else {storeSortK=k; storeSortDir='desc';}
+    renderStoreSort(); renderStores();
+  }));
+}
+function renderStores(){
+  const rows=[...STATE.stores].sort((a,b)=>{const d=a[storeSortK]-b[storeSortK];return storeSortDir==='desc'?-d:d;});
+  $('#storeBody').innerHTML=rows.map(s=>{
+    const dd=s.dRating>0?`<span class="up">▲ +${s.dRating.toFixed(2)}</span>`
+      :s.dRating<0?`<span class="down">▼ ${s.dRating.toFixed(2)}</span>`:'<span class="warnc">─ 0.00</span>';
+    return `<tr>
+      <td class="st">${s.name}</td>
+      <td class="rt">${s.rating.toFixed(1)} <span class="stars">${starStr(Math.round(s.rating))}</span></td>
+      <td class="num">${s.reviews.toLocaleString()}</td>
+      <td>${dd}</td>
+      <td class="num">${s.newToday}</td>
+      <td class="num" style="color:var(--down);font-weight:600">${s.neg}</td>
+    </tr>`;
+  }).join('');
+}
+
+const starOpts=[{v:'all',l:'全部'},{v:'neg',l:'只看負評 ≤2★'},{v:5,l:'5★'},{v:4,l:'4★'},{v:3,l:'3★'},{v:2,l:'2★'},{v:1,l:'1★'}];
+const revSorts=[{v:'newest',l:'最新'},{v:'low',l:'星等低→高'},{v:'high',l:'星等高→低'}];
+let starF='all', revSort='newest';
+function renderFilters(){
+  $('#starFilter').innerHTML=starOpts.map(o=>`<button class="fbtn ${o.v===starF?'active':''}" data-v="${o.v}">${o.l}</button>`).join('');
+  $('#reviewSort').innerHTML=revSorts.map(o=>`<button class="fbtn ${o.v===revSort?'active':''}" data-s="${o.v}">${o.l}</button>`).join('');
+  document.querySelectorAll('#starFilter .fbtn').forEach(b=>b.addEventListener('click',()=>{
+    const v=b.dataset.v; starF=(v==='all'||v==='neg')?v:+v; renderFilters(); renderReviews();
+  }));
+  document.querySelectorAll('#reviewSort .fbtn').forEach(b=>b.addEventListener('click',()=>{
+    revSort=b.dataset.s; renderFilters(); renderReviews();
+  }));
+}
+function renderReviews(){
+  let list=[...STATE.gReviews];
+  if(starF==='neg') list=list.filter(r=>r.stars<=2);
+  else if(starF!=='all') list=list.filter(r=>r.stars===starF);
+  const dord={'今天':0,'昨天':1,'2 天前':2,'3 天前':3,'4 天前':4};
+  if(revSort==='newest') list.sort((a,b)=>(dord[a.date]??9)-(dord[b.date]??9));
+  else if(revSort==='low') list.sort((a,b)=>a.stars-b.stars);
+  else list.sort((a,b)=>b.stars-a.stars);
+  $('#reviewFeed').innerHTML = list.length? list.map(r=>`
+    <div class="rev ${r.stars<=2?'neg':''}">
+      <div class="rev-top">
+        <span class="stars">${starStr(r.stars)}</span>
+        <span class="rev-store">${r.store}</span>
+        <span class="rev-date">${r.date}</span>
+        ${r.stars<=2?'<span class="neg-flag">負評</span>':''}
+      </div>
+      <div class="rev-text">${r.text}</div>
+      <div class="rev-author">— ${r.author}</div>
+    </div>`).join('') : '<div class="sub">這個條件下沒有評論。</div>';
+}
+function initGoogle(){ gKpis(); renderStoreSort(); renderStores(); renderFilters(); renderReviews(); }
+
+async function init(){
+  try{
+    const r=await fetch('data/dashboard.json',{cache:'no-store'});
+    if(r.ok){ const j=await r.json(); STATE=Object.assign({}, SEED, j); }
+  }catch(e){ /* 載入失敗就用內建 SEED */ }
+  document.getElementById('today').textContent = STATE.today || SEED.today;
+  renderHeat(); renderKw(); renderAlerts(); renderWatch(); renderSOV(); renderTrace(); renderVOC(); renderNeg(); initGoogle();
+}
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+name: scrape
+
+on:
+  schedule:
+    - cron: "0 1 * * *"      # 每天 09:00（台灣時間 = UTC 01:00）
+  workflow_dispatch: {}       # 允許手動觸發（gh workflow run 需要這行）
+
+permissions:
+  contents: write             # 讓排程能把 dashboard.json commit 回 repo
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 安裝相依
+        run: pip install -r requirements.txt
+
+      - name: 抓 Google 商家評論
+        env:
+          OUTSCRAPER_API_KEY: ${{ secrets.OUTSCRAPER_API_KEY }}
+        run: python collector/google_reviews.py
+
+      - name: 產生 AI 內容（選用）
+        if: ${{ secrets.ANTHROPIC_API_KEY != '' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python collector/ai_report.py
+
+      - name: Commit 結果
+        run: |
+          git config user.name  "ug-bot"
+          git config user.email "ug-bot@users.noreply.github.com"
+          git add docs/data/
+          git commit -m "chore: 更新評論資料 $(date +%F)" || echo "無變更"
+          git push
