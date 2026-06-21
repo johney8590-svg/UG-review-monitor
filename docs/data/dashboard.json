@@ -1,72 +1,879 @@
 {
-  "today": "資料更新中…",
+  "today": "2026年06月21日",
   "brands": [
-    {"name":"迷客夏","self":false,"score":81,"d":4,"news":88,"trends":84,"reviews":70,"social":82,"pos":62,"neg":24},
-    {"name":"50嵐","self":false,"score":74,"d":-2,"news":70,"trends":80,"reviews":72,"social":74,"pos":58,"neg":22},
-    {"name":"UG 聯發","self":true,"score":63,"d":7,"news":52,"trends":58,"reviews":78,"social":64,"pos":55,"neg":31},
-    {"name":"可不可熟成紅茶","self":false,"score":59,"d":1,"news":56,"trends":60,"reviews":64,"social":55,"pos":60,"neg":18},
-    {"name":"一沐日","self":false,"score":48,"d":5,"news":44,"trends":52,"reviews":50,"social":46,"pos":57,"neg":20},
-    {"name":"清心福全","self":false,"score":41,"d":-3,"news":40,"trends":42,"reviews":46,"social":38,"pos":52,"neg":25}
+    {
+      "name": "迷客夏",
+      "self": false,
+      "score": 81,
+      "d": 4,
+      "news": 88,
+      "trends": 84,
+      "reviews": 70,
+      "social": 82,
+      "pos": 62,
+      "neg": 24
+    },
+    {
+      "name": "50嵐",
+      "self": false,
+      "score": 74,
+      "d": -2,
+      "news": 70,
+      "trends": 80,
+      "reviews": 72,
+      "social": 74,
+      "pos": 58,
+      "neg": 22
+    },
+    {
+      "name": "UG 聯發",
+      "self": true,
+      "score": 63,
+      "d": 7,
+      "news": 52,
+      "trends": 58,
+      "reviews": 78,
+      "social": 64,
+      "pos": 55,
+      "neg": 31
+    },
+    {
+      "name": "可不可熟成紅茶",
+      "self": false,
+      "score": 59,
+      "d": 1,
+      "news": 56,
+      "trends": 60,
+      "reviews": 64,
+      "social": 55,
+      "pos": 60,
+      "neg": 18
+    },
+    {
+      "name": "一沐日",
+      "self": false,
+      "score": 48,
+      "d": 5,
+      "news": 44,
+      "trends": 52,
+      "reviews": 50,
+      "social": 46,
+      "pos": 57,
+      "neg": 20
+    },
+    {
+      "name": "清心福全",
+      "self": false,
+      "score": 41,
+      "d": -3,
+      "news": 40,
+      "trends": 42,
+      "reviews": 46,
+      "social": 38,
+      "pos": 52,
+      "neg": 25
+    }
   ],
   "keywords": {
-    "brand": ["UG","聯發","Unigreen","聯發國際"],
-    "competitor": ["迷客夏","50嵐","可不可","一沐日","清心"],
-    "promo": ["買一送一","第二杯","新品","聯名","加價購"]
+    "brand": [
+      "UG",
+      "聯發",
+      "Unigreen",
+      "聯發國際"
+    ],
+    "competitor": [
+      "迷客夏",
+      "50嵐",
+      "可不可",
+      "一沐日",
+      "清心"
+    ],
+    "promo": [
+      "買一送一",
+      "第二杯",
+      "新品",
+      "聯名",
+      "加價購"
+    ]
   },
   "alerts": [
-    {"lv":"r","txt":"競品「迷客夏」優惠詞「買一送一」命中暴增 +210%（近 6 小時），來源集中 Threads。","at":"今天 13:20"},
-    {"lv":"y","txt":"UG 負面聲量較昨日 +35%，關鍵字集中在「等太久」「出餐慢」。","at":"今天 11:05"},
-    {"lv":"g","txt":"UG 聲量熱度升至同業第 3（昨日第 4），帶動詞為新品「桂花烏龍」。","at":"今天 09:40"}
+    {
+      "lv": "r",
+      "txt": "競品「迷客夏」優惠詞「買一送一」命中暴增 +210%（近 6 小時），來源集中 Threads。",
+      "at": "今天 13:20"
+    },
+    {
+      "lv": "y",
+      "txt": "UG 負面聲量較昨日 +35%，關鍵字集中在「等太久」「出餐慢」。",
+      "at": "今天 11:05"
+    },
+    {
+      "lv": "g",
+      "txt": "UG 聲量熱度升至同業第 3（昨日第 4），帶動詞為新品「桂花烏龍」。",
+      "at": "今天 09:40"
+    }
   ],
   "watchlist": [
-    {"title":"Dcard 美食板：手搖飲新品討論串","url":"https://www.dcard.tw/f/food","meta":"論壇 · 38 則回應"},
-    {"title":"競品「迷客夏」買一送一 Threads 爆文","url":"https://www.threads.net","meta":"Threads · 估互動高"}
+    {
+      "title": "Dcard 美食板：手搖飲新品討論串",
+      "url": "https://www.dcard.tw/f/food",
+      "meta": "論壇 · 38 則回應"
+    },
+    {
+      "title": "競品「迷客夏」買一送一 Threads 爆文",
+      "url": "https://www.threads.net",
+      "meta": "Threads · 估互動高"
+    }
   ],
   "voc_clusters": [
-    {"name":"出餐慢／等待過久","count":3,"sample":"等了快半小時才拿到，前面沒幾杯"},
-    {"name":"甜度不準","count":3,"sample":"點微糖卻甜到不行，標示像參考用"},
-    {"name":"價格偏高／CP 值","count":3,"sample":"比隔壁貴，料卻比較少"},
-    {"name":"產品口感（珍珠冷、茶味淡）","count":3,"sample":"珍珠是冷的不 Q，茶味淡像糖水"},
-    {"name":"服務態度","count":3,"sample":"店員臉臭，問問題被白眼"}
+    {
+      "name": "出餐慢／等待過久",
+      "count": 3,
+      "sample": "等了快半小時才拿到，前面沒幾杯"
+    },
+    {
+      "name": "甜度不準",
+      "count": 3,
+      "sample": "點微糖卻甜到不行，標示像參考用"
+    },
+    {
+      "name": "價格偏高／CP 值",
+      "count": 3,
+      "sample": "比隔壁貴，料卻比較少"
+    },
+    {
+      "name": "產品口感（珍珠冷、茶味淡）",
+      "count": 3,
+      "sample": "珍珠是冷的不 Q，茶味淡像糖水"
+    },
+    {
+      "name": "服務態度",
+      "count": 3,
+      "sample": "店員臉臭，問問題被白眼"
+    }
   ],
   "negPosts": [
-    {"src":"Google 評論 · 中山店 ★2","txt":"等了快半小時才拿到，店員忙到沒空回應，飲料還做錯口味，體驗很差。","reply":"非常抱歉讓您久候又出錯，這是我們的疏失。尖峰時段我們將加開人力與覆核出杯流程。再請私訊訂單時間，我們會立即補做並致上心意，謝謝您的指教。"},
-    {"src":"Threads · 公開貼文","txt":"UG 桂花烏龍甜到爆，說了微糖也沒用，這糖度標示根本參考用的吧。","reply":"謝謝提醒！甜度沒到位是我們該檢討的，已請門市重新校正糖量標準。方便的話私訊門市與時段，我們補一杯正確甜度的給您喝喝看。"}
+    {
+      "src": "Google 評論 · 中山店 ★2",
+      "txt": "等了快半小時才拿到，店員忙到沒空回應，飲料還做錯口味，體驗很差。",
+      "reply": "非常抱歉讓您久候又出錯，這是我們的疏失。尖峰時段我們將加開人力與覆核出杯流程。再請私訊訂單時間，我們會立即補做並致上心意，謝謝您的指教。"
+    },
+    {
+      "src": "Threads · 公開貼文",
+      "txt": "UG 桂花烏龍甜到爆，說了微糖也沒用，這糖度標示根本參考用的吧。",
+      "reply": "謝謝提醒！甜度沒到位是我們該檢討的，已請門市重新校正糖量標準。方便的話私訊門市與時段，我們補一杯正確甜度的給您喝喝看。"
+    }
   ],
   "trace": [
-    {"t":"今天 07:42","x":"競品官方 IG 限動首發「買一送一」","tag":"origin"},
-    {"t":"今天 08:15","x":"美食帳 @drink_taipei 轉成貼文","tag":"amp"},
-    {"t":"今天 09:50","x":"Threads 用戶實拍排隊照，引爆討論串","tag":"amp"},
-    {"t":"今天 11:30","x":"Dcard 美食板出現比較文","tag":"amp"}
+    {
+      "t": "今天 07:42",
+      "x": "競品官方 IG 限動首發「買一送一」",
+      "tag": "origin"
+    },
+    {
+      "t": "今天 08:15",
+      "x": "美食帳 @drink_taipei 轉成貼文",
+      "tag": "amp"
+    },
+    {
+      "t": "今天 09:50",
+      "x": "Threads 用戶實拍排隊照，引爆討論串",
+      "tag": "amp"
+    },
+    {
+      "t": "今天 11:30",
+      "x": "Dcard 美食板出現比較文",
+      "tag": "amp"
+    }
   ],
   "stores": [
-    {"name":"UG信義永吉店","rating":4.6,"reviews":1100,"dRating":0.0,"newToday":0,"neg":0},
-    {"name":"UG信義虎林店","rating":4.5,"reviews":520,"dRating":0.0,"newToday":0,"neg":0},
-    {"name":"UG遠東GARDEN CITY大巨蛋店","rating":4.0,"reviews":536,"dRating":0.0,"newToday":0,"neg":0},
-    {"name":"UG信義通化店","rating":4.4,"reviews":219,"dRating":0.0,"newToday":0,"neg":0}
+    {
+      "name": "UG信義永吉店",
+      "rating": 4.6,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG信義虎林店",
+      "rating": 4.5,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG遠東GARDEN CITY大巨蛋店",
+      "rating": 4.0,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG新店民權店",
+      "rating": 4.3,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG嘉義文化店",
+      "rating": 4.1,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG高雄巨蛋店",
+      "rating": 3.9,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG台中逢甲店",
+      "rating": 4.0,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG台中勤美店",
+      "rating": 4.2,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG台南民生店",
+      "rating": 4.1,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG中壢新生店",
+      "rating": 3.8,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG台北西湖店",
+      "rating": 4.0,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG新竹清大店",
+      "rating": 4.2,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG斗六中山店",
+      "rating": 4.0,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG中壢中原店",
+      "rating": 4.4,
+      "reviews": 324,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG蘆洲光華店",
+      "rating": 4.0,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG中和南勢角店",
+      "rating": 4.6,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG信義通化店",
+      "rating": 4.4,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG新莊幸福店",
+      "rating": 4.3,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG板橋中正店",
+      "rating": 4.3,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG土城學府店",
+      "rating": 4.3,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG台中大里店",
+      "rating": 4.4,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG汐止中興店",
+      "rating": 4.0,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG新竹民生店",
+      "rating": 4.4,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG桃園南崁店",
+      "rating": 4.2,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG台北大安店",
+      "rating": 4.4,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG台北萬芳店",
+      "rating": 4.2,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG三重正義店",
+      "rating": 4.1,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG台中東山店",
+      "rating": 4.2,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG高雄美麗島店",
+      "rating": 4.4,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG桃園中正店",
+      "rating": 3.3,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG台中北平店",
+      "rating": 4.4,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG中山大直店",
+      "rating": 4.0,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG彰化彰基店",
+      "rating": 4.3,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG永和永安市場店",
+      "rating": 4.5,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG竹北博愛店",
+      "rating": 4.4,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG彰化員林店",
+      "rating": 4.0,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG台北石牌店",
+      "rating": 3.8,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG苗栗頭份店",
+      "rating": 4.4,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG桃園藝文店",
+      "rating": 3.7,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG高雄瑞隆店",
+      "rating": 4.2,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG台中東海店",
+      "rating": 4.3,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG南投復興店",
+      "rating": 4.5,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG北投光明店",
+      "rating": 4.2,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG台中黎明店",
+      "rating": 4.2,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG新竹金山店",
+      "rating": 3.7,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG台中豐原店",
+      "rating": 4.3,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG基隆廟口店",
+      "rating": 4.0,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG台南永康店",
+      "rating": 4.2,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG台中中科店",
+      "rating": 4.3,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG楊梅大成店",
+      "rating": 4.3,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG竹北勝利店",
+      "rating": 4.0,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG台南東寧店",
+      "rating": 4.5,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG台中太平店",
+      "rating": 4.2,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG內壢忠孝店",
+      "rating": 4.3,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG台中大甲店",
+      "rating": 4.5,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG虎尾林森店",
+      "rating": 4.2,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG樹林中山店",
+      "rating": 4.4,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG新竹新豐店",
+      "rating": 4.5,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG桃園龍潭店",
+      "rating": 4.3,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG花蓮中山店",
+      "rating": 4.7,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG台中沙鹿店",
+      "rating": 4.5,
+      "reviews": 2,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG站前南陽店",
+      "rating": 4.3,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG羅東民權店",
+      "rating": 4.7,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG林口長庚店",
+      "rating": 4.2,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG士林捷運店",
+      "rating": 4.2,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG中山南西店",
+      "rating": 4.9,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG宜蘭礁溪店",
+      "rating": 4.8,
+      "reviews": 45,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    },
+    {
+      "name": "UG忠孝敦化店",
+      "rating": 4.1,
+      "reviews": 0,
+      "dRating": 0.0,
+      "newToday": 0,
+      "neg": 0
+    }
   ],
   "gReviews": [
-    {"store":"UG遠東GARDEN CITY大巨蛋店","stars":1,"date":"今天","author":"A.Lin","text":"等了快半小時，店員忙到沒空理人，飲料還做錯口味，太誇張。"},
-    {"store":"UG信義通化店","stars":2,"date":"今天","author":"小魚","text":"說微糖結果甜到不行，甜度標示根本參考用的。"},
-    {"store":"UG信義永吉店","stars":5,"date":"今天","author":"Kevin C.","text":"桂花烏龍很香，店員服務也親切，會再來。"},
-    {"store":"UG信義虎林店","stars":4,"date":"昨天","author":"婷婷","text":"整體不錯，尖峰時段要等一下但可接受。"},
-    {"store":"UG遠東GARDEN CITY大巨蛋店","stars":1,"date":"昨天","author":"阿德","text":"珍珠是冷的不 Q，茶味很淡，價格又不便宜。"},
-    {"store":"UG信義永吉店","stars":5,"date":"昨天","author":"Wei","text":"這家品質很穩，每次來都不踩雷。"},
-    {"store":"UG信義通化店","stars":2,"date":"2 天前","author":"J.H.","text":"點錯飲料還被店員白眼，態度需要加強。"},
-    {"store":"UG信義虎林店","stars":4,"date":"2 天前","author":"Mei","text":"新品好喝，包裝也用心，扣一星是排隊有點久。"},
-    {"store":"UG信義通化店","stars":3,"date":"2 天前","author":"Tony","text":"中規中矩，沒有特別驚艷也沒地雷。"},
-    {"store":"UG信義永吉店","stars":5,"date":"3 天前","author":"Sandy","text":"店員記得我常點的，很有溫度，推。"},
-    {"store":"UG遠東GARDEN CITY大巨蛋店","stars":2,"date":"3 天前","author":"阿凱","text":"比隔壁貴五塊料卻比較少，CP 值偏低。"},
-    {"store":"UG信義虎林店","stars":4,"date":"3 天前","author":"Lily","text":"好喝，但希望甜度能做更準一點。"},
-    {"store":"UG遠東GARDEN CITY大巨蛋店","stars":1,"date":"4 天前","author":"Ben","text":"現場只有一個人做，出餐有夠慢，下次不來了。"},
-    {"store":"UG信義永吉店","stars":5,"date":"4 天前","author":"Grace","text":"乾淨明亮，飲料穩定，值得這個星等。"}
+    {
+      "store": "UG宜蘭礁溪店",
+      "stars": 5,
+      "date": "7 天前",
+      "author": "JUNE CHIU",
+      "text": "桂花奶茶好喝一直喝，讚讚👍",
+      "ts": 1781431790
+    },
+    {
+      "store": "UG宜蘭礁溪店",
+      "stars": 5,
+      "date": "7 天前",
+      "author": "JUNE CHIU",
+      "text": "桂花奶茶好喝一直喝，讚讚👍",
+      "ts": 1781431790
+    },
+    {
+      "store": "UG宜蘭礁溪店",
+      "stars": 5,
+      "date": "14 天前",
+      "author": "許巧芸（Yue）",
+      "text": "奶茶非常好喝，店員也很友善！",
+      "ts": 1780826990
+    },
+    {
+      "store": "UG宜蘭礁溪店",
+      "stars": 5,
+      "date": "14 天前",
+      "author": "許巧芸（Yue）",
+      "text": "奶茶非常好喝，店員也很友善！",
+      "ts": 1780826990
+    },
+    {
+      "store": "UG宜蘭礁溪店",
+      "stars": 5,
+      "date": "14 天前",
+      "author": "WU DALIN",
+      "text": "第一次來 桂花青烏龍if 奶茶好喝",
+      "ts": 1780826990
+    },
+    {
+      "store": "UG宜蘭礁溪店",
+      "stars": 5,
+      "date": "14 天前",
+      "author": "WU DALIN",
+      "text": "第一次來 桂花青烏龍if 奶茶好喝",
+      "ts": 1780826990
+    },
+    {
+      "store": "UG宜蘭礁溪店",
+      "stars": 5,
+      "date": "21 天前",
+      "author": "柯文章",
+      "text": "飲品好喝~服務親切!",
+      "ts": 1780222190
+    },
+    {
+      "store": "UG宜蘭礁溪店",
+      "stars": 5,
+      "date": "21 天前",
+      "author": "柯文章",
+      "text": "飲品好喝~服務親切!",
+      "ts": 1780222190
+    },
+    {
+      "store": "UG宜蘭礁溪店",
+      "stars": 5,
+      "date": "30 天前",
+      "author": "賴千鈺",
+      "text": "琥𤤿鐵觀音 真的很好喝\n每次來每次必點",
+      "ts": 1779444590
+    },
+    {
+      "store": "UG宜蘭礁溪店",
+      "stars": 5,
+      "date": "30 天前",
+      "author": "賴千鈺",
+      "text": "琥𤤿鐵觀音 真的很好喝\n每次來每次必點",
+      "ts": 1779444590
+    },
+    {
+      "store": "UG宜蘭礁溪店",
+      "stars": 4,
+      "date": "60 天前",
+      "author": "Mina",
+      "text": "新開幕のUG\n告五人代言來捧捧場\n三窨十五茉👍\n等了半小時多才喝到🤣",
+      "ts": 1776852590
+    },
+    {
+      "store": "UG宜蘭礁溪店",
+      "stars": 4,
+      "date": "60 天前",
+      "author": "Mina",
+      "text": "新開幕のUG\n告五人代言來捧捧場\n三窨十五茉👍\n等了半小時多才喝到🤣",
+      "ts": 1776852590
+    },
+    {
+      "store": "UG宜蘭礁溪店",
+      "stars": 5,
+      "date": "60 天前",
+      "author": "Ping HO",
+      "text": "就在人來人往的礁溪路上(奕順軒附近)，開幕期間(3/28~4/2)有三窨十五茉/UG奶茶買一送一活動，3/28~4/10消費不限金額就送保冷袋，真的超划算的\n服務人員也都超Nice👍👍 …",
+      "ts": 1776852590
+    },
+    {
+      "store": "UG宜蘭礁溪店",
+      "stars": 5,
+      "date": "60 天前",
+      "author": "Ping HO",
+      "text": "就在人來人往的礁溪路上(奕順軒附近)，開幕期間(3/28~4/2)有三窨十五茉/UG奶茶買一送一活動，3/28~4/10消費不限金額就送保冷袋，真的超划算的\n服務人員也都超Nice👍👍 …",
+      "ts": 1776852590
+    },
+    {
+      "store": "UG宜蘭礁溪店",
+      "stars": 5,
+      "date": "60 天前",
+      "author": "玲玲",
+      "text": "蜜桃紅烏龍很好喝～\n雲頂奶蓋桂花輕烏龍也很推很讚👍🏻👍🏻👍🏻\n（建議大家可以線上點餐再過去取）",
+      "ts": 1776852590
+    },
+    {
+      "store": "UG宜蘭礁溪店",
+      "stars": 5,
+      "date": "60 天前",
+      "author": "玲玲",
+      "text": "蜜桃紅烏龍很好喝～\n雲頂奶蓋桂花輕烏龍也很推很讚👍🏻👍🏻👍🏻\n（建議大家可以線上點餐再過去取）",
+      "ts": 1776852590
+    }
   ],
   "ai": {
     "daily": "結論：UG 熱度回升至同業第 3，但負評升溫，須優先處理「出餐慢」。\n\nUG vs 競品：迷客夏靠「買一送一」聲量衝到第 1，UG 新品桂花烏龍帶動討論、較昨日 +7。\n情緒警訊：UG 負面占比 31%，高於多數競品，集中在等待時間與甜度標示。\n今天值得看：① 迷客夏優惠爆文（Threads）② 永和店連兩則 1★ 出餐慢 ③ 桂花烏龍甜度負評。\n建議行動：尖峰加開人力與出杯覆核；門市重新校正糖量；針對迷客夏優惠評估限時回應。",
     "weekly": "結論：本週 UG 平均排名第 3、聲量持平，門市端負評是主要拖累。\n\n聲量與排名：UG 熱度區間 56–63，週末新品帶動小高峰。\n競品動向：迷客夏靠優惠檔期領先；50嵐穩定。\n負評主題 TOP3：出餐慢、甜度不準、價格／CP 值。\n下週聚焦：尖峰人力排班、糖量標準化、評估新品定價溝通。",
     "geo": {
       "q": "推薦台北 5 個值得喝的手搖飲品牌",
-      "list": ["迷客夏","可不可熟成紅茶","50嵐","一沐日","龜記"]
+      "list": [
+        "迷客夏",
+        "可不可熟成紅茶",
+        "50嵐",
+        "一沐日",
+        "龜記"
+      ]
     }
   }
 }
