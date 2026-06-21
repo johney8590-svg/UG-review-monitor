@@ -1,2 +1,3 @@
-outscraper>=5.0.0
-anthropic>=0.39.0
+playwright>=1.44.0
+outscraper>=5.0.0   # 選用：有設 OUTSCRAPER_API_KEY 才會用到
+anthropic>=0.39.0  # 選用：有設 ANTHROPIC_API_KEY 才會用到

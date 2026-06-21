@@ -24,15 +24,9 @@ def _load_stores():
         return json.load(f)["stores"]
 
 
-def fetch_reviews(query, limit=50):
-    """
-    用 Outscraper 抓單一商家的評論。query 可為 Google place_id、店名或地址，
-    Outscraper 會自行解析（place_id 最精準，店名/地址次之）。
-    回傳 (rating, reviews_count, [reviews], resolved_place_id).
-    reviews 每筆：{stars, text, author, ts(epoch)}
-    若你既有 collect.py 已有 Outscraper 呼叫，可直接改用你的版本。
-    """
-    api_key = os.environ["OUTSCRAPER_API_KEY"]  # 缺金鑰就直接報錯，不靜默
+def _fetch_outscraper(query, limit):
+    """付費路徑：有 OUTSCRAPER_API_KEY 時走 Outscraper（最穩、可抓多則）。"""
+    api_key = os.environ["OUTSCRAPER_API_KEY"]
     from outscraper import ApiClient  # pip install outscraper
     client = ApiClient(api_key=api_key)
     res = client.google_maps_reviews([query], reviews_limit=limit, language="zh-TW")
@@ -48,6 +42,23 @@ def fetch_reviews(query, limit=50):
             "ts": int(r.get("review_timestamp") or 0),
         })
     return place.get("rating"), place.get("reviews"), reviews, place.get("place_id") or query
+
+
+def fetch_reviews(query, limit=50):
+    """
+    抓單一商家評論。query 可為 Google place_id、店名或地址。
+    回傳 (rating, reviews_count, [reviews], resolved_place_id)。
+    來源自動切換：
+      - 有設 OUTSCRAPER_API_KEY → 走 Outscraper（付費、最穩）
+      - 沒設                    → 走免費無金鑰的 Playwright 爬蟲（gmaps_scraper）
+    """
+    if os.environ.get("OUTSCRAPER_API_KEY"):
+        return _fetch_outscraper(query, limit)
+    try:
+        from gmaps_scraper import scrape_place        # 以 script 方式跑（collector/ 在 sys.path）
+    except ImportError:
+        from collector.gmaps_scraper import scrape_place
+    return scrape_place(query, limit=min(limit, 20))
 
 
 def _today():
@@ -81,16 +92,26 @@ def collect_google():
 
     stores_out, reviews_out, snapshot = [], [], {}
 
-    for s in _load_stores():
-        pid, name = s["place_id"], s["name"]
-        rating, count, reviews = fetch_reviews(pid)
-        if rating is None:
+    all_stores = _load_stores()
+    for i, s in enumerate(all_stores, 1):
+        name = s["name"]
+        query = s.get("place_id") or s.get("query") or name  # place_id 最精準，其次搜尋詞
+        print(f"[{i}/{len(all_stores)}] 抓取 {name} …", flush=True)
+        try:
+            rating, count, reviews, pid = fetch_reviews(query)
+        except Exception as e:
+            print(f"    ⚠️ {name} 失敗，跳過：{e}", flush=True)
             continue
+        if rating is None:
+            print(f"    ⚠️ {name} 查無結果，跳過", flush=True)
+            continue
+        key = query  # 用穩定字串當快照 key，確保跨天相減一致（爬蟲的 place_id 可能不穩）
+        print(f"    ✓ {rating}★ / {count} 則，抓到 {len(reviews)} 則評論", flush=True)
 
-        snapshot[pid] = {"rating": rating, "reviews": count}
+        snapshot[key] = {"rating": rating, "reviews": count}
 
         # 今日★變化 / 新增評論：與昨日快照相減
-        prev_s = prev.get(pid, {})
+        prev_s = prev.get(key, {})
         d_rating = round(rating - prev_s.get("rating", rating), 2)
         new_today = max(count - prev_s.get("reviews", count), 0)
         neg_count = sum(1 for r in reviews if 0 < r["stars"] <= NEG_THRESHOLD)

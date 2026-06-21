@@ -21,8 +21,12 @@ jobs:
       - name: 安裝相依
         run: pip install -r requirements.txt
 
+      - name: 安裝 Playwright 瀏覽器（免金鑰爬蟲用）
+        run: python -m playwright install --with-deps chromium
+
       - name: 抓 Google 商家評論
         env:
+          # 有設 OUTSCRAPER_API_KEY 就走 Outscraper；沒設則自動用免費 Playwright 爬蟲
           OUTSCRAPER_API_KEY: ${{ secrets.OUTSCRAPER_API_KEY }}
         run: python collector/google_reviews.py
 

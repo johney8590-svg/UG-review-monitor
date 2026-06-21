@@ -47,6 +47,11 @@ dashboard.update(google)         # 併進你既有的 dashboard 物件再寫檔
 
 若你的 collect.py 已有 Outscraper 呼叫，可把 `google_reviews.py` 裡的 `fetch_reviews()` 換成你的版本，其餘（快照相減、負評抽取）照用。
 
+## 抓取來源（免金鑰 / 付費，自動二選一）
+
+- **預設：免金鑰爬蟲**。未設 `OUTSCRAPER_API_KEY` 時，排程用 `collector/gmaps_scraper.py`（Playwright 無頭瀏覽器）直接讀 Google 地圖，**不需要任何金鑰**。缺點是直接爬較脆弱（Google 改版／機房 IP 被要求驗證時可能單店暫時抓不到，會跳過不中斷）。
+- **選用：Outscraper（付費、最穩）**。只要在 Secrets 設了 `OUTSCRAPER_API_KEY`，`fetch_reviews()` 會自動改走 Outscraper，程式不用改。
+
 ## 注意
 
 - 門市比對用 **place_id 白名單**，避免抓到同名或非官方商家。
