@@ -31,9 +31,9 @@ jobs:
         run: python collector/google_reviews.py
 
       - name: 產生 AI 內容（選用）
-        if: ${{ secrets.ANTHROPIC_API_KEY != '' }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        if: ${{ env.ANTHROPIC_API_KEY != '' }}
         run: python collector/ai_report.py
 
       - name: Commit 結果
