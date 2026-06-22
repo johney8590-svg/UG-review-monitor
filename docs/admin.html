@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>UG 門市管理</title>
+<style>
+  :root{
+    --green:#2D5016; --green2:#3A6B20; --green-soft:#8DB87A;
+    --bg:#F8F5F0; --card:#FFFFFF; --ink:#2C2C2C; --muted:#6B6B6B;
+    --line:#E8E8E8; --line2:#EBEBEB; --th:#F5F5F5;
+    --up:#28A745; --down:#DC3545; --warn:#FFC107;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:'Noto Sans TC','微軟正黑體','PingFang TC',sans-serif;font-size:14px;line-height:1.6}
+  .wrap{max-width:860px;margin:0 auto;padding:24px 18px 60px}
+  header{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:22px;
+    display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+  header h1{font-size:22px;font-weight:600;margin:0;color:var(--green)}
+  header .sub{font-size:13px;color:var(--muted)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:18px 20px;margin-bottom:22px}
+  .card h2{font-size:16px;font-weight:600;margin:0 0 14px;color:var(--ink)}
+  label{display:block;font-size:13px;color:var(--muted);margin:0 0 4px}
+  input{font-family:inherit;font-size:14px;border:1px solid var(--line);border-radius:4px;
+    padding:8px 10px;color:var(--ink);background:#fff;width:100%}
+  input:focus{outline:none;border-color:var(--green-soft)}
+  .row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end}
+  .row > div{flex:1;min-width:180px}
+  .btn{background:var(--green);color:#fff;border:none;border-radius:4px;
+    padding:9px 18px;font-weight:600;font-size:14px;cursor:pointer;font-family:inherit}
+  .btn:hover{background:var(--green2)}
+  .btn.ghost{background:transparent;border:1px solid var(--green);color:var(--green)}
+  .btn.ghost:hover{background:#F0F5EC}
+  .btn.sm{padding:5px 11px;font-size:13px}
+  .btn.danger{background:transparent;border:1px solid var(--down);color:var(--down)}
+  .btn.danger:hover{background:#FDF1F1}
+  .btn:disabled{opacity:.45;cursor:not-allowed}
+  .muted{color:var(--muted);font-size:13px}
+  .toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+  table{width:100%;border-collapse:collapse;border:1px solid var(--line2);border-radius:6px;overflow:hidden}
+  th{background:var(--th);font-weight:600;color:#444;text-align:left;padding:10px 12px;font-size:13px}
+  td{padding:8px 12px;border-top:1px solid var(--line2);vertical-align:middle}
+  tbody tr:nth-child(even){background:#FAFAFA}
+  td.idx{color:var(--muted);font-family:'Inter',system-ui;width:34px;text-align:right}
+  td.act{width:64px;text-align:center}
+  .count{font-size:13px;color:var(--muted)}
+  .status{margin-top:14px;padding:10px 14px;border-radius:6px;font-size:13px;display:none}
+  .status.ok{display:block;background:#F0F5EC;border:1px solid var(--green-soft);color:var(--green)}
+  .status.err{display:block;background:#FDF1F1;border:1px solid #E2A6A6;color:var(--down)}
+  .status.info{display:block;background:#FBF8F2;border:1px solid var(--line);color:var(--muted)}
+  .hint{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.7}
+  @media(max-width:560px){
+    .row > div{min-width:100%}
+    td.idx{display:none} th.idx{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>UG 門市管理</h1>
+    <span class="sub">聯發國際 · 輿情監測門市白名單</span>
+  </header>
+
+  <!-- 連線設定 -->
+  <div class="card">
+    <h2>連線設定</h2>
+    <div class="row">
+      <div>
+        <label>後端網址（GAS Web App /exec）</label>
+        <input id="gasUrl" placeholder="https://script.google.com/macros/s/.../exec" autocomplete="off">
+      </div>
+      <div style="flex:0 0 200px">
+        <label>通關密語</label>
+        <input id="secret" type="password" placeholder="管理密語" autocomplete="off">
+      </div>
+      <div style="flex:0 0 auto">
+        <button class="btn ghost" id="loadBtn">載入門市</button>
+      </div>
+    </div>
+    <div class="hint">設定只存在這台瀏覽器（localStorage），不會寫進公開原始碼。密語由後端比對，錯誤會被拒絕。</div>
+  </div>
+
+  <!-- 門市清單 -->
+  <div class="card">
+    <div class="toolbar">
+      <h2 style="margin:0">門市白名單 <span class="count" id="count"></span></h2>
+      <div style="display:flex;gap:8px">
+        <button class="btn ghost sm" id="addBtn" disabled>＋ 新增門市</button>
+        <button class="btn sm" id="saveBtn" disabled>儲存到 GitHub</button>
+      </div>
+    </div>
+    <table>
+      <thead><tr>
+        <th class="idx">#</th>
+        <th style="width:34%">門市名稱</th>
+        <th>搜尋詞 / place_id</th>
+        <th class="act"></th>
+      </tr></thead>
+      <tbody id="rows">
+        <tr><td colspan="4" class="muted" style="text-align:center;padding:22px">尚未載入。請先填上方設定後按「載入門市」。</td></tr>
+      </tbody>
+    </table>
+    <div class="hint">搜尋詞可填「店名＋完整地址」或更精準的 Google <b>place_id</b>。儲存後，下一次每日排程（台灣 09:00）會依此白名單抓取。</div>
+    <div class="status" id="status"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var LSK = 'ug_store_admin';
+  var loaded = false;
+
+  // 還原設定
+  try{
+    var saved = JSON.parse(localStorage.getItem(LSK) || '{}');
+    if(saved.gasUrl) $('gasUrl').value = saved.gasUrl;
+    if(saved.secret) $('secret').value = saved.secret;
+  }catch(e){}
+
+  function persist(){
+    try{ localStorage.setItem(LSK, JSON.stringify({gasUrl:$('gasUrl').value.trim(), secret:$('secret').value})); }catch(e){}
+  }
+
+  function setStatus(kind, msg){
+    var s = $('status'); s.className = 'status ' + kind; s.textContent = msg;
+  }
+
+  function call(action, extra){
+    var url = $('gasUrl').value.trim();
+    var secret = $('secret').value;
+    if(!url){ setStatus('err','請先填後端網址'); return Promise.reject(); }
+    if(!secret){ setStatus('err','請先填通關密語'); return Promise.reject(); }
+    var payload = Object.assign({action:action, secret:secret}, extra||{});
+    // 用 text/plain 避免 CORS preflight（GAS 友善）
+    return fetch(url, {method:'POST', body: JSON.stringify(payload)})
+      .then(function(r){ return r.json(); });
+  }
+
+  // 建一列（用 DOM API，避免 XSS）
+  function makeRow(name, query){
+    var tr = document.createElement('tr');
+    var tdIdx = document.createElement('td'); tdIdx.className='idx';
+    var tdN = document.createElement('td');
+    var tdQ = document.createElement('td');
+    var tdA = document.createElement('td'); tdA.className='act';
+    var inN = document.createElement('input'); inN.value = name||''; inN.placeholder='例：UG信義永吉店'; inN.className='f-name';
+    var inQ = document.createElement('input'); inQ.value = query||''; inQ.placeholder='例：UG信義永吉店 台北市信義區忠孝東路'; inQ.className='f-query';
+    var rm = document.createElement('button'); rm.className='btn danger sm'; rm.textContent='移除';
+    rm.onclick = function(){ tr.parentNode.removeChild(tr); renumber(); };
+    tdN.appendChild(inN); tdQ.appendChild(inQ); tdA.appendChild(rm);
+    tr.appendChild(tdIdx); tr.appendChild(tdN); tr.appendChild(tdQ); tr.appendChild(tdA);
+    return tr;
+  }
+
+  function renumber(){
+    var trs = $('rows').querySelectorAll('tr');
+    var n = 0;
+    for(var i=0;i<trs.length;i++){
+      var idx = trs[i].querySelector('td.idx');
+      if(idx){ n++; idx.textContent = n; }
+    }
+    $('count').textContent = '（' + n + ' 間）';
+  }
+
+  function render(stores){
+    var tb = $('rows'); tb.textContent='';
+    if(!stores.length){ tb.appendChild(makeRow('','')); }
+    else { for(var i=0;i<stores.length;i++){ tb.appendChild(makeRow(stores[i].name, stores[i].query)); } }
+    renumber();
+    $('addBtn').disabled = false;
+    $('saveBtn').disabled = false;
+    loaded = true;
+  }
+
+  function collect(){
+    var trs = $('rows').querySelectorAll('tr');
+    var out = [];
+    for(var i=0;i<trs.length;i++){
+      var n = trs[i].querySelector('.f-name'), q = trs[i].querySelector('.f-query');
+      if(!n||!q) continue;
+      var name = n.value.trim(), query = q.value.trim();
+      if(name && query) out.push({name:name, query:query});
+    }
+    return out;
+  }
+
+  $('loadBtn').onclick = function(){
+    persist();
+    setStatus('info','載入中…');
+    call('list').then(function(res){
+      if(!res || !res.ok){ setStatus('err','載入失敗：' + ((res&&res.error)||'無回應')); return; }
+      render(res.stores||[]);
+      setStatus('ok','已載入 ' + (res.stores?res.stores.length:0) + ' 間門市。');
+    }).catch(function(e){ if(e) setStatus('err','連線失敗，請確認後端網址。'); });
+  };
+
+  $('addBtn').onclick = function(){
+    if(!loaded) return;
+    var tr = makeRow('','');
+    $('rows').appendChild(tr); renumber();
+    tr.querySelector('.f-name').focus();
+  };
+
+  $('saveBtn').onclick = function(){
+    persist();
+    var stores = collect();
+    if(!stores.length){ setStatus('err','至少要有一筆有效門市（名稱＋搜尋詞都要填）。'); return; }
+    if(!confirm('確定儲存 ' + stores.length + ' 間門市到 GitHub？此操作會覆寫白名單。')) return;
+    setStatus('info','儲存中…（GitHub commit）');
+    $('saveBtn').disabled = true;
+    call('save', {stores:stores}).then(function(res){
+      $('saveBtn').disabled = false;
+      if(!res || !res.ok){ setStatus('err','儲存失敗：' + ((res&&res.error)||'無回應')); return; }
+      setStatus('ok','已儲存 ' + res.count + ' 間門市，並 commit 到 repo。下一次排程會依此抓取。');
+    }).catch(function(e){ $('saveBtn').disabled=false; if(e) setStatus('err','連線失敗。'); });
+  };
+
+  $('gasUrl').addEventListener('change', persist);
+  $('secret').addEventListener('change', persist);
+})();
+</script>
+</body>
+</html>
