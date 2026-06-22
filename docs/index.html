@@ -249,9 +249,10 @@
     </div>
     <div class="card" id="heatBoard"></div>
     <div class="sub" style="margin-top:8px">
-      熱度 = 各來源訊號各自正規化 0–100 後加權合成（新聞 30% · 搜尋趨勢 25% · 評論增量 25% · 社群互動 20%）。
-      拿不到原始數字的平台給較低權重並標「估計」——這才是務實版的跨平台比較。
+      熱度 = 各來源訊號各自正規化 0–100 後加權合成（新聞 40% · 搜尋趨勢 35% · 社群/論壇 25%）。
+      新聞與搜尋趨勢為真實資料；FB/IG/Threads 公開互動無免費來源，暫標「估計」。
     </div>
+    <div class="sub" id="buzzMeta" style="margin-top:4px;color:var(--muted)"></div>
   </section>
 
   <!-- 2. AI 日報 -->
@@ -509,14 +510,14 @@ function renderHeat(){
     return `<div class="heat-row ${b.self?'is-self':''}" data-i="${i}">
       <div class="heat-top">
         <span class="rank num">${i+1}</span>
-        <span class="bname">${b.name}${b.self?'<span class="self">自家</span>':''}</span>
+        <span class="bname">${b.name}${b.self?'<span class="self">自家</span>':''}${b.estimated?'<span class="self" style="background:#B8860B" title="社群互動/情緒為估計">估計</span>':''}</span>
         <span class="bar-wrap"><span class="bar" style="width:${b.score/max*100}%"></span></span>
         <span class="score num">${b.score}</span>
         <span class="rdelta">${deltaTag(b.d)}</span>
       </div>
       <div class="breakdown">
         ${sigs}
-        <div class="sent">情緒 · 正面 <b class="p">${b.pos}%</b> ／ 負面 <b class="n">${b.neg}%</b>
+        <div class="sent">情緒 · 正面 <b class="p">${b.pos==null?'—':b.pos+'%'}</b> ／ 負面 <b class="n">${b.neg==null?'—':b.neg+'%'}</b>
         ｜加權合成熱度 <b class="num">${b.score}</b></div>
       </div>
     </div>`;
@@ -898,6 +899,8 @@ async function init(){
     if(r.ok){ const j=await r.json(); STATE=Object.assign({}, SEED, j); }
   }catch(e){ /* 載入失敗就用內建 SEED */ }
   document.getElementById('today').textContent = STATE.today || SEED.today;
+  var bm=STATE.buzzMeta, bmEl=document.getElementById('buzzMeta');
+  if(bm && bmEl){ bmEl.textContent='輿情資料更新：'+(bm.generatedAt||'')+'｜真實新聞 '+(bm.news||0)+' 則'+(bm.pttReal?('、PTT '+(bm.ptt||0)+' 篇'):'')+(bm.trendsReal?'、含 Google Trends':'（Trends 本次被限流）'); }
   renderHeat(); renderKw(); renderAlerts(); renderWatch(); renderSOV(); renderTrace(); renderVOC(); renderNeg(); initGoogle();
 }
 init();

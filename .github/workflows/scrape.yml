@@ -32,6 +32,9 @@ jobs:
           OUTSCRAPER_API_KEY: ${{ secrets.OUTSCRAPER_API_KEY }}
         run: python collector/google_reviews.py
 
+      - name: 抓輿情聲量（新聞／趨勢／PTT，免金鑰）
+        run: python collector/buzz.py
+
       - name: 產生 AI 內容（選用）
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
