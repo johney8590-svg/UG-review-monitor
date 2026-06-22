@@ -44,14 +44,76 @@ def _fetch_outscraper(query, limit):
     return place.get("rating"), place.get("reviews"), reviews, place.get("place_id") or query
 
 
+def _iso_to_ts(s):
+    """ISO8601（Places API 的 publishTime，含 Z）→ epoch 秒。抓不到回 0。"""
+    if not s:
+        return 0
+    try:
+        return int(datetime.datetime.fromisoformat(s.replace("Z", "+00:00")).timestamp())
+    except Exception:
+        return 0
+
+
+def _fetch_places_api(query, limit):
+    """
+    官方路徑：Google Places API (New) — Text Search 一次拿到
+    rating + userRatingCount（正確的總評論數）+ 最多 5 則真實評論。
+    金鑰從環境變數 GOOGLE_MAPS_API_KEY 讀（GitHub Secret），用 urllib 不加相依。
+    計費落在 Google 每月 $200 抵用額度內（68 店/天約 2000 次/月）。
+    """
+    import urllib.request
+    import urllib.error
+    api_key = os.environ["GOOGLE_MAPS_API_KEY"]
+    body = json.dumps({
+        "textQuery": query,
+        "languageCode": "zh-TW",
+        "regionCode": "TW",
+        "maxResultCount": 1,
+    }).encode("utf-8")
+    req = urllib.request.Request(
+        "https://places.googleapis.com/v1/places:searchText",
+        data=body, method="POST",
+        headers={
+            "Content-Type": "application/json",
+            "X-Goog-Api-Key": api_key,
+            # 只要這些欄位，控制計費 SKU
+            "X-Goog-FieldMask": ("places.id,places.displayName,places.rating,"
+                                 "places.userRatingCount,places.reviews"),
+        },
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"Places API {e.code}: {e.read().decode('utf-8')[:300]}")
+
+    places = data.get("places") or []
+    if not places:
+        return None, 0, [], None
+    p = places[0]
+    reviews = []
+    for r in (p.get("reviews") or []):
+        txt = (r.get("text") or {}).get("text") or (r.get("originalText") or {}).get("text") or ""
+        reviews.append({
+            "stars": int(round(r.get("rating") or 0)),
+            "text": txt.strip(),
+            "author": (r.get("authorAttribution") or {}).get("displayName") or "匿名",
+            "ts": _iso_to_ts(r.get("publishTime")),
+        })
+    return p.get("rating"), p.get("userRatingCount") or 0, reviews, p.get("id")
+
+
 def fetch_reviews(query, limit=50):
     """
     抓單一商家評論。query 可為 Google place_id、店名或地址。
     回傳 (rating, reviews_count, [reviews], resolved_place_id)。
-    來源自動切換：
-      - 有設 OUTSCRAPER_API_KEY → 走 Outscraper（付費、最穩）
-      - 沒設                    → 走免費無金鑰的 Playwright 爬蟲（gmaps_scraper）
+    來源自動切換（依序）：
+      - 有設 GOOGLE_MAPS_API_KEY  → 走官方 Places API（評論數最準，建議）
+      - 有設 OUTSCRAPER_API_KEY   → 走 Outscraper（付費、含完整評論內文）
+      - 都沒設                    → 走免費無金鑰的 Playwright 爬蟲（gmaps_scraper，較脆弱）
     """
+    if os.environ.get("GOOGLE_MAPS_API_KEY"):
+        return _fetch_places_api(query, limit)
     if os.environ.get("OUTSCRAPER_API_KEY"):
         return _fetch_outscraper(query, limit)
     try:

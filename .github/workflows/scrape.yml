@@ -26,7 +26,9 @@ jobs:
 
       - name: 抓 Google 商家評論
         env:
-          # 有設 OUTSCRAPER_API_KEY 就走 Outscraper；沒設則自動用免費 Playwright 爬蟲
+          # 優先序：GOOGLE_MAPS_API_KEY（官方 Places API，評論數最準）
+          #   → OUTSCRAPER_API_KEY（付費）→ 都沒設則用免費 Playwright 爬蟲
+          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
           OUTSCRAPER_API_KEY: ${{ secrets.OUTSCRAPER_API_KEY }}
         run: python collector/google_reviews.py
 
