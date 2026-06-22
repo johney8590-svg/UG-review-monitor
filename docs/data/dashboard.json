@@ -10,74 +10,74 @@
       "trends": 23,
       "reviews": 0,
       "social": 100,
-      "pos": null,
-      "neg": null,
+      "pos": 76,
+      "neg": 17,
       "estimated": false
     },
     {
       "name": "可不可",
       "self": false,
-      "score": 55,
+      "score": 59,
       "d": 0,
       "news": 100,
       "trends": 19,
       "reviews": 0,
-      "social": 33,
+      "social": 48,
       "pos": null,
       "neg": null,
-      "estimated": false
+      "estimated": true
     },
     {
       "name": "50嵐",
       "self": false,
-      "score": 51,
+      "score": 57,
       "d": 0,
       "news": 100,
       "trends": 32,
       "reviews": 0,
-      "social": 0,
+      "social": 22,
       "pos": null,
       "neg": null,
-      "estimated": false
-    },
-    {
-      "name": "迷客夏",
-      "self": false,
-      "score": 49,
-      "d": 0,
-      "news": 100,
-      "trends": 16,
-      "reviews": 0,
-      "social": 13,
-      "pos": null,
-      "neg": null,
-      "estimated": false
+      "estimated": true
     },
     {
       "name": "清心",
       "self": false,
-      "score": 48,
+      "score": 54,
       "d": 0,
       "news": 100,
       "trends": 0,
       "reviews": 0,
-      "social": 33,
+      "social": 57,
       "pos": null,
       "neg": null,
-      "estimated": false
+      "estimated": true
+    },
+    {
+      "name": "迷客夏",
+      "self": false,
+      "score": 53,
+      "d": 0,
+      "news": 100,
+      "trends": 16,
+      "reviews": 0,
+      "social": 30,
+      "pos": null,
+      "neg": null,
+      "estimated": true
     },
     {
       "name": "一沐日",
       "self": false,
-      "score": 46,
+      "score": 53,
       "d": 0,
       "news": 100,
       "trends": 11,
       "reviews": 0,
-      "social": 7,
+      "social": 35,
       "pos": null,
       "neg": null,
-      "estimated": false
+      "estimated": true
     }
   ],
   "keywords": {
@@ -106,53 +106,63 @@
     {
       "lv": "y",
       "txt": "自家「UG 聯發」新聞出現優惠詞「買一送一」：UG買一送一｜UG TEA｜最新優惠 - 食尚玩家",
-      "at": "06/22 06:33"
+      "at": "06/22 07:19"
+    },
+    {
+      "lv": "y",
+      "txt": "自家「UG 聯發」新聞出現優惠詞「新品」：台灣超人氣 UG Tea 出咗新品｢馥桂桔祥｣🍊 - U Lifestyle",
+      "at": "06/22 07:19"
     },
     {
       "lv": "r",
       "txt": "競品「迷客夏」新聞出現優惠詞「新品」：迷客夏「MIND.A.DAY跩跩貓」聯名開跑！5大周邊＋3款荔枝新品一次看，寵物圍兜＆環保杯限量加購 - 妞新聞",
-      "at": "06/22 06:33"
+      "at": "06/22 07:19"
     },
     {
       "lv": "r",
       "txt": "競品「迷客夏」新聞出現優惠詞「新品」：2026 迷客夏聯名MIND.A.DAY 周邊清單：寵物圍兜、環保杯5/6 開賣，夏季荔枝新品優惠整理 - Women's Health",
-      "at": "06/22 06:33"
+      "at": "06/22 07:19"
     },
     {
       "lv": "r",
       "txt": "競品「迷客夏」新聞出現優惠詞「買一送一」：端午節CoCo、UG買一送一！迷客夏2杯99元、麻古9折手搖飲料優惠 - NOWnews今日新聞",
-      "at": "06/22 06:33"
+      "at": "06/22 07:19"
     },
     {
       "lv": "r",
       "txt": "競品「迷客夏」新聞出現優惠詞「聯名」：迷客夏聯名韓國人氣IP「MIND.A.DAY」！5款必收聯名商品與夏季飲品登場 - 輕旅行",
-      "at": "06/22 06:33"
+      "at": "06/22 07:19"
     },
     {
       "lv": "r",
       "txt": "競品「迷客夏」新聞出現優惠詞「聯名」：【2026夏季菜單】迷客夏 ×「MIND.A.DAY」潮貓限量聯名周邊加價購 夏季果茶必喝推薦、限時組合優惠 - 上報Up Media",
-      "at": "06/22 06:33"
+      "at": "06/22 07:19"
     },
     {
       "lv": "r",
       "txt": "競品「迷客夏」新聞出現優惠詞「聯名」：貓奴尖叫！迷客夏「MIND.A.DAY」5/6開賣5款聯名周邊，全品項加購價一次看 - Harper's BAZAAR",
-      "at": "06/22 06:33"
+      "at": "06/22 07:19"
     },
     {
       "lv": "r",
       "txt": "競品「迷客夏」新聞出現優惠詞「聯名」：貓奴快衝！迷客夏攜手「MIND.A.DAY」推聯名周邊、主題杯裝 - Zeek玩家誌",
-      "at": "06/22 06:33"
+      "at": "06/22 07:19"
     },
     {
       "lv": "r",
       "txt": "競品「迷客夏」新聞出現優惠詞「新品」：根本是貓奴專屬手搖！迷客夏推荔枝新品、夏季飲品菜單，貓咪超Q周邊一次收 - 食尚玩家",
-      "at": "06/22 06:33"
+      "at": "06/22 07:19"
     }
   ],
   "watchlist": [
     {
+      "title": "Mister Donut攜手一沐日推艾草甜甜圈CoCo名偵探柯南偵茶事務所開張| 生活 - 三立新聞網SETN.com",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9kYTNFcWxvdFZMb05jNFB3V01TLUQ4c1pEcTg0NVV3cUdRNXZacGlNNm9NN0w1M2NBMWp1THNTOXB4cWE3Y3Q0WExmZGwwcTJvVHBWUUJLM1M?oc=5",
+      "meta": "三立新聞網SETN.com · 一沐日 · 今天"
+    },
+    {
       "title": "6、7月甜點新品懶人包！一沐日甜甜圈、beard papa’s香橙泡芙、Krispy Kreme開心果流心一次看 - udn 女子漾",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5kdXRxb21NcWtNQjZHWWtOcnVDVWdWeFhYc1NFT3V1dkN6eDRjSnY4cGlmdG9JaVNSd1pQYjhBVGJOb0NRajNIUXdKTjk5YXdnb003bnNKNjZuVDFHd0xDRkJSWnJ5cHd0S3VFaWFzRGoyVDRnRHU1cHIxVHR0d9IBYkFVX3lxTE9mR0Z1NlNLRHFRS3FUbmdvTW9HMmVFaDhPTjY0b2F6N253aEdDTHJ5ZFpfRzBqdUZHM2laNjRET2JIaU1Pb3plcHB5c2pVeWpxcnBUTFRoU0VQSTB2QXNNc093?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBCSTRXVWpScnBKSWN4ZHIwMHZyMEFBR0Z4WkN4SmVWOThRWExuTE10Nlkwdmw0Rk42YWlESzMwTnFQRzNuWGI3QURwNEQ2VmVtRHF1RExlaGtKOVdnNURMTm1pOXlFWUI5ODg5a2NOUDJTTXJMOHfSAWJBVV95cUxPZkdGdTZTS0RxUUtxVG5nb01vRzJlRWg4T042NG9hejdud2hHQ0xyeWRaX0cwanVGRzNpWjY0RE9iSGlNT296ZXBweXNqVXlqcXJwVExUaFNFUEkwdkFzTXNPdw?oc=5",
       "meta": "udn 女子漾 · 一沐日 · 今天"
     },
     {
@@ -174,11 +184,6 @@
       "title": "端午節CoCo、UG買一送一！迷客夏2杯99元、麻古9折手搖飲料優惠 - NOWnews今日新聞",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1tdFZfRWxpZU5sRmhwUXo0b0E5VWFNZmZEZzNXcVVUcWpEZmllMEdaVjZLSjBXdHhNNXlod25mQ2c3NmRfQUQwMjNySGQ0alJMOHfSAVJBVV95cUxNbXRWX0VsaWVObEZocFF6NG9BOVVhTWZmRGczV3FVVHFqRGZpZTBHWlY2S0owV3R4TTV5aHduZkNnNzZkX0FEMDIzckhkNGpSTDh3?oc=5",
       "meta": "NOWnews今日新聞 · 迷客夏 · 3 天前"
-    },
-    {
-      "title": "2026端午連假手搖優惠開跑！CoCo人氣冰沙最低49元 、可不可新品第二杯6折｜熱門話題 - 網路溫度計DailyView",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1sNkdqNkhTQ1FPeFpDMkZ2ZDhDV3o4eXh1cGJteDdnZ1RPV3NESGE0MnEzUmRONU1zSmNsdWlQQnVhQUpuUnRaQzJXU0l5SlVCaFJz?oc=5",
-      "meta": "網路溫度計DailyView · 可不可 · 3 天前"
     }
   ],
   "voc_clusters": [
@@ -222,24 +227,40 @@
   ],
   "trace": [
     {
-      "t": "今天 07:42",
-      "x": "競品官方 IG 限動首發「買一送一」",
-      "tag": "origin"
+      "t": "3 天前",
+      "x": "迷客夏｜端午節CoCo、UG買一送一！迷客夏2杯99元、麻古9折手搖飲料優惠 - NOWnews今日新聞",
+      "tag": "origin",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1tdFZfRWxpZU5sRmhwUXo0b0E5VWFNZmZEZzNXcVVUcWpEZmllMEdaVjZLSjBXdHhNNXlod25mQ2c3NmRfQUQwMjNySGQ0alJMOHfSAVJBVV95cUxNbXRWX0VsaWVObEZocFF6NG9BOVVhTWZmRGczV3FVVHFqRGZpZTBHWlY2S0owV3R4TTV5aHduZkNnNzZkX0FEMDIzckhkNGpSTDh3?oc=5"
     },
     {
-      "t": "今天 08:15",
-      "x": "美食帳 @drink_taipei 轉成貼文",
-      "tag": "amp"
+      "t": "2 天前",
+      "x": "可不可｜夏日消暑必喝手搖！85度C、大茗、可不可、路易莎、甜夏等 9 家「水果系飲品」優惠懶人包 - 上報Up Media",
+      "tag": "amp",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5DMVZaVU8wMDd5NzRDRFczQ1dtZnRqMm9BNjl6cFNwbHZQUU5RcFc3LTFpOS13X1FacEk5V1JueE5pdjAyZUM1QkZvd3RJV180NTZ5RlRMRlFTMEU?oc=5"
     },
     {
-      "t": "今天 09:50",
-      "x": "Threads 用戶實拍排隊照，引爆討論串",
-      "tag": "amp"
+      "t": "昨天",
+      "x": "迷客夏｜2026迷客夏菜單推薦！網友激推必喝TOP8排行榜，跟著這樣點絕對不踩雷 - Marie Claire 美麗佳人",
+      "tag": "amp",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9IaXM0dmVEaUFiYjNsUWNSTE1uMWxmYlp6Y3A0dVh1OU93MkxTclF4X1JCamJLNHU4bGgtTElKQ3FVNEoyY2s0YkVSYjlycm1LblhyMlRwSEVia01ZT2RodXVB?oc=5"
     },
     {
-      "t": "今天 11:30",
-      "x": "Dcard 美食板出現比較文",
-      "tag": "amp"
+      "t": "昨天",
+      "x": "可不可｜可不可紅茶24、奶茶28元！比買一送一便宜　CoCo冰沙49元夏至優惠 - NOWnews今日新聞",
+      "tag": "amp",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9GeWJXbzBSNHBZVlVHbjJaa3RBc290NjRYbEFzYVdrYnVwZEJCaGtCQ3RyXzVPWjM5SVByVnZ2Sk10VFE1ak1rcmFuRFPSAVJBVV95cUxOQmR1UWp0cWJwZWFoZU44dGdMSnUyZm9JRmVqbXROWWN2RnZnTkhLdldTLU9aWTdDb1NkOFlEWWJyUnlWUHk1aEtKSnpYcUotV2dR?oc=5"
+    },
+    {
+      "t": "今天",
+      "x": "一沐日｜6、7月甜點新品懶人包！一沐日甜甜圈、beard papa’s香橙泡芙、Krispy Kreme開心果流心一次看 - udn 女子漾",
+      "tag": "amp",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBCSTRXVWpScnBKSWN4ZHIwMHZyMEFBR0Z4WkN4SmVWOThRWExuTE10Nlkwdmw0Rk42YWlESzMwTnFQRzNuWGI3QURwNEQ2VmVtRHF1RExlaGtKOVdnNURMTm1pOXlFWUI5ODg5a2NOUDJTTXJMOHfSAWJBVV95cUxPZkdGdTZTS0RxUUtxVG5nb01vRzJlRWg4T042NG9hejdud2hHQ0xyeWRaX0cwanVGRzNpWjY0RE9iSGlNT296ZXBweXNqVXlqcXJwVExUaFNFUEkwdkFzTXNPdw?oc=5"
+    },
+    {
+      "t": "今天",
+      "x": "一沐日｜Mister Donut攜手一沐日推艾草甜甜圈CoCo名偵探柯南偵茶事務所開張| 生活 - 三立新聞網SETN.com",
+      "tag": "amp",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9kYTNFcWxvdFZMb05jNFB3V01TLUQ4c1pEcTg0NVV3cUdRNXZacGlNNm9NN0w1M2NBMWp1THNTOXB4cWE3Y3Q0WExmZGwwcTJvVHBWUUJLM1M?oc=5"
     }
   ],
   "stores": [
@@ -390,7 +411,7 @@
     {
       "name": "UG板橋中正店",
       "rating": 4.3,
-      "reviews": 485,
+      "reviews": 486,
       "dRating": 0.0,
       "newToday": 0,
       "neg": 0
@@ -713,7 +734,7 @@
       "reviews": 36,
       "dRating": 0.0,
       "newToday": 0,
-      "neg": 2
+      "neg": 0
     },
     {
       "name": "UG花蓮中山店",
@@ -725,11 +746,11 @@
     },
     {
       "name": "UG台中沙鹿店",
-      "rating": 4.3,
-      "reviews": 75,
-      "dRating": -0.2,
-      "newToday": 73,
-      "neg": 0
+      "rating": 4.5,
+      "reviews": 106,
+      "dRating": 0.0,
+      "newToday": 104,
+      "neg": 1
     },
     {
       "name": "UG站前南陽店",
@@ -790,12 +811,36 @@
   ],
   "gReviews": [
     {
+      "store": "UG花蓮中山店",
+      "stars": 5,
+      "date": "2 天前",
+      "author": "Allen Yu",
+      "text": "服務有點太好，害我開心了好幾天",
+      "ts": 1781975507
+    },
+    {
       "store": "UG桃園龍潭店",
-      "stars": 1,
+      "stars": 5,
+      "date": "2 天前",
+      "author": "陳志遠",
+      "text": "桂花輕烏龍～讚",
+      "ts": 1781964712
+    },
+    {
+      "store": "UG花蓮中山店",
+      "stars": 5,
+      "date": "2 天前",
+      "author": "Ru",
+      "text": "飲料好喝店員很熱情",
+      "ts": 1781963660
+    },
+    {
+      "store": "UG桃園龍潭店",
+      "stars": 5,
       "date": "3 天前",
-      "author": "Br L",
-      "text": "去冰給很多冰是？？現場也才5張單",
-      "ts": 1781869387
+      "author": "蘇昱珉",
+      "text": "買9杯，想分開裝確不行，一袋裝五杯一袋裝4杯，裝第五杯的受擠壓…\n新開幕…送保冰袋是美意～\n但…有需求時，可以滿足一下嗎…謝謝您們～辛苦了",
+      "ts": 1781870529
     },
     {
       "store": "UG花蓮中山店",
@@ -804,30 +849,6 @@
       "author": "Goa Shing",
       "text": "終於get到了UG!! 很驚豔的UG奶茶~~~茶很有層次，淡淡的茶香混合奶香味，真的很好喝✓✓✓基礎茶款也都還不錯~~推！！而且杯子，袋子也設計的很美~~~",
       "ts": 1781853891
-    },
-    {
-      "store": "UG桃園龍潭店",
-      "stars": 1,
-      "date": "7 天前",
-      "author": "詹夢婷",
-      "text": "開幕第二天去買\n總共點了14杯\n家人喝三窨十五茉純茶喝了說尾韻有點苦\n自己是喝桂花輕烏龍\n喝起來像是非常淡的桂花水\n其他同事有的喝鮮奶茶\n也都覺得喝起來很水\n像喝牛奶+水一樣",
-      "ts": 1781499477
-    },
-    {
-      "store": "UG花蓮中山店",
-      "stars": 5,
-      "date": "9 天前",
-      "author": "tingyu jian",
-      "text": "店員很熱心也貼心，排隊還會送水給客人喝👍😻",
-      "ts": 1781334910
-    },
-    {
-      "store": "UG花蓮中山店",
-      "stars": 5,
-      "date": "9 天前",
-      "author": "阿宜",
-      "text": "最愛的飲料店！不用等太久，店員服務親切，超推薦大家來試試看！",
-      "ts": 1781329469
     },
     {
       "store": "UG花蓮中山店",
@@ -932,6 +953,14 @@
       "author": "許巧芸（Yue）",
       "text": "奶茶非常好喝，店員也很友善！",
       "ts": 1780647194
+    },
+    {
+      "store": "UG台中沙鹿店",
+      "stars": 5,
+      "date": "19 天前",
+      "author": "Feeby Pu",
+      "text": "闆娘親切服務好 👍👍👍\n一週一定要買3～4杯",
+      "ts": 1780485728
     },
     {
       "store": "UG彰化彰基店",
@@ -1198,14 +1227,6 @@
       "ts": 1779459990
     },
     {
-      "store": "UG台中沙鹿店",
-      "stars": 5,
-      "date": "31 天前",
-      "author": "姚又瑄（Sarah Yao）",
-      "text": "店員們超熱情❤️‍🔥\n對狗狗也很友善！\n今天的UG特別好喝🫶🏻🫶🏻",
-      "ts": 1779459990
-    },
-    {
       "store": "UG台中太平店",
       "stars": 5,
       "date": "31 天前",
@@ -1324,6 +1345,14 @@
       "author": "Grace Wang",
       "text": "昨天喝民生，今天喝東寧~嘗試了十五沫鮮奶茶1分糖去冰，個人覺得比鐵觀音鮮奶茶好喝！（但我點的是無糖去冰）十五沫有種很清爽的感覺~喜番💞",
       "ts": 1778420460
+    },
+    {
+      "store": "UG台中沙鹿店",
+      "stars": 1,
+      "date": "43 天前",
+      "author": "紫璃玉懿",
+      "text": "5／7晚上快要七點左右來店做點餐追加，因我公司辦公室職員同事5／8（中午）喝你們家的，已提早向你們打電話點餐下單，而我這有現場職員同事也想喝你們家的，所以，我才來店做點餐追加。我來到你們店後，有向你們家的女服務店員做詢問，我有告知女服務店員我公司名稱或公司地址，也拿出手機開網路Google 我公司名稱與地址給女店員看，結果，女服務店員態度不願處理，一直向我說5／8的單很多，沒有你們公司的單，就是不願做點餐追加。後來，我在旁打電話向我公司辦公室職員同事做確認是用公司名稱，還是，地址，又或者是，我公司辦公室職員同事的名稱與電話，最終結果，我同事告知我說，是用我公司名稱。而問完我公司職員同事後，回頭再問你們家的女服務店員是否有我公司的單，結果，女店員查詢訂單後，確定有這個訂單，才讓我點餐追加，當下，心中燃起了怒火。讓我白白浪費時間空等。\n你烏弄還輸 老賴茶棧清水中山店，人家老賴\n點餐追加也不會如此，態度會願意處理。\n更輸 50嵐沙鹿鹿寮店，人家50嵐沙鹿鹿寮店店員服務態度好、老闆親切待人。\n難怪，50嵐能在台灣屹立不搖。",
+      "ts": 1778376397
     },
     {
       "store": "UG遠東GARDEN CITY大巨蛋店",
@@ -1543,14 +1572,6 @@
     },
     {
       "store": "UG台中東海店",
-      "stars": 5,
-      "date": "71 天前",
-      "author": "嚕嚕",
-      "text": "2026.04.11\n茶花紅烏龍/UG奶茶\n茶味非常香，香到很像香精味，個人不愛，以後還是點三窨十五茉就好\n店家乾淨明亮服務佳值得給予五星",
-      "ts": 1776014623
-    },
-    {
-      "store": "UG台中沙鹿店",
       "stars": 5,
       "date": "71 天前",
       "author": "嚕嚕",
@@ -2126,6 +2147,14 @@
       "ts": 1771230805
     },
     {
+      "store": "UG台中沙鹿店",
+      "stars": 5,
+      "date": "127 天前",
+      "author": "Tony Lee",
+      "text": "​茶湯細膩，喝起來非常順滑，完全沒有那種刮舌頭的乾澀感。喝完之後，口腔會留有一種淡淡的高山冷冽感，非常解膩。",
+      "ts": 1771158265
+    },
+    {
       "store": "UG土城學府店",
       "stars": 2,
       "date": "127 天前",
@@ -2151,14 +2180,6 @@
     },
     {
       "store": "UG台中東海店",
-      "stars": 5,
-      "date": "128 天前",
-      "author": "Enjoy Life",
-      "text": "吃完早餐剛好快十點沒人排隊就來買杯喝喝看，點了網路推薦的三窨十五茉無糖去冰，喝起來不澀還蠻喜歡～\n要大推2/14早班的男店員，飲料做好給我們時發現我手上還有一杯，主動詢問是否幫我丟掉超貼💖\n感覺可以因為服務就常來👍👍",
-      "ts": 1771037585
-    },
-    {
-      "store": "UG台中沙鹿店",
       "stars": 5,
       "date": "128 天前",
       "author": "Enjoy Life",
@@ -2654,14 +2675,6 @@
       "ts": 1765207626
     },
     {
-      "store": "UG台中沙鹿店",
-      "stars": 4,
-      "date": "196 天前",
-      "author": "千",
-      "text": "喝飲料很像在聞香水一樣奇妙的一間店，研究前中後味蠻有趣的，剛開幕有送保冷袋，吸管形狀蠻特別的\n\n米香玉露菁 $40 / $70\n有芋頭的香氣，斑斕葉和米的味道也有出來\n個人覺得單喝普通，搭奶茶比較好喝\n\n三香十五茉+奶茶 $70\n茉莉味道很清爽，不會重到有化學感，不錯",
-      "ts": 1765207626
-    },
-    {
       "store": "UG南投復興店",
       "stars": 5,
       "date": "196 天前",
@@ -2719,14 +2732,6 @@
     },
     {
       "store": "UG台中東海店",
-      "stars": 4,
-      "date": "202 天前",
-      "author": "Grace",
-      "text": "飲料好喝\n第一口就驚艷到 以為喝到毛\n吸管的品質有待加強",
-      "ts": 1764675265
-    },
-    {
-      "store": "UG台中沙鹿店",
       "stars": 4,
       "date": "202 天前",
       "author": "Grace",
@@ -3262,6 +3267,14 @@
       "ts": 1755251638
     },
     {
+      "store": "UG台中沙鹿店",
+      "stars": 5,
+      "date": "312 天前",
+      "author": "Lu Yang",
+      "text": "超讚的飲料！\n老闆娘超親切～\n還親自送飲料過來🥺🥺\n超感動～",
+      "ts": 1755165446
+    },
+    {
       "store": "UG信義虎林店",
       "stars": 4,
       "date": "315 天前",
@@ -3508,6 +3521,14 @@
       "author": "Xiao Hsuan",
       "text": "推薦⬇️\n✔ 「米香玉露菁/奶茶」\n✔ 「琥珀鐵觀音/鮮奶茶」\n\n去年第一次喝到覺得還不錯，\n當初線上點還可以自選時間取餐，\n不知道爲什麼現在沒有了🫠，\n台中逢甲店今天剛開人很多，\n目前只接受現場點單，\n故等候較久，\n等試營運結束後，\n就會開放線上點餐現取了。",
       "ts": 1744119530
+    },
+    {
+      "store": "UG台中沙鹿店",
+      "stars": 5,
+      "date": "657 天前",
+      "author": "陳里昂",
+      "text": "R闆娘服務真的超好！\n每次去都很熱情的跟客人打招呼，每次去買完飲料心情都會被老闆娘的熱情感染🔥🔥\n上次去買6杯忘記帶到塑膠袋，闆娘看我自己走過去比較難拿，也很熱情的提供塑膠袋給我，要操作活動時也會很積極的幫我處理優惠，真的很貼心🫶🏼\n熱情的店家，需要大家熱情的支持🙌🙌",
+      "ts": 1725349589
     }
   ],
   "ai": {
@@ -3526,8 +3547,15 @@
   },
   "buzzNews": [
     {
+      "title": "Mister Donut攜手一沐日推艾草甜甜圈CoCo名偵探柯南偵茶事務所開張| 生活 - 三立新聞網SETN.com",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9kYTNFcWxvdFZMb05jNFB3V01TLUQ4c1pEcTg0NVV3cUdRNXZacGlNNm9NN0w1M2NBMWp1THNTOXB4cWE3Y3Q0WExmZGwwcTJvVHBWUUJLM1M?oc=5",
+      "source": "三立新聞網SETN.com",
+      "brand": "一沐日",
+      "date": "今天"
+    },
+    {
       "title": "6、7月甜點新品懶人包！一沐日甜甜圈、beard papa’s香橙泡芙、Krispy Kreme開心果流心一次看 - udn 女子漾",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5kdXRxb21NcWtNQjZHWWtOcnVDVWdWeFhYc1NFT3V1dkN6eDRjSnY4cGlmdG9JaVNSd1pQYjhBVGJOb0NRajNIUXdKTjk5YXdnb003bnNKNjZuVDFHd0xDRkJSWnJ5cHd0S3VFaWFzRGoyVDRnRHU1cHIxVHR0d9IBYkFVX3lxTE9mR0Z1NlNLRHFRS3FUbmdvTW9HMmVFaDhPTjY0b2F6N253aEdDTHJ5ZFpfRzBqdUZHM2laNjRET2JIaU1Pb3plcHB5c2pVeWpxcnBUTFRoU0VQSTB2QXNNc093?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBCSTRXVWpScnBKSWN4ZHIwMHZyMEFBR0Z4WkN4SmVWOThRWExuTE10Nlkwdmw0Rk42YWlESzMwTnFQRzNuWGI3QURwNEQ2VmVtRHF1RExlaGtKOVdnNURMTm1pOXlFWUI5ODg5a2NOUDJTTXJMOHfSAWJBVV95cUxPZkdGdTZTS0RxUUtxVG5nb01vRzJlRWg4T042NG9hejdud2hHQ0xyeWRaX0cwanVGRzNpWjY0RE9iSGlNT296ZXBweXNqVXlqcXJwVExUaFNFUEkwdkFzTXNPdw?oc=5",
       "source": "udn 女子漾",
       "brand": "一沐日",
       "date": "今天"
@@ -3561,9 +3589,9 @@
       "date": "3 天前"
     },
     {
-      "title": "2026端午連假手搖優惠開跑！CoCo人氣冰沙最低49元 、可不可新品第二杯6折｜熱門話題 - 網路溫度計DailyView",
+      "title": "2026端午連假手搖優惠開跑！CoCo人氣冰沙最低49元 、可不可新品第二杯6折｜熱門話題 - 網路溫度計 DailyView",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1sNkdqNkhTQ1FPeFpDMkZ2ZDhDV3o4eXh1cGJteDdnZ1RPV3NESGE0MnEzUmRONU1zSmNsdWlQQnVhQUpuUnRaQzJXU0l5SlVCaFJz?oc=5",
-      "source": "網路溫度計DailyView",
+      "source": "網路溫度計 DailyView",
       "brand": "可不可",
       "date": "3 天前"
     },
@@ -3596,25 +3624,11 @@
       "date": "5 天前"
     },
     {
-      "title": "討論牆 | 50嵐喝手搖131元中千萬！餐飲發票幸運兒名單一次看 - LINE TODAY",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1kY3VZeE9JMHczTXlSSDdVcmo4UVJ1dEdiaTFZQnNsWXN3QW1rS1B3SktqaW93RW1IOE0xeTVGSVFyZDRwaHVtRG8xV1ZYSHU3V1VJWUt5Y2FZaGI3Nl9ZbElqaFg?oc=5",
-      "source": "LINE TODAY",
-      "brand": "50嵐",
-      "date": "9 天前"
-    },
-    {
       "title": "50嵐喝手搖131元中千萬！餐飲發票幸運兒名單一次看 - 東森新聞",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1BTDFCc1hiazV1MkNFc0lBV0xETDVud0IxQjk1VEhqNV9VZHNiQ3A2ZFBIZDVUZHR2OWp2VE5DeFlLY3h5bl9PM05VYW05cW1nZTNwRg?oc=5",
       "source": "東森新聞",
       "brand": "50嵐",
       "date": "9 天前"
-    },
-    {
-      "title": "中區50嵐盛大舉辦首屆「嵐星達人秀」！產藝聯手挺公益 募集逾3000張發票點亮社會 - 大成報",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1MTXBqZ1JuS2ZYQkJMR24xVC1jellQYi15NXZWMk1BZ2NSc1ctTU0xanRxUWRmU3BDUi1weU1sLVdTaWEtUVRUNHhmNkxNMGxla2dtZG9FSHY5TmJNVERjREhlcEtKTERiakZpUXlYTF8?oc=5",
-      "source": "大成報",
-      "brand": "50嵐",
-      "date": "11 天前"
     },
     {
       "title": "知名手搖飲可不可紅茶違規！這家冰淇淋腸桿菌超標36倍吃下肚嚴重恐腹瀉- 營養好食 - TVBS 健康2.0",
@@ -3722,6 +3736,13 @@
       "date": "32 天前"
     },
     {
+      "title": "50嵐「隱藏版點法」多說2字！　奶茶控驚：層次完全不同 - 鏡週刊Mirror Media",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4yOTllSVhnMEZocUtFTFU0UEhsdUJVUFhyTjJnaEtXNWJRQlZFemxmLTdqaFFMRndqakY1SzhKQ1NvTDNVaTJiOE9jQlowNWFSb1EtUk9zTkFfdWfSAWBBVV95cUxObmo4dVpzaVNfMTRkV1lGcjNFZ09vaTczb0FPcFE5aFlxdkQ5ekV6ZGxhZ09OeUNzQkZ1MFMxbHdFcTMyaVZMb3VsbTBhbVVVVDhzMHFId1FIdnZ3RWF0S2k?oc=5",
+      "source": "鏡週刊Mirror Media",
+      "brand": "50嵐",
+      "date": "35 天前"
+    },
+    {
       "title": "2026 迷客夏聯名MIND.A.DAY 周邊清單：寵物圍兜、環保杯5/6 開賣，夏季荔枝新品優惠整理 - Women's Health",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONWpoa25GNERfVHlLVk9tcjhaekFDeFZMR3hqREUtLUh6eWxWWHJ5ME5HLVotdHlFaXEzLVdUU0VkZThpcV9DMEthMkotWi1tcVJfaXZCMWZwaDFXTWdsOFQ0LXlaT1RtWHRMOFpCSHZBb3hsbnBEMWdkLUtrYUY5U2RxX1JybVRxXzhNVHJzMzB5c1ZMYUtvOTVSMWdRWnZGdWhnaGVLMnd0cmZJM3J4NWdKQkoyMEJ6?oc=5",
       "source": "Women's Health",
@@ -3737,11 +3758,13 @@
     }
   ],
   "buzzMeta": {
-    "generatedAt": "2026-06-22 06:33",
+    "generatedAt": "2026-06-22 07:19",
     "news": 360,
     "ptt": 28,
+    "threads": 39,
     "trendsReal": true,
     "pttReal": true,
-    "note": "新聞與趨勢為真實資料；社群互動(FB/IG/Threads)與情緒為估計，待付費來源或 AI 補。"
+    "threadsReal": true,
+    "note": "新聞/趨勢/PTT/情緒(UG)為真實；FB/IG/Threads 公開提及多被擋，社群偏估計。"
   }
 }
