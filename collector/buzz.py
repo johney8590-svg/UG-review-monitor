@@ -129,6 +129,46 @@ def fetch_ptt(query, board="Food", limit=15):
     return out
 
 
+# ───────── Threads（best-effort，機房 IP 常被擋，失敗回 0） ─────────
+def fetch_threads(query, limit=15):
+    """用 Playwright 試載 Threads 公開搜尋，數可見貼文。抓不到回 []。"""
+    out = []
+    try:
+        from playwright.sync_api import sync_playwright
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True,
+                                        args=["--no-sandbox", "--disable-blink-features=AutomationControlled"])
+            ctx = browser.new_context(locale="zh-TW", user_agent=UA,
+                                      viewport={"width": 1280, "height": 1800})
+            page = ctx.new_page()
+            page.set_default_timeout(18000)
+            url = "https://www.threads.net/search?q=" + urllib.parse.quote(query) + "&serp_type=default"
+            page.goto(url, wait_until="domcontentloaded")
+            page.wait_for_timeout(4500)
+            # 若被導到登入牆就放棄
+            if "login" in page.url or "/accounts/" in page.url:
+                raise RuntimeError("被導到登入牆")
+            cells = page.query_selector_all('div[data-pressable-container="true"]')
+            for c in cells[:limit]:
+                t = (c.inner_text() or "").strip().replace("\n", " ")
+                if query.replace('"', "") in t:
+                    out.append({"text": t[:140]})
+            browser.close()
+    except Exception as e:
+        print(f"  ⚠️ Threads「{query}」抓不到（多半被擋/登入牆），跳過：{e}", flush=True)
+    return out
+
+
+def _ug_sentiment(dash):
+    """用真實 UG Google 評論星等算 正面%/負面%（客觀、免 AI）。回 (pos, neg) 或 (None,None)。"""
+    stars = [r.get("stars") for r in dash.get("gReviews", []) if r.get("stars")]
+    if not stars:
+        return None, None
+    pos = round(sum(1 for s in stars if s >= 4) / len(stars) * 100)
+    neg = round(sum(1 for s in stars if s <= 2) / len(stars) * 100)
+    return pos, neg
+
+
 # ───────── 組裝 ─────────
 def _norm(values):
     """把一組數值正規化到 0-100（相對最大值）。全 0 回全 0。"""
@@ -138,7 +178,8 @@ def _norm(values):
     return [int(round(v / mx * 100)) for v in values]
 
 
-def collect_buzz():
+def collect_buzz(dash=None):
+    dash = dash or {}
     kw = _load_keywords()
     brand_terms = kw.get("brand", []) or ["UG"]
     competitors = kw.get("competitor", []) or []
@@ -181,25 +222,38 @@ def collect_buzz():
     ptt_real = any(ptt_counts)
     print(f"  · PTT：{'OK 共 ' + str(sum(ptt_counts)) + ' 篇' if ptt_real else '無（爬不到/被擋）'}", flush=True)
 
+    # 3b) Threads（best-effort，多半會被擋）
+    th_counts = []
+    for name, _q, t, _self in brand_list:
+        th_counts.append(len(fetch_threads(t, limit=15)))
+    th_real = any(th_counts)
+    print(f"  · Threads：{'OK 共 ' + str(sum(th_counts)) + ' 篇' if th_real else '無（被擋/登入牆，預期內）'}", flush=True)
+
+    # 社群訊號 = PTT + Threads
+    social_raw = [ptt_counts[i] + th_counts[i] for i in range(len(brand_list))]
+
     # 正規化各訊號
     news_n = _norm(news_counts)
-    social_n = _norm(ptt_counts)
+    social_n = _norm(social_raw)
     trend_n = [trends.get(t, 0) for _n, _q, t, _s in brand_list]  # 已是 0-100
 
+    ug_pos, ug_neg = _ug_sentiment(dash)   # UG 情緒用真實評論星等算（客觀）
     brands = []
     for i, (name, _q, _t, is_self) in enumerate(brand_list):
         news = news_n[i]
         trends_v = trend_n[i]
         social = social_n[i]
-        # 評論訊號：只有自家（UG）有真實 Google 評論，競品無 → 估計
         reviews = 0
         # 真實可得的訊號加權（新聞 40% + 趨勢 35% + 社群 25%）
         score = int(round(news * 0.40 + trends_v * 0.35 + social * 0.25))
+        # 情緒：UG 用真實評論星等；競品無評論 → None（待 AI 估，前端顯示「—」）
+        pos = ug_pos if is_self else None
+        neg = ug_neg if is_self else None
         brands.append({
             "name": name, "self": is_self, "score": score, "d": 0,
             "news": news, "trends": trends_v, "reviews": reviews, "social": social,
-            "pos": None, "neg": None,                 # 情緒待 AI（ai_report）填，前端顯示「—」
-            "estimated": (not trends_real) or (not ptt_real),
+            "pos": pos, "neg": neg,
+            "estimated": (pos is None),   # 自家有真實情緒就不算估計
         })
     brands.sort(key=lambda b: b["score"], reverse=True)
 
@@ -241,16 +295,28 @@ def collect_buzz():
         "meta": " · ".join([x for x in [n.get("source", ""), n.get("brand", ""), n.get("date", "")] if x]),
     } for n in buzz_news[:6]]
 
+    # 傳播溯源：用真實新聞時間軸（最舊在前＝首發，之後＝放大），每筆可點連結
+    trace_src = sorted(all_news, key=lambda x: x.get("pub", 0))[-6:]
+    trace = []
+    for i, n in enumerate(trace_src):
+        trace.append({
+            "t": _rel_date(n.get("pub", 0)) or (n.get("source") or ""),
+            "x": f'{n.get("brand", "")}｜{n["title"]}',
+            "tag": "origin" if i == 0 else "amp",
+            "url": n.get("url", ""),
+        })
+
     return {
         "brands": brands,
         "alerts": alerts,
         "watchlist": watchlist,
+        "trace": trace,
         "buzzNews": buzz_news,
         "buzzMeta": {
             "generatedAt": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
-            "news": sum(news_counts), "ptt": sum(ptt_counts),
-            "trendsReal": trends_real, "pttReal": ptt_real,
-            "note": "新聞與趨勢為真實資料；社群互動(FB/IG/Threads)與情緒為估計，待付費來源或 AI 補。",
+            "news": sum(news_counts), "ptt": sum(ptt_counts), "threads": sum(th_counts),
+            "trendsReal": trends_real, "pttReal": ptt_real, "threadsReal": th_real,
+            "note": "新聞/趨勢/PTT/情緒(UG)為真實；FB/IG/Threads 公開提及多被擋，社群偏估計。",
         },
     }
 
@@ -268,7 +334,7 @@ def _rel_date(ts):
 
 def merge_into_dashboard():
     dash = json.loads(DASH.read_text(encoding="utf-8")) if DASH.exists() else {}
-    dash.update(collect_buzz())
+    dash.update(collect_buzz(dash))
     DASH.write_text(json.dumps(dash, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"✅ 已更新輿情段 → {DASH}")
 

@@ -614,11 +614,14 @@ function renderSOV(){
 
 // ----- 傳播溯源 -----
 function renderTrace(){
-  $('#traceList').innerHTML=STATE.trace.map(t=>`
-    <div class="trace-item ${t.tag==='origin'?'origin':''}">
+  $('#traceList').innerHTML=STATE.trace.map(t=>{
+    const label=`${t.x}<span class="badge ${t.tag==='origin'?'org':'amp'}">${t.tag==='origin'?'首發源頭':'放大節點'}</span>`;
+    const body=t.url?`<a href="${t.url}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">${label} ↗</a>`:label;
+    return `<div class="trace-item ${t.tag==='origin'?'origin':''}">
       <div class="trace-t">${t.t}</div>
-      <div class="trace-x">${t.x}<span class="badge ${t.tag==='origin'?'org':'amp'}">${t.tag==='origin'?'首發源頭':'放大節點'}</span></div>
-    </div>`).join('');
+      <div class="trace-x">${body}</div>
+    </div>`;
+  }).join('');
 }
 
 // ----- 7. VOC 聚類 -----

@@ -21,12 +21,20 @@ def _ask(cli, prompt, max_tokens=1000):
     return "".join(b.text for b in msg.content if b.type == "text").strip()
 
 
+def _pn(v):
+    return f"{v}%" if v is not None else "—"
+
+
 def build_context(d):
-    brands = sorted(d.get("brands", []), key=lambda b: -b["score"])
+    brands = sorted(d.get("brands", []), key=lambda b: -b.get("score", 0))
     lines = [f'{i+1}. {b["name"]}{"(自家)" if b.get("self") else ""} '
-             f'熱度{b["score"]} 正{b["pos"]}%/負{b["neg"]}%' for i, b in enumerate(brands)]
+             f'熱度{b.get("score", 0)} 正{_pn(b.get("pos"))}/負{_pn(b.get("neg"))}'
+             for i, b in enumerate(brands)]
     alerts = "\n".join(f'[{a["lv"]}] {a["txt"]}' for a in d.get("alerts", []))
-    return "今日聲量熱度榜：\n" + "\n".join(lines) + "\n\n預警：\n" + alerts
+    news = "\n".join(f'- {n.get("brand","")}｜{n.get("title","")}' for n in d.get("buzzNews", [])[:15])
+    return ("今日聲量熱度榜：\n" + "\n".join(lines)
+            + "\n\n預警：\n" + alerts
+            + "\n\n近期新聞：\n" + news)
 
 
 def main():
@@ -38,6 +46,11 @@ def main():
     ai["daily"] = _ask(cli,
         "你是聯發國際(UG)手搖飲連鎖的營運總監幕僚。根據以下資料寫繁體中文營運日報："
         "BLUF 一句結論，再條列 UG vs 競品、情緒警訊、今天值得看的 2-3 件事、建議行動。320 字內。\n\n" + ctx, 900)
+
+    ai["weekly"] = _ask(cli,
+        "你是聯發國際(UG)營運總監幕僚。根據以下資料寫繁體中文『本週輿情週報』："
+        "本週重點摘要、UG 與競品聲量趨勢、競品活動觀察、UG 口碑（評論情緒）變化、"
+        "下週可採取的 2-3 個行動建議。400 字內。\n\n" + ctx, 1100)
 
     # VOC 分群（負評）
     negs = [r["text"] for r in d.get("gReviews", []) if r.get("stars", 5) <= 2]
