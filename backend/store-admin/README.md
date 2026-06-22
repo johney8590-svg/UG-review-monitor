@@ -53,6 +53,21 @@ clasp push
 打開 `https://johney8590-svg.github.io/UG-review-monitor/admin.html`，
 在「連線設定」填入上一步的 `/exec` URL 與通關密語 → 載入門市 → 增刪 → 儲存到 GitHub。
 
+## 附：團隊貼文／評論追蹤（track.html）
+
+同一支 GAS 也支援 `docs/track.html` 的追蹤面板，**不需 GitHub Token、只需通關密語**。
+追蹤狀態（狀態／標籤／指派／註記）存在一份**私有 Google Sheet**，由 GAS 首次使用時
+自動建立（ID 存指令碼屬性 `TRACK_SHEET_ID`），不會出現在公開頁面。
+
+- 多了一個 OAuth scope `spreadsheets` → **重新部署後第一次會再跳一次授權**，按允許即可。
+- 端點：`track_list`（讀全部狀態）、`track_set`（upsert 單筆，依 key）。
+- 面板與 admin 頁**共用同一組網址＋密語**（存在瀏覽器 localStorage），設定一次即可。
+- 項目來源＝`dashboard.json` 的 `gReviews`／`negPosts`／`watchlist`；每筆用
+  「類型＋來源＋內文」算出穩定 key，狀態以 key 疊加。
+
+啟用：部署同一支 GAS 後，打開 `https://johney8590-svg.github.io/UG-review-monitor/track.html`，
+填 `/exec` 網址＋密語＋署名 → 載入。
+
 ## 安全備註
 - 通關密語為內部工具等級驗證（非企業級身分），交接資訊部門時需註明。
 - Token 外洩時：到 GitHub 撤銷該 fine-grained token 再重發、更新 `GH_TOKEN` 即可，不影響線上服務。

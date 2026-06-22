@@ -22,11 +22,24 @@ function doPost(e) {
     var ADMIN_SECRET = props.getProperty('ADMIN_SECRET');
     var GH_TOKEN     = props.getProperty('GH_TOKEN');
 
-    if (!ADMIN_SECRET || !GH_TOKEN) {
-      return json({ ok: false, error: '後端未設定 ADMIN_SECRET / GH_TOKEN（請見指令碼屬性）' });
+    if (!ADMIN_SECRET) {
+      return json({ ok: false, error: '後端未設定 ADMIN_SECRET（請見指令碼屬性）' });
     }
     if (body.secret !== ADMIN_SECRET) {
       return json({ ok: false, error: '通關密語錯誤' });
+    }
+
+    // 團隊貼文/評論追蹤（只需密語，不需 GitHub Token；狀態存私有 Google Sheet）
+    if (body.action === 'track_list') {
+      return json({ ok: true, items: trackList_() });
+    }
+    if (body.action === 'track_set') {
+      return json(trackSet_(body.item || {}));
+    }
+
+    // 以下門市管理動作需要 GitHub Token
+    if (!GH_TOKEN) {
+      return json({ ok: false, error: '後端未設定 GH_TOKEN（門市管理需要；追蹤功能不需要）' });
     }
 
     if (body.action === 'list') {
@@ -106,4 +119,61 @@ function ghPut_(token, dataObj, sha, message) {
 function json(obj) {
   return ContentService.createTextOutput(JSON.stringify(obj))
                        .setMimeType(ContentService.MimeType.JSON);
+}
+
+/* ---------- 團隊追蹤：私有 Google Sheet 當資料表 ---------- */
+// 自動建立一份私有試算表（ID 存指令碼屬性 TRACK_SHEET_ID），分頁 tracking。
+// 欄位：key | status | tags | assignee | note | updatedAt | updatedBy
+var TRACK_HEAD = ['key', 'status', 'tags', 'assignee', 'note', 'updatedAt', 'updatedBy'];
+
+function trackSheet_() {
+  var props = PropertiesService.getScriptProperties();
+  var id = props.getProperty('TRACK_SHEET_ID');
+  var ss = null;
+  if (id) { try { ss = SpreadsheetApp.openById(id); } catch (e) { ss = null; } }
+  if (!ss) {
+    ss = SpreadsheetApp.create('UG 追蹤狀態（勿刪）');
+    props.setProperty('TRACK_SHEET_ID', ss.getId());
+  }
+  var sh = ss.getSheetByName('tracking');
+  if (!sh) {
+    sh = ss.insertSheet('tracking');
+    sh.appendRow(TRACK_HEAD);
+  }
+  return sh;
+}
+
+function trackList_() {
+  var sh = trackSheet_();
+  var values = sh.getDataRange().getValues();
+  var out = [];
+  for (var i = 1; i < values.length; i++) {
+    var r = values[i];
+    if (!r[0]) continue;
+    out.push({
+      key: String(r[0]), status: r[1] || '', tags: r[2] || '',
+      assignee: r[3] || '', note: r[4] || '',
+      updatedAt: r[5] || '', updatedBy: r[6] || ''
+    });
+  }
+  return out;
+}
+
+function trackSet_(item) {
+  var key = String(item.key || '').trim();
+  if (!key) return { ok: false, error: '缺 key' };
+  var sh = trackSheet_();
+  var now = Utilities.formatDate(new Date(), 'Asia/Taipei', 'yyyy-MM-dd HH:mm');
+  var row = [key, String(item.status || ''), String(item.tags || ''),
+             String(item.assignee || ''), String(item.note || ''), now,
+             String(item.updatedBy || '')];
+  var values = sh.getDataRange().getValues();
+  for (var i = 1; i < values.length; i++) {
+    if (String(values[i][0]) === key) {
+      sh.getRange(i + 1, 1, 1, TRACK_HEAD.length).setValues([row]);
+      return { ok: true, updated: true, updatedAt: now };
+    }
+  }
+  sh.appendRow(row);
+  return { ok: true, created: true, updatedAt: now };
 }

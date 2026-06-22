@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>UG 貼文／評論追蹤</title>
+<style>
+  :root{
+    --green:#2D5016; --green2:#3A6B20; --green-soft:#8DB87A;
+    --bg:#F8F5F0; --card:#FFFFFF; --ink:#2C2C2C; --muted:#6B6B6B;
+    --line:#E8E8E8; --line2:#EBEBEB; --th:#F5F5F5;
+    --up:#28A745; --down:#DC3545; --warn:#FFC107;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:'Noto Sans TC','微軟正黑體','PingFang TC',sans-serif;font-size:14px;line-height:1.6}
+  .wrap{max-width:1180px;margin:0 auto;padding:20px 16px 50px}
+  header{border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:16px;
+    display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+  header h1{font-size:21px;font-weight:600;margin:0;color:var(--green)}
+  header .sub{font-size:13px;color:var(--muted)}
+  .bar{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:12px 14px;margin-bottom:16px;
+    display:flex;gap:10px;align-items:flex-end;flex-wrap:wrap}
+  .bar .f{display:flex;flex-direction:column;gap:3px}
+  label{font-size:12px;color:var(--muted)}
+  input,select,textarea{font-family:inherit;font-size:14px;border:1px solid var(--line);border-radius:4px;
+    padding:7px 9px;color:var(--ink);background:#fff}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green-soft)}
+  .btn{background:var(--green);color:#fff;border:none;border-radius:4px;padding:8px 16px;
+    font-weight:600;font-size:14px;cursor:pointer;font-family:inherit}
+  .btn:hover{background:var(--green2)}
+  .btn.ghost{background:transparent;border:1px solid var(--green);color:var(--green)}
+  .btn.ghost:hover{background:#F0F5EC}
+  .btn.sm{padding:5px 11px;font-size:13px}
+  .btn:disabled{opacity:.45;cursor:not-allowed}
+  .grid{display:grid;grid-template-columns:200px 1fr 340px;gap:14px;align-items:start}
+  .col{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
+  .col h2{font-size:14px;font-weight:600;margin:0 0 10px;color:var(--ink)}
+  .fchip{display:block;width:100%;text-align:left;border:1px solid var(--line);background:#fff;border-radius:5px;
+    padding:7px 10px;margin-bottom:6px;cursor:pointer;font-size:13px;color:var(--ink);font-family:inherit}
+  .fchip.active{border-color:var(--green);background:#F0F5EC;color:var(--green);font-weight:600}
+  .fchip .n{float:right;color:var(--muted);font-weight:400}
+  .list{max-height:70vh;overflow:auto}
+  .item{border:1px solid var(--line2);border-radius:6px;padding:9px 11px;margin-bottom:8px;cursor:pointer;background:#fff}
+  .item:hover{border-color:var(--green-soft)}
+  .item.sel{border-color:var(--green);background:#FAFCF8}
+  .item .top{display:flex;gap:7px;align-items:center;margin-bottom:3px;flex-wrap:wrap}
+  .item .snip{font-size:13px;color:var(--ink);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .item .meta{font-size:11px;color:var(--muted);margin-top:3px}
+  .tag{font-size:11px;border-radius:3px;padding:1px 7px;font-weight:600}
+  .tag.t-評論{background:#F0F5EC;color:var(--green)} .tag.t-貼文{background:#FBF1E8;color:#9A5B1E}
+  .tag.t-連結{background:#F3F0F8;color:#5B3E86}
+  .st{font-size:11px;border-radius:3px;padding:1px 7px;font-weight:600;border:1px solid transparent}
+  .st-待處理{background:#FBE9E9;color:var(--down)} .st-處理中{background:#FFF6E0;color:#B8860B}
+  .st-已處理{background:#F0F5EC;color:var(--green)} .st-已封存{background:#EEE;color:var(--muted)}
+  .stars{color:#E0A800;font-size:12px}
+  .detail .row{display:flex;flex-direction:column;gap:4px;margin-bottom:11px}
+  .detail textarea{width:100%;min-height:80px;resize:vertical}
+  .detail .src{font-size:12px;color:var(--muted)}
+  .detail .full{font-size:13px;background:#FAFAF7;border:1px solid var(--line2);border-radius:6px;padding:10px;max-height:160px;overflow:auto;white-space:pre-wrap}
+  .empty{color:var(--muted);text-align:center;padding:30px 10px;font-size:13px}
+  .status{margin-top:12px;padding:9px 12px;border-radius:6px;font-size:13px;display:none}
+  .status.ok{display:block;background:#F0F5EC;border:1px solid var(--green-soft);color:var(--green)}
+  .status.err{display:block;background:#FDF1F1;border:1px solid #E2A6A6;color:var(--down)}
+  .status.info{display:block;background:#FBF8F2;border:1px solid var(--line);color:var(--muted)}
+  .hint{font-size:12px;color:var(--muted);margin-top:8px}
+  @media(max-width:900px){ .grid{grid-template-columns:1fr} .list{max-height:none} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>UG 貼文／評論追蹤</h1>
+    <span class="sub">聯發國際 · 相關貼文與負評的工單追蹤</span>
+  </header>
+
+  <div class="bar">
+    <div class="f" style="flex:1;min-width:230px">
+      <label>後端網址（GAS /exec）</label>
+      <input id="gasUrl" placeholder="https://script.google.com/macros/s/.../exec" autocomplete="off">
+    </div>
+    <div class="f" style="width:150px">
+      <label>通關密語</label>
+      <input id="secret" type="password" placeholder="管理密語" autocomplete="off">
+    </div>
+    <div class="f" style="width:120px">
+      <label>我是（署名）</label>
+      <input id="who" placeholder="例：Robert" autocomplete="off">
+    </div>
+    <button class="btn ghost" id="loadBtn">載入</button>
+  </div>
+
+  <div class="grid">
+    <!-- 左：篩選 -->
+    <div class="col">
+      <h2>狀態</h2>
+      <div id="statusFilters"></div>
+      <h2 style="margin-top:14px">類型</h2>
+      <div id="typeFilters"></div>
+    </div>
+
+    <!-- 中：清單 -->
+    <div class="col">
+      <h2>項目 <span id="count" class="sub" style="font-weight:400;color:var(--muted)"></span></h2>
+      <div class="list" id="list">
+        <div class="empty">填上方設定後按「載入」。項目來自每日抓取的評論與貼文。</div>
+      </div>
+    </div>
+
+    <!-- 右：明細 -->
+    <div class="col detail">
+      <h2>明細</h2>
+      <div id="detail"><div class="empty">點左側任一項目來標籤、指派、改狀態。</div></div>
+      <div class="status" id="status"></div>
+    </div>
+  </div>
+  <div class="hint">狀態存在私有 Google Sheet（由後端 GAS 建立），不會出現在公開頁面。項目本身來自 <code>dashboard.json</code> 的評論／負面貼文／追蹤連結。</div>
+</div>
+
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var LSK = 'ug_store_admin';   // 與門市管理頁共用網址＋密語
+  var WHOK = 'ug_track_who';
+  var STATUSES = ['待處理','處理中','已處理','已封存'];
+  var ITEMS = [];               // 合併後的項目
+  var fStatus = '全部', fType = '全部', selKey = null;
+
+  // 還原設定
+  try{
+    var saved = JSON.parse(localStorage.getItem(LSK) || '{}');
+    if(saved.gasUrl) $('gasUrl').value = saved.gasUrl;
+    if(saved.secret) $('secret').value = saved.secret;
+  }catch(e){}
+  $('who').value = localStorage.getItem(WHOK) || '';
+
+  function persist(){
+    try{ localStorage.setItem(LSK, JSON.stringify({gasUrl:$('gasUrl').value.trim(), secret:$('secret').value})); }catch(e){}
+    localStorage.setItem(WHOK, $('who').value.trim());
+  }
+  function setStatus(kind,msg){ var s=$('status'); s.className='status '+kind; s.textContent=msg; }
+
+  function hashStr(s){ var h=5381; for(var i=0;i<s.length;i++){ h=((h<<5)+h)+s.charCodeAt(i); h=h|0; } return (h>>>0).toString(36); }
+  function keyOf(type, source, text){ return type+':'+hashStr((source||'')+'|'+(text||'')); }
+
+  function call(action, extra){
+    var url=$('gasUrl').value.trim(), secret=$('secret').value;
+    if(!url){ setStatus('err','請先填後端網址'); return Promise.reject(); }
+    if(!secret){ setStatus('err','請先填通關密語'); return Promise.reject(); }
+    var payload = Object.assign({action:action, secret:secret}, extra||{});
+    return fetch(url, {method:'POST', body:JSON.stringify(payload)}).then(function(r){ return r.json(); });
+  }
+
+  // 從 dashboard.json 組出可追蹤項目
+  function buildItems(d){
+    var out=[];
+    (d.gReviews||[]).forEach(function(r){
+      out.push({type:'評論', source:r.store||'', text:r.text||'', stars:r.stars||0, meta:(r.author||'')+' · '+(r.date||'')});
+    });
+    (d.negPosts||[]).forEach(function(r){
+      out.push({type:'貼文', source:r.src||'', text:r.txt||'', stars:0, meta:'負面貼文'});
+    });
+    (d.watchlist||[]).forEach(function(r){
+      out.push({type:'連結', source:r.title||'', text:r.meta||'', stars:0, meta:'追蹤連結', url:r.url||''});
+    });
+    out.forEach(function(it){ it.key = keyOf(it.type, it.source, it.text); });
+    return out;
+  }
+
+  function load(){
+    persist();
+    setStatus('info','載入中…');
+    var dashP = fetch('data/dashboard.json',{cache:'no-store'}).then(function(r){ return r.ok?r.json():{}; }).catch(function(){ return {}; });
+    Promise.all([dashP, call('track_list')]).then(function(res){
+      var d=res[0]||{}, tr=res[1];
+      if(!tr || !tr.ok){ setStatus('err','後端載入失敗：'+((tr&&tr.error)||'無回應')); return; }
+      var stateByKey={};
+      (tr.items||[]).forEach(function(x){ stateByKey[x.key]=x; });
+      ITEMS = buildItems(d).map(function(it){
+        var st = stateByKey[it.key] || {};
+        it.status = st.status || '待處理';
+        it.tags = st.tags || '';
+        it.assignee = st.assignee || '';
+        it.note = st.note || '';
+        it.updatedAt = st.updatedAt || '';
+        it.updatedBy = st.updatedBy || '';
+        return it;
+      });
+      renderFilters(); renderList();
+      setStatus('ok','已載入 '+ITEMS.length+' 個項目。');
+    }).catch(function(e){ if(e) setStatus('err','連線失敗，請確認後端網址。'); });
+  }
+
+  function counts(field, val){ return ITEMS.filter(function(i){ return val==='全部' || i[field]===val; }).length; }
+
+  function renderFilters(){
+    var sf=$('statusFilters'); sf.textContent='';
+    ['全部'].concat(STATUSES).forEach(function(s){
+      var b=document.createElement('button'); b.className='fchip'+(fStatus===s?' active':'');
+      var label=document.createElement('span'); label.textContent=s;
+      var n=document.createElement('span'); n.className='n'; n.textContent=ITEMS.filter(function(i){return s==='全部'||i.status===s;}).length;
+      b.appendChild(label); b.appendChild(n);
+      b.onclick=function(){ fStatus=s; renderFilters(); renderList(); };
+      sf.appendChild(b);
+    });
+    var tf=$('typeFilters'); tf.textContent='';
+    ['全部','評論','貼文','連結'].forEach(function(t){
+      var b=document.createElement('button'); b.className='fchip'+(fType===t?' active':'');
+      var label=document.createElement('span'); label.textContent=t;
+      var n=document.createElement('span'); n.className='n'; n.textContent=ITEMS.filter(function(i){return t==='全部'||i.type===t;}).length;
+      b.appendChild(label); b.appendChild(n);
+      b.onclick=function(){ fType=t; renderFilters(); renderList(); };
+      tf.appendChild(b);
+    });
+  }
+
+  function filtered(){
+    return ITEMS.filter(function(i){
+      return (fStatus==='全部'||i.status===fStatus) && (fType==='全部'||i.type===fType);
+    });
+  }
+
+  function starStr(n){ if(!n) return ''; return '★'.repeat(n); }
+
+  function renderList(){
+    var list=$('list'), data=filtered(); list.textContent='';
+    $('count').textContent='（'+data.length+'）';
+    if(!data.length){ var e=document.createElement('div'); e.className='empty'; e.textContent='這個條件下沒有項目。'; list.appendChild(e); return; }
+    data.forEach(function(it){
+      var d=document.createElement('div'); d.className='item'+(it.key===selKey?' sel':'');
+      var top=document.createElement('div'); top.className='top';
+      var tg=document.createElement('span'); tg.className='tag t-'+it.type; tg.textContent=it.type;
+      var stt=document.createElement('span'); stt.className='st st-'+it.status; stt.textContent=it.status;
+      top.appendChild(tg); top.appendChild(stt);
+      if(it.stars){ var st=document.createElement('span'); st.className='stars'; st.textContent=starStr(it.stars); top.appendChild(st); }
+      if(it.assignee){ var as=document.createElement('span'); as.className='meta'; as.textContent='@'+it.assignee; top.appendChild(as); }
+      var src=document.createElement('div'); src.className='meta'; src.textContent=it.source;
+      var snip=document.createElement('div'); snip.className='snip'; snip.textContent=it.text||'（無內文）';
+      d.appendChild(top); d.appendChild(src); d.appendChild(snip);
+      d.onclick=function(){ selKey=it.key; renderList(); renderDetail(it); };
+      list.appendChild(d);
+    });
+  }
+
+  function renderDetail(it){
+    var box=$('detail'); box.textContent='';
+    var src=document.createElement('div'); src.className='src'; src.textContent=it.type+' · '+it.source+(it.meta?(' · '+it.meta):'');
+    var full=document.createElement('div'); full.className='full'; full.textContent=(it.stars?(starStr(it.stars)+'  '):'')+(it.text||'（無內文）');
+    box.appendChild(src); box.appendChild(full);
+    if(it.url){ var a=document.createElement('a'); a.href=it.url; a.target='_blank'; a.rel='noopener'; a.textContent='開啟連結 ↗'; a.style.cssText='font-size:12px;display:block;margin:6px 0'; box.appendChild(a); }
+
+    function field(labelTxt, el){ var r=document.createElement('div'); r.className='row'; var l=document.createElement('label'); l.textContent=labelTxt; r.appendChild(l); r.appendChild(el); box.appendChild(r); return el; }
+
+    var sel=document.createElement('select'); STATUSES.forEach(function(s){ var o=document.createElement('option'); o.value=s; o.textContent=s; if(s===it.status)o.selected=true; sel.appendChild(o); });
+    field('狀態', sel);
+    var tags=document.createElement('input'); tags.value=it.tags; tags.placeholder='標籤（逗號分隔，例：出餐慢,態度）'; field('標籤', tags);
+    var asg=document.createElement('input'); asg.value=it.assignee; asg.placeholder='指派給（姓名）'; field('指派', asg);
+    var note=document.createElement('textarea'); note.value=it.note; note.placeholder='處理註記…'; field('註記', note);
+
+    if(it.updatedAt){ var u=document.createElement('div'); u.className='src'; u.textContent='最後更新：'+it.updatedAt+(it.updatedBy?('（'+it.updatedBy+'）'):''); box.appendChild(u); }
+
+    var save=document.createElement('button'); save.className='btn'; save.textContent='儲存'; save.style.marginTop='4px';
+    save.onclick=function(){
+      persist();
+      save.disabled=true; save.textContent='儲存中…';
+      var item={ key:it.key, status:sel.value, tags:tags.value.trim(), assignee:asg.value.trim(), note:note.value.trim(), updatedBy:$('who').value.trim() };
+      call('track_set',{item:item}).then(function(res){
+        save.disabled=false; save.textContent='儲存';
+        if(!res||!res.ok){ setStatus('err','儲存失敗：'+((res&&res.error)||'無回應')); return; }
+        it.status=item.status; it.tags=item.tags; it.assignee=item.assignee; it.note=item.note; it.updatedAt=res.updatedAt||''; it.updatedBy=item.updatedBy;
+        renderFilters(); renderList(); renderDetail(it);
+        setStatus('ok','已儲存。');
+      }).catch(function(e){ save.disabled=false; save.textContent='儲存'; if(e) setStatus('err','連線失敗。'); });
+    };
+    box.appendChild(save);
+  }
+
+  $('loadBtn').onclick = load;
+  ['gasUrl','secret','who'].forEach(function(id){ $(id).addEventListener('change', persist); });
+})();
+</script>
+</body>
+</html>
