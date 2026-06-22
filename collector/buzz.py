@@ -144,20 +144,21 @@ def collect_buzz():
     competitors = kw.get("competitor", []) or []
     promo_terms = kw.get("promo", []) or []
 
-    # 用最具代表性的一個詞當每個品牌的查詢主詞
+    # 每個品牌：(顯示名, 新聞查詢, 趨勢/PTT 主詞, 是否自家)
+    # UG 的「UG」「聯發」太廣（會誤抓 studio UG、聯發科），用手搖/飲料限定詞收斂。
     ug_name = "UG 聯發"
-    ug_query = brand_terms[0] if brand_terms else "UG"
-    brand_list = [(ug_name, ug_query, True)] + [(c, c, False) for c in competitors]
+    ug_news_q = '"UG TEA" OR "UG手搖" OR "UG 手搖" OR "UG飲料" OR "UG 茶飲" OR "UG聯發"'
+    brand_list = [(ug_name, ug_news_q, "UG", True)] + [(c, c, c, False) for c in competitors]
 
     print(f"▶ 輿情收集：品牌 {len(brand_list)} 個", flush=True)
 
     # 1) 新聞
     news_by_brand, news_counts, all_news = {}, [], []
-    for name, q, _self in brand_list:
+    for name, news_q, _t, _self in brand_list:
         try:
-            items = fetch_news(q, limit=25)
+            items = fetch_news(news_q, limit=60)
         except Exception as e:
-            print(f"  ⚠️ 新聞「{q}」失敗：{e}", flush=True)
+            print(f"  ⚠️ 新聞「{name}」失敗：{e}", flush=True)
             items = []
         news_by_brand[name] = items
         news_counts.append(len(items))
@@ -166,15 +167,15 @@ def collect_buzz():
         print(f"  · {name} 新聞 {len(items)} 則", flush=True)
 
     # 2) 搜尋趨勢（一次最多 5 詞）
-    trend_terms = [q for _n, q, _s in brand_list][:5]
+    trend_terms = [t for _n, _q, t, _s in brand_list][:5]
     trends = fetch_trends(trend_terms)
     trends_real = bool(trends)
     print(f"  · Google Trends：{'OK ' + str(trends) if trends_real else '無（限流/失敗）'}", flush=True)
 
     # 3) PTT 論壇
     ptt_counts, ptt_by_brand = [], {}
-    for name, q, _self in brand_list:
-        posts = fetch_ptt(q, board="Food", limit=15)
+    for name, _q, t, _self in brand_list:
+        posts = fetch_ptt(t, board="Food", limit=15)
         ptt_by_brand[name] = posts
         ptt_counts.append(len(posts))
     ptt_real = any(ptt_counts)
@@ -183,10 +184,10 @@ def collect_buzz():
     # 正規化各訊號
     news_n = _norm(news_counts)
     social_n = _norm(ptt_counts)
-    trend_n = [trends.get(q, 0) for _n, q, _s in brand_list]  # 已是 0-100
+    trend_n = [trends.get(t, 0) for _n, _q, t, _s in brand_list]  # 已是 0-100
 
     brands = []
-    for i, (name, q, is_self) in enumerate(brand_list):
+    for i, (name, _q, _t, is_self) in enumerate(brand_list):
         news = news_n[i]
         trends_v = trend_n[i]
         social = social_n[i]
