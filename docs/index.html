@@ -224,6 +224,7 @@
     <div style="text-align:right">
       <span class="demo-tag">每日自動更新</span>
       <div class="sub" id="today" style="margin-top:6px"></div>
+      <button class="btn" id="pptBtn" style="margin-top:8px">⬇ 匯出簡報</button>
     </div>
   </header>
 
@@ -403,6 +404,7 @@
 
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.12.0/dist/pptxgen.bundle.js"></script>
 <script>
 // 內建種子＝離線後備；正式資料由 data/dashboard.json 覆蓋（見檔尾 init()）
 const SEED = {
@@ -783,6 +785,112 @@ function renderReviews(){
     </div>`).join('') : '<div class="sub">這個條件下沒有評論。</div>';
 }
 function initGoogle(){ gKpis(); renderStoreSort(); renderStores(); renderFilters(); renderReviews(); }
+
+/* ───────── 一鍵匯出簡報（PPTX，純前端、用 dashboard.json 資料） ───────── */
+function exportPPTX(){
+  if(typeof PptxGenJS === 'undefined'){ alert('簡報元件還在載入，請過幾秒再按一次。'); return; }
+  const btn=document.getElementById('pptBtn'), old=btn.textContent;
+  btn.disabled=true; btn.textContent='產生中…';
+
+  const GREEN='2D5016', INK='2C2C2C', MUTED='6B6B6B', LINE='E8E8E8', TH='F5F5F5',
+        RED='DC3545', UP='28A745', WARN='B8860B', BG='F8F5F0', FONT='Microsoft JhengHei';
+  const today = STATE.today || '';
+  const hc = t => ({text:t, options:{fill:{color:TH}, color:'444444', bold:true}});
+  const dc = (t,color,bold) => ({text:String(t), options:{color:color||INK, bold:!!bold}});
+  const delta = d => d>0 ? '▲ +'+d : (d<0 ? '▼ '+d : '─ 0');
+  const stamp = () => { const d=new Date(); const p=n=>('0'+n).slice(-2);
+    return ''+d.getFullYear()+p(d.getMonth()+1)+p(d.getDate()); };
+
+  try{
+    const pptx = new PptxGenJS();
+    pptx.defineLayout({name:'UG', width:13.33, height:7.5});
+    pptx.layout='UG'; pptx.author='UG 輿情監測'; pptx.company='聯發國際';
+
+    const heading = (s,txt) => {
+      s.background={color:'FFFFFF'};
+      s.addText(txt,{x:0.5,y:0.38,w:12.3,h:0.7,fontFace:FONT,fontSize:24,bold:true,color:GREEN});
+      s.addShape(pptx.ShapeType.line,{x:0.5,y:1.18,w:12.3,h:0,line:{color:LINE,width:1}});
+      s.addText('UG 輿情監測 · 聯發國際',{x:0.5,y:7.05,w:8,h:0.3,fontFace:FONT,fontSize:9,color:MUTED});
+      s.addText(today,{x:9.0,y:7.05,w:3.83,h:0.3,align:'right',fontFace:FONT,fontSize:9,color:MUTED});
+    };
+    const storeTable = (title, list) => {
+      const s=pptx.addSlide(); heading(s,title);
+      const rows=[['排名','門市','星等','評論數','今日新增','負評'].map(hc)];
+      list.forEach((x,i)=>rows.push([
+        dc(i+1), dc(x.name, x.name&&x.name.indexOf('UG')===0?INK:INK),
+        dc((x.rating!=null?x.rating:'-'), x.rating>=4.3?UP:(x.rating&&x.rating<4?RED:INK), true),
+        dc(x.reviews!=null?x.reviews:'-'), dc((x.newToday>0?'+'+x.newToday:(x.newToday||0)), x.newToday>0?UP:MUTED),
+        dc(x.neg||0, x.neg>0?RED:MUTED)
+      ]));
+      s.addTable(rows,{x:0.5,y:1.4,w:12.3,fontFace:FONT,fontSize:13,align:'center',valign:'middle',
+        rowH:0.4, border:{type:'solid',color:LINE,pt:1}, colW:[1.3,5.0,1.8,2.0,1.6,1.6]});
+    };
+
+    // 1. 封面
+    const c=pptx.addSlide(); c.background={color:BG};
+    c.addText('UG 輿情監測簡報',{x:0.8,y:2.5,w:11.7,h:1.0,fontFace:FONT,fontSize:40,bold:true,color:GREEN});
+    c.addText('聯發國際 · 手搖飲品牌與競品聲量觀測',{x:0.8,y:3.65,w:11.7,h:0.5,fontFace:FONT,fontSize:18,color:INK});
+    c.addText(today,{x:0.8,y:4.25,w:11.7,h:0.4,fontFace:FONT,fontSize:14,color:MUTED});
+
+    // 2. 綜合聲量熱度榜
+    const brands=(STATE.brands||[]).slice().sort((a,b)=>b.score-a.score);
+    if(brands.length){
+      const s=pptx.addSlide(); heading(s,'綜合聲量熱度榜');
+      const rows=[['排名','品牌','熱度','較昨日','正面%','負面%'].map(hc)];
+      brands.forEach((b,i)=>rows.push([
+        dc(i+1), dc(b.name+(b.self?'（自家）':''), b.self?GREEN:INK, b.self),
+        dc(b.score, INK, true), dc(delta(b.d), b.d>0?UP:(b.d<0?RED:WARN)),
+        dc(b.pos!=null?b.pos+'%':'-'), dc(b.neg!=null?b.neg+'%':'-')
+      ]));
+      s.addTable(rows,{x:0.5,y:1.4,w:12.3,fontFace:FONT,fontSize:14,align:'center',valign:'middle',
+        rowH:0.5, border:{type:'solid',color:LINE,pt:1}, colW:[1.5,4.3,1.8,2.2,1.5,1.5]});
+    }
+
+    // 3. 即時預警
+    const alerts=STATE.alerts||[];
+    if(alerts.length){
+      const s=pptx.addSlide(); heading(s,'即時預警');
+      let y=1.5;
+      alerts.forEach(a=>{
+        const col=a.lv==='r'?RED:(a.lv==='y'?WARN:UP);
+        s.addShape(pptx.ShapeType.rect,{x:0.5,y:y,w:0.12,h:0.85,fill:{color:col}});
+        s.addText(a.txt||'',{x:0.8,y:y,w:11.8,h:0.55,fontFace:FONT,fontSize:14,color:INK,valign:'top'});
+        s.addText(a.at||'',{x:0.8,y:y+0.55,w:11.8,h:0.28,fontFace:FONT,fontSize:10,color:MUTED});
+        y+=1.05;
+      });
+    }
+
+    // 4-5. Google 門市星等排行（前 / 後）
+    const stores=(STATE.stores||[]).filter(x=>x.rating!=null);
+    if(stores.length){
+      const byR=stores.slice().sort((a,b)=>b.rating-a.rating);
+      storeTable('Google 門市星等排行 · 前 12 名', byR.slice(0,12));
+      storeTable('需關注 · 星等最低 12 名', byR.slice().reverse().slice(0,12));
+    }
+
+    // 6. 近期負評摘要
+    const negs=(STATE.gReviews||[]).filter(r=>r.stars>0&&r.stars<=2).slice(0,8);
+    if(negs.length){
+      const s=pptx.addSlide(); heading(s,'近期負評摘要');
+      let y=1.5;
+      negs.forEach(r=>{
+        s.addText([
+          {text:'★'+r.stars+'  ',options:{color:RED,bold:true}},
+          {text:(r.store||'')+'  ',options:{color:GREEN,bold:true}},
+          {text:r.text||'',options:{color:INK}}
+        ],{x:0.5,y:y,w:12.3,h:0.6,fontFace:FONT,fontSize:13,valign:'top'});
+        y+=0.66;
+      });
+    }
+
+    pptx.writeFile({fileName:'UG輿情簡報_'+stamp()+'.pptx'})
+      .then(()=>{ btn.disabled=false; btn.textContent=old; })
+      .catch(e=>{ btn.disabled=false; btn.textContent=old; alert('匯出失敗：'+e); });
+  }catch(e){
+    btn.disabled=false; btn.textContent=old; alert('匯出失敗：'+e);
+  }
+}
+document.getElementById('pptBtn').addEventListener('click', exportPPTX);
 
 async function init(){
   try{
