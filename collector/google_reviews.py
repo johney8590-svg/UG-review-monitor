@@ -175,7 +175,10 @@ def collect_google():
         # 今日★變化 / 新增評論：與昨日快照相減
         prev_s = prev.get(key, {})
         d_rating = round(rating - prev_s.get("rating", rating), 2)
-        new_today = max(count - prev_s.get("reviews", count), 0)
+        # 新增評論需有「有效的昨日基準」才算；昨日缺值或為 0（新店、或前一天抓取失敗）
+        # 一律記 0，避免把整個歷史總數誤算成今日暴增。
+        prev_reviews = prev_s.get("reviews") or 0
+        new_today = max(count - prev_reviews, 0) if prev_reviews else 0
         neg_count = sum(1 for r in reviews if 0 < r["stars"] <= NEG_THRESHOLD)
 
         stores_out.append({
