@@ -2,76 +2,82 @@
   "today": "2026年06月22日",
   "brands": [
     {
-      "name": "迷客夏",
+      "name": "UG 聯發",
+      "self": true,
+      "score": 73,
+      "d": 0,
+      "news": 100,
+      "trends": 23,
+      "reviews": 0,
+      "social": 100,
+      "pos": null,
+      "neg": null,
+      "estimated": false
+    },
+    {
+      "name": "可不可",
       "self": false,
-      "score": 81,
-      "d": 4,
-      "news": 88,
-      "trends": 84,
-      "reviews": 70,
-      "social": 82,
-      "pos": 62,
-      "neg": 24
+      "score": 55,
+      "d": 0,
+      "news": 100,
+      "trends": 19,
+      "reviews": 0,
+      "social": 33,
+      "pos": null,
+      "neg": null,
+      "estimated": false
     },
     {
       "name": "50嵐",
       "self": false,
-      "score": 74,
-      "d": -2,
-      "news": 70,
-      "trends": 80,
-      "reviews": 72,
-      "social": 74,
-      "pos": 58,
-      "neg": 22
+      "score": 51,
+      "d": 0,
+      "news": 100,
+      "trends": 32,
+      "reviews": 0,
+      "social": 0,
+      "pos": null,
+      "neg": null,
+      "estimated": false
     },
     {
-      "name": "UG 聯發",
-      "self": true,
-      "score": 63,
-      "d": 7,
-      "news": 52,
-      "trends": 58,
-      "reviews": 78,
-      "social": 64,
-      "pos": 55,
-      "neg": 31
-    },
-    {
-      "name": "可不可熟成紅茶",
+      "name": "迷客夏",
       "self": false,
-      "score": 59,
-      "d": 1,
-      "news": 56,
-      "trends": 60,
-      "reviews": 64,
-      "social": 55,
-      "pos": 60,
-      "neg": 18
+      "score": 49,
+      "d": 0,
+      "news": 100,
+      "trends": 16,
+      "reviews": 0,
+      "social": 13,
+      "pos": null,
+      "neg": null,
+      "estimated": false
+    },
+    {
+      "name": "清心",
+      "self": false,
+      "score": 48,
+      "d": 0,
+      "news": 100,
+      "trends": 0,
+      "reviews": 0,
+      "social": 33,
+      "pos": null,
+      "neg": null,
+      "estimated": false
     },
     {
       "name": "一沐日",
       "self": false,
-      "score": 48,
-      "d": 5,
-      "news": 44,
-      "trends": 52,
-      "reviews": 50,
-      "social": 46,
-      "pos": 57,
-      "neg": 20
-    },
-    {
-      "name": "清心福全",
-      "self": false,
-      "score": 41,
-      "d": -3,
-      "news": 40,
-      "trends": 42,
-      "reviews": 46,
-      "social": 38,
-      "pos": 52,
-      "neg": 25
+      "score": 46,
+      "d": 0,
+      "news": 100,
+      "trends": 11,
+      "reviews": 0,
+      "social": 7,
+      "pos": null,
+      "neg": null,
+      "estimated": false
     }
   ],
   "keywords": {
@@ -98,31 +104,86 @@
   },
   "alerts": [
     {
-      "lv": "r",
-      "txt": "競品「迷客夏」優惠詞「買一送一」命中暴增 +210%（近 6 小時），來源集中 Threads。",
-      "at": "今天 13:20"
+      "lv": "y",
+      "txt": "自家「UG 聯發」新聞出現優惠詞「買一送一」：UG買一送一｜UG TEA｜最新優惠 - 食尚玩家",
+      "at": "06/22 04:55"
     },
     {
       "lv": "y",
-      "txt": "UG 負面聲量較昨日 +35%，關鍵字集中在「等太久」「出餐慢」。",
-      "at": "今天 11:05"
+      "txt": "自家「UG 聯發」新聞出現優惠詞「聯名」：壽司郎暑假聯名《studio UG》 3款限定餐點、19款周邊今起登場 - 壹蘋新聞網",
+      "at": "06/22 04:55"
     },
     {
-      "lv": "g",
-      "txt": "UG 聲量熱度升至同業第 3（昨日第 4），帶動詞為新品「桂花烏龍」。",
-      "at": "今天 09:40"
+      "lv": "y",
+      "txt": "自家「UG 聯發」新聞出現優惠詞「聯名」：戀愛兔登陸壽司郎！西村 優志《studio UG》聯名19款周邊、3款餐點、6家主題店6/22登場 - Harper's BAZAAR",
+      "at": "06/22 04:55"
+    },
+    {
+      "lv": "y",
+      "txt": "自家「UG 聯發」新聞出現優惠詞「買一送一」：端午節CoCo、UG買一送一！迷客夏2杯99元、麻古9折手搖飲料優惠 - NOWnews今日新聞",
+      "at": "06/22 04:55"
+    },
+    {
+      "lv": "y",
+      "txt": "自家「UG 聯發」新聞出現優惠詞「聯名」：壽司郎×西村優志「studio UG」6/22 聯名開跑 開心熊貓、戀愛兔 5 大人氣角色相約吃壽司 - GNN 新聞網",
+      "at": "06/22 04:55"
+    },
+    {
+      "lv": "y",
+      "txt": "自家「UG 聯發」新聞出現優惠詞「聯名」：壽司郎 × 西村 優志《studio UG》6月22日聯名開跑！ - 中華新聞雲／中華日報",
+      "at": "06/22 04:55"
+    },
+    {
+      "lv": "y",
+      "txt": "自家「UG 聯發」新聞出現優惠詞「聯名」：未演先轟動！壽司郎ｘ西村優志《studio UG》聯名即將開跑 6 月 22 日起與熊貓大軍相約一起吃壽司！ - Paradaily",
+      "at": "06/22 04:55"
+    },
+    {
+      "lv": "y",
+      "txt": "自家「UG 聯發」新聞出現優惠詞「聯名」：壽司郎 × 西村優志《studio UG》聯名開跑！3款聯名餐點、19款趣味周邊、主題店登場 - BEAUTY美人圈",
+      "at": "06/22 04:55"
+    },
+    {
+      "lv": "y",
+      "txt": "自家「UG 聯發」新聞出現優惠詞「聯名」：2026 壽司郎外遇兔聯名：studio UG 周邊盲袋、熱炒杯滿額贈、6大主題店門市整理 - Women's Health",
+      "at": "06/22 04:55"
+    },
+    {
+      "lv": "y",
+      "txt": "自家「UG 聯發」新聞出現優惠詞「聯名」：壽司郎×《studio UG》萌爆聯名開跑！5大角色齊聚吃壽司、19款周邊一次收 - 鏡報",
+      "at": "06/22 04:55"
     }
   ],
   "watchlist": [
     {
-      "title": "Dcard 美食板：手搖飲新品討論串",
-      "url": "https://www.dcard.tw/f/food",
-      "meta": "論壇 · 38 則回應"
+      "title": "壽司郎暑假聯名《studio UG》 3款限定餐點、19款周邊今起登場 - 壹蘋新聞網",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUlhJZUtndzd3YTI1ZDVGNFRPOHN2QTl6YnhJZWprdnhqNmthTDVJUEJfOEtqeVJsYmRVNmxpVkNGLXpVU3k2R2xVREdodTlxT0pDR0dad1JZTHp4VmdmUUU5NVNONVk5VjlLemJOSDFYWnZKRHFoZ0tOcmt4bEFlZA?oc=5",
+      "meta": "壹蘋新聞網 · UG 聯發 · 今天"
     },
     {
-      "title": "競品「迷客夏」買一送一 Threads 爆文",
-      "url": "https://www.threads.net",
-      "meta": "Threads · 估互動高"
+      "title": "可不可紅茶24、奶茶28元！比買一送一便宜　CoCo冰沙49元夏至優惠 - NOWnews今日新聞",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9GeWJXbzBSNHBZVlVHbjJaa3RBc290NjRYbEFzYVdrYnVwZEJCaGtCQ3RyXzVPWjM5SVByVnZ2Sk10VFE1ak1rcmFuRFPSAVJBVV95cUxOQmR1UWp0cWJwZWFoZU44dGdMSnUyZm9JRmVqbXROWWN2RnZnTkhLdldTLU9aWTdDb1NkOFlEWWJyUnlWUHk1aEtKSnpYcUotV2dR?oc=5",
+      "meta": "NOWnews今日新聞 · 可不可 · 昨天"
+    },
+    {
+      "title": "2026迷客夏菜單推薦！網友激推必喝TOP8排行榜，跟著這樣點絕對不踩雷 - Marie Claire 美麗佳人",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9IaXM0dmVEaUFiYjNsUWNSTE1uMWxmYlp6Y3A0dVh1OU93MkxTclF4X1JCamJLNHU4bGgtTElKQ3FVNEoyY2s0YkVSYjlycm1LblhyMlRwSEVia01ZT2RodXVB?oc=5",
+      "meta": "Marie Claire 美麗佳人 · 迷客夏 · 昨天"
+    },
+    {
+      "title": "夏日消暑必喝手搖！85度C、大茗、可不可、路易莎、甜夏等 9 家「水果系飲品」優惠懶人包 - 上報Up Media",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5DMVZaVU8wMDd5NzRDRFczQ1dtZnRqMm9BNjl6cFNwbHZQUU5RcFc3LTFpOS13X1FacEk5V1JueE5pdjAyZUM1QkZvd3RJV180NTZ5RlRMRlFTMEU?oc=5",
+      "meta": "上報Up Media · 可不可 · 2 天前"
+    },
+    {
+      "title": "端午節CoCo、UG買一送一！迷客夏2杯99元、麻古9折手搖飲料優惠 - NOWnews今日新聞",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1tdFZfRWxpZU5sRmhwUXo0b0E5VWFNZmZEZzNXcVVUcWpEZmllMEdaVjZLSjBXdHhNNXlod25mQ2c3NmRfQUQwMjNySGQ0alJMOHfSAVJBVV95cUxNbXRWX0VsaWVObEZocFF6NG9BOVVhTWZmRGczV3FVVHFqRGZpZTBHWlY2S0owV3R4TTV5aHduZkNnNzZkX0FEMDIzckhkNGpSTDh3?oc=5",
+      "meta": "NOWnews今日新聞 · UG 聯發 · 3 天前"
+    },
+    {
+      "title": "端午節CoCo、UG買一送一！迷客夏2杯99元、麻古9折手搖飲料優惠 - NOWnews今日新聞",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1tdFZfRWxpZU5sRmhwUXo0b0E5VWFNZmZEZzNXcVVUcWpEZmllMEdaVjZLSjBXdHhNNXlod25mQ2c3NmRfQUQwMjNySGQ0alJMOHfSAVJBVV95cUxNbXRWX0VsaWVObEZocFF6NG9BOVVhTWZmRGczV3FVVHFqRGZpZTBHWlY2S0owV3R4TTV5aHduZkNnNzZkX0FEMDIzckhkNGpSTDh3?oc=5",
+      "meta": "NOWnews今日新聞 · 迷客夏 · 3 天前"
     }
   ],
   "voc_clusters": [
@@ -3467,5 +3528,225 @@
         "龜記"
       ]
     }
+  },
+  "buzzNews": [
+    {
+      "title": "壽司郎暑假聯名《studio UG》 3款限定餐點、19款周邊今起登場 - 壹蘋新聞網",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUlhJZUtndzd3YTI1ZDVGNFRPOHN2QTl6YnhJZWprdnhqNmthTDVJUEJfOEtqeVJsYmRVNmxpVkNGLXpVU3k2R2xVREdodTlxT0pDR0dad1JZTHp4VmdmUUU5NVNONVk5VjlLemJOSDFYWnZKRHFoZ0tOcmt4bEFlZA?oc=5",
+      "source": "壹蘋新聞網",
+      "brand": "UG 聯發",
+      "date": "今天"
+    },
+    {
+      "title": "可不可紅茶24、奶茶28元！比買一送一便宜　CoCo冰沙49元夏至優惠 - NOWnews今日新聞",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9GeWJXbzBSNHBZVlVHbjJaa3RBc290NjRYbEFzYVdrYnVwZEJCaGtCQ3RyXzVPWjM5SVByVnZ2Sk10VFE1ak1rcmFuRFPSAVJBVV95cUxOQmR1UWp0cWJwZWFoZU44dGdMSnUyZm9JRmVqbXROWWN2RnZnTkhLdldTLU9aWTdDb1NkOFlEWWJyUnlWUHk1aEtKSnpYcUotV2dR?oc=5",
+      "source": "NOWnews今日新聞",
+      "brand": "可不可",
+      "date": "昨天"
+    },
+    {
+      "title": "2026迷客夏菜單推薦！網友激推必喝TOP8排行榜，跟著這樣點絕對不踩雷 - Marie Claire 美麗佳人",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9IaXM0dmVEaUFiYjNsUWNSTE1uMWxmYlp6Y3A0dVh1OU93MkxTclF4X1JCamJLNHU4bGgtTElKQ3FVNEoyY2s0YkVSYjlycm1LblhyMlRwSEVia01ZT2RodXVB?oc=5",
+      "source": "Marie Claire 美麗佳人",
+      "brand": "迷客夏",
+      "date": "昨天"
+    },
+    {
+      "title": "夏日消暑必喝手搖！85度C、大茗、可不可、路易莎、甜夏等 9 家「水果系飲品」優惠懶人包 - 上報Up Media",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5DMVZaVU8wMDd5NzRDRFczQ1dtZnRqMm9BNjl6cFNwbHZQUU5RcFc3LTFpOS13X1FacEk5V1JueE5pdjAyZUM1QkZvd3RJV180NTZ5RlRMRlFTMEU?oc=5",
+      "source": "上報Up Media",
+      "brand": "可不可",
+      "date": "2 天前"
+    },
+    {
+      "title": "端午節CoCo、UG買一送一！迷客夏2杯99元、麻古9折手搖飲料優惠 - NOWnews今日新聞",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1tdFZfRWxpZU5sRmhwUXo0b0E5VWFNZmZEZzNXcVVUcWpEZmllMEdaVjZLSjBXdHhNNXlod25mQ2c3NmRfQUQwMjNySGQ0alJMOHfSAVJBVV95cUxNbXRWX0VsaWVObEZocFF6NG9BOVVhTWZmRGczV3FVVHFqRGZpZTBHWlY2S0owV3R4TTV5aHduZkNnNzZkX0FEMDIzckhkNGpSTDh3?oc=5",
+      "source": "NOWnews今日新聞",
+      "brand": "UG 聯發",
+      "date": "3 天前"
+    },
+    {
+      "title": "端午節CoCo、UG買一送一！迷客夏2杯99元、麻古9折手搖飲料優惠 - NOWnews今日新聞",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1tdFZfRWxpZU5sRmhwUXo0b0E5VWFNZmZEZzNXcVVUcWpEZmllMEdaVjZLSjBXdHhNNXlod25mQ2c3NmRfQUQwMjNySGQ0alJMOHfSAVJBVV95cUxNbXRWX0VsaWVObEZocFF6NG9BOVVhTWZmRGczV3FVVHFqRGZpZTBHWlY2S0owV3R4TTV5aHduZkNnNzZkX0FEMDIzckhkNGpSTDh3?oc=5",
+      "source": "NOWnews今日新聞",
+      "brand": "迷客夏",
+      "date": "3 天前"
+    },
+    {
+      "title": "2026端午連假手搖優惠開跑！CoCo人氣冰沙最低49元 、可不可新品第二杯6折｜熱門話題 - 網路溫度計 DailyView",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1sNkdqNkhTQ1FPeFpDMkZ2ZDhDV3o4eXh1cGJteDdnZ1RPV3NESGE0MnEzUmRONU1zSmNsdWlQQnVhQUpuUnRaQzJXU0l5SlVCaFJz?oc=5",
+      "source": "網路溫度計 DailyView",
+      "brand": "可不可",
+      "date": "3 天前"
+    },
+    {
+      "title": "2026夏季迷客夏必喝排行TOP10！員工「隱藏版特調」內行點法公開，Threads大推蜜桃烏龍 - 女人我最大",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9hSm9GMDNTRmJFN2U4aS1meHRqbTZSRnA1aEY1TXZXTVYwRlFRZjkwTzlqSWFCc1cwbTN1cElmR2FEQUNpNV9PbnVHd3BBN0RlSWNN?oc=5",
+      "source": "女人我最大",
+      "brand": "迷客夏",
+      "date": "4 天前"
+    },
+    {
+      "title": "手搖飲端午連假優惠　UG買1送1、迷客夏2杯99元 - ETtoday旅遊雲",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1MGlhZmFMZkpNMFlSM3ZQdERWclNydC1xb3NWb25aZjBKbWNKRXZxWEV3QVB5NWxFbEZWYXdxbm9rYW1fbmlHaEpvSmhfdExqVU1jTGUwSDVUZ9IBbEFVX3lxTE12MnJFZlloM2pTQnI4alN6ckRBd2dRdkx0amR1aFk2MkxkekdyNkl0UVdTMG5jVnpJbHlad2F2UnVxZEVodWlGeWVCLUxNb1FJcVU5X09rZHdzWF9vVG9vSFZwWEFzbEwyX2pqWg?oc=5",
+      "source": "ETtoday旅遊雲",
+      "brand": "UG 聯發",
+      "date": "4 天前"
+    },
+    {
+      "title": "手搖飲端午連假優惠　UG買1送1、迷客夏2杯99元 - ETtoday旅遊雲",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1MGlhZmFMZkpNMFlSM3ZQdERWclNydC1xb3NWb25aZjBKbWNKRXZxWEV3QVB5NWxFbEZWYXdxbm9rYW1fbmlHaEpvSmhfdExqVU1jTGUwSDVUZ9IBbEFVX3lxTE12MnJFZlloM2pTQnI4alN6ckRBd2dRdkx0amR1aFk2MkxkekdyNkl0UVdTMG5jVnpJbHlad2F2UnVxZEVodWlGeWVCLUxNb1FJcVU5X09rZHdzWF9vVG9vSFZwWEFzbEwyX2pqWg?oc=5",
+      "source": "ETtoday旅遊雲",
+      "brand": "迷客夏",
+      "date": "4 天前"
+    },
+    {
+      "title": "迷客夏TOP10飲品排行榜出爐！咀嚼控最愛奪第一、員工私藏喝法一次看 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMiigNBVV95cUxOekRDMTd3WE5ocGVlS212QkcxMFJGb2g5bEZhQU10elo0V2NqUXV1QzE2LTVyV2JDTTBiOGY2TjBtY19Qb2d4cmNkSGJwTXNqeF9uNnVRZUxIUXlVemttUXFUWGQ0Yy1pT2xsQUJ6WTI2U1Z1MWJaQ2FkVlBfanlQTURVTzhOS2VENXc4VlByQzZ4QVY4dFQyYmUzSzlZUWZmTGxFRkpvN1BlT0xhbU9qTTFQbDdqQ3lVV1ZxOGs4YzJkdkxoSlFuNW9tblVPQURUWGpRYXVtYUpES1hTYWdReGpNWmljcWRIZF8yLS1PMEtaQ0c2LU4ySTNHQ3l2cG1fTHRSV0xid1J1eG1URWFnWExpbXR4NEUzR3pENnE0elNNTk96ZElBR3J6d3BkREszOGJvWHJLTXAzM1JjUHNyUlZfNDFDbVd6cFZNNm1QMUxtOGdYNmhqSGtqcU5sSGExdnI5dFBtOWp3TWlGanpjbHdmczZwLVlzeEt6dXpuSTNBYXg1ZTlLZUxR?oc=5",
+      "source": "Yahoo新聞",
+      "brand": "迷客夏",
+      "date": "4 天前"
+    },
+    {
+      "title": "端午節優惠一次看！大苑子、UG、肯德基祭限時好康，飲料買1送1、炸雞桶46折起！ - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxOV0J0NjJTN2k1b3czQ2RkVVZDR3ZkbDZ2enp0V1F5dHVmUEdyVVBwaHY0Um94ZmFhZEtVUUdOZVdPVWpxYlEzdDBMOG81cVo2TE4ySEkwV096RGZQWDl3ZWM2ejJReVoyT2Q2a1hBakhManF3ZTQtR2g2Y2xIeXp6SlplNGFlOGpPQXk0RGZRYlQ5Z0tJMDlFcF9YTUZadDc1U1BLdENrZ1ZFSmN6OU1aTGU2Nkd1b1hfV2JIb0FNQVhtN1AwVlJyaFEwWlEwLXdLdXJ5dnVQaEYtV3k0T21JSGs4UjJvSGFkM0FUTEhncXF0MWNpOTJISlJPcTdWeTNuajhiSVJjOHJpQTJ6SkQxdXV3MHpDTVo2UVFmYkJPZFFwRmxEMVZCeUtURVp6ZENYVkFF?oc=5",
+      "source": "Yahoo新聞",
+      "brand": "UG 聯發",
+      "date": "5 天前"
+    },
+    {
+      "title": "UG買一送一｜UG TEA｜最新優惠 - 食尚玩家",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1MUXJ6aFNqWjF4cWVLN3FQX0F3RjVnVWtCZS0xNFJtenZORDhoWjktR0dWb1Y1eXF0SGF3M2MxNkg4aDh2eGlHOU9zVzVnZ2tNTTR6ZUlR?oc=5",
+      "source": "食尚玩家",
+      "brand": "UG 聯發",
+      "date": "5 天前"
+    },
+    {
+      "title": "壽司郎×西村優志「studio UG」6/22 聯名開跑 開心熊貓、戀愛兔 5 大人氣角色相約吃壽司 - GNN 新聞網",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1LRExoTE1rd0hsaklYT2VaZnFqZWplNXA2ZUJPWEJtSzIzU3YwNjZKamxHNnZ1RmRRVFN6a3VxcmlPdmptWVFlT3prTVNRS3JHV2tseXJTWE0?oc=5",
+      "source": "GNN 新聞網",
+      "brand": "UG 聯發",
+      "date": "5 天前"
+    },
+    {
+      "title": "戀愛兔登陸壽司郎！西村 優志《studio UG》聯名19款周邊、3款餐點、6家主題店6/22登場 - Harper's BAZAAR",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcl8yTkNFUzdnWVhKNG9HdWJ4dWVFRWk4UTlwakZfdG80Q0hxN0stSnFfdGRFczdaWnJmUHpGZVNub2dwVjR4Zy02alQtRkR2VXJDVGFBUEF1bnFJNjRsR3N2UDMxaGlZQjJSZWFIX3FrNEVzRHZrRmpPQmM0MlNqRDVQRFhvN2lueTBIRDNiaFE3bVc2ZGpFMG5EeHJ5S2c?oc=5",
+      "source": "Harper's BAZAAR",
+      "brand": "UG 聯發",
+      "date": "5 天前"
+    },
+    {
+      "title": "酷夏將至 迷客夏夏季10大消暑飲品公開 「珍珠娜杯紅茶拿鐵」經典奪冠 - 中華新聞雲／中華日報",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9LamJ3dzFIdlhxYmlMbkl4akE1N1dYOWJ1UWFzWXVqVV9FTnhEVEFlU2dsUi1CRGVwS3JtUlZCTHM1emNFaDQ4T3hSR250VkZ4UEE?oc=5",
+      "source": "中華新聞雲／中華日報",
+      "brand": "迷客夏",
+      "date": "7 天前"
+    },
+    {
+      "title": "50嵐喝手搖131元中千萬！餐飲發票幸運兒名單一次看 - 東森新聞",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1BTDFCc1hiazV1MkNFc0lBV0xETDVud0IxQjk1VEhqNV9VZHNiQ3A2ZFBIZDVUZHR2OWp2VE5DeFlLY3h5bl9PM05VYW05cW1nZTNwRg?oc=5",
+      "source": "東森新聞",
+      "brand": "50嵐",
+      "date": "9 天前"
+    },
+    {
+      "title": "知名手搖飲可不可紅茶違規！這家冰淇淋腸桿菌超標36倍吃下肚嚴重恐腹瀉- 營養好食 - TVBS 健康2.0",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9NUkhfdW52Q0xJcEczdUdZVzh4THYyTUlWeWpCUmtHWEhhUU03c3ZESjNzLXA5TFFJb0VjYkZ0Y2lKUnNVbF85Ym5CajN6RlFYS2xTbEx3?oc=5",
+      "source": "TVBS 健康2.0",
+      "brand": "可不可",
+      "date": "11 天前"
+    },
+    {
+      "title": "買一送一！最新手搖優惠：50嵐、可不可、CoCo、丘森茶室都有，星巴克買一送一同步登場 - BEAUTY美人圈",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5zNHVTR3BhM2ZJaG45U2hvV2s4cW02cVpNcTZ1c1VFaDltRU9lSTRKWWcwTFIwTUsxdTRZSjRtUFFiNHIxUnpRMkZUZkzSAVJBVV95cUxOb0pXc3NLeG9WaUxLOTc2OGpiUU9JQTNCbG1adzBkMG5YMHNVZlNNMl8wbjBycjBLdXBSdm1ZLTdfSnpfRTk3XzRySjdrdFNwY0t3?oc=5",
+      "source": "BEAUTY美人圈",
+      "brand": "50嵐",
+      "date": "12 天前"
+    },
+    {
+      "title": "2026 可不可菜單推薦！網評必喝Top10、最新菜單＆價格一次看 - BEAUTY美人圈",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9HbTdQeFUzc20tV0ZodnN0NEN2NE80YkU3cURLbnB0eXYzZ3ljQTF6b3N0SFZRRzk1OUJlSF9YdzVndUdQMjl4dlVKUEU?oc=5",
+      "source": "BEAUTY美人圈",
+      "brand": "可不可",
+      "date": "13 天前"
+    },
+    {
+      "title": "可不可推薦！「仲夏莓果系列」今日開賣，「這時間」到店再享新品優惠 - Harper's BAZAAR",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5JYTlFWENERGtmVC1pNTVuS29GSTFRWmhlbHF5dUNUUDFrb2hsbzdIcDVMbkJIUnJ5RE1sMHRWdUU1MS03aWlJYmtkOF9BU20ySTllTEdoaHpsLXRNVWxjZFhSV2JyRHlaUGpOellxUEZ0Q1Iw?oc=5",
+      "source": "Harper's BAZAAR",
+      "brand": "可不可",
+      "date": "14 天前"
+    },
+    {
+      "title": "「一沐日」必喝TOP10！人氣飲品榜單出爐，手搖控最愛不是「逮丸奶茶」 - Marie Claire 美麗佳人",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5ISDVyTjRYUXBLQzFSdnRzd2tIMWVlTFhvc0lsYnJqUlhpckZqeDlTdTF3ajRsSTNMa3Fjbm95ZW5WUzhGTW9TRjJJVUhvdWVEUks0amVrd3dIUjFMRjZLMmdB?oc=5",
+      "source": "Marie Claire 美麗佳人",
+      "brand": "一沐日",
+      "date": "14 天前"
+    },
+    {
+      "title": "UG/United-Guardian - 今日股價行情與走勢圖 - 股市爆料同學會 - CMoney",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTTB0bXhSRDBsaktOQXd3Qlh6SHNaT2lPYTZsWXpWQTFNc3JpdDJYZ1NBNHh6WjNDczd2SEtTRkNOWnZlSzNHV0pXQzBUb0o3Z3NteDZKM25LdHZLb3hMYjdtdWpGX3A2a0N5ZG5mOFlwVy1YOXhLVmlzcTJPWmNPQUhWUEl2MTVQVnc?oc=5",
+      "source": "CMoney",
+      "brand": "UG 聯發",
+      "date": "15 天前"
+    },
+    {
+      "title": "不拚黃金店面、不追爆款飲料！清心福全如何靠「巷弄兵法」穩坐全台店數第一？ - 食力 foodNEXT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE04bXpVYnk0QzBNWFFINVQtd3FQa0tpdHVTY3NOblllU0YxTnc2bWl3V2JnckllSXV3OFh4cWNHOThKQVpLelBOdHFVUnlWaE4tTTBtTzB2Y2ZNc1JXX2NKUVpFRUd2UQ?oc=5",
+      "source": "食力 foodNEXT",
+      "brand": "清心",
+      "date": "15 天前"
+    },
+    {
+      "title": "可不可3款「仲夏莓果」新品開賣！主打無咖啡因紫蘇檸檬，隱藏版紫蘇馥莓冰茶激推 - 妞新聞",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBfSC1hSUQ5alZMRnEwd2xhXzMzZGZuLUJFT0NBQ3pqR1RyREdnMy1aQ3VLRXJDUERqcGM3ckY1X2xqNFQ4QVhpRDNxTQ?oc=5",
+      "source": "妞新聞",
+      "brand": "可不可",
+      "date": "17 天前"
+    },
+    {
+      "title": "可不可「仲夏莓果系列」第2杯6折　發發開賣山茶花聯名飲品 - ETtoday旅遊雲",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Sb3NaSlh3enNQQi1OOVcxMTZuMkZQcVFJOTdsQmJ2MDBDTTViWUpqXy1XdDQwbkNWMkc1OXBNVFpqVlE1NVdfS0hGcXZuSFpKUE1UNzctLU9zd9IBbEFVX3lxTE1kQjF2eGgzUW5Eb2dIVXo1WWw3ZmpGYzhpXzJwWGdhM2pKX3ZHeVRaT1hTOUNmOFlJem1hTHhHVHRvQ2dnWGlqUnF6dEcycGd2dElTVVV0MFM0UEg1eWlkRjNaaldrclFfaEttMQ?oc=5",
+      "source": "ETtoday旅遊雲",
+      "brand": "可不可",
+      "date": "17 天前"
+    },
+    {
+      "title": "芒種CoCo、清心買一送一！西西里2杯99元　85度C咖啡第2杯半價 - NOWnews今日新聞",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFB2NkIzM3JVNVBPQzZYa1VQT0ZKSDJyby1KN3RjNDY2aFpuYU81aWpCUWNKU0pQTTBnRGpScEQteFd2Wk9WUkRfYUw5OGjSAVJBVV95cUxOMFVVZmVxM1Q5dGxqV0dRMmxYRUs5cU9VX3BZVG56dDNaV1dFZzZ4Q0VKUVVoSDdqak0wYmpITTNVTXZtem5mZVpCRmFMVTFWQm9B?oc=5",
+      "source": "NOWnews今日新聞",
+      "brand": "清心",
+      "date": "17 天前"
+    },
+    {
+      "title": "清心福全攜手超人氣IP「奧樂雞」第三波聯名紙杯登場！ - cnma.org.tw",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1CVzlBc2V6OHdIbXQxS2poUk1BajQ0Sm5NajJ1M3diNGV0UEFvdGRoNEt0UURVV1QwZkxvY1lzaDF3VEtDZk5Ibm5oTUMwZVNtRWhPMU4wZEV3RnZDam5FTlg2WQ?oc=5",
+      "source": "cnma.org.tw",
+      "brand": "清心",
+      "date": "17 天前"
+    },
+    {
+      "title": "喝50嵐中千萬發票！星巴克只花15元、吃麥當勞也中200萬 - TVBS新聞網",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBLNEg4R25ybHFVTWFxQmZ2Qm5JWmtHcEprOURfWGZQemQ1V21NdlhDVEVwakxLNGFvd0Z6S24yMlkteUk1dDNfdzJ1ME1aZw?oc=5",
+      "source": "TVBS新聞網",
+      "brand": "50嵐",
+      "date": "20 天前"
+    },
+    {
+      "title": "什麼ＸＸ態度！立領男怒飆50嵐店員「我客人耶！」…嗆：找人開車撞死你 - 三立新聞網SETN.com",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAzbVFST09BdXVxYkxrMzJDVm9kcmxWaFZVbVhJQ1FoRlhlSEZ5cnI1Z0Y1RklxQTZVSDNBd05HdVdYSFVDQWJMZURjNWt5UzI0T2d6UDZGN0vSAV9BVV95cUxPMHF5SzdfM3ZTQ2ctZ2ZKTUlzcFNvN19TSThRaW1lZTFlRzBTbEl3ak5KV2JGZzhHV1htYlFMOEVSZjZqdjdvTzhxNF9IWEFVbWU0eGYwYVRSQkhqSzdsSQ?oc=5",
+      "source": "三立新聞網SETN.com",
+      "brand": "50嵐",
+      "date": "23 天前"
+    }
+  ],
+  "buzzMeta": {
+    "generatedAt": "2026-06-22 04:55",
+    "news": 150,
+    "ptt": 28,
+    "trendsReal": true,
+    "pttReal": true,
+    "note": "新聞與趨勢為真實資料；社群互動(FB/IG/Threads)與情緒為估計，待付費來源或 AI 補。"
   }
 }
