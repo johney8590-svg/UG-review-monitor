@@ -83,6 +83,16 @@
     <div class="hint">設定只存在這台瀏覽器（localStorage），不會寫進公開原始碼。密語由後端比對，錯誤會被拒絕。</div>
   </div>
 
+  <!-- 立即刷新 -->
+  <div class="card">
+    <div class="toolbar" style="margin-bottom:6px">
+      <h2 style="margin:0">Google 評論資料</h2>
+      <button class="btn ghost sm" id="refreshBtn">↻ 立即刷新</button>
+    </div>
+    <div class="hint">手動觸發排程重抓全門市 Google 評論（約 1 分鐘）。需後端 PAT 含 <b>Actions: Read and write</b> 權限。完成後儀表板會在下次頁面更新時顯示新數字。</div>
+    <div class="status" id="refreshStatus"></div>
+  </div>
+
   <!-- 門市清單 -->
   <div class="card">
     <div class="toolbar">
@@ -217,6 +227,20 @@
       if(!res || !res.ok){ setStatus('err','儲存失敗：' + ((res&&res.error)||'無回應')); return; }
       setStatus('ok','已儲存 ' + res.count + ' 間門市，並 commit 到 repo。下一次排程會依此抓取。');
     }).catch(function(e){ $('saveBtn').disabled=false; if(e) setStatus('err','連線失敗。'); });
+  };
+
+  $('refreshBtn').onclick = function(){
+    persist();
+    var rs = $('refreshStatus');
+    var rset = function(kind,msg){ rs.className='status '+kind; rs.textContent=msg; };
+    var ot = $('refreshBtn').textContent;
+    $('refreshBtn').disabled = true; $('refreshBtn').textContent='觸發中…';
+    rset('info','觸發中…');
+    call('refresh').then(function(res){
+      $('refreshBtn').disabled=false; $('refreshBtn').textContent=ot;
+      if(!res || !res.ok){ rset('err','刷新失敗：' + ((res&&res.error)||'無回應')); return; }
+      rset('ok','已觸發重抓全門市 Google 評論，約 1 分鐘後完成。');
+    }).catch(function(e){ $('refreshBtn').disabled=false; $('refreshBtn').textContent=ot; if(e) rset('err','連線失敗。'); });
   };
 
   $('gasUrl').addEventListener('change', persist);

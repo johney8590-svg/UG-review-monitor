@@ -11,7 +11,8 @@ docs/admin.html  ──POST(JSON, 含通關密語)──▶  GAS doPost  ──G
 
 1. GitHub → Settings → Developer settings → **Fine-grained tokens** → Generate new token
 2. **Repository access**：Only select repositories → 只勾 `UG-review-monitor`
-3. **Permissions → Repository permissions → Contents：Read and write**（其餘維持 No access）
+3. **Permissions → Repository permissions → Contents：Read and write**
+   - 若要用 admin 頁的「↻ 立即刷新」鈕，再加 **Actions：Read and write**（觸發排程重抓評論用）。其餘維持 No access。
 4. 產生後複製 token（`github_pat_...`）。**只在下一步貼進 GAS，別貼到任何檔案或聊天視窗。**
 
 ## 二、部署 GAS

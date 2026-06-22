@@ -37,9 +37,14 @@ function doPost(e) {
       return json(trackSet_(body.item || {}));
     }
 
-    // 以下門市管理動作需要 GitHub Token
+    // 以下動作需要 GitHub Token
     if (!GH_TOKEN) {
-      return json({ ok: false, error: '後端未設定 GH_TOKEN（門市管理需要；追蹤功能不需要）' });
+      return json({ ok: false, error: '後端未設定 GH_TOKEN（門市管理／立即刷新需要；追蹤功能不需要）' });
+    }
+
+    // 立即刷新：觸發 GitHub Actions 排程重抓 Google 評論（PAT 需含 Actions:write）
+    if (body.action === 'refresh') {
+      return json(ghDispatch_(GH_TOKEN));
     }
 
     if (body.action === 'list') {
@@ -114,6 +119,26 @@ function ghPut_(token, dataObj, sha, message) {
   var bytes   = Utilities.newBlob(JSON.stringify(dataObj, null, 2)).getBytes();
   var content = Utilities.base64Encode(bytes);
   return ghApi_(token, 'put', { message: message, content: content, sha: sha, branch: BRANCH });
+}
+
+// 觸發 scrape.yml 排程（workflow_dispatch）；成功回 204。需 token 有 Actions:write。
+function ghDispatch_(token) {
+  var url = 'https://api.github.com/repos/' + REPO + '/actions/workflows/scrape.yml/dispatches';
+  var res = UrlFetchApp.fetch(url, {
+    method: 'post',
+    headers: {
+      Authorization: 'Bearer ' + token,
+      Accept: 'application/vnd.github+json',
+      'User-Agent': 'ug-store-admin'
+    },
+    contentType: 'application/json',
+    payload: JSON.stringify({ ref: BRANCH }),
+    muteHttpExceptions: true
+  });
+  var code = res.getResponseCode();
+  if (code === 204) return { ok: true, dispatched: true };
+  if (code === 403) return { ok: false, error: 'Token 缺 Actions:write 權限（請在 fine-grained PAT 加上）' };
+  return { ok: false, error: 'GitHub dispatch ' + code + '：' + res.getContentText().slice(0, 200) };
 }
 
 function json(obj) {
