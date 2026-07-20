@@ -1,19 +1,6 @@
 {
-  "today": "2026年07月19日",
+  "today": "2026年07月20日",
   "brands": [
-    {
-      "name": "可不可",
-      "self": false,
-      "score": 68,
-      "d": 0,
-      "news": 100,
-      "trends": 10,
-      "reviews": 0,
-      "social": 100,
-      "pos": null,
-      "neg": null,
-      "estimated": true
-    },
     {
       "name": "清心",
       "self": false,
@@ -28,27 +15,27 @@
       "estimated": true
     },
     {
-      "name": "一沐日",
+      "name": "可不可",
       "self": false,
-      "score": 61,
+      "score": 63,
       "d": 0,
       "news": 100,
-      "trends": 6,
+      "trends": 10,
       "reviews": 0,
-      "social": 75,
+      "social": 79,
       "pos": null,
       "neg": null,
       "estimated": true
     },
     {
-      "name": "迷客夏",
+      "name": "一沐日",
       "self": false,
       "score": 60,
       "d": 0,
       "news": 100,
-      "trends": 9,
+      "trends": 6,
       "reviews": 0,
-      "social": 67,
+      "social": 71,
       "pos": null,
       "neg": null,
       "estimated": true
@@ -56,12 +43,25 @@
     {
       "name": "50嵐",
       "self": false,
-      "score": 57,
+      "score": 59,
       "d": 0,
       "news": 100,
-      "trends": 18,
+      "trends": 19,
       "reviews": 0,
-      "social": 42,
+      "social": 50,
+      "pos": null,
+      "neg": null,
+      "estimated": true
+    },
+    {
+      "name": "迷客夏",
+      "self": false,
+      "score": 58,
+      "d": 0,
+      "news": 100,
+      "trends": 10,
+      "reviews": 0,
+      "social": 57,
       "pos": null,
       "neg": null,
       "estimated": true
@@ -69,13 +69,13 @@
     {
       "name": "UG 聯發",
       "self": true,
-      "score": 56,
+      "score": 47,
       "d": 0,
       "news": 100,
-      "trends": 15,
+      "trends": 16,
       "reviews": 0,
-      "social": 42,
-      "pos": 78,
+      "social": 7,
+      "pos": 77,
       "neg": 16,
       "estimated": false
     }
@@ -106,84 +106,79 @@
     {
       "lv": "y",
       "txt": "自家「UG 聯發」新聞出現優惠詞「買一送一」：[情報] UG飲料買一送一- 股市爆料同學會 - CMoney",
-      "at": "07/19 04:25"
-    },
-    {
-      "lv": "y",
-      "txt": "自家「UG 聯發」新聞出現優惠詞「買一送一」：奶茶買一送一｜UG TEA｜最新優惠 - 食尚玩家",
-      "at": "07/19 04:25"
-    },
-    {
-      "lv": "r",
-      "txt": "競品「迷客夏」新聞出現優惠詞「買一送一」：消暑優惠！CoCo飲料買一送一、迷客夏買就送甜點 - TVBS新聞網",
-      "at": "07/19 04:25"
-    },
-    {
-      "lv": "r",
-      "txt": "競品「迷客夏」新聞出現優惠詞「聯名」：迷客夏聯名beard papa's推「香草雲朵季」　還有卡士達奶酪新配料 - ETtoday旅遊雲",
-      "at": "07/19 04:25"
+      "at": "07/20 04:41"
     },
     {
       "lv": "r",
       "txt": "競品「迷客夏」新聞出現優惠詞「聯名」：鬍子爺爺X迷客夏聯名！必吃限定娜杯紅茶拿鐵泡芙 還有加料券 - Yahoo新聞",
-      "at": "07/19 04:25"
+      "at": "07/20 04:41"
     },
     {
       "lv": "r",
-      "txt": "競品「迷客夏」新聞出現優惠詞「聯名」：手搖飲買1送1爽喝CoCo！茶湯會plantica玫瑰醋75折、迷客夏聯名beard papa’s免費加料 - 玩咖Playing",
-      "at": "07/19 04:25"
+      "txt": "競品「迷客夏」新聞出現優惠詞「聯名」：迷客夏聯名beard papa's推「香草雲朵季」　還有卡士達奶酪新配料 - ETtoday旅遊雲",
+      "at": "07/20 04:41"
     },
     {
       "lv": "r",
-      "txt": "競品「迷客夏」新聞出現優惠詞「買一送一」：CoCo買一送一！蜜桃映烏龍、粉角拿鐵4大優惠　迷客夏免費加奶酪 - NOWnews今日新聞",
-      "at": "07/19 04:25"
+      "txt": "競品「迷客夏」新聞出現優惠詞「聯名」：迷客夏「香草卡士達飲」罪惡開喝！首聯名beard papa’s推卡士達奶酪、免費送泡芙 - 食尚玩家",
+      "at": "07/20 04:41"
     },
     {
       "lv": "r",
       "txt": "競品「迷客夏」新聞出現優惠詞「新品」：迷客夏「香草雲朵季」開跑！攜手beard papa’s推3款手搖新品，獨家「娜杯紅茶拿鐵泡芙」必吃 - 妞新聞",
-      "at": "07/19 04:25"
+      "at": "07/20 04:41"
     },
     {
       "lv": "r",
       "txt": "競品「迷客夏」新聞出現優惠詞「聯名」：【2026夏季手搖推薦】麻古酪梨芒果甘露回歸！迷客夏泡芙聯名、可不可柚檸紅茶5大話題新飲品消暑必喝 - GirlStyle 女生日常",
-      "at": "07/19 04:25"
+      "at": "07/20 04:41"
     },
     {
       "lv": "r",
-      "txt": "競品「迷客夏」新聞出現優惠詞「聯名」：奶茶控別錯過！beard papa’s迷客夏聯名，娜杯紅茶拿鐵泡芙、QQ麻糬派限量吃。 - WalkerLand 窩客島",
-      "at": "07/19 04:25"
+      "txt": "競品「迷客夏」新聞出現優惠詞「聯名」：手搖飲買1送1爽喝CoCo！茶湯會plantica玫瑰醋75折、迷客夏聯名beard papa’s免費加料 - 玩咖Playing",
+      "at": "07/20 04:41"
+    },
+    {
+      "lv": "r",
+      "txt": "競品「迷客夏」新聞出現優惠詞「買一送一」：消暑優惠！CoCo飲料買一送一、迷客夏買就送甜點 - TVBS新聞網",
+      "at": "07/20 04:41"
+    },
+    {
+      "lv": "r",
+      "txt": "競品「迷客夏」新聞出現優惠詞「買一送一」：CoCo買一送一！蜜桃映烏龍、粉角拿鐵4大優惠　迷客夏免費加奶酪 - NOWnews今日新聞",
+      "at": "07/20 04:41"
     }
   ],
   "watchlist": [
     {
-      "title": "快訊／汐止可不可再增1店員確診　侯友宜：有南部旅遊史 - 三立新聞網SETN.com",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1kY2NMSmxfRkpzdWpEYjRNLXRSSVVULXNnRkpUVzhQOXdiRXpTUVFYV0VaMzdDamQycVNzQjFraVNLdW93SnRHUtIBTEFVX3lxTE1ITGFVbkI5eEE3d1V1ajhvdm5wUWduVDNCSE80QUF1ZnQ5aFlBd0M4RW5IdTN6UUR5d1MtdE1ab1dpZUdfMXg2WDd4NlI?oc=5",
-      "meta": "三立新聞網SETN.com · 可不可 · 昨天"
-    },
-    {
-      "title": "全台僅20人! 50嵐店員「穿這件圍裙」調飲精準度驚呆眾人： 手搖飲精算師 - MSN",
-      "url": "https://news.google.com/rss/articles/CBMirANBVV95cUxNb2VqMzlDSmdKTkNnQjZRUVh3TnRyWU0tUzNTd2VXTTEtREhjeW02MEZtNy1KWmowSE56U0FDVzFuS0lId1VTMU9SOTVwdDFpOFJIaERpTXZKUWVLdkR0dDRtanAxWlMyRUh3LUxaVDdUQUI5OUQwZklBazMtMnVvOFozbjQ2ckN1OXl5REk3VkRfcVlUREZ0WGZLdFlNdmp4czRoTDg2STMtQVRtTzF0eVVFY0t4ZTVpd1NGNXd5b3ZIZmdiQjRXdkZXb0lWTlZmekNrUDRmZ1hWQ1JuaWdBNWx2d09IWGJrU2xrUUlzaWVOcE8wUmkzRW5SblI1c2QxWmNTdE5ORlJabFdOeTVtSnBWeWU3Z3c1Q0VCcFdyaHAzdFFSa3dMdVE1TmpmUnJBYlA2ek5mckYtdTdDU3RKMEpfcEdNR0ZrZ2NudEJ3dnBlRy05MGxhUmpENGFKS2RQekstYVJhb2F0ZDF1RUxObW9sX2MtZ3NkcXh4UTluZVdkVmhfTl9QUndjbUxpRkpJMzhFVWtteXpLMVpVV1NXZFpGa05EcF9VdEJHOQ?oc=5",
-      "meta": "MSN · 50嵐 · 2 天前"
-    },
-    {
       "title": "Mister Donut × 一沐日聯名開賣！6款草仔粿甜甜圈售價、優惠一次看 - Yahoo新聞",
       "url": "https://news.google.com/rss/articles/CBMigwNBVV95cUxNVTU4dzl0aGc0Q3diendOWWdrZDYyY0I3UGlVM1FKNHhvUzVqYVZuR3hDSVhfZTg4djI3YkJLSjFZclQyRnRnMWxSN0RFX0V1U0dycUEzTElzM2tZV3pMMGJGM0JjZTRKV0VBU21EaFpaOURqSTRCcFYydEJyZnlDRTI5OS1Vck5sMng3RDUyaFNWMjNUbTlWSUVFVU5WTTdMZDVZYWIzLTRIUVpORXh2TXY3cnc5OUo4T05uZGphblBtZ2RJLWNQaDM4ZTlUdlZCem96cVJmYldUT2txTnBTeUtzaGE1ZHN3X0xWcFRwc1VtbmM0UUQwMjg2MnNMYkR6djJDSjE2cHZLX3pCRS1KcmVtZ3dvNFRaQ2RXeG1rTjJDWlZDY0toLUE3UDBiMmhsblU1NHJScDhoUmxoTTdEVDhBdzhxaUJaZElldUpQekNVbjl1a3NMZ1g4cmhsb3c4dXJiXzR4YjBmdGgyMVJpVkxVYkowMW9BU1ZlWUV5aWh2NGM?oc=5",
-      "meta": "Yahoo新聞 · 一沐日 · 3 天前"
+      "meta": "Yahoo新聞 · 一沐日 · 4 天前"
     },
     {
-      "title": "50嵐、得正輸了！台灣最強飲料店TOP10「冠軍是它」：真材實料有茶香、 品質穩強到沒對手 - 風傳媒",
+      "title": "50嵐、得正輸了！台灣最強飲料店TOP10「冠軍是它」：真材實料有茶香、 品質穩強到沒對手 - Storm.mg",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9RLWxEZ0VURklaZFgyRlpxbnFKS05uOFBRd20yZDZpMG81M2x0QzFZZ19zaUVTR3RhSk1xUUtDNDA5N0JPVTRfNThrZGppbU5D?oc=5",
-      "meta": "風傳媒 · 50嵐 · 3 天前"
+      "meta": "Storm.mg · 50嵐 · 4 天前"
+    },
+    {
+      "title": "手搖飲口味來了　肯德基X可不可期間限定「紅寶歐蕾蛋撻」 - 三立新聞網SETN.com",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5DMVdOaFRGWVo4MDJORnY0WjByUTM4N0Z6blZQN095YTJXZGNyakF4YmVzbzE2Xy1lcWw1bUlacjFTSWFiZUFYdtIBTEFVX3lxTFB3SHRtX1plN1lDMnh6bnJ2THhxRmhPTGdyVVBEMjlJOVhINzczZ1NRVzNaTmlySi01dTNsWmVFQ2JvMGt1Qm9oM0NqYmU?oc=5",
+      "meta": "三立新聞網SETN.com · 可不可 · 5 天前"
     },
     {
       "title": "夏季手搖新品！麻古茶坊「酪梨芒果甘露」回歸、可不可聯名55688限定喝 - 造咖",
       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1rWFpUcHViTUt5RnlHYlQ5M0RycVJZaExYTHZCeXFBeTNNclhMaWRjY3Bob1QwNTFUQ1pCUm4wdXhaYTJjcFljUUdkcjhJNVlyUkxYXzVsSQ?oc=5",
-      "meta": "造咖 · 可不可 · 4 天前"
+      "meta": "造咖 · 可不可 · 5 天前"
     },
     {
-      "title": "消暑優惠！CoCo飲料買一送一、迷客夏買就送甜點 - TVBS新聞網",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5FMEswWjE3aUZBZzVhcHJ6UmhUeWRBMlFzN1RnQ0lrZ0JSSDVkQ3NQY0p4VUdKakVwUkNBUk9OdzktV0hTNG51ZFQ0S2Z5UQ?oc=5",
-      "meta": "TVBS新聞網 · 迷客夏 · 4 天前"
+      "title": "（影）張秀卿演媽祖老公「不敢親近」 清心寡慾2週：牽手都急道歉 - 自由娛樂",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBFWDBVSzVyVEd1ZG1fUnYyUnZ4eUZMV1BDcmhiMG52Wk5SX0U0Wk0tX21weDI1NE9fbEpJZUhVUGc5RUJ6WWVIVkNqV2Mxdk1DUW1ZWkxWajhnRDlX0gFiQVVfeXFMTTNxNW9hckFzc2hhU0hNNzBvRGtsZkZ4cDlmdmpPcWhoeFlUWlRsNnhJWXJLZTQ0VFVmRjdlclg2UFBHZDVWQm1Pd0xwYW9HeE5WQ3QyS21VMXpnNkdfOWd5cFE?oc=5",
+      "meta": "自由娛樂 · 清心 · 7 天前"
+    },
+    {
+      "title": "募集三千張發票！中區50嵐首辦嵐星達人秀，產藝聯手見證基督恩典 - 基督教今日報",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBUc1labGlaWlZTUmZxckJWX3JnQktQN0ZpYlpSRlhjb2l4LU5TTEEtY2Rxb0R6OGxQNVVQQ0Jfd3VlbnA0ZndqYUk2ZE9Zdw?oc=5",
+      "meta": "基督教今日報 · 50嵐 · 11 天前"
     }
   ],
   "voc_clusters": [
@@ -227,40 +222,40 @@
   ],
   "trace": [
     {
-      "t": "4 天前",
-      "x": "迷客夏｜消暑優惠！CoCo飲料買一送一、迷客夏買就送甜點 - TVBS新聞網",
+      "t": "11 天前",
+      "x": "50嵐｜募集三千張發票！中區50嵐首辦嵐星達人秀，產藝聯手見證基督恩典 - 基督教今日報",
       "tag": "origin",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5FMEswWjE3aUZBZzVhcHJ6UmhUeWRBMlFzN1RnQ0lrZ0JSSDVkQ3NQY0p4VUdKakVwUkNBUk9OdzktV0hTNG51ZFQ0S2Z5UQ?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBUc1labGlaWlZTUmZxckJWX3JnQktQN0ZpYlpSRlhjb2l4LU5TTEEtY2Rxb0R6OGxQNVVQQ0Jfd3VlbnA0ZndqYUk2ZE9Zdw?oc=5"
     },
     {
-      "t": "4 天前",
+      "t": "7 天前",
+      "x": "清心｜（影）張秀卿演媽祖老公「不敢親近」 清心寡慾2週：牽手都急道歉 - 自由娛樂",
+      "tag": "amp",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBFWDBVSzVyVEd1ZG1fUnYyUnZ4eUZMV1BDcmhiMG52Wk5SX0U0Wk0tX21weDI1NE9fbEpJZUhVUGc5RUJ6WWVIVkNqV2Mxdk1DUW1ZWkxWajhnRDlX0gFiQVVfeXFMTTNxNW9hckFzc2hhU0hNNzBvRGtsZkZ4cDlmdmpPcWhoeFlUWlRsNnhJWXJLZTQ0VFVmRjdlclg2UFBHZDVWQm1Pd0xwYW9HeE5WQ3QyS21VMXpnNkdfOWd5cFE?oc=5"
+    },
+    {
+      "t": "5 天前",
       "x": "可不可｜夏季手搖新品！麻古茶坊「酪梨芒果甘露」回歸、可不可聯名55688限定喝 - 造咖",
       "tag": "amp",
       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1rWFpUcHViTUt5RnlHYlQ5M0RycVJZaExYTHZCeXFBeTNNclhMaWRjY3Bob1QwNTFUQ1pCUm4wdXhaYTJjcFljUUdkcjhJNVlyUkxYXzVsSQ?oc=5"
     },
     {
-      "t": "3 天前",
-      "x": "50嵐｜50嵐、得正輸了！台灣最強飲料店TOP10「冠軍是它」：真材實料有茶香、 品質穩強到沒對手 - 風傳媒",
+      "t": "5 天前",
+      "x": "可不可｜手搖飲口味來了　肯德基X可不可期間限定「紅寶歐蕾蛋撻」 - 三立新聞網SETN.com",
+      "tag": "amp",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5DMVdOaFRGWVo4MDJORnY0WjByUTM4N0Z6blZQN095YTJXZGNyakF4YmVzbzE2Xy1lcWw1bUlacjFTSWFiZUFYdtIBTEFVX3lxTFB3SHRtX1plN1lDMnh6bnJ2THhxRmhPTGdyVVBEMjlJOVhINzczZ1NRVzNaTmlySi01dTNsWmVFQ2JvMGt1Qm9oM0NqYmU?oc=5"
+    },
+    {
+      "t": "4 天前",
+      "x": "50嵐｜50嵐、得正輸了！台灣最強飲料店TOP10「冠軍是它」：真材實料有茶香、 品質穩強到沒對手 - Storm.mg",
       "tag": "amp",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9RLWxEZ0VURklaZFgyRlpxbnFKS05uOFBRd20yZDZpMG81M2x0QzFZZ19zaUVTR3RhSk1xUUtDNDA5N0JPVTRfNThrZGppbU5D?oc=5"
     },
     {
-      "t": "3 天前",
+      "t": "4 天前",
       "x": "一沐日｜Mister Donut × 一沐日聯名開賣！6款草仔粿甜甜圈售價、優惠一次看 - Yahoo新聞",
       "tag": "amp",
       "url": "https://news.google.com/rss/articles/CBMigwNBVV95cUxNVTU4dzl0aGc0Q3diendOWWdrZDYyY0I3UGlVM1FKNHhvUzVqYVZuR3hDSVhfZTg4djI3YkJLSjFZclQyRnRnMWxSN0RFX0V1U0dycUEzTElzM2tZV3pMMGJGM0JjZTRKV0VBU21EaFpaOURqSTRCcFYydEJyZnlDRTI5OS1Vck5sMng3RDUyaFNWMjNUbTlWSUVFVU5WTTdMZDVZYWIzLTRIUVpORXh2TXY3cnc5OUo4T05uZGphblBtZ2RJLWNQaDM4ZTlUdlZCem96cVJmYldUT2txTnBTeUtzaGE1ZHN3X0xWcFRwc1VtbmM0UUQwMjg2MnNMYkR6djJDSjE2cHZLX3pCRS1KcmVtZ3dvNFRaQ2RXeG1rTjJDWlZDY0toLUE3UDBiMmhsblU1NHJScDhoUmxoTTdEVDhBdzhxaUJaZElldUpQekNVbjl1a3NMZ1g4cmhsb3c4dXJiXzR4YjBmdGgyMVJpVkxVYkowMW9BU1ZlWUV5aWh2NGM?oc=5"
-    },
-    {
-      "t": "2 天前",
-      "x": "50嵐｜全台僅20人! 50嵐店員「穿這件圍裙」調飲精準度驚呆眾人： 手搖飲精算師 - MSN",
-      "tag": "amp",
-      "url": "https://news.google.com/rss/articles/CBMirANBVV95cUxNb2VqMzlDSmdKTkNnQjZRUVh3TnRyWU0tUzNTd2VXTTEtREhjeW02MEZtNy1KWmowSE56U0FDVzFuS0lId1VTMU9SOTVwdDFpOFJIaERpTXZKUWVLdkR0dDRtanAxWlMyRUh3LUxaVDdUQUI5OUQwZklBazMtMnVvOFozbjQ2ckN1OXl5REk3VkRfcVlUREZ0WGZLdFlNdmp4czRoTDg2STMtQVRtTzF0eVVFY0t4ZTVpd1NGNXd5b3ZIZmdiQjRXdkZXb0lWTlZmekNrUDRmZ1hWQ1JuaWdBNWx2d09IWGJrU2xrUUlzaWVOcE8wUmkzRW5SblI1c2QxWmNTdE5ORlJabFdOeTVtSnBWeWU3Z3c1Q0VCcFdyaHAzdFFSa3dMdVE1TmpmUnJBYlA2ek5mckYtdTdDU3RKMEpfcEdNR0ZrZ2NudEJ3dnBlRy05MGxhUmpENGFKS2RQekstYVJhb2F0ZDF1RUxObW9sX2MtZ3NkcXh4UTluZVdkVmhfTl9QUndjbUxpRkpJMzhFVWtteXpLMVpVV1NXZFpGa05EcF9VdEJHOQ?oc=5"
-    },
-    {
-      "t": "昨天",
-      "x": "可不可｜快訊／汐止可不可再增1店員確診　侯友宜：有南部旅遊史 - 三立新聞網SETN.com",
-      "tag": "amp",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1kY2NMSmxfRkpzdWpEYjRNLXRSSVVULXNnRkpUVzhQOXdiRXpTUVFYV0VaMzdDamQycVNzQjFraVNLdW93SnRHUtIBTEFVX3lxTE1ITGFVbkI5eEE3d1V1ajhvdm5wUWduVDNCSE80QUF1ZnQ5aFlBd0M4RW5IdTN6UUR5d1MtdE1ab1dpZUdfMXg2WDd4NlI?oc=5"
     }
   ],
   "stores": [
@@ -283,9 +278,9 @@
     {
       "name": "UG遠東GARDEN CITY大巨蛋店",
       "rating": 3.9,
-      "reviews": 539,
+      "reviews": 541,
       "dRating": 0.0,
-      "newToday": 0,
+      "newToday": 2,
       "neg": 2
     },
     {
@@ -309,7 +304,7 @@
       "rating": 3.9,
       "reviews": 1115,
       "dRating": 0.0,
-      "newToday": 1,
+      "newToday": 0,
       "neg": 0
     },
     {
@@ -325,7 +320,7 @@
       "rating": 4.2,
       "reviews": 969,
       "dRating": 0.0,
-      "newToday": 1,
+      "newToday": 0,
       "neg": 0
     },
     {
@@ -339,10 +334,10 @@
     {
       "name": "UG中壢新生店",
       "rating": 3.8,
-      "reviews": 385,
+      "reviews": 386,
       "dRating": 0.0,
       "newToday": 1,
-      "neg": 1
+      "neg": 0
     },
     {
       "name": "UG台北西湖店",
@@ -357,7 +352,7 @@
       "rating": 4.2,
       "reviews": 525,
       "dRating": 0.0,
-      "newToday": 1,
+      "newToday": 0,
       "neg": 2
     },
     {
@@ -387,9 +382,9 @@
     {
       "name": "UG中和南勢角店",
       "rating": 4.6,
-      "reviews": 589,
+      "reviews": 590,
       "dRating": 0.0,
-      "newToday": 0,
+      "newToday": 1,
       "neg": 1
     },
     {
@@ -411,7 +406,7 @@
     {
       "name": "UG板橋中正店",
       "rating": 4.4,
-      "reviews": 528,
+      "reviews": 529,
       "dRating": 0.0,
       "newToday": 1,
       "neg": 1
@@ -421,7 +416,7 @@
       "rating": 4.3,
       "reviews": 377,
       "dRating": 0.0,
-      "newToday": 2,
+      "newToday": 0,
       "neg": 3
     },
     {
@@ -438,7 +433,7 @@
       "reviews": 105,
       "dRating": 0,
       "newToday": 0,
-      "neg": 1
+      "neg": 2
     },
     {
       "name": "UG新竹民生店",
@@ -510,15 +505,15 @@
       "reviews": 321,
       "dRating": 0.0,
       "newToday": 0,
-      "neg": 1
+      "neg": 2
     },
     {
       "name": "UG中山大直店",
       "rating": 4,
       "reviews": 58,
-      "dRating": -0.9,
+      "dRating": 0,
       "newToday": 0,
-      "neg": 1
+      "neg": 0
     },
     {
       "name": "UG彰化彰基店",
@@ -554,11 +549,11 @@
     },
     {
       "name": "UG台北石牌店",
-      "rating": 3.7,
-      "reviews": 48,
-      "dRating": 0.0,
-      "newToday": 0,
-      "neg": 3
+      "rating": 3.6,
+      "reviews": 49,
+      "dRating": -0.1,
+      "newToday": 1,
+      "neg": 2
     },
     {
       "name": "UG苗栗頭份店",
@@ -589,7 +584,7 @@
       "rating": 4.3,
       "reviews": 76,
       "dRating": 0.0,
-      "newToday": 1,
+      "newToday": 0,
       "neg": 1
     },
     {
@@ -627,9 +622,9 @@
     {
       "name": "UG台中豐原店",
       "rating": 4.3,
-      "reviews": 151,
+      "reviews": 152,
       "dRating": 0.0,
-      "newToday": 0,
+      "newToday": 1,
       "neg": 0
     },
     {
@@ -661,15 +656,15 @@
       "rating": 4.3,
       "reviews": 86,
       "dRating": 0.0,
-      "newToday": 1,
+      "newToday": 0,
       "neg": 0
     },
     {
       "name": "UG竹北勝利店",
-      "rating": 4,
-      "reviews": 131,
-      "dRating": 0,
-      "newToday": 0,
+      "rating": 3.9,
+      "reviews": 132,
+      "dRating": -0.1,
+      "newToday": 1,
       "neg": 2
     },
     {
@@ -692,8 +687,8 @@
       "name": "UG內壢忠孝店",
       "rating": 4.1,
       "reviews": 71,
-      "dRating": -0.1,
-      "newToday": 3,
+      "dRating": 0.0,
+      "newToday": 0,
       "neg": 2
     },
     {
@@ -710,7 +705,7 @@
       "reviews": 40,
       "dRating": 0.0,
       "newToday": 0,
-      "neg": 0
+      "neg": 1
     },
     {
       "name": "UG樹林中山店",
@@ -723,10 +718,10 @@
     {
       "name": "UG新竹新豐店",
       "rating": 4.4,
-      "reviews": 90,
+      "reviews": 91,
       "dRating": 0.0,
-      "newToday": 0,
-      "neg": 0
+      "newToday": 1,
+      "neg": 1
     },
     {
       "name": "UG桃園龍潭店",
@@ -746,18 +741,18 @@
     },
     {
       "name": "UG高雄鳳山店",
-      "rating": 4.3,
-      "reviews": 14,
-      "dRating": 0.4,
-      "newToday": 0,
-      "neg": 2
+      "rating": 4.1,
+      "reviews": 15,
+      "dRating": -0.2,
+      "newToday": 1,
+      "neg": 1
     },
     {
       "name": "UG台中沙鹿店",
       "rating": 4.7,
       "reviews": 63,
       "dRating": 0.0,
-      "newToday": 2,
+      "newToday": 0,
       "neg": 1
     },
     {
@@ -765,8 +760,8 @@
       "rating": 4.3,
       "reviews": 1911,
       "dRating": 0.0,
-      "newToday": 1,
-      "neg": 1
+      "newToday": 0,
+      "neg": 0
     },
     {
       "name": "UG羅東民權店",
@@ -795,17 +790,17 @@
     {
       "name": "UG中山南西店",
       "rating": 4.9,
-      "reviews": 876,
+      "reviews": 882,
       "dRating": 0.0,
-      "newToday": 12,
+      "newToday": 6,
       "neg": 1
     },
     {
       "name": "UG宜蘭礁溪店",
       "rating": 4.8,
-      "reviews": 218,
+      "reviews": 220,
       "dRating": 0.0,
-      "newToday": 0,
+      "newToday": 2,
       "neg": 0
     },
     {
@@ -819,25 +814,33 @@
   ],
   "gReviews": [
     {
-      "store": "UG高雄鳳山店",
+      "store": "UG台中沙鹿店",
       "stars": 5,
-      "date": "3 天前",
-      "author": "CHIEN-SHENG",
-      "text": "品項好喝，最愛純茶不苦澀。\n75元的蜜桃紅烏龍真的很好喝！～大推微糖微冰～\n店員們都很認真，能協助顧客解決會員app使用上的問題。\n這家飲料店已回購多次，品質如一較不會有踩雷問題，可見在SOP的訓練非常紮實。",
-      "ts": 1784164406
+      "date": "6 天前",
+      "author": "mia Lai",
+      "text": "甘甜好喝，服務佳",
+      "ts": 1784010982
     },
     {
-      "store": "UG高雄鳳山店",
-      "stars": 1,
+      "store": "UG嘉義文化店",
+      "stars": 5,
       "date": "11 天前",
-      "author": "雙u",
-      "text": "7/8第一次遇到問店員「桂花青烏龍跟茶花紅烏龍有什麼不一樣嗎？」 店員盡然回我：就茶不一樣。\n講什麼廢話？貴店、貴品牌是這樣訓練員工的？ 還有雙手插在胸前的，看了超！不！舒！服！！\n看了評論覺得UG欸..應該沒那麼差吧？..去買過一次之後真的謝謝一次店欸 那一排不是只有你們賣飲料🙄 一星都不想給",
-      "ts": 1783525130
+      "author": "Ming Yan",
+      "text": "「茶花紅烏龍奶茶」敲豪喝！！\n本人順口度：微糖去冰\n順口到停不下來，3分鐘*乾完*😋",
+      "ts": 1783585086
+    },
+    {
+      "store": "UG花蓮中山店",
+      "stars": 4,
+      "date": "11 天前",
+      "author": "Cute Cindy",
+      "text": "跟風一下，聽說年輕人最近都在買UG...\n身為年輕人當然要來買呀 ....\n\n今天下午2.去現場直接買，也沒有線上預訂\n結果有看到優惠券，用下去折扣,我覺得很便宜，我三窨十五茉也很好喝，服務的店員人也很親切，他的保冷袋也建議可以購買，蠻實用的、也很fashion..\n\n但缺點就是附近不太好停車，畢竟位於花蓮市區，然後我覺得微冰冰塊超多，其實可以少一點....",
+      "ts": 1783584231
     },
     {
       "store": "UG台中沙鹿店",
       "stars": 5,
-      "date": "13 天前",
+      "date": "14 天前",
       "author": "小李",
       "text": "新開店\n裝潢明亮  店員服務好\n保冷袋很有質感😍😍\nQR點餐一直無法登入\n不知道是不是太多人使用緣故\n所以最後還是排隊點餐😗😗",
       "ts": 1783338242
@@ -845,7 +848,7 @@
     {
       "store": "UG台中沙鹿店",
       "stars": 5,
-      "date": "13 天前",
+      "date": "14 天前",
       "author": "黑黑",
       "text": "蠻喜歡外包裝的～",
       "ts": 1783335189
@@ -853,7 +856,7 @@
     {
       "store": "UG遠東GARDEN CITY大巨蛋店",
       "stars": 1,
-      "date": "13 天前",
+      "date": "14 天前",
       "author": "Gina Tsai",
       "text": "昨天在用線上點了飲料，後來手機系統顯示已經完成於是我們就過去領，到了現場打包區的女店員卻只是不耐煩的說是員工誤按，然後就沒有然後，在這過程中我們的單號始終在領取螢幕上，手機也還是顯示已完成，再加上因為它號碼一直在螢幕上，所以根本無從判斷什麼時候輪到自己，只能聽現場叫號，所以我們也無法離開，整個過程就這樣在現場乾等了40分鐘，哪都不能去，還因此錯過了演唱會前面的表演，說實在的我覺得體驗非常糟糕，尤其是當事情發生的時候就只是一句輕描淡寫的說員工按錯了？然後就這樣？一點不好意思的感覺，處理方式也沒有，當下也沒有改正app或是提醒，整件事情下來就是我花錢，但是我還要為了店家自己員工的失誤買單是嗎？如果你們對於自己的系統這麼不熟悉那幹嘛還要用？",
       "ts": 1783334961
@@ -861,7 +864,7 @@
     {
       "store": "UG虎尾林森店",
       "stars": 4,
-      "date": "13 天前",
+      "date": "14 天前",
       "author": "Ze",
       "text": "葡柚十五茉：微糖微冰柚子果肉會苦，可能要甜一點，80有點貴可能水果類還是要大苑子",
       "ts": 1783332129
@@ -869,7 +872,7 @@
     {
       "store": "UG桃園南崁店",
       "stars": 1,
-      "date": "14 天前",
+      "date": "15 天前",
       "author": "Elon Zack",
       "text": "已經發生三次才來留評論的，真心建議UG總公司：可以理解人手不足所以有人應徵就錄用嘗試的無奈，但建議還是必須觀察櫃檯人員對待客人的服務態度，南崁店的櫃檯服務員已經不止一次愛理不理，講話很小聲，讓人感覺點餐是造成他的麻煩與困擾；甚至到因為他詢問的很小聲，我們沉住氣禮貌的用正常音量的跟他再次確認，他通常會沒有回應，必須再詢問一次然後他才會點頭或回答，然後感覺是不耐煩的，不看客人也不會再說話，儘管如此，我們會變成自言自語「刷會員點數、用Line Pay、存載具…」這些都不會得到櫃檯人員的回應，總之就是「讓客人自己主動表示客氣，但櫃檯人員並不會理會客人的消費體驗」。\n這種消費體驗已經發生三次以上了，而且身邊的家人朋友都有同感，感想是「店員態度不好，不會想要再去消費。每次去都覺得好像欠他的、南崁UG本來就服務態度不好有別家飲料店幹嘛去這家」這是大家的真實感受。\n如果UG南崁店有認真想要在努力經營的話，強烈建議審視你們櫃檯人員的應對方式，從開幕的排隊人潮，到現在變成門可羅雀，這會是主要原因之一。\n原本是UG愛好者，到現在就算送優惠券也不想去了，點數寧可放到過期的原主顧之一。",
       "ts": 1783263287
@@ -877,7 +880,7 @@
     {
       "store": "UG虎尾林森店",
       "stars": 5,
-      "date": "14 天前",
+      "date": "15 天前",
       "author": "張宜柔",
       "text": "飲料好喝、服務好👍招待新品桂花奶茶好喝，妹妹很漂亮🤩🤩",
       "ts": 1783227664
@@ -885,7 +888,7 @@
     {
       "store": "UG台中沙鹿店",
       "stars": 2,
-      "date": "15 天前",
+      "date": "16 天前",
       "author": "嘛啊啊",
       "text": "朱槿普洱鮮奶茶加茶凍\n給一根長得莫名其妙的吸管有夠難吸\n喝的有夠痛苦",
       "ts": 1783172842
@@ -893,23 +896,15 @@
     {
       "store": "UG台中沙鹿店",
       "stars": 5,
-      "date": "15 天前",
+      "date": "16 天前",
       "author": "Yan-Lin Zeng",
       "text": "不太需要等，也不錯喝，只是他的特色小吸管，真的吸的挺累的😅",
       "ts": 1783167189
     },
     {
-      "store": "UG台中沙鹿店",
-      "stars": 4,
-      "date": "15 天前",
-      "author": "BF G",
-      "text": "剛開幕應該開放試喝飲品，提升自家茶品的見光率。",
-      "ts": 1783151025
-    },
-    {
       "store": "UG高雄鳳山店",
       "stars": 1,
-      "date": "15 天前",
+      "date": "16 天前",
       "author": "林小靖",
       "text": "茶不是沒味道就是太澀\n店家處理事情非常不積極，出問題一直推給總公司，等了三天沒給任何後續處理事情的態度跟電話，非常的爛\n千萬要注意，這個店家連基本點數登入都會疏忽，開幕到現在我們消費感受都極度的差，為何高雄別間店家沒發生問題，在本店卻一直都是問題，他店長說都是總公司的錯\n\n點數沒登入會員總公司問題\n茶太澀總公司問題\n茶沒味總公司問題\n店長處理事情只能推給總公司？",
       "ts": 1783148881
@@ -917,7 +912,7 @@
     {
       "store": "UG台北石牌店",
       "stars": 1,
-      "date": "16 天前",
+      "date": "17 天前",
       "author": "Akira Sakai",
       "text": "厚抹奶\n難喝\n有抹茶但是沒有抹茶的厚度和濃度\n有奶的口感，但是沒有奶香和脂香\n一杯95還中杯\n而且一定要少冰\n還不如喝7-11的抹茶拿鐵\n看了一下你們還有服務態度的問題\n這麼好的牌子\n可惜啊…\n喝和服務都到了這個地步…",
       "ts": 1783055648
@@ -925,7 +920,7 @@
     {
       "store": "UG宜蘭礁溪店",
       "stars": 5,
-      "date": "17 天前",
+      "date": "18 天前",
       "author": "陳育濬",
       "text": "好喝、服務人員態度非常好.",
       "ts": 1782969614
@@ -933,15 +928,23 @@
     {
       "store": "UG宜蘭礁溪店",
       "stars": 5,
-      "date": "17 天前",
+      "date": "18 天前",
       "author": "ㄚ咘",
       "text": "第一次來飲料店有冷氣可以吹 招牌奶茶真的蠻好喝的，下次再來",
       "ts": 1782968344
     },
     {
+      "store": "UG汐止中興店",
+      "stars": 1,
+      "date": "18 天前",
+      "author": "戴淑蓉",
+      "text": "訂線上自取，到門市進去跟人員說要取單，人員告知飲料製作好在旁邊自己找，到旁邊櫃子要自己裝袋時，因有自備“UG保冷袋”，但沒有紙杯架，且櫃子旁邊就直接放一堆杯架（就放在飲料旁邊），上面也沒寫說杯架要付費，就拿了一個，人員過了一下子才告知說，杯架要付費....\n當下我就說可是其他店都會附，只有你們家再收錢，店員就說因為他們是加盟店，其他的是直營店，我就說好，那我買一個....畢竟使用者付費，這個我接受，後來店員才說一個10元，我們是保冷袋+紙杯架一起賣.......我就問，我不可以買杯架就好了嗎？店員就說都是這樣一組賣......扯耶！！！我只想買杯架回去還不行，還要我再多買保冷袋.....自家就是太多他們家的差評保冷袋....品質真的很差！！！！常常拆開一下或是提一下保冷袋就破掉.....我就不想在買垃圾袋回去....又很不環保.....紙杯架是真的沒辦法...有時候飲料倒在上面弄髒，汰換的快......都說要環保.....你們自己保冷袋如果品質很好，叫我買一個加杯架我OK，但是你們保冷袋品質不好，還硬要這樣一組一起給人家販售...真的很不OK，總之之後一定不會再到這間“加盟店”消費了！！！以後都還是回到”直營店”買比較舒適！！！",
+      "ts": 1782965796
+    },
+    {
       "store": "UG竹北勝利店",
       "stars": 5,
-      "date": "20 天前",
+      "date": "21 天前",
       "author": "Alan Tseng",
       "text": "茶香四溢，不甜好吃，服務不錯👍",
       "ts": 1782733265
@@ -949,7 +952,7 @@
     {
       "store": "UG高雄鳳山店",
       "stars": 5,
-      "date": "20 天前",
+      "date": "21 天前",
       "author": "劉安妮",
       "text": "店員服務很好💖\n超級愛15茉奶茶💚",
       "ts": 1782729026
@@ -957,7 +960,7 @@
     {
       "store": "UG高雄鳳山店",
       "stars": 5,
-      "date": "22 天前",
+      "date": "23 天前",
       "author": "潘映丹",
       "text": "服務好，正妹們",
       "ts": 1782553479
@@ -965,15 +968,31 @@
     {
       "store": "UG台中勤美店",
       "stars": 5,
-      "date": "22 天前",
+      "date": "23 天前",
       "author": "Mia chu",
       "text": "★★★★★\n\n來勤美逛街時順道買了 UG，整體印象很好。\n\n茶香很自然，不會被甜味蓋過，喝得出茶葉本身的層次，品質相當穩定。\n\n店面設計很有質感，服務人員也很親切，出杯速度快，就算人多也不用等太久。\n\n很推薦買一杯後到草悟道散步，悠閒享受台中的午後時光。\n\n之後來勤美商圈，我還會想再回訪。\n\n#花爺推薦\n#iwork花屋",
       "ts": 1782549202
     },
     {
-      "store": "UG台南東寧店",
+      "store": "UG高雄鳳山店",
+      "stars": 3,
+      "date": "25 天前",
+      "author": "黃昱騰",
+      "text": "這價位的飲料喝起來普\n買五杯每杯都少裝這麼多\n有點誇張了吧==",
+      "ts": 1782389208
+    },
+    {
+      "store": "UG高雄鳳山店",
       "stars": 5,
       "date": "26 天前",
+      "author": "Ching",
+      "text": "騎摩托車去比較方便\n因濱山街路較小條 車流量也算大",
+      "ts": 1782335885
+    },
+    {
+      "store": "UG台南東寧店",
+      "stars": 5,
+      "date": "27 天前",
       "author": "Fa Rong Chen",
       "text": "店員服務態度很好 很用心的推薦 以及分享有什麼會員優惠 茶也很好喝 很值得嚐鮮看看～～",
       "ts": 1782233063
@@ -981,7 +1000,7 @@
     {
       "store": "UG台中豐原店",
       "stars": 5,
-      "date": "27 天前",
+      "date": "28 天前",
       "author": "SallyCho",
       "text": "因為豐原店才知道UG，真的超好喝，必須給大大的讚！不知道喝什麼可以請店員推薦，外送人也很好，很適合聚會一起喝，朋友都很喜歡😍😍😍",
       "ts": 1782156775
@@ -989,7 +1008,7 @@
     {
       "store": "UG中和南勢角店",
       "stars": 4,
-      "date": "27 天前",
+      "date": "28 天前",
       "author": "Matcha",
       "text": "第一次體驗，覺得飲料整體味道有點太甜了。",
       "ts": 1782138104
@@ -997,7 +1016,7 @@
     {
       "store": "UG台中豐原店",
       "stars": 5,
-      "date": "27 天前",
+      "date": "28 天前",
       "author": "呂育昇",
       "text": "飲料好喝👍\n環境乾淨、服務品質非常滿意 大推！",
       "ts": 1782136185
@@ -1005,7 +1024,7 @@
     {
       "store": "UG士林捷運店",
       "stars": 1,
-      "date": "30 天前",
+      "date": "31 天前",
       "author": "Tiffany",
       "text": "剛剛用線上點餐 第一次點了士林店的ug\n哇塞，第一次喝到U G是完全沒有花香味的飲料\n我明明點的是15 茉UG奶茶\n怎麼一點味道都沒有\n讓我真的傻眼\n\n喝別家分店都沒有這個問題😩😩😩\n第一次喝ug 有到覺得大踩雷的問題",
       "ts": 1781867651
@@ -1013,7 +1032,7 @@
     {
       "store": "UG花蓮中山店",
       "stars": 5,
-      "date": "31 天前",
+      "date": "32 天前",
       "author": "呱呱呱",
       "text": "服務員姊姊人超級好，特別為他寫評論！！真的超好喝，我們昨天快五點去排了20分鐘，但真的很好喝而且袋子好好看！",
       "ts": 1781763830
@@ -1021,7 +1040,7 @@
     {
       "store": "UG桃園龍潭店",
       "stars": 5,
-      "date": "32 天前",
+      "date": "33 天前",
       "author": "Chihling Hsu",
       "text": "飲料好喝🥤\n男店員服務態度親切\n包裝提袋都很漂亮😻",
       "ts": 1781697623
@@ -1029,7 +1048,7 @@
     {
       "store": "UG嘉義文化店",
       "stars": 4,
-      "date": "32 天前",
+      "date": "33 天前",
       "author": "destroy",
       "text": "平日生意也還不錯，點了茶花紅烏龍，味道就是想像中的感覺，少了點驚艷，整體質感還算不錯！",
       "ts": 1781688059
@@ -1037,7 +1056,7 @@
     {
       "store": "UG桃園龍潭店",
       "stars": 5,
-      "date": "34 天前",
+      "date": "35 天前",
       "author": "萱（Shuan）",
       "text": "點熱的做冰的…下雨天真的懶的騎車回去換…\n\n謝謝店長回覆～還是很好喝沒事😆\n會再去買的🧡",
       "ts": 1781510047
@@ -1045,7 +1064,7 @@
     {
       "store": "UG台中豐原店",
       "stars": 4,
-      "date": "34 天前",
+      "date": "35 天前",
       "author": "wangwang gold",
       "text": "環境乾淨明亮\n\n點了三窨十五茉鮮奶茶\n奶香茶香偏清淡\n整體中規中矩",
       "ts": 1781506476
@@ -1053,7 +1072,7 @@
     {
       "store": "UG花蓮中山店",
       "stars": 5,
-      "date": "34 天前",
+      "date": "35 天前",
       "author": "天心",
       "text": "店家生意好所以外帶多杯有不小心用錯，其餘都很不錯，飲料好喝",
       "ts": 1781497940
@@ -1061,7 +1080,7 @@
     {
       "store": "UG基隆廟口店",
       "stars": 5,
-      "date": "35 天前",
+      "date": "36 天前",
       "author": "張魚芳",
       "text": "服務很好\n有一位可愛的店員\n幫我用的奶蓋⋯好美😍",
       "ts": 1781449114
@@ -1069,7 +1088,7 @@
     {
       "store": "UG花蓮中山店",
       "stars": 5,
-      "date": "35 天前",
+      "date": "36 天前",
       "author": "吳文義",
       "text": "店員親切有耐心，排隊過程中還會提供試喝飲料，很用心的新店家！",
       "ts": 1781446581
@@ -1077,7 +1096,7 @@
     {
       "store": "UG高雄美麗島店",
       "stars": 5,
-      "date": "35 天前",
+      "date": "36 天前",
       "author": "李偉銘",
       "text": "人超級好店員（中間黑色口罩收傘店員）\n6/14 下午4點35分下大雨\n我妹下車拿三杯飲料\n回程路上還主動幫忙撐傘讓我妹可以慢慢走回車上\n大好人必須留言 願店裡可以好好激勵此種表現\n謝謝\n沒有要內卷 只是工作要主動真的不容易\np.s我妹才12歲所以跟正不正沒關係：）",
       "ts": 1781426723
@@ -1085,7 +1104,7 @@
     {
       "store": "UG基隆廟口店",
       "stars": 1,
-      "date": "35 天前",
+      "date": "36 天前",
       "author": "Eva Lin",
       "text": "6/14下午13:00 號碼單號226\n與店員正在點飲料，在正後方機器操作機器店員已經開始點機器裝牛奶，最後聽到要點中杯但她已經裝好大杯牛奶，就對著機器比中指，問點餐同事怎麼辦。\n\n在客人面前店員還比中指行為很沒禮貌",
       "ts": 1781414316
@@ -1093,7 +1112,7 @@
     {
       "store": "UG桃園龍潭店",
       "stars": 5,
-      "date": "36 天前",
+      "date": "37 天前",
       "author": "小野",
       "text": "不茶不奶也不濃…\n喝起來水水的，味道很淡…\n這….是調製失誤嗎？\n感覺買了一杯水奶茶😮‍💨\n沒關係，我還是會給你們5星\n希望你們自己喝喝看這個品項…\n飲料店一級戰區，加油吧",
       "ts": 1781361415
@@ -1101,15 +1120,7 @@
     {
       "store": "UG花蓮中山店",
       "stars": 5,
-      "date": "36 天前",
-      "author": "8號",
-      "text": "裝璜袋子杯子漂亮.好喝.店員服務親切.一大早就來排隊",
-      "ts": 1781319939
-    },
-    {
-      "store": "UG花蓮中山店",
-      "stars": 5,
-      "date": "37 天前",
+      "date": "38 天前",
       "author": "張維平",
       "text": "今天去UG開幕第一天，現場人潮很多，但整體排隊動線安排得不錯\n門口有工作人員協助加入會員，也用紙本先幫忙點單，讓等待過程比較有秩序\n這次買了三窨十五茉，無糖正常冰茶感比較明顯，五分糖正常冰喝起來比較順口，香氣也柔和許多\n店面裝潢和包裝都很有質感，從杯身到紙袋都看得出品牌有用心，給人的感覺不只是買飲料，而是有完整的品牌體驗\n以開幕第一天來說，服務流程和現場狀況都算穩定，之後會想再來試試其他品項\n期待中",
       "ts": 1781260668
@@ -1117,7 +1128,7 @@
     {
       "store": "UG彰化彰基店",
       "stars": 1,
-      "date": "37 天前",
+      "date": "38 天前",
       "author": "彰化大美女",
       "text": "杯底破掉…幸好重要東西沒濕\n但店員服務很好，小可惜",
       "ts": 1781248812
@@ -1125,7 +1136,7 @@
     {
       "store": "UG新莊幸福店",
       "stars": 1,
-      "date": "38 天前",
+      "date": "39 天前",
       "author": "Y H",
       "text": "新品抹茶看起來很好喝，還標榜厚抹鮮奶，點了外送結果喝起來跟水一樣…淡到不行的茶味且完全沒有奶味，喝之前已經瘋狂搖過確保他是均勻的！超級失望，還要115元，震驚消費者",
       "ts": 1781157286
@@ -1133,7 +1144,7 @@
     {
       "store": "UG桃園龍潭店",
       "stars": 5,
-      "date": "38 天前",
+      "date": "39 天前",
       "author": "Yuri",
       "text": "以後還會再回購的！❤️",
       "ts": 1781153146
@@ -1141,7 +1152,7 @@
     {
       "store": "UG台中大甲店",
       "stars": 5,
-      "date": "38 天前",
+      "date": "39 天前",
       "author": "李佩芳",
       "text": "服務好速度快！\n好評有送提袋",
       "ts": 1781148044
@@ -1149,7 +1160,7 @@
     {
       "store": "UG台北石牌店",
       "stars": 5,
-      "date": "38 天前",
+      "date": "39 天前",
       "author": "elton chen",
       "text": "最近喝到很順口的純茶，推薦 uG 石牌店 的桂花輕烏龍！這次點微糖少冰，入口先是淡雅桂花香，尾韻帶著輕烏龍的清爽茶感，不苦不澀很耐喝。炎熱天氣來一杯剛剛好，整體清新又有層次，會讓人想再回購。",
       "ts": 1781142737
@@ -1157,15 +1168,23 @@
     {
       "store": "UG桃園龍潭店",
       "stars": 5,
-      "date": "39 天前",
+      "date": "40 天前",
       "author": "Elvan Young",
       "text": "終於輪到龍潭了，飲料品質都一樣，棒棒",
       "ts": 1781075571
     },
     {
+      "store": "UG台中北平店",
+      "stars": 2,
+      "date": "41 天前",
+      "author": "Syuan",
+      "text": "買很多次朱槿普洱鮮奶茶3分糖微冰\n這次在店內外帶，約2分鐘內喝第一口覺得偏淡，味道和以往不太一樣，折返回去請店員調整，但店員說他們的糖是按機器的所以不可能沒有甜、冰塊的部分都是正常的量沒有太多或太少，還有特地調監視器出來證明自己的SOP步驟正確。\n\n雖然有補一杯朱槿普洱鮮奶茶5分糖微冰給我，\n但我的疑問是打開封膜後發現3分糖的顏色偏深？茶味及奶味都不及5分甜的濃，和以往我在別家分店買的有差異，請問這是哪個環節出問題？",
+      "ts": 1781020324
+    },
+    {
       "store": "UG高雄巨蛋店",
       "stars": 4,
-      "date": "41 天前",
+      "date": "42 天前",
       "author": "白豆漿",
       "text": "茶飲、店面設計、杯身和提袋都很有質感，服務態度也很親切。\n不過提袋需要另外加購 10 元，雖然袋子設計漂亮，但還是覺得有點小小扣分。🍃🧋✨",
       "ts": 1780951003
@@ -1173,7 +1192,7 @@
     {
       "store": "UG彰化員林店",
       "stars": 5,
-      "date": "41 天前",
+      "date": "42 天前",
       "author": "Monica Lee",
       "text": "店員服務態度親切，耐心教我加入會員☺️",
       "ts": 1780927138
@@ -1181,7 +1200,7 @@
     {
       "store": "UG桃園藝文店",
       "stars": 3,
-      "date": "42 天前",
+      "date": "43 天前",
       "author": "吳芷柔",
       "text": "剛剛買飲料，杯子掉到地上去，店員撿起來繼續用裝我點的飲料，在觀感上就打折了⋯⋯",
       "ts": 1780818795
@@ -1189,7 +1208,7 @@
     {
       "store": "UG汐止中興店",
       "stars": 1,
-      "date": "43 天前",
+      "date": "44 天前",
       "author": "主角光環",
       "text": "哇第一次喝到這麼難喝的奶綠這個十五茉茶味是苦的根本喝不出鮮奶的香味喝不到一半直接丟了，上次點奶蓋他們家奶蓋又油又膩，撒了堅果做的很漂亮又如何味道糟透了，也是沒喝完就丟",
       "ts": 1780752327
@@ -1197,7 +1216,7 @@
     {
       "store": "UG遠東GARDEN CITY大巨蛋店",
       "stars": 1,
-      "date": "44 天前",
+      "date": "45 天前",
       "author": "劉姝儀",
       "text": "感覺非常糟糕，明明點的比較貴的奶綠，最後卻拿了便宜的綠茶給我，而且還是我不喜歡的無糖品項。\n但生意這麼好，應該是不會多在意我一個負評。",
       "ts": 1780669892
@@ -1205,7 +1224,7 @@
     {
       "store": "UG斗六中山店",
       "stars": 4,
-      "date": "44 天前",
+      "date": "45 天前",
       "author": "黃敏惠",
       "text": "開幕大概1.2個月，生意很好，每次經過都有排隊人潮。\n上網爬文是說茶花紅烏龍很推，\n我們買了四杯的鮮奶茶，\n個人覺得朱槿普洱紅跟茶花紅烏龍：茶香足，好喝。\n不過小貴，但就是滿好喝的，所以有經過時都會買一下。",
       "ts": 1780655663
@@ -1213,7 +1232,7 @@
     {
       "store": "UG彰化彰基店",
       "stars": 5,
-      "date": "46 天前",
+      "date": "47 天前",
       "author": "Monica Lee",
       "text": "店面整潔舒適、飲料新鮮好喝",
       "ts": 1780480280
@@ -1221,7 +1240,7 @@
     {
       "store": "UG台南民生店",
       "stars": 5,
-      "date": "47 天前",
+      "date": "48 天前",
       "author": "榛榛",
       "text": "⭐️謝謝店家讓姨媽來的我這麼晚還能喝到熱熱的飲料，這是第二次購買，第一次買ug是買給朋友喝的，就很喜歡他們的袋子！❤️真的是很高級很安心，外送特別友好，自己也喝到了！真的好喝，對於飲料很挑惕的我，喝完很喜歡，看到評論有人說吸管設計不行，對於愛咬吸管加喜歡在車上喝飲料，這種設計非常適合我們的這種人💕吸管永遠不會爛爛的而且開口也衛生非常多！杯子的設計也超適合我常常不小心戳太大力導致紙膜的洞太大！😂😂😂\n推薦大家購買👍🏻👍🏻👍🏻👍🏻👍🏻",
       "ts": 1780417298
@@ -1229,7 +1248,7 @@
     {
       "store": "UG彰化彰基店",
       "stars": 4,
-      "date": "47 天前",
+      "date": "48 天前",
       "author": "吃喝玩樂趴趴走",
       "text": "茶花紅烏龍鮮奶茶，有淡淡果香，喝起來不錯挺順口，下次再試試別款",
       "ts": 1780403368
@@ -1237,7 +1256,7 @@
     {
       "store": "UG南投復興店",
       "stars": 5,
-      "date": "47 天前",
+      "date": "48 天前",
       "author": "翎渝",
       "text": "店內整體氛圍超級好❤️\n個人本身沒有喝飲料習慣，因為盆油關係認識了UG喝一次直接回不去💕\n茶的平衡發散的清香感，會讓人整天好心情！\n店員服務更是親和力滿分💯\n可以算是一家精品飲料店❤️\n喜翻喝飲料自己來感受囉～",
       "ts": 1780402664
@@ -1245,7 +1264,7 @@
     {
       "store": "UG台中東山店",
       "stars": 1,
-      "date": "48 天前",
+      "date": "49 天前",
       "author": "筠峰林",
       "text": "這樣叫微冰\n一杯飲料60塊 真的要賺成那樣\n連一點茶水都要貪\n受教了 不會再去了",
       "ts": 1780312361
@@ -1253,23 +1272,15 @@
     {
       "store": "UG台中黎明店",
       "stars": 1,
-      "date": "48 天前",
+      "date": "49 天前",
       "author": "Cheese Maker",
       "text": "很失望 點了「無糖」飲料 生日買一送一\n店員完全沒有提醒或是告知飲料本身有加桃子果醬等等 我喝起來是正常甜度超甜😭喝不下去\n可以理解飲料有本身調味但是至少先告知 我可以少加或是不添加果醬 超甜 浪費倒掉了",
       "ts": 1780301277
     },
     {
-      "store": "UG新竹新豐店",
-      "stars": 5,
-      "date": "48 天前",
-      "author": "喀喀",
-      "text": "環境乾淨明亮、還有股淡淡清香\n這次點三窨十五茉奶茶🤩🤩\n身為奶茶人很喜歡❤️\n整體感受非常好👍",
-      "ts": 1780292495
-    },
-    {
       "store": "UG彰化彰基店",
       "stars": 5,
-      "date": "48 天前",
+      "date": "49 天前",
       "author": "Y.Y. L.",
       "text": "一早經過搶先入店喝「茉窨極抺」，無糖冰不能調，店員推薦加一點奶精味道更濃厚，果然好喝，不會苦，又有抺茶味，奶味也不淡，融合在這杯裡味道各有奇特。",
       "ts": 1780278468
@@ -1277,7 +1288,7 @@
     {
       "store": "UG台北石牌店",
       "stars": 2,
-      "date": "49 天前",
+      "date": "50 天前",
       "author": "pui",
       "text": "服務好\n但茶不行❌苦澀 沒有茉莉花香",
       "ts": 1780226281
@@ -1285,7 +1296,7 @@
     {
       "store": "UG板橋中正店",
       "stars": 5,
-      "date": "49 天前",
+      "date": "50 天前",
       "author": "Fangting YE",
       "text": "好喝 已經回購多次 推薦朋友也很喜歡",
       "ts": 1780222748
@@ -1293,23 +1304,15 @@
     {
       "store": "UG樹林中山店",
       "stars": 5,
-      "date": "49 天前",
+      "date": "50 天前",
       "author": "游鎮遠",
       "text": "老闆親力親為，年輕又帥又有禮貌，服務態度超好，大家都來買看看！\n\n但身為老同學來敝鄉下開店也沒先通知一聲，不太厚道吧🙂",
       "ts": 1780208657
     },
     {
-      "store": "UG虎尾林森店",
-      "stars": 5,
-      "date": "50 天前",
-      "author": "七月初六·嬛",
-      "text": "服務態度好，米香玉露青茶更是沒的說，真的很好喝！！順口不澀",
-      "ts": 1780185207
-    },
-    {
       "store": "UG中和南勢角店",
       "stars": 2,
-      "date": "50 天前",
+      "date": "51 天前",
       "author": "WKS",
       "text": "可悠遊卡\n-\n第一次喝UG，點了招牌的十五茉，這不就是茉莉蜜茶的味道嗎？",
       "ts": 1780154240
@@ -1317,7 +1320,7 @@
     {
       "store": "UG蘆洲光華店",
       "stars": 2,
-      "date": "50 天前",
+      "date": "51 天前",
       "author": "bonzi bonzi",
       "text": "你們的茶很好喝也主動加了你們會員，有個建議想想還是提供給業主知道，就是你們的店員態度必須加強！取完飲料想順便了解其他商品資訊還沒問完某個女店員就轉身離開，當時店內也沒客人，不知你們的店員為何這麼不耐煩？買了很多次也觀察很多次，發現其他女店員在對待客人的時候聲音態度也相對冷漠，很假，很沒溫度，不知其他分店的員工如何，但你們這間店的真的不行，希望你們可以更好！因為我常常購買，不想因員工態度問題影響品茶的心情！\n那個不耐煩的女店員我沒注意名字，戴口罩綁馬尾，身材在裡面偏瘦小，沒戴眼鏡，有染髮(挑染?)\n飲料5顆星，態度太差扣了3顆，期待你們改善\nps.男店員態度就很好，是不錯的",
       "ts": 1780142165
@@ -1325,7 +1328,7 @@
     {
       "store": "UG虎尾林森店",
       "stars": 5,
-      "date": "50 天前",
+      "date": "51 天前",
       "author": "謝宜樺",
       "text": "奶茶的三窨十五茉  必買  香氣十足\n再搭配他們的吸管  喝起來真的很有感覺 讚👍🏼",
       "ts": 1780109175
@@ -1333,7 +1336,7 @@
     {
       "store": "UG新竹新豐店",
       "stars": 5,
-      "date": "51 天前",
+      "date": "52 天前",
       "author": "happy yo",
       "text": "UG新開幕 來朝聖一下 飲料好喝袋子優美👍",
       "ts": 1780032182
@@ -1341,7 +1344,7 @@
     {
       "store": "UG新竹新豐店",
       "stars": 5,
-      "date": "51 天前",
+      "date": "52 天前",
       "author": "抹茶拿鐵",
       "text": "服務人員親切，飲料好喝",
       "ts": 1780024470
@@ -1349,31 +1352,31 @@
     {
       "store": "UG新竹新豐店",
       "stars": 5,
-      "date": "52 天前",
+      "date": "53 天前",
       "author": "林風",
       "text": "開到新豐了～文青的包裝跟好喝的飲料。\n是說袋子可以不要太容易破掉嗎？",
       "ts": 1779970102
     },
     {
       "store": "UG新竹新豐店",
+      "stars": 2,
+      "date": "53 天前",
+      "author": "1珊",
+      "text": "點純茶，不知道吸到這什麼…",
+      "ts": 1779948469
+    },
+    {
+      "store": "UG新竹新豐店",
       "stars": 5,
-      "date": "52 天前",
+      "date": "53 天前",
       "author": "Judy",
       "text": "飲料很好喝！服務態度好😍",
       "ts": 1779936146
     },
     {
-      "store": "UG台北石牌店",
-      "stars": 1,
-      "date": "53 天前",
-      "author": "李",
-      "text": "店員服務態度超差 連飲料用甩的放在桌上 第一次遇到態度這麼差的店員",
-      "ts": 1779850075
-    },
-    {
       "store": "UG台中大里店",
       "stars": 5,
-      "date": "55 天前",
+      "date": "56 天前",
       "author": "紅茶.",
       "text": "蜜桃紅烏龍，無糖微冰，朋友強烈推薦，果肉本身有甜點，如果在加糖，就影響飲品口感，茶喝起來柔順，不會青澀苦味之類~",
       "ts": 1779724705
@@ -1381,7 +1384,7 @@
     {
       "store": "UG永和永安市場店",
       "stars": 4,
-      "date": "55 天前",
+      "date": "56 天前",
       "author": "預未來",
       "text": "凝綠厚抹鮮奶，三孔細吸管，慢慢品嚐",
       "ts": 1779712288
@@ -1389,7 +1392,7 @@
     {
       "store": "UG忠孝敦化店",
       "stars": 5,
-      "date": "55 天前",
+      "date": "56 天前",
       "author": "Twiz",
       "text": "（2025/11/4）\n不知道是不是因為吸管形狀的關係，喝起來很像對岸的霸王茶姬。買二杯附的袋子挺精美。",
       "ts": 1779675722
@@ -1397,7 +1400,7 @@
     {
       "store": "UG三重正義店",
       "stars": 5,
-      "date": "56 天前",
+      "date": "57 天前",
       "author": "夏米娜",
       "text": "服務人員的態度蠻好的。飲料好喝！可以回訪！店內乾淨整潔明亮！",
       "ts": 1779621290
@@ -1405,7 +1408,7 @@
     {
       "store": "UG高雄瑞隆店",
       "stars": 5,
-      "date": "56 天前",
+      "date": "57 天前",
       "author": "黃瑜萱",
       "text": "超好喝的 我去買別家的桂花烏龍花香味很重 但UG的剛剛好  奶茶類也不會很死甜！  袋子超美的 ❤️\n一直以為高雄沒開 今天查了才發現有 趕快衝去買",
       "ts": 1779617736
@@ -1413,7 +1416,7 @@
     {
       "store": "UG土城學府店",
       "stars": 1,
-      "date": "56 天前",
+      "date": "57 天前",
       "author": "鐘麗緹",
       "text": "點餐想說喝常溫，點餐服務人員說只有冰的跟熱的，我反問有溫的嗎？小姐一樣說冰的跟熱的，第一張照片的服務小姐，你倒下來在結帳小姐身上的態度真的讓人很不舒服點餐多做詢問你的態度讓人很不舒服，全店的態度差勁，身為服務業真的沒必要這樣態度，附上杯子上時間，本門市主管可以調監視器看",
       "ts": 1779616298
@@ -1421,7 +1424,7 @@
     {
       "store": "UG台中中科店",
       "stars": 2,
-      "date": "56 天前",
+      "date": "57 天前",
       "author": "JT H",
       "text": "店裡前台現在這個時間點只有一個小妹妹，然後他中文感覺沒有很流利！一個人忙東忙西的～實在是很可憐！所以請不要苛責她！我是要跟店的負責人抱怨～",
       "ts": 1779614733
@@ -1429,7 +1432,7 @@
     {
       "store": "UG桃園中正店",
       "stars": 5,
-      "date": "57 天前",
+      "date": "58 天前",
       "author": "Vivi",
       "text": "5/20初訪：細吸管也很韓風。\n5/23:假日比較早賣完，21:45紅烏龍沒了，鐵觀音也沒了，不是到23:00嗎？！不能信用卡結帳，Google map上面卻寫可以🙃。",
       "ts": 1779565932
@@ -1437,7 +1440,7 @@
     {
       "store": "UG桃園南崁店",
       "stars": 1,
-      "date": "57 天前",
+      "date": "58 天前",
       "author": "wu麗麗",
       "text": "用Foodpanda訂購三窨十五茉奶茶*2，店家缺項，擅自把品項更改成桂花輕烏龍奶茶，買A送來B，超誇張，第一次給別人負評，就給你們了！\n完全沒有收到更換訊息，打開平台也顯示不給取消訂單，一般缺項不應該是要先問過客人嗎？",
       "ts": 1779546358
@@ -1445,7 +1448,7 @@
     {
       "store": "UG羅東民權店",
       "stars": 1,
-      "date": "57 天前",
+      "date": "58 天前",
       "author": "Peru Ho",
       "text": "點了十五茉微糖微冰，竟然跟我昨天在中壢新生路上點同杯喝到的味道不一樣！！！這裡味道偏淡，總覺得少了茉莉花香味，好失望🥲（我自認是味覺非常敏銳的人，身邊朋友喝了幾口也這樣覺得，表示不是只有我這樣感覺）",
       "ts": 1779535934
@@ -1453,7 +1456,7 @@
     {
       "store": "UG信義永吉店",
       "stars": 1,
-      "date": "57 天前",
+      "date": "58 天前",
       "author": "Rita Chen",
       "text": "十五茉已經沒有茉莉香了…近期喝了兩次都很水，之前請店員重做後也是一樣，連店員自己都覺得沒有茉莉味…完全跟以前的品質不一樣了，好糟糕，不會再回購…",
       "ts": 1779512030
@@ -1461,15 +1464,23 @@
     {
       "store": "UG樹林中山店",
       "stars": 5,
-      "date": "58 天前",
+      "date": "59 天前",
       "author": "陳巧巧",
       "text": "可以線上點餐實在太棒了～天氣炎熱不用現場排隊等候、在家等待手機顯示可取餐再去現場拿飲料，真的很方便～",
       "ts": 1779479077
     },
     {
+      "store": "UG虎尾林森店",
+      "stars": 1,
+      "date": "59 天前",
+      "author": "黃天義",
+      "text": "桂花輕烏龍這杯飲料真的過譽了，75塊錢的性價比真的不高，跟飲冰室茶集差不多的口感，而且非常不好停車….",
+      "ts": 1779466208
+    },
+    {
       "store": "UG台中太平店",
       "stars": 5,
-      "date": "58 天前",
+      "date": "59 天前",
       "author": "澎湖夏艷",
       "text": "太平這裡開了間新店UG 就來試試看，主色綠色的店面很漂亮店門還有放代言藝人立牌給人十足專業的氛圍，飲料的品項也很獨特只有在這才喝的到，那飲料拿到手一定會先讚嘆一下因為飲料袋很漂亮，它這袋子材質是可保冷的可以重複使用，飲料杯也超漂亮的質感拉滿，然後重點來了賣飲料最重要的是口感好不好喝，不誇張口感真是太棒了，您在喝的時候看看飲料杯上的標籤，標籤它提示了這杯飲料的入口風味，吸一口飲料在口中細細的感受它的前、中、後味居然跟標籤上寫的一模一樣啊，他們精準掌握自己賣的飲料品項風味非常的專業，UG 的飲料走了一個平價精品風，飲料好喝帶有滿滿的驚奇，真的是超棒，自己買來喝還是帶給同事朋友喝都很適合！！",
       "ts": 1779452577
@@ -1477,7 +1488,7 @@
     {
       "store": "UG虎尾林森店",
       "stars": 5,
-      "date": "59 天前",
+      "date": "60 天前",
       "author": "陶樂絲",
       "text": "飲料好喝，店員動作很快，服務態度良好",
       "ts": 1779373325
@@ -1485,7 +1496,7 @@
     {
       "store": "UG竹北勝利店",
       "stars": 2,
-      "date": "59 天前",
+      "date": "60 天前",
       "author": "林",
       "text": "很可愛的一間店，隔壁飲料店都一堆人，只有這家員工比客人還多，櫃檯好像是教新人吧，然後其他人都在默默低頭滑手機，櫃檯擠鮮奶油更是可愛，2隻果蠅飛來飛去是要我看你們擠奶油還是看你們環境髒亂🤣\n我只喝過台北的，大概一個禮拜都會買一次，第一次喝竹北這邊，口感怎麼感覺很水😅",
       "ts": 1779361150
@@ -1493,15 +1504,23 @@
     {
       "store": "UG竹北博愛店",
       "stars": 2,
-      "date": "62 天前",
+      "date": "63 天前",
       "author": "Finder",
       "text": "嚐鮮第一次購買UG\n店員態度 不是很積極\n取餐叫號的時候 感受度真的不太好\n茶品一般",
       "ts": 1779066481
     },
     {
+      "store": "UG高雄巨蛋店",
+      "stars": 5,
+      "date": "64 天前",
+      "author": "王士方",
+      "text": "偶然想到來買一杯，結果意外的很好喝，茶香很順口很清爽，喝起來很舒服。店長服務也很親切，整體感覺很好，會想再回來買！",
+      "ts": 1779015586
+    },
+    {
       "store": "UG高雄美麗島店",
       "stars": 5,
-      "date": "63 天前",
+      "date": "64 天前",
       "author": "Ya Chang",
       "text": "超好喝買了幾次。但這次發生很神奇的事 湯匙包裝完整 沒被撕開 但裡面沒有湯匙 什麼啦🤣",
       "ts": 1779010678
@@ -1509,7 +1528,7 @@
     {
       "store": "UG南投復興店",
       "stars": 4,
-      "date": "64 天前",
+      "date": "65 天前",
       "author": "良的多元頻道",
       "text": "店面設計風格、色彩搭配，讓人吸睛！",
       "ts": 1778938815
@@ -1517,7 +1536,7 @@
     {
       "store": "UG竹北勝利店",
       "stars": 1,
-      "date": "64 天前",
+      "date": "65 天前",
       "author": "how yellow",
       "text": "櫃檯服務的身材巨大的小朋友甩態摔東西🤣 我傻眼，她說可以刷了我才可能拿起條碼刷，然後沒成功支付妳也臭臉給我這不知情的人看了，等妳同事問狀況妳竟然說：我都還沒弄好他就刷了🤣（再摔一次手上不知道什麼在桌上），支付不成功不是我問題妳不需要撒氣在我身上，不就是重來而已，我也沒說什麼，更何況使用折價券都是我親自提醒親自要求，妳本份根本就沒做好，不需要鬧脾氣欸\n帶回家教育訓練一下🤣\n客人不需要吃妳的情緒消費",
       "ts": 1778908379
@@ -1525,7 +1544,7 @@
     {
       "store": "UG高雄巨蛋店",
       "stars": 5,
-      "date": "64 天前",
+      "date": "65 天前",
       "author": "沈韋恩",
       "text": "衝著與伯牙絕弦相似的三窨十五茉來的，個人覺得大概70%相似，但還是少了一點香氣，不過整體來說是好喝的",
       "ts": 1778902552
@@ -1533,7 +1552,7 @@
     {
       "store": "UG台南東寧店",
       "stars": 5,
-      "date": "65 天前",
+      "date": "66 天前",
       "author": "葉于甄",
       "text": "用foodpanda點了一杯大杯三杯中杯，結果送來四杯都是中杯的…\n更新：有補送一杯了👍🏻",
       "ts": 1778843510
@@ -1541,7 +1560,7 @@
     {
       "store": "UG樹林中山店",
       "stars": 2,
-      "date": "65 天前",
+      "date": "66 天前",
       "author": "Zoey",
       "text": "建議還是安排好動線吧！\n人多塞著人行道 擋住人家去路 和要走到馬路上才能通行，多危險 整個亂七八糟",
       "ts": 1778825224
@@ -1549,7 +1568,7 @@
     {
       "store": "UG斗六中山店",
       "stars": 1,
-      "date": "66 天前",
+      "date": "67 天前",
       "author": "ERIC",
       "text": "不是，你上一組客人你就拿錯飲料，上一組客人有跟你反應，換我領餐， 因為我有買袋子就沒特地打開檢查，然後又拿錯，四杯三窨十五茉奶茶+一個四杯袋310，你一杯變成桂花烏龍45，我直接虧30，能注意一下嗎？不是要當奧客，連兩次給錯是有點誇張吧？",
       "ts": 1778744260
@@ -1557,7 +1576,7 @@
     {
       "store": "UG中山南西店",
       "stars": 5,
-      "date": "67 天前",
+      "date": "68 天前",
       "author": "驢驢",
       "text": "第一次喝UG飲料🥤\n包裝好有質感\n一杯45元\n生日優惠買一送一\n一分糖 很好喝\n\n整理這一個月的生日優惠\n順便整理手機相簿\n1.UG加入line好友 純茶買一送一\n2.珍煮丹加入line好友 復刻紅茶買一送一\n3.季緣加入line好友 同品項買一送一\n4.摩斯下載APP紅茶買一送一\n5.這味泰泰加入line好友套餐買一送一\n6.一幻拉麵🍜加入line好友買一送一(服務費另計)\n7.佩佩奶奶大份量義大利麵 加入line好友買一送一 入會禮100元可以馬上折\n8.丸龜加入line好友買炸物享中碗豆皮烏龍麵買一送一\n9.Habibi加入line好友 贈一顆馬卡龍\n10.洪瑞珍三明治 官網註冊送45元內三明治與35元沙琪瑪、裕珍馨加入line會員100元生日禮+入會禮30元\n11.御前上茶購買任一飲品送抹茶生乳捲\n12.Woosa鬆餅加入line會員松露薯條一份\n13.環球會員APP 下載註冊獲得100元電子商品禮卷 我在板橋車站B1兌換飯糰🍙\n14.爭鮮PLUS 下載APP註冊 消費就送鮭魚鰭\n15.玖仰加入line好友 消費送慢熟焦糖布丁一顆\n16.島語下載來美食APP入會禮折100元、生日禮瑪德蓮/茶包禮盒擇一\n17.大師兄銷魂麵舖加line好友註冊生日禮送一包乾拌麵￼\n18.無肉蔬食拉麵🍜主義生日需帶證件享一碗拉麵￼",
       "ts": 1778696313
@@ -1565,7 +1584,7 @@
     {
       "store": "UG樹林中山店",
       "stars": 5,
-      "date": "67 天前",
+      "date": "68 天前",
       "author": "Haha Wa",
       "text": "遇到史上最親切的飲料店，雨天心都暖了！🫶\n今天新開幕的樣子，但晚上下著超級大雨，幸好也因此不需要久候。從進門開始，櫃檯正在接電話，但旁邊的店員立刻帶著笑容請我稍等，讓人感覺很受重視。點餐時的店員也非常細心親切地確認內容。\n最窩心的是最後取餐時，店員還特別囑咐下雨天騎車要小心。😳 遇到的每位店員都這麼親切，下大雨也覺得專程跑這一趟很值得。每個店員都笑容滿面，讓人心情很好，這服務水準真的必須給五星好評！😍",
       "ts": 1778683666
@@ -1573,7 +1592,7 @@
     {
       "store": "UG樹林中山店",
       "stars": 5,
-      "date": "67 天前",
+      "date": "68 天前",
       "author": "風之旅人",
       "text": "誠意十足，生意興隆，前幾天經過，問甚麼時候營業，小伙子說星期三，隨即送了一杯飲料，真好喝，開慕又來排了買了",
       "ts": 1778646017
@@ -1581,7 +1600,7 @@
     {
       "store": "UG桃園中正店",
       "stars": 4,
-      "date": "69 天前",
+      "date": "70 天前",
       "author": "謝玉珍",
       "text": "在中正夜市附近，一抹綠搭UG大寫，店面整潔、一面牆是外帶取餐，和自購排隊區分，今天4個人上班，氣氛還好😅送紅簽增加一點趣味😆十五茉有回甘，常選檸檬桂花也很喜歡💕",
       "ts": 1778478741
@@ -1589,7 +1608,7 @@
     {
       "store": "UG內壢忠孝店",
       "stars": 5,
-      "date": "71 天前",
+      "date": "72 天前",
       "author": "Zion Phlipps",
       "text": "其實以服務流程絕對比這整條飲料店好，乾淨也細心，但能不能夠一直維持就要看老闆怎麼經營了。",
       "ts": 1778329323
@@ -1597,7 +1616,7 @@
     {
       "store": "UG遠東GARDEN CITY大巨蛋店",
       "stars": 3,
-      "date": "71 天前",
+      "date": "72 天前",
       "author": "M. Chen",
       "text": "點了招牌的無糖茶\n沒有不好喝，但沒有什麼記憶點。45元一杯。\n\n「三 ㄧㄣˋ (yìn) 十五茉」。此處「窨」為專門的製茶工藝字，指茉莉花香薰染茶葉的過程。\n\n喝飲料學中文🤣",
       "ts": 1778329025
@@ -1605,7 +1624,7 @@
     {
       "store": "UG羅東民權店",
       "stars": 4,
-      "date": "71 天前",
+      "date": "72 天前",
       "author": "LEO L",
       "text": "這次喝的是哈瓜 UG 奶茶，整體蠻好喝的！哈密瓜香氣很濃，喝起來味道很順，不會太膩，蠻有特色的。\n不過價格稍微偏高一點，偶爾喝還可以，但可能沒辦法太常買。喜歡哈密瓜口味的人可以試試看～",
       "ts": 1778323433
@@ -1613,7 +1632,7 @@
     {
       "store": "UG台中北平店",
       "stars": 5,
-      "date": "71 天前",
+      "date": "72 天前",
       "author": "Light in the Dark",
       "text": "我其實很少喝到，\n米香這麼明顯的茶。\n\n走進 UG，第一眼會先被整體的綠色調包圍。\n不是那種刻意強調的設計感，而是一種很乾淨、很一致的視覺語言——\n從外觀、牆面，到杯身與包裝，甚至連小細節的周邊，都維持在同一個世界裡。\n\n那種感覺有點像，把「品牌」這件事，認真地做成一種氛圍。\n\n這次點的是「外帶｜米香玉露青」。\n入口的第一感受是輕柔的甜，不會突兀，\n但讓人有點意外的是——那股米香，比想像中還要明顯。\n\n不是那種淡淡點綴，而是真的能被喝出來的存在。\n帶著一點溫潤的穀物氣息，慢慢在口中展開，\n反而讓整杯茶，多了一種安定下來的感覺。\n\n我其實很少喝到這麼有米香的茶。\n\n它不是那種一喝就強烈衝擊的類型，\n但會在幾口之後，讓人慢慢安靜下來。\n\n另外一個讓我很喜歡的，是杯身的設計。\n花朵不是單純的印刷，而是帶有微微浮雕的立體感，\n手指輕輕滑過時，可以感受到花瓣的紋理與起伏。\n\n那種觸感很細膩，\n甚至會讓人不自覺多停留幾秒。\n\n比起味道本身，我更在意的是它整體呈現的狀態。\n從視覺、觸感，到空間氛圍，都是一致而完整的。\n\n不是完美，\n而是願意把事情做好。\n\n如果要說特別推薦什麼，\n我反而會說\n\n這是一間適合在某個不太想說話的下午，\n自己來一杯的地方。\n\nI don’t often come across a tea\nwith such a distinct rice aroma.\n\nI stopped by UG for a takeaway drink,\nand the first thing that stood out was the consistency of its visual identity.\nThe green tones, from the storefront to the packaging, felt clean and intentional—\nnot overly designed, but quietly cohesive.\n\nIt almost felt like the brand wasn’t just selling drinks,\nbut shaping a certain kind of atmosphere.\n\nI ordered the “Rice Aroma Jade Green Tea.”\nThe first sip was soft and lightly sweet, without being overwhelming.\nBut what surprised me was how present the rice aroma was—\nnot just a subtle hint, but something you could genuinely taste.\n\nThere was a gentle, grain-like warmth that slowly unfolded,\nbringing a calm and grounded feeling to the tea.\n\nIt’s not the kind of drink that immediately demands attention,\nbut after a few sips, it quietly settles you.\n\nAnother detail I really appreciated was the cup design.\nThe floral pattern isn’t just printed—\nit has a subtle embossed texture that you can actually feel.\n\nRunning your fingers over it,\nyou notice the delicate contours of the petals.\nIt’s a small detail, but one that makes you pause a little longer.\n\nMore than just the taste,\nwhat stayed with me was the overall experience—\nthe visuals, the texture, and the atmosphere all felt aligned.\n\nNot perfect,\nbut thoughtful.\n\nIf I had to recommend it,\nI’d say\n\nThis is the kind of place you visit on a quiet afternoon,\nwhen you don’t feel like saying much,\nand just want something to accompany your thoughts.",
       "ts": 1778305819
@@ -1621,7 +1640,7 @@
     {
       "store": "UG台中東海店",
       "stars": 1,
-      "date": "72 天前",
+      "date": "73 天前",
       "author": "陳霈熙",
       "text": "貴又難喝 大失所望 別買\n把自己當香水喔還有前中後調 超屁眼難喝",
       "ts": 1778246584
@@ -1629,7 +1648,7 @@
     {
       "store": "UG羅東民權店",
       "stars": 5,
-      "date": "72 天前",
+      "date": "73 天前",
       "author": "broken Heart",
       "text": "店員服務態度超好👍\n每一種口味都大推 超級好喝的",
       "ts": 1778240039
@@ -1637,7 +1656,7 @@
     {
       "store": "UG羅東民權店",
       "stars": 5,
-      "date": "72 天前",
+      "date": "73 天前",
       "author": "黃佳祥",
       "text": "第一次喝UG飲料都蠻好喝，最近新出馥桂保庇茶非常好喝，而且是期間限量發售。值得推薦",
       "ts": 1778239660
@@ -1645,7 +1664,7 @@
     {
       "store": "UG中山南西店",
       "stars": 5,
-      "date": "72 天前",
+      "date": "73 天前",
       "author": "Angela Li",
       "text": "點了鐵觀音鮮奶茶，要稍微排隊，店員點餐和出餐很快，旁邊還會有試喝，馥桂保庇茶味道還不錯",
       "ts": 1778234247
@@ -1653,7 +1672,7 @@
     {
       "store": "UG台中北平店",
       "stars": 5,
-      "date": "73 天前",
+      "date": "74 天前",
       "author": "Jennifer Lee",
       "text": "2025.10.25北平也有UG了，可以加入line先線上點餐。推薦茉綠，聞起來喝起來都很有茉莉味。加入會員有贈優惠卷。2025.11.06研選純茶5款我覺得都很不錯。",
       "ts": 1778155083
@@ -1661,7 +1680,7 @@
     {
       "store": "UG板橋中正店",
       "stars": 1,
-      "date": "73 天前",
+      "date": "74 天前",
       "author": "Anh Lý",
       "text": "我買兩杯多加奶蓋，我想要封膜可以換大杯上面有空可以翻奶蓋，人員說可以翻少一點奶蓋封來。一點是一半了？？？那後笑那麼開心啊？？？",
       "ts": 1778137379
@@ -1669,7 +1688,7 @@
     {
       "store": "UG台南民生店",
       "stars": 1,
-      "date": "74 天前",
+      "date": "75 天前",
       "author": "鐘柏翔",
       "text": "今天去UG取飲料，真的第一次遇到這麼讓人傻眼的服務態度。\n\n我一進門就很清楚說『我要取訂單』，結果店員不是協助確認，而是一臉狀況外地回我：『蛤？什麼號碼？』，接著開始裝傻式對話，完全沒有想幫忙理解客人的意思。\n\n重點是當下店裡根本沒客人，裡面還有三個服務人員，不忙、不趕，卻連最基本的引導都做不到。正常不是應該主動詢問姓名、電話後三碼、哪個平台下單嗎？而不是站在那邊一副『你自己講清楚』的態度。\n\n服務差不是忙才會被抱怨，而是明明有時間、有空間，卻還能把基本接待做成這樣，真的讓人感覺非常不用心，也很不尊重客人。",
       "ts": 1778055546
@@ -1677,7 +1696,7 @@
     {
       "store": "UG台北大安店",
       "stars": 5,
-      "date": "75 天前",
+      "date": "76 天前",
       "author": "Mavis Cheng",
       "text": "十五茉奶茶真的好好喝~~~💚\n用Line點餐很方便!\n謝謝店長下雨天還是為我們外送🤍🤍🤍\n祝大安店生意興隆o(*////▽////*)q",
       "ts": 1777964872
@@ -1685,7 +1704,7 @@
     {
       "store": "UG高雄美麗島店",
       "stars": 5,
-      "date": "76 天前",
+      "date": "77 天前",
       "author": "桃仔",
       "text": "不得不說！值得推薦的飲品跟服務❤️\n先說除了飲料名字稍微有點在念rap 其他都還不錯\n好喝📌絕對會再回訪\n清爽推薦-茶花紅烏龍加紅烏龍茶凍🫶🏻❤️\n舒壓推薦-蜜香紅奶茶加燕麥粒🫶🏻❤️",
       "ts": 1777905446
@@ -1693,7 +1712,7 @@
     {
       "store": "UG忠孝敦化店",
       "stars": 5,
-      "date": "76 天前",
+      "date": "77 天前",
       "author": "孫凱晨",
       "text": "約莫15:30左右前往消費，給餐金髮的女服務人員親切講解活動優惠資訊，相當貼心友善！整體環境很不錯舒適，飲品也好喝且快速！期待抹茶再次回歸！",
       "ts": 1777886383
@@ -1701,7 +1720,7 @@
     {
       "store": "UG楊梅大成店",
       "stars": 4,
-      "date": "77 天前",
+      "date": "78 天前",
       "author": "老土 豆豆",
       "text": "大陸進來的連鎖店 服務人員蠻多的 出餐快 加入會員有三窨十五苿買一送一卷及5元折價卷*6 可LINE 💰pay付款",
       "ts": 1777805180
@@ -1709,7 +1728,7 @@
     {
       "store": "UG內壢忠孝店",
       "stars": 4,
-      "date": "77 天前",
+      "date": "78 天前",
       "author": "Murphy",
       "text": "結帳的男店員態度無法認同\n但後面的女店員態度很好、很客氣\n冷氣很強、飲料製作速度蠻快的",
       "ts": 1777790780
@@ -1717,15 +1736,23 @@
     {
       "store": "UG新竹金山店",
       "stars": 5,
-      "date": "80 天前",
+      "date": "81 天前",
       "author": "Chen Andy (KYOU)",
       "text": "飲料好喝，服務態度好，推薦來",
       "ts": 1777552238
     },
     {
+      "store": "UG中壢新生店",
+      "stars": 4,
+      "date": "82 天前",
+      "author": "蛋黃哥",
+      "text": "店面很乾淨，感覺很清爽\n因為入會禮來嘗試指定口味買一送一\n可惜三窨十五茉茶湯很清淡無感😑\n\n加購的烏龍茶凍$15吃起來超淡\n無味到要猜還真沒有任何方向的凍\n還是阿義的玫瑰荔枝凍好吃\n感覺錢掉進水裡😂\n\n唯一覺得不錯的地方就是品牌方的紙杯很厚很硬\n尤其是杯底又加厚 雖然我買的不是熱飲\n不過圖案很怪人像是倒著的\n倒的也好 反過來看裡面的女生在生氣啊啊啊啊😵‍💫\n\n服務生不錯，喜歡服務的可以來試試\n給個讚👍",
+      "ts": 1777449546
+    },
+    {
       "store": "UG台中大甲店",
       "stars": 4,
-      "date": "81 天前",
+      "date": "82 天前",
       "author": "Xuan",
       "text": "口感不錯，有點微香\n可以嘗試看看😋\n剛開幕，人潮有點多\n號碼不是很順",
       "ts": 1777449531
@@ -1733,7 +1760,7 @@
     {
       "store": "UG北投光明店",
       "stars": 4,
-      "date": "82 天前",
+      "date": "83 天前",
       "author": "陳伽瑜",
       "text": "2026/01/23\nUG北投光明店新開幕，1/23~1/25\n特別舉辦三窨十五茉奶茶買1送1活動，每1杯是75元，購買再免費贈送1杯，會員無法再憑Line5元折價券折抵，但自備環保杯可再折抵5元。個人很喜歡UG的店面裝潢和產品包裝，連代言人告五人的廣告宣傳看板的字樣都是綠色的，非常有整體感，形象十分鮮明。這次 訂購的三窨十五茉奶茶，選擇三分糖去冰，喝起來的口感十分清新，奶味甜度剛剛好，喝完也不覺得膩。瓶身還特別介紹此款奶茶的前味是：純淨茉莉香；中味是：浪漫梔子花香;後味是:優雅玉蘭香，整個視覺和味覺同步享受。 唯一可惜的是沒有賣珍珠奶茶... 也沒有粉圓加料的服務...",
       "ts": 1777391032
@@ -1741,7 +1768,7 @@
     {
       "store": "UG高雄瑞隆店",
       "stars": 5,
-      "date": "82 天前",
+      "date": "83 天前",
       "author": "謝品宣",
       "text": "店員親切，雖人多要排隊，但飲料做很快，大拇指👍🏻",
       "ts": 1777379160
@@ -1749,7 +1776,7 @@
     {
       "store": "UG土城學府店",
       "stars": 1,
-      "date": "83 天前",
+      "date": "84 天前",
       "author": "ris I",
       "text": "櫃檯小姐（體型比較豐滿）一直在跟旁邊的店員講話，在點餐都沒有在聽，服務態度還非常不好，我點了兩杯一樣的琥珀鐵觀音的UG奶茶3分糖少冰，結果到公司才發現有一杯給我做無糖一杯做3分糖⋯明明說一樣的兩杯，怎麼會兩杯不一樣，非常不尊重客人，點的過程中完全都在看著旁邊的店員聊天，超傻眼",
       "ts": 1777270424
@@ -1757,7 +1784,7 @@
     {
       "store": "UG台南永康店",
       "stars": 5,
-      "date": "85 天前",
+      "date": "86 天前",
       "author": "廖淑蘭",
       "text": "包裝精美\n茶飲好喝 有獨特的茶香味\n有贈送可以重複使用的保冰袋 很棒喔",
       "ts": 1777102650
@@ -1765,7 +1792,7 @@
     {
       "store": "UG台中太平店",
       "stars": 1,
-      "date": "86 天前",
+      "date": "87 天前",
       "author": "妮尼",
       "text": "今天去買飲料，店員在旁邊把做飲料用的杯子掉在地上，聲音超大，整個很不專業，當下觀感直接變差，員工素質低，需要再訓練。",
       "ts": 1777052123
@@ -1773,7 +1800,7 @@
     {
       "store": "UG台北西湖店",
       "stars": 2,
-      "date": "87 天前",
+      "date": "88 天前",
       "author": "郇心純",
       "text": "第一次買，茶還可以\n但服務很差\n男店員講話態度很冷，臉上沒有半點笑容\n付款完，一句話都不說，只用食指跟中指夾住號碼單等客人拿\n不能好好地拿給客人嗎？\n好像是什麼大老闆在給服務生小費的那種姿勢，很高姿態\n讓人非常不舒服，實在很不想拿\n講話也很小聲聽不太清楚，店內音樂放得超大聲\n不會再去消費了",
       "ts": 1776925866
@@ -1781,7 +1808,7 @@
     {
       "store": "UG中壢中原店",
       "stars": 5,
-      "date": "89 天前",
+      "date": "90 天前",
       "author": "Super performance",
       "text": "2026/03/24\n☕️ UG中壢中原店\n這家UG真的很懂茶！\n招牌三窨（ㄧㄣˋ）15茉，（奶茶）\n滿是清新茉莉香的奶茶，\n1分糖/微冰，\n入口順滑不澀；\n1分糖竟然不會苦澀😲！\n\n桂花輕烏龍（雲頂）\n上方有白色鮮奶泡，\n有種精緻感！\n尾韻飄著淡雅桂花香，\n上方有巧克力碎，\n3分糖也完全不苦。\n兩杯都順口到一口接一口，\n喝完只想回頭再刷～",
       "ts": 1776762338
@@ -1789,7 +1816,7 @@
     {
       "store": "UG台中中科店",
       "stars": 5,
-      "date": "90 天前",
+      "date": "91 天前",
       "author": "SHIH-YAN HONG",
       "text": "🔻 這次經過台中西屯路美食區，特地來試試近期討論度不低的UG 台中中科店，整體感受算是「茶飲有特色、品質穩定，但價格偏中高」的一間手搖飲店。\n\n店面外觀簡單現代，整體走的是乾淨俐落的風格。點餐時可以發現品項不少，主打各種茶底變化與鮮奶茶系列，像是三窨十五茉、琥珀鐵觀音、茶花紅烏龍等，都是網路上不少人推薦的人氣品項。\n\n這次點了招牌的奶茶系列，茶香表現確實比一般手搖飲更明顯，喝起來不會只有甜味，尾韻還能感受到茶本身的層次，整體是偏耐喝型的風格。珍珠與配料表現中規中矩，不會特別驚艷，但也沒有明顯缺點。\n\n另外，UG主打類似「AI製茶」的操作方式，讓製作流程標準化，這點在網路上也被認為是穩定品質的一個原因。\n\n不過價格部分確實比一般飲料店略高，一杯飲料大約落在45～100元左右，對於習慣平價手搖飲的人來說，可能會稍微有感。\n\n服務方面整體順暢，出餐速度也算快，即使人多也不會等太久。整體節奏偏有效率，不太走聊天互動型服務。\n\n整體而言，UG 台中中科店是一間主打茶香層次與穩定品質的手搖飲品牌。\n\n如果是想喝一杯偏質感、重茶香的飲料，這裡會是不錯的選擇；但若追求高CP值，可能就會覺得普通。",
       "ts": 1776684089
@@ -1797,7 +1824,7 @@
     {
       "store": "UG台中中科店",
       "stars": 5,
-      "date": "90 天前",
+      "date": "91 天前",
       "author": "高嘉瑋",
       "text": "家裡附近開了一家UG好開心，喜歡他們家的桂花系列，無糖也可以喝出茶的風味，又有室內位子可以等，讚讚",
       "ts": 1776655786
@@ -1805,7 +1832,7 @@
     {
       "store": "UG北投光明店",
       "stars": 5,
-      "date": "91 天前",
+      "date": "92 天前",
       "author": "truecolor",
       "text": "第一次喝UG，直上三窨十五茉鮮奶茶（75元），一分糖微冰。茶跟奶香調和的很好，順口不甜膩，或許店家使用三品吸管也有加乘作用。",
       "ts": 1776635405
@@ -1813,7 +1840,7 @@
     {
       "store": "UG士林捷運店",
       "stars": 5,
-      "date": "91 天前",
+      "date": "92 天前",
       "author": "michelle",
       "text": "首購！招牌三窨十五茉\n滿滿的茉莉 梔子花香 茶味不苦澀還可以\n杯子和付費保鮮提袋漂亮 好用",
       "ts": 1776625610
@@ -1821,7 +1848,7 @@
     {
       "store": "UG台北大安店",
       "stars": 5,
-      "date": "91 天前",
+      "date": "92 天前",
       "author": "M M",
       "text": "雖然很多人都推三窨十五茉\n但幾乎喝過一輪\n私心覺得更愛桂花輕烏龍鮮奶茶🤣\n至少要一分糖風味才會出來\n\n而且老闆人很好\n大安區滿額還可以免費外送，超佛心\n\n推推推٩( ⸝⸝´꒳`⸝⸝) 人( ⸝⸝´꒳`⸝⸝)و",
       "ts": 1776602949
@@ -1829,7 +1856,7 @@
     {
       "store": "UG台中豐原店",
       "stars": 5,
-      "date": "91 天前",
+      "date": "92 天前",
       "author": "魏魏",
       "text": "上次來要排隊，今天特地早點到、好喝又美美滴！",
       "ts": 1776566231
@@ -1837,7 +1864,7 @@
     {
       "store": "UG台中大甲店",
       "stars": 5,
-      "date": "92 天前",
+      "date": "93 天前",
       "author": "鄭如吟",
       "text": "頭次遇上這麼罷氣的店家，敦親睦鄰請鄰居喝飲料，讚啦，好喝，祝生意興隆.",
       "ts": 1776494944
@@ -1845,7 +1872,7 @@
     {
       "store": "UG台中大甲店",
       "stars": 5,
-      "date": "92 天前",
+      "date": "93 天前",
       "author": "Juin Shieh",
       "text": "新開的店，第一次遇到免費試喝！\n口味很清爽好喝，\n值得推薦！",
       "ts": 1776494454
@@ -1853,7 +1880,7 @@
     {
       "store": "UG台中大甲店",
       "stars": 5,
-      "date": "92 天前",
+      "date": "93 天前",
       "author": "楊丹綺Lily",
       "text": "好喝喔！很推薦！\n喝了葡萄十五茉莉 琥珀鐵觀音 都很好喝",
       "ts": 1776493515
@@ -1861,7 +1888,7 @@
     {
       "store": "UG台中東山店",
       "stars": 5,
-      "date": "92 天前",
+      "date": "93 天前",
       "author": "Jayan",
       "text": "出飲料的速度很快！服務人員也很親切講解、介紹茶的種類，幾乎每天都會買一杯來喝～",
       "ts": 1776485036
@@ -1869,7 +1896,7 @@
     {
       "store": "UG台南東寧店",
       "stars": 4,
-      "date": "93 天前",
+      "date": "94 天前",
       "author": "Ku Ma",
       "text": "這家新開幕的分店，茶品出餐快速，號稱是AI製茶，控制品質與速度，但這套系統應該是學對岸的，很久以前就看過類似的技術\n\n還不錯喝\n\n價格偏高一點（如果是在減少人力出茶的狀態下，成本應該可以降低）",
       "ts": 1776412812
@@ -1877,7 +1904,7 @@
     {
       "store": "UG竹北博愛店",
       "stars": 4,
-      "date": "95 天前",
+      "date": "96 天前",
       "author": "Caesar小陳",
       "text": "新開幕的飲品店，茶喝起來還滿順的；不會過於太澀.",
       "ts": 1776295317
@@ -1885,7 +1912,7 @@
     {
       "store": "UG台中大里店",
       "stars": 4,
-      "date": "95 天前",
+      "date": "96 天前",
       "author": "eric chang",
       "text": "坦白說：喝不出提示的前中後韻，好的茶葉理論上不會畫蛇添足，花茶倒是變化多端，個人喝不太習慣就是了。",
       "ts": 1776264060
@@ -1893,7 +1920,7 @@
     {
       "store": "UG新竹民生店",
       "stars": 3,
-      "date": "95 天前",
+      "date": "96 天前",
       "author": "洪梓銜",
       "text": "今天用手機點餐自取\n點了12杯都是沒有料的茶\n但卻給了我10隻粗吸管？\n是太忙一把抓亂給嗎\n\n點招牌的15茉應該是給很酷的細吸管才對吧\n要請客導致給人家粗吸管喝茶有點奇怪🤔",
       "ts": 1776260032
@@ -1901,7 +1928,7 @@
     {
       "store": "UG中山大直店",
       "stars": 3,
-      "date": "97 天前",
+      "date": "98 天前",
       "author": "濃湯棒",
       "text": "這品牌近年有一些爭議，例如曾因在社會事件後的行銷行為引發討論，也有網路上對於品牌設計風格與其他茶飲品牌相似的質疑。\n相關內容在網路上有不同說法與解讀，建議有興趣的人可以自行查證了解。\n\n-------\n店面裝潢很有質感，設計走精緻風格，連飲料杯也很有特色。\n製作速度非常快，點完很快就能拿到。\n\n吸管很特別，是扁平設計＋三個細孔洞，可以慢慢吸，第一次用會誤以為是攪拌棒😆算是蠻有記憶點的小巧思。\n\n朱槿普洱紅 $70（鮮奶／1分糖／去冰）\n入口先帶出淡淡果香，接著是滑順的口感與濃厚奶味，風味層次蠻特別的，是平常比較少喝到的組合👍",
       "ts": 1776109727
@@ -1909,15 +1936,23 @@
     {
       "store": "UG台中東海店",
       "stars": 5,
-      "date": "98 天前",
+      "date": "99 天前",
       "author": "嚕嚕",
       "text": "2026.04.11\n茶花紅烏龍/UG奶茶\n茶味非常香，香到很像香精味，個人不愛，以後還是點三窨十五茉就好\n店家乾淨明亮服務佳值得給予五星",
       "ts": 1776014623
     },
     {
-      "store": "UG楊梅大成店",
+      "store": "UG站前南陽店",
       "stars": 5,
       "date": "100 天前",
+      "author": "Lèvr【第10級在地嚮導】",
+      "text": "在南陽街飲料一級戰區的UG，平日晚上店員服務很好。UG的純茶類一直都不錯喝，今天點桂花烏龍(45元)加紅烏龍凍(+15元)，有茶香又能吃到茶味濃、甜度低的QQ茶凍，好喝～",
+      "ts": 1775872811
+    },
+    {
+      "store": "UG楊梅大成店",
+      "stars": 5,
+      "date": "101 天前",
       "author": "CHUNTAO YEH",
       "text": "飲料很好喝，點了7杯奶蓋，有一杯沒加到，再麻煩注意一下",
       "ts": 1775821316
@@ -1925,7 +1960,7 @@
     {
       "store": "UG中山大直店",
       "stars": 5,
-      "date": "100 天前",
+      "date": "101 天前",
       "author": "Jenna Yen",
       "text": "金杯蜜香紅鮮奶茶無糖熱的很好喝，奶泡打出來很綿密濃郁，奶的比例是我喜歡的，不會澀澀的茶味，服務人員非常親切👍👍",
       "ts": 1775789144
@@ -1933,7 +1968,7 @@
     {
       "store": "UG台北大安店",
       "stars": 5,
-      "date": "102 天前",
+      "date": "103 天前",
       "author": "不想上班卻天天上班的旅人",
       "text": "📍UG 台北大安店\n\n有些店，你一走進去就知道——\n👉 這不是賣飲料的，是在做品牌的。\n\n—\n\n老實說，看到 UG 的第一眼，\n我腦中浮現的是：\n👉 對岸的「霸王茶姬」\n\n那種很完整的「視覺統一感」：\n顏色、字體、材質、動線\n全部都設計過\n\n—\n\n✔️ 設計感\n\n整體就是一個字：\n👉「乾淨到像樣品屋」\n苔蘚牆＋金屬字 Logo\n👉 自然感＋精緻感 同時成立\n這種東西不是好看而已\n是會讓人記住\n\n—\n\n✔️ 系統化（這才是重點）\n\n飲料全部用自動機調配\n👉 店員不用背配方\n👉 出杯穩定\n👉 速度快\n這叫「規模化思維」\n\n—\n\n✔️ 包裝（我懂你為什麼來）\n\n外帶袋真的有做設計\n👉 不是紙袋，是「品牌資產」\n拿在手上\n就像在幫他打廣告\n\n—\n\n✔️ 但我要吐槽一件事\n\n那個三根細吸管\n真的很有創意\n也真的很痛苦\n👉 喝一杯像在做肺活量訓練\n你會懷疑：\n我是在喝飲料\n還是在參加體測？\n\n—\n\n✔️ 真實結論\n你問我會不會常喝？\n👉 不一定\n但你問我會不會記住？\n👉 一定會\n\n—\n\n最後一句話送你：\n👉 這間店賣的不是茶，是「被設計過的消費體驗」",
       "ts": 1775655546
@@ -1941,7 +1976,7 @@
     {
       "store": "UG台南永康店",
       "stars": 5,
-      "date": "102 天前",
+      "date": "103 天前",
       "author": "Tina Lin",
       "text": "外送點了招牌奶茶系列，茶香濃郁又順口，不會死甜，整體品質很高，招待朋友大受好評👍👍👍👍👍",
       "ts": 1775638091
@@ -1949,7 +1984,7 @@
     {
       "store": "UG中山大直店",
       "stars": 5,
-      "date": "103 天前",
+      "date": "104 天前",
       "author": "Hsiu-Chen CHANG",
       "text": "店員親切美麗，飲料好喝。\n中山大直店，推推😉",
       "ts": 1775534652
@@ -1957,7 +1992,7 @@
     {
       "store": "UG遠東GARDEN CITY大巨蛋店",
       "stars": 5,
-      "date": "104 天前",
+      "date": "105 天前",
       "author": "SeaFood Father",
       "text": "來逛大巨蛋，順道買一杯好喝的米香玉露青1分糖。\n可以電子支付。",
       "ts": 1775495874
@@ -1965,7 +2000,7 @@
     {
       "store": "UG忠孝敦化店",
       "stars": 5,
-      "date": "104 天前",
+      "date": "105 天前",
       "author": "chia chung chung",
       "text": "讚唷店員感覺回覆跟臨場反應蠻有趣\n店內有些點是可以拍照的好地方\n綠茶滿意外好喝但不是那種純粹好喝單純感",
       "ts": 1775479239
@@ -1973,7 +2008,7 @@
     {
       "store": "UG新竹金山店",
       "stars": 5,
-      "date": "105 天前",
+      "date": "106 天前",
       "author": "曾朝源",
       "text": "雖然人多需等候，但⋯服務態度非常好👍飲料好好喝",
       "ts": 1775390737
@@ -1981,7 +2016,7 @@
     {
       "store": "UG內壢忠孝店",
       "stars": 5,
-      "date": "106 天前",
+      "date": "107 天前",
       "author": "Angelina Kiwi",
       "text": "服務態度好，店員親切，點了三窨十五茉奶茶真的很讚👍還有贈送飲料提袋，大推～～",
       "ts": 1775318678
@@ -1989,7 +2024,7 @@
     {
       "store": "UG新莊幸福店",
       "stars": 5,
-      "date": "106 天前",
+      "date": "107 天前",
       "author": "Co Co",
       "text": "這家飲料店真的讓人一試成主顧！從外觀到飲品品質，每一個細節都能感受到店家的用心與專業。第一次經過時就被乾淨明亮的店面吸引，整體風格簡約又有質感，給人一種舒服又放鬆的感覺。走進店裡，店員親切的招呼聲讓人印象深刻，不會過度熱情但剛剛好，讓人感覺很自在。\n\n點餐時，店員會耐心介紹飲品，像是甜度冰量的建議、熱門款式，甚至會依照客人的口味給出推薦，這點真的很加分。可以感覺到他們對自己產品非常熟悉，也很希望客人能喝到最適合自己的飲料。等候時間也不會太久，製作過程看起來衛生又細心，透明化的操作讓人更放心。",
       "ts": 1775283283
@@ -1997,7 +2032,7 @@
     {
       "store": "UG新竹金山店",
       "stars": 3,
-      "date": "107 天前",
+      "date": "108 天前",
       "author": "毅",
       "text": "今晚點一杯飲料，無糖去冰，標籤也對，但喝下去就馬上感到甜味，應該做成微糖的了",
       "ts": 1775226886
@@ -2005,7 +2040,7 @@
     {
       "store": "UG內壢忠孝店",
       "stars": 1,
-      "date": "107 天前",
+      "date": "108 天前",
       "author": "FEI FEI",
       "text": "號碼有沒有照順序不知道？\n但是線上點預計等候12分鐘 結果實際等了30分鐘有夠久==",
       "ts": 1775218295
@@ -2013,7 +2048,7 @@
     {
       "store": "UG新莊幸福店",
       "stars": 4,
-      "date": "107 天前",
+      "date": "108 天前",
       "author": "郭朝淵",
       "text": "趁排隊人潮少的時候來買\n點了招牌三窨十五茉\n來跟大家科普一下🤣\n意指使用「三窨」（音同「yin」）古法製作的，\n讓茶葉重複吸收茉莉花香三次\n達到每杯茶都蘊含相當於15朵茉莉花的香氣，喝起來跟一般超商賣的奶綠確實不一樣，可以喝UG各方面味道不錯，很順口",
       "ts": 1775182737
@@ -2021,7 +2056,7 @@
     {
       "store": "UG宜蘭礁溪店",
       "stars": 4,
-      "date": "108 天前",
+      "date": "109 天前",
       "author": "Mina",
       "text": "新開幕のUG\n告五人代言來捧捧場\n三窨十五茉👍\n等了半小時多才喝到🤣",
       "ts": 1775142062
@@ -2029,7 +2064,7 @@
     {
       "store": "UG宜蘭礁溪店",
       "stars": 5,
-      "date": "108 天前",
+      "date": "109 天前",
       "author": "玲玲",
       "text": "蜜桃紅烏龍很好喝～\n雲頂奶蓋桂花輕烏龍也很推很讚👍🏻👍🏻👍🏻\n（建議大家可以線上點餐再過去取）",
       "ts": 1775126905
@@ -2037,7 +2072,7 @@
     {
       "store": "UG內壢忠孝店",
       "stars": 1,
-      "date": "110 天前",
+      "date": "111 天前",
       "author": "陳柏均",
       "text": "昨天去買，買一送一，\n加購加點每杯加15元茶凍，結果全部給細的吸管，4杯袋店員硬放5杯，手提把不耐重還硬放，\n今天在去買10杯點餐店員說可以裝成3袋結果只裝成2袋5杯，\n我才提到機車手提袋就快斷了，真傻眼\n我拿去請同事喝，說紅烏龍茶凍，感覺比較少，用了細吸管吸超難吸，茶凍比新莊跟台北還要少",
       "ts": 1774969529
@@ -2045,7 +2080,7 @@
     {
       "store": "UG宜蘭礁溪店",
       "stars": 5,
-      "date": "112 天前",
+      "date": "113 天前",
       "author": "Ping HO",
       "text": "就在人來人往的礁溪路上(奕順軒附近)，開幕期間(3/28~4/2)有三窨十五茉/UG奶茶買一送一活動，3/28~4/10消費不限金額就送保冷袋，真的超划算的\n服務人員也都超Nice👍👍",
       "ts": 1774762685
@@ -2053,7 +2088,7 @@
     {
       "store": "UG台中逢甲店",
       "stars": 5,
-      "date": "113 天前",
+      "date": "114 天前",
       "author": "Jonson Chung",
       "text": "真心很愛UG 茶香品質好，包裝也很有情緒價值呢🥰\n藍帶米淇鐵板燒全體員工愛上😍",
       "ts": 1774671450
@@ -2061,7 +2096,7 @@
     {
       "store": "UG台中太平店",
       "stars": 5,
-      "date": "116 天前",
+      "date": "117 天前",
       "author": "Jamie L",
       "text": "剛開幕三天有買一送一活動，服務優質，現場要等30分鐘左右，門口有下水道工程施工交通比較不方便。",
       "ts": 1774406963
@@ -2069,7 +2104,7 @@
     {
       "store": "UG竹北博愛店",
       "stars": 5,
-      "date": "117 天前",
+      "date": "118 天前",
       "author": "睡神",
       "text": "UG手搖飲 竹北博愛店\n\n這間是在竹北博愛路上的手搖飲店，算是路過幾次後開始注意到，雖然不確定算不算典型網紅店，但確實有做出自己的風格，無論是飲品還是整體設計都蠻有辨識度。\n\n主打的「三窖15茉茶」比較偏奶香型的茉莉茶，不過實際喝起來風味有點微妙，個人是沒有特別抓到很明確的層次，算是見仁見智的品項。\n\n生意是真的不錯，每次去幾乎都有人潮，排個二三十杯算是常態，而且不少人是用線上點單再來取。現場動線處理還算順，人手也很充足，通常可以看到四個人以上在操作，出杯速度算穩定，基本上不太會等太久，但平均還是抓個10分鐘左右比較實際。\n\n比較可惜的是等候區設計，因為有網紅牆的關係，實際上不太有地方可以靠或休息，如果能增加一些欄杆或簡單的倚靠設計，體驗會更好。\n\n飲品本身算是這家的亮點，尤其奶茶類確實有做出差異性。另外杯子設計也蠻用心，採用雙層紙杯結構，拿起來有厚度跟手感，保溫效果也比較好；杯蓋還會附類似咖啡杯的設計，可以直接就口喝，整體在外觀跟使用體驗上都有加分。\n\n整體來說，是一間兼顧美感與飲品特色的手搖店，價格偏高但有對應到質感，如果剛好在竹北這一帶，還是會願意再回訪。",
       "ts": 1774335430
@@ -2077,7 +2112,7 @@
     {
       "store": "UG台中太平店",
       "stars": 5,
-      "date": "117 天前",
+      "date": "118 天前",
       "author": "林柔佑",
       "text": "服務好、流動性處理良好\n品質好👍茶好喝",
       "ts": 1774323626
@@ -2085,7 +2120,7 @@
     {
       "store": "UG台中太平店",
       "stars": 5,
-      "date": "117 天前",
+      "date": "118 天前",
       "author": "偉立",
       "text": "太平終於有UG了，員工動作迅速，店長怕客人排隊太熱還出來發水給我們喝，很貼心，飲料跟服務都在水準之上！",
       "ts": 1774317345
@@ -2093,7 +2128,7 @@
     {
       "store": "UG台南東寧店",
       "stars": 5,
-      "date": "118 天前",
+      "date": "119 天前",
       "author": "Laurent Yang",
       "text": "質感系網美飲料店！  飲料好喝！！！ 店員服務一級棒👍👍👍👍👍",
       "ts": 1774278308
@@ -2101,7 +2136,7 @@
     {
       "store": "UG台北西湖店",
       "stars": 2,
-      "date": "118 天前",
+      "date": "119 天前",
       "author": "L INE",
       "text": "說真的這家Ug我很排斥來購買，\n要不是同事要我上班前來幫忙買不然我不會來這家買，\n我不想上班前就面對那些一臉傲嬌的店員，那種感覺讓我很討厭很不舒服，\n如果1次2次或許我覺得她那天心情不好，\n但是去了5..6次（都是同事要喝的我沒有要喝）\n都是這樣，看你們同事聊天都有說有笑但是怎麼面對客人的時候馬上就變一個臉，沒有笑容，\n我是服務業的因為你們沒收服務費我不會當面反應給你們知道，\n因為你們沒收服務費不需要那樣的態度，\n但是不準時開店就讓我很不爽，\n同事請我上班前幫忙買如果準時開門我還可以等待，\n但是要我在上班前去等原本10:00就要開門結果10:08分還沒開門的店我就不願意\n今天同事叫我幫他買結果10點08分到還沒開？？？我直接跟同事說沒開不買了，反正不差我一個客人，兩顆星我是給飲料本身",
       "ts": 1774227345
@@ -2109,7 +2144,7 @@
     {
       "store": "UG台北萬芳店",
       "stars": 5,
-      "date": "118 天前",
+      "date": "119 天前",
       "author": "Lèvr【第10級在地嚮導】",
       "text": "萬芳醫院商圈新開的UG，假日晚上女店員服務不錯。三窨十五茉(45元)滿好喝的，茶香和茉莉香濃厚；米香玉露菁(40元)其實是綠茶，米香的味道非常明顯，像在喝米茶一樣，還蠻有趣的，兩種純茶表現都不錯。",
       "ts": 1774226627
@@ -2117,7 +2152,7 @@
     {
       "store": "UG台中大里店",
       "stars": 4,
-      "date": "119 天前",
+      "date": "120 天前",
       "author": "馬蓋先",
       "text": "家人大都是點外送，第一次店內購買，生意很好，滿滿的外送訂單。",
       "ts": 1774180455
@@ -2125,7 +2160,7 @@
     {
       "store": "UG台南東寧店",
       "stars": 5,
-      "date": "120 天前",
+      "date": "121 天前",
       "author": "水水",
       "text": "剛好來文章牛肉湯\n看到新開幕UG就想來一杯🤩\n遇到新開幕買一送一茶綠茶\n感謝讓我有小確幸🥰",
       "ts": 1774082737
@@ -2133,7 +2168,7 @@
     {
       "store": "UG羅東民權店",
       "stars": 5,
-      "date": "121 天前",
+      "date": "122 天前",
       "author": "王銘德",
       "text": "26/3/20 初訪\n\n來到羅東夜市，除了傳統的小吃，這間位於民權路上的 UG 絕對是值得停下腳步的亮點。作為近期在茶飲界掀起熱潮的品牌，羅東民權店不僅延續了品牌一貫的「極簡東方美學」\n\n初見：極速與質感的平衡\n一踏入店內，最吸睛的莫過於那台宣稱「秒級出杯」的自動化製茶設備。身為在地嚮導，我特別觀察了整體的作業流程：雖然是全自動化輔助，但店員在點餐與遞杯時的服務溫度並未減少。店內環境乾淨明亮，不論是視覺上的色調，還是俐落的動線設計，都讓人感受到品牌對於「精準」與「美感」的追求。\n\n品鑑：茶香與層次的交織\n這次點了招牌的 「三窨十五朵茉莉」。對於喜愛輕盈茶感的我來說，這杯茶確實令人驚艷。每一口都能感受到濃郁卻不刺鼻的茉莉花香，那種香氣是與茶湯深度融合的，而非生硬的添加感。更重要的是，茶湯入喉後的甘甜度維持得很平衡，即便選擇微糖，也能帶出茶葉本身的清香。\n\n如果你是奶茶控，他們的雲頂系列也非常值得一試。綿密的乳沫與現萃茶底結合，口感細膩且層次分明，完全打破了對連鎖手搖飲「重甜重負擔」的既定印象。\n\n在地建議：鬧中取靜的補給站\n這間分店的地點選得極好，剛好位在羅東夜市的邊緣。對於不論是想在逛街前先買杯清爽飲品解膩，或是逛累了想找個有質感的空間稍微喘息的人來說，都是首選。雖然假日人潮較多，但受惠於自動化製茶技術，等候時間比預期的要短許多。",
       "ts": 1773987337
@@ -2141,7 +2176,7 @@
     {
       "store": "UG新竹金山店",
       "stars": 1,
-      "date": "121 天前",
+      "date": "122 天前",
       "author": "beantifullove JiJi",
       "text": "謝謝你們讓我把很久沒拖的辦公室地板拖一遍\n整杯底破掉打電話過去還說可能是外送員問題\n我就問一下你們怎麼不審視一下是不是自己的杯子問題啊",
       "ts": 1773979965
@@ -2149,7 +2184,7 @@
     {
       "store": "UG中壢中原店",
       "stars": 5,
-      "date": "123 天前",
+      "date": "124 天前",
       "author": "許宇潔",
       "text": "哈蜜瓜奶茶$75中杯好喝\n1/11正常甜=還是很清淡\n11/2整體效率終於變快了\n結帳後，\n一定要自行核對帳單內容是否正確????\n常常做錯，正常冰難喝又苦，\n不重視品質，固定客一定會變少。\n\n蠻好喝的，有些人一次買30-40杯，\n後面排隊的，就必須等很久更久了，\n買到要趕快喝，才好喝，\n10:00現場買，就不會等那麼久。",
       "ts": 1773837982
@@ -2157,7 +2192,7 @@
     {
       "store": "UG楊梅大成店",
       "stars": 5,
-      "date": "126 天前",
+      "date": "127 天前",
       "author": "陳瑜瑜",
       "text": "飲料好喝、品質穩定，茶香很順不澀，店面整體乾淨明亮，會想再回訪的一家店。",
       "ts": 1773579598
@@ -2165,7 +2200,7 @@
     {
       "store": "UG楊梅大成店",
       "stars": 5,
-      "date": "126 天前",
+      "date": "127 天前",
       "author": "謝祥然",
       "text": "服務態度超讚！喜歡喝UG的朋友們，千萬不要錯過",
       "ts": 1773579254
@@ -2173,7 +2208,7 @@
     {
       "store": "UG竹北勝利店",
       "stars": 5,
-      "date": "128 天前",
+      "date": "129 天前",
       "author": "Liisa Lin",
       "text": "以我這個UG老粉來說~這家UG特別可愛\n開幕活動招招牌三窨十五茉買一送一\n還不快來買！！！",
       "ts": 1773392788
@@ -2181,7 +2216,7 @@
     {
       "store": "UG竹北勝利店",
       "stars": 5,
-      "date": "128 天前",
+      "date": "129 天前",
       "author": "Fangmeidy Fang",
       "text": "今日開始試營運，\n目前有三窨十五茉茶買一送一，\n免費環保袋，\n茶品不錯，\n不會因人多就混亂，\n點餐略慢一些，\n茶好喝。",
       "ts": 1773389879
@@ -2189,7 +2224,7 @@
     {
       "store": "UG楊梅大成店",
       "stars": 5,
-      "date": "130 天前",
+      "date": "131 天前",
       "author": "Tea My",
       "text": "現在外帶有免費給保溫袋～蜜桃烏龍真的很好喝🤤\n不過剛開幕等得久算正常～非尖峰時段等20分鐘左右\n希望過了幾個月後速度能更快！",
       "ts": 1773223094
@@ -2197,7 +2232,7 @@
     {
       "store": "UG新竹清大店",
       "stars": 2,
-      "date": "131 天前",
+      "date": "132 天前",
       "author": "Epicat",
       "text": "員工對於自家產品好像不太了解\n\n晚上不想喝咖啡因太多的飲料，而櫃檯的菜單並沒有標註飲料的咖啡因濃度，所以詢問店員哪一款的咖啡因比較少。\n\n結果店員說：全部都有咖啡因，但是“果香四溢”系列的咖啡因比較少。\n\n所以最後點了 葡柚十五茉。\n\n結果飲料杯的貼紙就有標註 咖啡因：170mg ==\n之後在網路查，明明果香四溢系列的咖啡因濃度是最高的‼️‼️\n\n而且葡柚十五茉喝起來就像調配比例失敗的柚香覺醒，真的很普又貴，不會再回訪",
       "ts": 1773151551
@@ -2205,7 +2240,7 @@
     {
       "store": "UG台南永康店",
       "stars": 3,
-      "date": "132 天前",
+      "date": "133 天前",
       "author": "老爺",
       "text": "2026-03-08（日）初訪永康店～\n\n先說我沒有惡意～\n\n##當天早上約莫10點多，踏進店內點餐，隨即湧來的感覺是《很擁擠》，貴台到門的深度很短，只要擠2組客人，就覺得有壓迫感～\n\n##然後點完餐，得到店員很客氣、但覺得蠻莫名其妙的一句話：《請到外面騎樓等侯飲料》，當初你們開店裝潢時，如果把騎樓的空間也納入室內，把門往外伸展，可能整體的舒適感能大大的提升，客人也可在裡頭等侯，民生店相比之下是較舒適的，（你們騎樓的空間真的太大），順便提問一下，騎樓那一大片空間是真的給消費者的等侯區，還是是可以停機車的⋯⋯整個空間規劃，我覺得是可惜的～\n\n##另外，當天看到一位穿便服的，幫忙處理製做完成的飲品及打包的應該是老闆（店主），整個人給人的感覺是沉穩/客氣的，這點值得稱讚～",
       "ts": 1773057989
@@ -2213,7 +2248,7 @@
     {
       "store": "UG竹北博愛店",
       "stars": 5,
-      "date": "133 天前",
+      "date": "134 天前",
       "author": "彼得平",
       "text": "茶味很不錯👌，生意很好，今天突然看到沒人趕緊買兩杯，隨後就一堆人湧入😆",
       "ts": 1772968224
@@ -2221,7 +2256,7 @@
     {
       "store": "UG斗六中山店",
       "stars": 2,
-      "date": "134 天前",
+      "date": "135 天前",
       "author": "洪佩吟",
       "text": "這是第三次來斗六買UG去冰的冷飲，買完後直立放在機車後面的置物箱固定好，也沒有擠壓呀！一個小時後回家打開要拿起來，發現裡面剩不到1/3杯….拿起來檢查才發現飲料杯底竟然一直滲漏出來🤯🤯🤯傻眼極致\n整個置物箱底部都是葡萄柚綠茶還有果粒⋯⋯裡面的東西藍牙音箱也滲飲料進去😱貴公司的飲料杯怎麼會有這問題，都已經回家了，也沒辦法再過去門市反應這問題，若不好好改善包裝品質，之後真的不敢恭維了@@",
       "ts": 1772884175
@@ -2229,7 +2264,7 @@
     {
       "store": "UG新竹金山店",
       "stars": 5,
-      "date": "134 天前",
+      "date": "135 天前",
       "author": "車干",
       "text": "來嚐鮮新開的UG 還不錯喝 店員看起來很有福氣又有朝氣 會再次回訪👍",
       "ts": 1772860994
@@ -2237,7 +2272,7 @@
     {
       "store": "UG彰化彰基店",
       "stars": 2,
-      "date": "135 天前",
+      "date": "136 天前",
       "author": "星城Online",
       "text": "沒什麼人潮，可見新聞風爆有影響📽️，嚐鮮🧐追風一下買看看，喝起來普通，比它家飲料小貴💰，吸管難吸引👎。",
       "ts": 1772769209
@@ -2245,7 +2280,7 @@
     {
       "store": "UG高雄巨蛋店",
       "stars": 5,
-      "date": "136 天前",
+      "date": "137 天前",
       "author": "林楷宸",
       "text": "偶然想到來買一杯，結果意外的很好喝，茶香很順口很清爽，喝起來很舒服。店長服務也很親切，而且戴的護目鏡🥽好可愛，整體感覺很好，會想再回來買！",
       "ts": 1772731389
@@ -2253,7 +2288,7 @@
     {
       "store": "UG林口長庚店",
       "stars": 4,
-      "date": "137 天前",
+      "date": "138 天前",
       "author": "Chloe Chu",
       "text": "茉莉綠茶拿鐵（直白的翻譯）😆無糖去冰+燕麥，好喝，無糖人友善～👍🏻",
       "ts": 1772605621
@@ -2261,7 +2296,7 @@
     {
       "store": "UG台中北平店",
       "stars": 1,
-      "date": "137 天前",
+      "date": "138 天前",
       "author": "張噹噹",
       "text": "到底哪邊有問題啊 我已經在外送平台勾選 使用載具\n我怕沒看到 我在備註那邊又留一次 載具\n結果收到飲料還是看到發票\n這給人感覺很不用心在看顧客需求ㄟ\n既然都會收到發票 我用載具用心酸的喔",
       "ts": 1772598102
@@ -2269,7 +2304,7 @@
     {
       "store": "UG信義通化店",
       "stars": 4,
-      "date": "137 天前",
+      "date": "138 天前",
       "author": "Jing Yeh",
       "text": "服務人員態度很好，很願意介紹及協助點餐。\nIt has a good service for those willing to introduce and assist with orders.",
       "ts": 1772589764
@@ -2277,7 +2312,7 @@
     {
       "store": "UG台南民生店",
       "stars": 5,
-      "date": "139 天前",
+      "date": "140 天前",
       "author": "李詩雨",
       "text": "初次來買已經晚上11點了，還是有些人潮，點的是蜜桃紅烏龍，蠻厲害的有分前中後調，喝下去一開始蜜桃香就撲鼻而來，鼻子呼吸都還會有一點淡淡的清香，櫃檯戴眼鏡的服務人員態度很好，就算已經接近閉店時間，也還是有耐心跟我建議本身飲品就有點甜度還要加糖嗎？優質，喜歡🥰🥰",
       "ts": 1772463788
@@ -2285,7 +2320,7 @@
     {
       "store": "UG遠東GARDEN CITY大巨蛋店",
       "stars": 4,
-      "date": "139 天前",
+      "date": "140 天前",
       "author": "莫菲",
       "text": "這家太多人了，喝杯飲料等了一個半小時，下次不會再做這種傻事了…😅",
       "ts": 1772456325
@@ -2293,7 +2328,7 @@
     {
       "store": "UG新店民權店",
       "stars": 1,
-      "date": "139 天前",
+      "date": "140 天前",
       "author": "ting con",
       "text": "這家飲料真的讓人非常失望明明點的是含蜜燕麥粒的飲品，但竟然沒有配大吸管，完全無法順利吸到裡面的燕麥粒，喝起來就像在喝普通飲料一樣，口感大打折扣。\n看出員工在工作上很疏忽，對細節完全不重視，明明這是消費者基本的飲用需求，卻沒有做到。\n這種小問題影響整體體驗，讓人覺得店家管理和員工培訓都不到位。\n希望店家能重視這類細節，像燕麥、這種需要大吸管的配料，一定要做好配套。",
       "ts": 1772441816
@@ -2301,7 +2336,7 @@
     {
       "store": "UG永和永安市場店",
       "stars": 5,
-      "date": "139 天前",
+      "date": "140 天前",
       "author": "葉家成",
       "text": "還是很好喝，茶跟奶都好香，員工態度也很好👍",
       "ts": 1772421291
@@ -2309,7 +2344,7 @@
     {
       "store": "UG三重正義店",
       "stars": 5,
-      "date": "140 天前",
+      "date": "141 天前",
       "author": "SeaFood Father",
       "text": "環境乾淨明亮，店員服務親切，飲料好喝優質。\n推薦三窨十五茉UG奶茶/去冰三分糖，雖然加鮮奶價錢一樣，但加UG奶比較好喝。\nLine官方帳號點餐再過去拿，比較方便。\n可以行動支付。",
       "ts": 1772366078
@@ -2317,7 +2352,7 @@
     {
       "store": "UG台中中科店",
       "stars": 5,
-      "date": "140 天前",
+      "date": "141 天前",
       "author": "曾雅裕",
       "text": "店員親切，飲料好喝",
       "ts": 1772341083
@@ -2325,7 +2360,7 @@
     {
       "store": "UG中和南勢角店",
       "stars": 3,
-      "date": "141 天前",
+      "date": "142 天前",
       "author": "蔣虎牙",
       "text": "這是我第二次走進UG店 但貴店是第一次 戴眼鏡的有兩位不說是誰了 你很厭世嗎？ 問茶類請問有推薦嗎？ 我感覺到那個臉有口罩下 眼神給出去 看起來翻譯很不想做生意誒，是有推薦 但是體驗體感很差 就是大名頂頂的U....G, OK 我是還沒喝不評論 我是不知道你們在不在乎客人的小評論 在路上就想打評論了 感受不好",
       "ts": 1772272815
@@ -2333,7 +2368,7 @@
     {
       "store": "UG嘉義文化店",
       "stars": 5,
-      "date": "142 天前",
+      "date": "143 天前",
       "author": "King . Wang",
       "text": "「UG 飲料」是台灣連鎖手搖飲料品牌中，領先使用 AI 智能茶飲機，快速製作提供標準化高品質茶飲，嘉義文化店一開幕，就造成轟動，每次經過總是有長長的排隊人龍，以開幕數個月(蜜月期已過)，擁有不少回頭客，排隊人龍雖已不在，現在仍然來客絡繹不絕。\n使用 AI 智能茶飲機，品牌強調健康、簡約、愛自己的理念，提供一系列無糖、低卡路里的純茶選擇，突顯原料的真實風味，擄獲了年輕族群對茶飲的潮流，也深受大家的喜愛。\n位置在熱鬧的文化路夜市南面，中央噴水池就在前面，即使人潮不斷，服務人員訓練有素，迅速的製茶、潮流時尚的外觀、親切優質的服務，讓人會一再的回購。",
       "ts": 1772179975
@@ -2341,7 +2376,7 @@
     {
       "store": "UG信義虎林店",
       "stars": 5,
-      "date": "142 天前",
+      "date": "143 天前",
       "author": "黃哞哞",
       "text": "UG的葡柚十五茉真的蠻驚喜的！入口第一口就是很清新的柚香，帶點自然果酸，但不會刺激或過酸，反而是那種很舒服、很順的感覺。茉莉綠茶的花香在後段慢慢浮現，香氣乾淨優雅，跟葡柚的清爽感融合得剛剛好。\n\n整體甜度不會膩，喝起來很解渴，也很適合天氣熱的時候來一杯。冰冰涼涼地吸一口，果香、茶香層次分明，卻不搶戲，反而是那種越喝越順、會默默整杯喝光的類型。\n\n如果平常喜歡清爽系、不愛太甜飲料的人，這杯真的可以試試。不錯喔 👍",
       "ts": 1772172313
@@ -2349,7 +2384,7 @@
     {
       "store": "UG台中黎明店",
       "stars": 5,
-      "date": "142 天前",
+      "date": "143 天前",
       "author": "王維祺",
       "text": "新口味新口味～超好喝\n快來嚐鮮\n還有限量版的娃娃～^_^",
       "ts": 1772170919
@@ -2357,7 +2392,7 @@
     {
       "store": "UG桃園中正店",
       "stars": 1,
-      "date": "143 天前",
+      "date": "144 天前",
       "author": "ueena Q",
       "text": "2/26\n從點餐到拿到餐點   點餐的女店員態度不知道跩什麼😄\n封口機 壞掉就算了\n做完 直接丟在旁邊  黏都不黏\n還要客人 自己問 自己黏\n\n我：這是我的嗎 怎麼沒講（因為看到丟在旁邊）\n點餐女店員：我有說唷 下次麻煩 請仔細聽喔\n\n還被訓話 這就是UG員工教育訓練該有的態度嗎？\n\n一杯不是多便宜的飲料 會買你們家的\n相信都是為了你們的品牌而買\n被店員這樣 數落 到還要客人請她不要再說了\n真的很誇張\n\n以前剛開業的男店員態度就很好\n\n已經是手提了 還是一樣全漏出來\n（因為封口機壞了 也只能只用杯蓋蓋 ）\n\n買過很多次了 今天感受極差\n一顆星都不想給",
       "ts": 1772074929
@@ -2365,7 +2400,7 @@
     {
       "store": "UG桃園中正店",
       "stars": 3,
-      "date": "145 天前",
+      "date": "146 天前",
       "author": "兮爾",
       "text": "浮光掠影中的一抹青綠，遺憾的是那份溫度的缺失\n走進桃園中正路，目光很難不被這抹清新脫俗的綠意所吸引。店門面橫跨著幾何線條與現代美學的碰撞，彷彿在喧囂的市井中開闢了一處靜謐的綠洲。初見其裝潢，確有幾分「大隱隱於市」的高級質感，紙杯上的繁花圖騰更是細膩入微，將東方韻味與時尚茶飲完美融合，令人在舉杯間，彷彿與這座城市的脈動有了一場短暫而優雅的邂逅。\n然而，文字與光影所營造出的氛圍，卻在踏入店內的那一刻，因服務的斷裂而略顯失色。茶湯雖依舊甘醇，帶著蘭香與鮮乳交疊的層次感，但工作人員的應對卻顯得沒禮貌⋯\n在講求感官體驗的當下，空間與飲品固然是門面，但人與人之間的交互才是品牌的靈魂。當服務的周延度追不上品牌的審美高度時，那些精緻的包裝便顯得有些單薄。若能將服務的溫潤感細細揉入這杯青綠之中，使每一聲問候都能如同茶韻般回甘，這場尋味之旅方能稱得上圓滿。期待下一次回訪，能見證這抹綠意不僅止於視覺，更能深入心靈的每個細微處。",
       "ts": 1771942443
@@ -2373,7 +2408,7 @@
     {
       "store": "UG台中逢甲店",
       "stars": 4,
-      "date": "145 天前",
+      "date": "146 天前",
       "author": "Andrea Yang",
       "text": "茶沒問題但袋子蠻有問題的。拉著提拔撕開魔鬼氈時就破掉了，畢竟也是要7塊錢，當7塊重複使用的袋子變成一次性感覺袋子的質量應該在用心一下！",
       "ts": 1771921647
@@ -2381,7 +2416,7 @@
     {
       "store": "UG台中黎明店",
       "stars": 5,
-      "date": "146 天前",
+      "date": "147 天前",
       "author": "Jimmy",
       "text": "這家飲料也太好好喝了吧！！第三次來購買\n不止飲料好喝，店員都好有禮貌+熱情\n環境也乾淨，品質穩定\n下次要再來 😋",
       "ts": 1771863343
@@ -2389,7 +2424,7 @@
     {
       "store": "UG高雄巨蛋店",
       "stars": 4,
-      "date": "146 天前",
+      "date": "147 天前",
       "author": "睡著鴨",
       "text": "-2026/2/23-\n✔️琥珀鐵觀音/ug奶茶-茶味很濃、奶很順口，喜歡💕\n✔️蜜桃紅烏龍-內有茶凍，水蜜桃果肉，偏酸，不喜歡😩\n✔️米香玉露青/鮮奶茶-有芋香，不喜歡😩",
       "ts": 1771854572
@@ -2397,7 +2432,7 @@
     {
       "store": "UG台南民生店",
       "stars": 3,
-      "date": "146 天前",
+      "date": "147 天前",
       "author": "亮亮兒",
       "text": "台南展店也一陣子了\n人潮退了我才來嚐鮮 XD\n\n先說優點\n空間明亮 杯子做得很有質感\n整體來說是好看的裝潢 👍\n\n缺點不討論總公司的爭議話題\n就是單價高 飲品普\n沒有遇到什麼客氣店員\n過年期間只感受厭世加成這樣 ㄎㄎ\n喔 重點\n那個87吸管到底誰發明的？\n難用到一個極致\n感覺吸飲料會吸到高血壓那種 😤",
       "ts": 1771850993
@@ -2405,7 +2440,7 @@
     {
       "store": "UG蘆洲光華店",
       "stars": 5,
-      "date": "146 天前",
+      "date": "147 天前",
       "author": "Bobo Chao",
       "text": "滿心期待地去UG點了桂花輕烏龍加蜜燕麥\n結果喝一口發現不對，裡面居然是茶花凍QQ\n我好想喝燕麥QQQQ",
       "ts": 1771841798
@@ -2413,7 +2448,7 @@
     {
       "store": "UG高雄瑞隆店",
       "stars": 5,
-      "date": "146 天前",
+      "date": "147 天前",
       "author": "JC HIGA",
       "text": "服務態度很好不錯！茶類還不錯喝！",
       "ts": 1771829775
@@ -2421,7 +2456,7 @@
     {
       "store": "UG台中北平店",
       "stars": 5,
-      "date": "146 天前",
+      "date": "147 天前",
       "author": "Arthur廷",
       "text": "有時候，一杯飲料的記憶點，真的能讓人跨越城市去尋覓。當初第一次在宜蘭羅東喝到 UG 的那一刻，清新脫俗的滋味就此烙印在心底。回到台中後，那股回甘的韻味依然在腦海中揮之不去，於是這份「執念」帶領著我來到了北平店，想再次重溫那份悸動。🍃\n\n一走進店內，最先被暖到的是店員的服務態度，親切、專業且充滿活力，讓人感覺這不僅是一間飲料店，更是一處溫暖的街角驛站。雖然店內空間稍微精緻玲瓏，位置稍嫌有點小，但這種溫馨感反而讓等待茶飲的過程多了一份儀式感。☕✨\n\n今天的主角，當然就是我心心念念的**「米香玉露菁」**！這款飲品簡直是茶界的極品佳作。第一口喝下去，最先竄上舌尖的是那股靈魂般的「米香」，那是經過精心焙製後才有的穀物芬芳，清新中帶著一絲大地的氣息\n\n最讓人驚豔的是，當米香遇上優質的玉露菁茶與香純奶香，那種化學反應簡直是神來之筆！🥛🌾 奶液的滑順並沒有掩蓋茶葉原有的清甜，反而將米香的焦甜感完整地包裹起來，讓口感變得極致圓潤、層次鮮明。每一口入喉，都能感受到茶韻與奶香在齒間優雅地交織，那種純粹的滿足感，真的讓人感嘆：這段跨縣市的追尋，完全值得！\n\n如果你也追求高品質的茶飲，厭倦了市面上甜膩的化工感，請務必點一杯米香玉露菁試試。那種米香與奶香交融後的雋永餘韻，絕對會讓你一口入魂。這不只是一杯手搖飲，而是一場感官的優雅邂逅\n\n下次路過北平路，別因為店面小就錯過它，這裡的服務與茶飲品質真的非常讚！🔥💖",
       "ts": 1771827605
@@ -2429,7 +2464,7 @@
     {
       "store": "UG忠孝敦化店",
       "stars": 1,
-      "date": "147 天前",
+      "date": "148 天前",
       "author": "Bobo wu",
       "text": "喝過各式各樣不同價位的手搖「尤其綠茶類」 第一次試這家…原本要全糖多冰，小姐建議半糖或3分…結果…是有史以來喝過最難喝的手搖..完全沒有柚味，茶還超澀。不知道哪來的自信定價$80🤦‍♀️",
       "ts": 1771753906
@@ -2437,7 +2472,7 @@
     {
       "store": "UG高雄瑞隆店",
       "stars": 5,
-      "date": "147 天前",
+      "date": "148 天前",
       "author": "YUTING",
       "text": "朝聖一下前陣子排隊排爆的店😂\n店員很有耐心介紹還沒喝到飲料服務先給過👍",
       "ts": 1771751525
@@ -2445,7 +2480,7 @@
     {
       "store": "UG苗栗頭份店",
       "stars": 5,
-      "date": "147 天前",
+      "date": "148 天前",
       "author": "賴淑靜",
       "text": "飲料好喝～包裝典雅漂亮～只是吸管改版的實在太難用，洞太小，美中不足",
       "ts": 1771746982
@@ -2453,7 +2488,7 @@
     {
       "store": "UG嘉義文化店",
       "stars": 4,
-      "date": "148 天前",
+      "date": "149 天前",
       "author": "Ting Tseng",
       "text": "茶聞起來很香，喝起來也還可以。\n從店面、保裝、配色…一系列都很美。是來喝個感覺的🍃",
       "ts": 1771658461
@@ -2461,7 +2496,7 @@
     {
       "store": "UG蘆洲光華店",
       "stars": 1,
-      "date": "149 天前",
+      "date": "150 天前",
       "author": "christopher",
       "text": "我於線上完成點餐後約 10 分鐘抵達門市，並在現場等候超過 20 分鐘。期間電子看板始終顯示我的飲料「製作中」，因此我一直在現場等待。直到最後才發現飲料其實早已製作完成並放置在一旁。\n\n向店員詢問後，僅得到「電子顯示器壞掉」的回應。我可以理解現場人潮較多、工作繁忙的情況，但若門市已知電子顯示系統有異常，卻未採取其他配套措施（例如主動告知顧客或改以人工叫號方式提醒），讓顧客在不知情的情況下長時間等候，確實令人感到不被重視。\n\n此外，由於飲料已放置過久，冰塊幾乎完全融化，導致奶茶口感與風味明顯變淡，影響整體消費體驗",
       "ts": 1771605542
@@ -2469,7 +2504,7 @@
     {
       "store": "UG斗六中山店",
       "stars": 5,
-      "date": "150 天前",
+      "date": "151 天前",
       "author": "Bee",
       "text": "三窨十五茉+紅烏龍茶凍，真是清爽解油膩啊🤤😋。線上點餐非常便民，時間到再去取餐省去現場等待的不便。一直覺得UG的杯子整個很華麗，拿在手上很時尚，杯子的成本應該比內容物貴😅",
       "ts": 1771459785
@@ -2477,7 +2512,7 @@
     {
       "store": "UG板橋中正店",
       "stars": 3,
-      "date": "151 天前",
+      "date": "152 天前",
       "author": "困了嗎",
       "text": "點了青檸桂蜜紅烏龍，但不知為何不是烏龍茶，而是奶茶，打開來看顏色也不對，上網查了一下ug紅烏龍確實是茶而非奶茶，但應該是過年期間很忙做錯，所以給了三顆星\n而且本人不太能喝奶 所以很在意",
       "ts": 1771419238
@@ -2485,7 +2520,7 @@
     {
       "store": "UG土城學府店",
       "stars": 2,
-      "date": "154 天前",
+      "date": "155 天前",
       "author": "蹲家裡",
       "text": "用Uber Eats叫外送連續兩次都遇到杯子質量的問題，向貴店反應得到的回覆是下次補給我們，飲料杯的部分是由公司提供，飲料杯的問題希望UG公司能儘快改善！飲料訂88塊，平台只補償50塊，我知道杯子的樣式有換，但品質上卻不如從前，需要很大的改進。",
       "ts": 1771126678
@@ -2493,7 +2528,7 @@
     {
       "store": "UG永和永安市場店",
       "stars": 4,
-      "date": "155 天前",
+      "date": "156 天前",
       "author": "歐明煙",
       "text": "加會員現上點餐折5元，蠻方便，味道還行，個人覺得吸管太細，好難吸",
       "ts": 1771063747
@@ -2501,7 +2536,7 @@
     {
       "store": "UG信義永吉店",
       "stars": 5,
-      "date": "155 天前",
+      "date": "156 天前",
       "author": "Joyce Lin",
       "text": "朱槿普洱紅奶茶很好喝，有一個帶熊貓徽章的服務員推薦的，服務很好！",
       "ts": 1771063105
@@ -2509,7 +2544,7 @@
     {
       "store": "UG台中東海店",
       "stars": 5,
-      "date": "155 天前",
+      "date": "156 天前",
       "author": "Enjoy Life",
       "text": "吃完早餐剛好快十點沒人排隊就來買杯喝喝看，點了網路推薦的三窨十五茉無糖去冰，喝起來不澀還蠻喜歡～\n要大推2/14早班的男店員，飲料做好給我們時發現我手上還有一杯，主動詢問是否幫我丟掉超貼💖\n感覺可以因為服務就常來👍👍",
       "ts": 1771037585
@@ -2517,7 +2552,7 @@
     {
       "store": "UG台南民生店",
       "stars": 5,
-      "date": "156 天前",
+      "date": "157 天前",
       "author": "阿丁食旅誌",
       "text": "UG台南民生店整體空間走清新質感風格，大片綠色牆面與植感設計相當吸睛，門口玻璃窗的「unique green」字樣讓人一眼就記住。這次趁生日禮買一送一活動來朝聖，小孩聽到有優惠特別期待，拿到飲料時笑得超開心。雖然現場人潮不少，需要排隊，大約等了28分鐘，但動線安排還算順暢，店員製作節奏穩定，沒有想像中久。飲品風味清爽不膩，甜度與冰量都能客製，喝起來自然順口。整體體驗愉快，既有質感氛圍，又有活動誠意，下次有機會還會再訪。",
       "ts": 1770967462
@@ -2525,7 +2560,7 @@
     {
       "store": "UG新店民權店",
       "stars": 1,
-      "date": "156 天前",
+      "date": "157 天前",
       "author": "chia-shuan Chou",
       "text": "不推雲頂奶蓋，只能點中杯，而且強制選少冰，冰塊放超多，最上面會預留擠奶蓋的空間，飲料大概只剩半杯",
       "ts": 1770960033
@@ -2533,7 +2568,7 @@
     {
       "store": "UG台中中科店",
       "stars": 5,
-      "date": "157 天前",
+      "date": "158 天前",
       "author": "JUYING LIOU",
       "text": "剛好有活動去購買，很喜歡店面的風格，喜歡袋子跟杯子都好美（雖然飲料好像才是重點😝）剛好看到店員出餐很用心的製作飲品、服務覺得不錯。",
       "ts": 1770871299
@@ -2541,7 +2576,7 @@
     {
       "store": "UG台北萬芳店",
       "stars": 5,
-      "date": "159 天前",
+      "date": "160 天前",
       "author": "高淇軒",
       "text": "茶飲好喝，店內人員我給100分好態度，我還抽中折疊傘，太棒了。",
       "ts": 1770713310
@@ -2549,7 +2584,7 @@
     {
       "store": "UG台中東山店",
       "stars": 4,
-      "date": "161 天前",
+      "date": "162 天前",
       "author": "曾美貞",
       "text": "到東山路拜訪朋友，回程的路上意外的發現一直想喝看看的UG,點了一杯招牌三窨十五茉無糖加紅烏龍茶凍，感覺味茶有點澀，茉莉香味有但沒有很濃，覺得我還是適合喝微糖的奶茶…哈哈",
       "ts": 1770569538
@@ -2557,7 +2592,7 @@
     {
       "store": "UG台中勤美店",
       "stars": 4,
-      "date": "166 天前",
+      "date": "167 天前",
       "author": "冬天的一匹狼",
       "text": "這次喝UG真的有被驚艷到！茶香很乾淨、不苦不澀，甜度冰量調整剛剛好，喝得到原茶的回甘感。配料新鮮有口感，不會搶味，整體很順口，越喝越耐喝。包裝也很有質感，拿在手上心情都變好，會想再回購的一家飲料店。",
       "ts": 1770154076
@@ -2565,7 +2600,7 @@
     {
       "store": "UG苗栗頭份店",
       "stars": 4,
-      "date": "167 天前",
+      "date": "168 天前",
       "author": "Sheng Chia",
       "text": "🌟2026/2/2（週一，平日）\n📍頭份分店｜\n個人口味主觀心得，僅供參考\n✅ 12:18 線上點餐\n✅ 12:52 外帶取餐\n⭐ 平日點 4 杯仍需等候約 34 分鐘\n（假日狀況不清楚）\n✅ 僅提供線上結帳訂購\n❌ 不接受電話訂餐\n⭐ 明顯鎖定年輕族群，\n不用電子支付者較不方便\n——飲品心得——\n⭐ 雲頂奶蓋桂花輕烏龍 NT$95\n✅ 滑順清淡、順口\n✅ 價位中高\n⭐ 蜜桃紅烏龍 NT$75\n⚠️ 果香與香料味重\n⚠️ 茶味偏淡、略水感\n⭐ 三窨十五茉 買一送一\n☑️ 一般表現，無特別記憶點\n——優惠與系統——\n✅ 有 Uber One、LINE 會員優惠\n✅ 點餐介面簡單好操作\n⭐ 每杯折 5 元 →\n情緒價值大於實際折扣\n——整體感想——\n☑️ 朋友推薦嚐鮮\n❌ 個人回購意願不高\n⭐ 仍偏好可電話點餐、\n較有人情味的老字號50嵐手搖店\n☑️ 手搖飲是生活調劑，不是必需品",
       "ts": 1770023584
@@ -2573,7 +2608,7 @@
     {
       "store": "UG台南永康店",
       "stars": 5,
-      "date": "169 天前",
+      "date": "170 天前",
       "author": "Patrick Wang",
       "text": "飲品的品質穩定，店員親切友善服務很棒。",
       "ts": 1769861954
@@ -2581,7 +2616,7 @@
     {
       "store": "UG台中黎明店",
       "stars": 5,
-      "date": "169 天前",
+      "date": "170 天前",
       "author": "Kaloo Lai",
       "text": "吃午餐路過看到UG,加入會員活動有買一送一卷,很順口的茉香味😀好喝！質感超好的杯子😍",
       "ts": 1769842059
@@ -2589,7 +2624,7 @@
     {
       "store": "UG苗栗頭份店",
       "stars": 5,
-      "date": "169 天前",
+      "date": "170 天前",
       "author": "GW PENG",
       "text": "好喝，人潮蠻多的，外送也很多，頭份人的福音，附近的飲料店應該會被影響，加油",
       "ts": 1769839206
@@ -2597,7 +2632,7 @@
     {
       "store": "UG新竹民生店",
       "stars": 4,
-      "date": "170 天前",
+      "date": "171 天前",
       "author": "盧小風",
       "text": "點了之前很夯的三窨十五茉，店員還有把‘窨’給寫注音，算貼心啦我真的不會唸😅喝起來倒是像茉莉綠茶的味道沒有特別其他感覺，但回家發現封膜又蓋杯蓋，杯蓋還特別設計有點高級，總覺得成本應該滿高的，下次會想試試其他飲品🧋🧋",
       "ts": 1769772542
@@ -2605,7 +2640,7 @@
     {
       "store": "UG北投光明店",
       "stars": 4,
-      "date": "171 天前",
+      "date": "172 天前",
       "author": "YU-YING SONG",
       "text": "有點驚訝line 點餐雲頂系列居然是現場擠鮮奶油！\n飲料也顛覆印象，在中壢喝過兩次都被雷到，這次因為趕公車來不及跑北投知名飲料店，想說再試一次點了結雲頂桂花青烏龍，有輕香但不會像喝肥皂水，老實說沒仔細看菜單原本以為是奶蓋，結果是鮮奶油！\n店員態度很好，生意也很好，唯一不足是等太久了網路點餐後在現場將近半小時還沒好",
       "ts": 1769681823
@@ -2613,7 +2648,7 @@
     {
       "store": "UG永和永安市場店",
       "stars": 5,
-      "date": "172 天前",
+      "date": "173 天前",
       "author": "WooHoo",
       "text": "線上點餐超方便，還能折抵5元。\n保冷袋的品質也很優質。\n鮮奶茶無糖，好喝～",
       "ts": 1769597324
@@ -2621,7 +2656,7 @@
     {
       "store": "UG信義虎林店",
       "stars": 4,
-      "date": "173 天前",
+      "date": "174 天前",
       "author": "邱小麗",
       "text": "以UG店來說偏小點，對推車和輪椅代步工具來說也不是方便。但這家店員很快地說是否需要幫忙也親切端出新口味試喝。他們的茶味比別家濃一些泡出來的飲品好喝許多。",
       "ts": 1769557491
@@ -2629,7 +2664,7 @@
     {
       "store": "UG台中豐原店",
       "stars": 5,
-      "date": "173 天前",
+      "date": "174 天前",
       "author": "QQ妹",
       "text": "今天買兩杯飲料琥珀鐵觀音奶茶薇糖少冰好好喝，服務也很好👍下次還會再去買😅",
       "ts": 1769514350
@@ -2637,7 +2672,7 @@
     {
       "store": "UG中山南西店",
       "stars": 5,
-      "date": "174 天前",
+      "date": "175 天前",
       "author": "Ashley",
       "text": "個人偏好U G奶茶類👍👍👍\n好喝～真讓人愛不釋手！\n感謝店員熱情款待。",
       "ts": 1769432926
@@ -2645,7 +2680,7 @@
     {
       "store": "UG苗栗頭份店",
       "stars": 5,
-      "date": "175 天前",
+      "date": "176 天前",
       "author": "Yang Cindy",
       "text": "可以線上點餐先訂很方便～\n飲料杯子很美很有質感，可以看到店員現擠鮮奶油很特別，奶蓋搭配烏龍奶茶喝起來奶香很濃郁，店員也非常親切買飲料心情好",
       "ts": 1769355604
@@ -2653,7 +2688,7 @@
     {
       "store": "UG台南永康店",
       "stars": 5,
-      "date": "176 天前",
+      "date": "177 天前",
       "author": "スミレ.",
       "text": "雖然第一天飲料就做錯了\n因為很常買所以味道一喝就知道～\n但店家彌補很有誠意直接補兩杯\n有一家離我很近的真是太好了\n會常去光顧\n但希望未來服務態度會跟剛開幕一樣🩵",
       "ts": 1769268120
@@ -2661,7 +2696,7 @@
     {
       "store": "UG北投光明店",
       "stars": 5,
-      "date": "177 天前",
+      "date": "178 天前",
       "author": "SeaFood Father",
       "text": "米香玉露菁 熱 三分糖，淡淡的芋香很喜歡，送的保溫袋在冷冷的天發揮作用，飲料回到家還是熱的，很實用\n店員服務親切，服務100分\n可以linepay\n慶開幕再次光顧，三窨十五茉/UG奶茶 買一送一，熱的三分糖真好喝，新的杯身也很時尚美",
       "ts": 1769140111
@@ -2669,7 +2704,7 @@
     {
       "store": "UG汐止中興店",
       "stars": 4,
-      "date": "178 天前",
+      "date": "179 天前",
       "author": "姜太",
       "text": "奶綠的奶香跟綠茶結合得挺好的，背蓋的小巧思設計，要嘴巴喝或是吸管喝都挺方便。",
       "ts": 1769105813
@@ -2677,7 +2712,7 @@
     {
       "store": "UG信義永吉店",
       "stars": 5,
-      "date": "179 天前",
+      "date": "180 天前",
       "author": "Hi Say",
       "text": "跟公司同事上班時的小確幸♥️ 幾乎都透過外送平台在叫，也常到店內購買～最喜歡也要大力推薦店內有位短髮很高的漂亮女孩兒，每一次都是帶著笑容在幫我們點餐（哪怕我們有時點餐蠻雜亂，有的同事冰量，甜度，差異蠻大的）這位店員記憶力超好而且很有耐心，堪稱服務業的典範。 最後，新改版的紙袋真是令人少女心爆發♥️♥️♥️♥️",
       "ts": 1769001111
@@ -2685,7 +2720,7 @@
     {
       "store": "UG信義永吉店",
       "stars": 5,
-      "date": "179 天前",
+      "date": "180 天前",
       "author": "______",
       "text": "反應了外送送錯的問題，只說了下次再小心就好、結果得到店家直接再送一杯過來🥹\n午休回來同事拿給我好驚🥹\n\n其實真的不用這麼客氣啦⋯⋯⋯\n我也不敢直接在Line社群上說謝謝，就寫在這裡了。\n\n服務很好 飲料好喝 動作很快 感謝你們🙏",
       "ts": 1768981020
@@ -2693,7 +2728,7 @@
     {
       "store": "UG新竹民生店",
       "stars": 3,
-      "date": "180 天前",
+      "date": "181 天前",
       "author": "Henry Chen",
       "text": "點餐要先考中文，那個字我活到現在第一次看到🧐\n\n看菜單頭要抬很高，而且燈會反光。\n\n純茶不錯，茶味夠濃郁。可是我不能理解，點去冰的茶，有封膜還附杯蓋。\n\n加上店員人數眾多，寧可聊天也不在客人剛進來的時候演一下做點正事。\n\n以上種種，即使產品不錯，但浪費的成本反映在我手上的茶價上，挺不是滋味。",
       "ts": 1768907506
@@ -2701,7 +2736,7 @@
     {
       "store": "UG信義通化店",
       "stars": 5,
-      "date": "182 天前",
+      "date": "183 天前",
       "author": "SeaFood Father",
       "text": "米香玉露菁+蜜燕麥粒好喝，淡淡芋香加上燕麥口感，無糖最對味\n服務好，優質店家\n可以行動支付",
       "ts": 1768710600
@@ -2709,7 +2744,7 @@
     {
       "store": "UG三重正義店",
       "stars": 3,
-      "date": "183 天前",
+      "date": "184 天前",
       "author": "mi kuo",
       "text": "茶韻獨特且與眾不同。遺憾的是，如其他評論所言，女服務員確實缺乏熱忱，若服務能跟上產品品質，整體體驗會更完美。",
       "ts": 1768635315
@@ -2717,7 +2752,7 @@
     {
       "store": "UG基隆廟口店",
       "stars": 5,
-      "date": "184 天前",
+      "date": "185 天前",
       "author": "林喬安",
       "text": "服務親切💚飲料好喝💚\n就算很忙還是微笑服務\n終於插旗基隆！",
       "ts": 1768553659
@@ -2725,7 +2760,7 @@
     {
       "store": "UG竹北博愛店",
       "stars": 5,
-      "date": "184 天前",
+      "date": "185 天前",
       "author": "gigi wu",
       "text": "飲料好喝、吸管也很特別，已回購第二次。五星好評買一送一下次使用",
       "ts": 1768551396
@@ -2733,7 +2768,7 @@
     {
       "store": "UG基隆廟口店",
       "stars": 5,
-      "date": "187 天前",
+      "date": "188 天前",
       "author": "Mei Chiu (妳猜猜)",
       "text": "新開幕雖客人多，但服務態度很好依舊保持熱情❤️‍🔥讓人覺得排隊反而更期待了🤩難得的店家❗️會常常回購的❗️",
       "ts": 1768302857
@@ -2741,7 +2776,7 @@
     {
       "store": "UG基隆廟口店",
       "stars": 5,
-      "date": "187 天前",
+      "date": "188 天前",
       "author": "Amanda",
       "text": "只能說超好喝的啦❤️ 期待好久了最愛的飲料店終於在基隆駐足了😍",
       "ts": 1768302747
@@ -2749,7 +2784,7 @@
     {
       "store": "UG彰化員林店",
       "stars": 5,
-      "date": "188 天前",
+      "date": "189 天前",
       "author": "蘇莠淩",
       "text": "第一次來嚐鮮，三窨十五茉喝起來非常順口且不會帶有澀澀的感覺～👍👍\n\n且店員服務態度佳～👍👍",
       "ts": 1768233376
@@ -2757,7 +2792,7 @@
     {
       "store": "UG土城學府店",
       "stars": 5,
-      "date": "190 天前",
+      "date": "191 天前",
       "author": "邱邱",
       "text": "UG Line網路點餐自取，可用Line Pay連結信用卡付費，很方便又不用現場等，還可以看到各分店等待製作杯數及預計等候時間。",
       "ts": 1768046413
@@ -2765,7 +2800,7 @@
     {
       "store": "UG桃園藝文店",
       "stars": 5,
-      "date": "190 天前",
+      "date": "191 天前",
       "author": "Star Hoshi",
       "text": "🪧260110\n鮮奶茶系列很好喝!!😍 有茶香/奶味也不會太濃💯奶茶都用三排細吸管，但不影響喝飲料的口感。還會標示熱量跟咖啡因(很貼心✨)\n\n現場等也很快！做好的時候都會叫號，如果覺得等太久也可以問一下現場人員(有時候螢幕不同步)~\n\n線上(需加好友&會員)點餐有優惠&折價券，但目前只有LINEPAY跟街口支付，所以還是習慣現場點餐~~",
       "ts": 1768030398
@@ -2773,7 +2808,7 @@
     {
       "store": "UG三重正義店",
       "stars": 5,
-      "date": "190 天前",
+      "date": "191 天前",
       "author": "KAI SHUN",
       "text": "三窨十五茉(鮮奶茶）好喝\n雖然現場只有我一位客人\n但是光外送訂單就多到做不完\n所以店員很厭世！\n五顆⭐️給飲料",
       "ts": 1768027628
@@ -2781,7 +2816,7 @@
     {
       "store": "UG南投復興店",
       "stars": 5,
-      "date": "191 天前",
+      "date": "192 天前",
       "author": "Life_分享",
       "text": "最近南投新開的 UG，整間店走一個深綠質感路線，看起來蠻有記憶點的。\n點餐是用 QR Code＋AI 系統，直接手機操作，不用排隊慢慢點，流程滿順的。\n\n這次喝他們的招牌 👉 「三窨十五茉」\n茉莉花香很明顯，不是香精感，是偏清香、順口型的茶，喝起來滿清爽的，適合不愛太甜、喜歡茶香的人🌿\n\n門口還有 告五人代言的人形立牌，粉絲應該會想拍一下📸\n\n整體來說是走\n✔ 科技感點餐\n✔ 品牌形象明確\n✔ 花茶特色路線\n\n如果你平常喜歡茉莉、花香系茶飲，這家可以試試看。",
       "ts": 1767934500
@@ -2789,23 +2824,23 @@
     {
       "store": "UG北投光明店",
       "stars": 5,
-      "date": "193 天前",
+      "date": "194 天前",
       "author": "蔡大大",
       "text": "UG這間新星的飲品優質生，開店速度很快，到北投溫泉區又看到新開一間，立馬買來喝。\n一如既往的高品質，忍不住要給32個讚。",
       "ts": 1767763349
     },
     {
       "store": "UG台中黎明店",
-      "stars": 5,
-      "date": "197 天前",
-      "author": "藍藍",
-      "text": "這間店肯定是要給五顆星的吧😁～\n店員多=＞出餐快💯=＞客人抱怨少。而且開幕還是比鄰近的幾間店出餐的速度還快，大加分。\n店員服務與態度棒👍，在這麼冷的天氣還是這麼的有服務精神，真的很少見了😳～\n開幕買一送一的奶茶之前沒喝過，第一次喝的初體驗良好😀，是我個人排前面的奶茶☺️，而且喝下去的花香不會太重🥰覺得很有化學感，喝了不會覺得很渴，真的是讚讚。只是在回甘的時候稍微有一點小小的扣分🥲，但是茶底整體還是給過的😉。",
-      "ts": 1767453747
+      "stars": 4,
+      "date": "198 天前",
+      "author": "甜不辣台妹",
+      "text": "115/1/2-1/4 慶開幕\n十五茉UG奶茶 買一送一\n每人限購10組(20杯)\n\n極少看到這麼大器的活動\n很多都是限購1-2組而已\n\n無糖還挺好喝的～\n明天再回購一次試試",
+      "ts": 1767462456
     },
     {
       "store": "UG新竹清大店",
       "stars": 5,
-      "date": "202 天前",
+      "date": "203 天前",
       "author": "tinnng",
       "text": "UG奶茶很讚讚\n點鮮奶茶味道就有點偏淡ㄌ\n建議先線上點餐 但最少也要等個一個小時🥺",
       "ts": 1766973199
@@ -2813,7 +2848,7 @@
     {
       "store": "UG彰化員林店",
       "stars": 5,
-      "date": "209 天前",
+      "date": "210 天前",
       "author": "Ru Mi",
       "text": "店員服務態度很好，環境也很乾淨\n好喝 下次還來🫶",
       "ts": 1766412898
@@ -2821,7 +2856,7 @@
     {
       "store": "UG新竹民生店",
       "stars": 4,
-      "date": "213 天前",
+      "date": "214 天前",
       "author": "Feng Feng Hsieh",
       "text": "更\n今天點5分喝起來感覺做成無糖🥺\n\n-\n這家真的好喝，而且店員服務態度好好，主動問我需不需要杯架\n\n📍金杯蜜香紅／鮮奶茶\n把飲料停留在嘴巴靠近喉嚨有蜜香的味道，快速吞下去到喉嚨中間則有堅果+牛奶的味道，整體喝起來很清涼順口，很讚😍",
       "ts": 1766031081
@@ -2829,7 +2864,7 @@
     {
       "store": "UG中山南西店",
       "stars": 2,
-      "date": "215 天前",
+      "date": "216 天前",
       "author": "田園吃貨",
       "text": "🔺開門見山總結：\n同事說很好喝，看到中山開店問要不要喝才訂的，只能說對第一次喝的人來說，期待值過高。對我來說，喝過就好，可以不用喝第二次了😅\n奶茶是鮮奶混奶精，原價要75元，喝起來還很淡！如果不是活動買一送一（還有同事揪）根本不會當盤子......\n\n🔺飲品\n• 三窨十五茉奶茶（原價$75）\n一分糖，喝起來感覺比其他店的一分糖甜一點，但整杯喝起來都超水的，老實說單比濃厚度的話，早餐店奶茶還比較濃😅\n\n• 桂花輕烏龍奶茶（原價$75）\n也是點一分糖，一樣很水，基本上喝不出鮮奶味，奶精有何不太出來，就是整體奶味都很淡，感覺很像拿中杯飲料稀釋成大杯......\n\n🔺服務\n剛開幕有買一送一，人潮超爆多，還好有上網看人說要先預約再去拿，禮拜一人也比較少，不過現場還是有在排隊。\n取餐有專門的人看號碼拿給你，沒有發生其他網友遇到拿錯的狀況，態度也蠻親切的，這個部份蠻不錯的。\n\n🔺訂餐系統\n加Line跟Ocard會員可以領中山店限定的券，訂餐也蠻方便的，也會通知取餐，系統算是好用的。",
       "ts": 1765896258
@@ -2837,7 +2872,7 @@
     {
       "store": "UG桃園藝文店",
       "stars": 5,
-      "date": "215 天前",
+      "date": "216 天前",
       "author": "Kimi Xiao",
       "text": "今天點了一杯米香玉露菁茶，算奶茶系列，喝起來順口，香氣不錯，不錯喝\n\n店內支付可linepay",
       "ts": 1765883057
@@ -2845,7 +2880,7 @@
     {
       "store": "UG汐止中興店",
       "stars": 5,
-      "date": "215 天前",
+      "date": "216 天前",
       "author": "陳玉芬",
       "text": "第一次喝，也是第一次叫外送\n還不錯喝",
       "ts": 1765867831
@@ -2853,7 +2888,7 @@
     {
       "store": "UG苗栗頭份店",
       "stars": 5,
-      "date": "216 天前",
+      "date": "217 天前",
       "author": "邱瑞塔",
       "text": "飲料好好喝！\n店員服務很親切👍🏼👍🏼👍🏼\n大推！！！！！\n下次會再來買唷！",
       "ts": 1765786027
@@ -2861,7 +2896,7 @@
     {
       "store": "UG新莊幸福店",
       "stars": 5,
-      "date": "216 天前",
+      "date": "217 天前",
       "author": "Anna Yeh",
       "text": "熱潮漸漸退去，趁排隊人潮少的時候來買\n點了招牌三窨十五茉\n來跟大家科普一下🤣\n意指使用「三窨」（音同「yin」）古法製作\n讓茶葉重複吸收茉莉花香三次\n達到每杯茶都蘊含相當於15朵茉莉花的香氣\n喝起來跟一般超商賣的奶綠確實不一樣\n-\n很懷念霸王茶姬\n可惜台灣沒有賣\n如果想要回憶的話，可以喝UG\n味道蠻像的，很順口\n但還是有點不太一樣\n價格的話，有點貴\n買兩杯會送一個保溫袋\n偶爾喝還可以",
       "ts": 1765774556
@@ -2869,23 +2904,15 @@
     {
       "store": "UG站前南陽店",
       "stars": 5,
-      "date": "217 天前",
+      "date": "218 天前",
       "author": "TH YANG",
       "text": "每次經過總能看到很多人在外等待，還好可以線上先點後取，不然真的懶得在現場等，三窨十五茉原茶還行，下次再來嘗試其他品項",
       "ts": 1765697812
     },
     {
-      "store": "UG台中勤美店",
-      "stars": 5,
-      "date": "218 天前",
-      "author": "Lisa",
-      "text": "25/12月初次到訪，可以加入會員線上先訂購飲料，到時候再自取，杯身很漂亮，招牌三窨十五茉飲料蠻好喝的。",
-      "ts": 1765610339
-    },
-    {
       "store": "UG中山南西店",
       "stars": 5,
-      "date": "219 天前",
+      "date": "220 天前",
       "author": "陳玉軒",
       "text": "點了招牌三窨十五茉 出餐速度很快謝謝服務人員 態度也很好",
       "ts": 1765512949
@@ -2893,31 +2920,15 @@
     {
       "store": "UG中壢新生店",
       "stars": 5,
-      "date": "221 天前",
+      "date": "222 天前",
       "author": "楊彌音",
       "text": "可以加入會員會送折價卷 還可以集點 也可以線上訂購就不用去現場等很久 生意非常好 訂單很多 現場客人也多\n鮮奶茶很可以買 吸管是給三品吸管 可以細細品味茶香跟奶香 好想要告五人的保冷袋可惜沒有了\n杯身上有注記前味 中味 候味 還有咖啡因跟卡路里\n覺得蠻貼心的\n可以來嚐鮮看看👌",
       "ts": 1765331139
     },
     {
-      "store": "UG高雄巨蛋店",
-      "stars": 4,
-      "date": "222 天前",
-      "author": "Wu Richard",
-      "text": "UG飲料，全名UG樂己，是台灣手搖品牌「歇腳亭」推出的新品牌，主打AI智能製茶，7秒就能完成一杯茶，並有時尚包裝，搭配告五人代言，迅速成為話題與質感手搖飲代表，必喝品項有三窨十五茉、桂花輕烏龍奶蓋、茶花紅烏龍等。\n品牌特色\nAI智能製茶：: 使用QR Code自助點單，AI製茶機平均7秒出一杯，糖度控制精準。\n高品質茶底：: 主打「三窨十五茉」工法，強調茶香與細緻口感。\n代言人加持：: 人氣樂團告五人擔任代言人，引發話題。\n時尚設計：: 簡約時尚的包裝，符合年輕族群喜好。\n必喝推薦\n三窨十五茉：: 招牌奶茶，有15朵茉莉花的香氣，口感細緻。\n桂花輕烏龍奶蓋：: 桂花香與輕烏龍茶的結合，搭配奶蓋超受歡迎。\n茶花紅烏龍：: 紅烏龍茶基底，帶有淡雅花香。\n牧場直達系列：: 使用小農鮮乳，口感更佳。\n如何點/省時間\n可使用線上點餐系統（透過官方LINE），先點好再到店取貨，避開排隊人潮。",
-      "ts": 1765280676
-    },
-    {
-      "store": "UG嘉義文化店",
-      "stars": 4,
-      "date": "223 天前",
-      "author": "猗窩座",
-      "text": "⭐️個人評價4.4分，飲品品質不錯，價格偏中上的飲料店\n服務：佳，點餐流程順暢，支付方式多元\n有存載具功能，飲品製作速度算快\n態度：普通\n米香玉露菁：還蠻特別的口味，真的有米香\n個人是點鮮奶茶款，奶香蠻明顯的\n不過整體很順口且清爽\n真的是從未喝過的風味，還不錯\n紅烏龍茶凍：清新爽口的茶凍，甜度也不高\n還算蠻有特色的，值得推薦。",
-      "ts": 1765213084
-    },
-    {
       "store": "UG台中東海店",
       "stars": 4,
-      "date": "223 天前",
+      "date": "224 天前",
       "author": "千",
       "text": "喝飲料很像在聞香水一樣奇妙的一間店，研究前中後味蠻有趣的，剛開幕有送保冷袋，吸管形狀蠻特別的\n\n米香玉露菁 $40 / $70\n有芋頭的香氣，斑斕葉和米的味道也有出來\n個人覺得單喝普通，搭奶茶比較好喝\n\n三香十五茉+奶茶 $70\n茉莉味道很清爽，不會重到有化學感，不錯",
       "ts": 1765207626
@@ -2925,7 +2936,7 @@
     {
       "store": "UG南投復興店",
       "stars": 5,
-      "date": "223 天前",
+      "date": "224 天前",
       "author": "江至婷",
       "text": "雖然人很多等很久不過服務也是很周到，態度很好飲料也很好喝",
       "ts": 1765205720
@@ -2933,7 +2944,7 @@
     {
       "store": "UG站前南陽店",
       "stars": 5,
-      "date": "224 天前",
+      "date": "225 天前",
       "author": "Yun Shan Yeh",
       "text": "茶花紅烏龍非常的順口，沒有茶澀味，生意好不是沒原因☺️",
       "ts": 1765127020
@@ -2941,7 +2952,7 @@
     {
       "store": "UG板橋中正店",
       "stars": 3,
-      "date": "224 天前",
+      "date": "225 天前",
       "author": "shara",
       "text": "店家只接受線上點餐不能電話點\n平常現場人潮多🙂‍↕️點餐前會跳一堆頁面超麻煩\n線上點：line pay付，現場：現金💰\n🥛🍃三窨十五茉/鮮奶茶(M) $65\n喝起來就是一般的奶綠嘛⋯沒有什麼特別香氣\n中杯大小+平常要等很久\n我覺得喝一次差不多了😂不難喝但很普通CP低\n冰塊融化後奶味水水的 不推但你們可以嚐鮮",
       "ts": 1765079161
@@ -2949,7 +2960,7 @@
     {
       "store": "UG林口長庚店",
       "stars": 5,
-      "date": "225 天前",
+      "date": "226 天前",
       "author": "李雯雯",
       "text": "蜜桃紅烏龍 滿好喝的❤️❤️\n從外送平台點 有說要吸管\n店家忘了放 打給店家\n店家幫我們送過來\n真的很讚 💪💪💪",
       "ts": 1765024549
@@ -2957,7 +2968,7 @@
     {
       "store": "UG台北石牌店",
       "stars": 5,
-      "date": "226 天前",
+      "date": "227 天前",
       "author": "SeaFood Father",
       "text": "石牌終於開了UG，優秀的茶飲店\n推薦UG奶茶 -三窨十五茉/3分糖，蜜桃紅烏龍/1分糖，純茶桂花輕烏龍/3分糖，米香玉露菁/芋香味超讚\nLine搜尋UG tea，好友加起來，買一送一先用再說，直接Line點餐自取，可省去等待時間，line上面會有目前等待杯數\n可以行動支付",
       "ts": 1764945805
@@ -2965,15 +2976,23 @@
     {
       "store": "UG永和永安市場店",
       "stars": 5,
-      "date": "226 天前",
+      "date": "227 天前",
       "author": "Jane Lee",
       "text": "第一次走進 UG 就被整家店的質感與清新的綠意療癒到！從門市的植栽牆到整體視覺設計，都讓人覺得像走進一個舒心的小森林。\n\n這次點了招牌的 三窨十五茶 & 桂花輕烏龍\n入口後茶香清爽溫潤、不苦不澀，喝起來很乾淨、很舒服。奶茶系列也超推薦，濃郁但不膩口，喝得出來原料是真的有用心挑選過。\n\n店員態度也非常親切，即使忙碌仍然微笑服務，手腳俐落又有禮貌，讓人感覺被照顧到了。包裝更是值得稱讚，杯子與手提袋都超美，質感到完全可以收藏，是少數讓我覺得「飲料也能很高級」的品牌。\n\n整體來說，UG 是一家會讓人喝完就再回訪的店。\n喜歡清爽茶香、講究質感的人，一定要來試！💚✨",
       "ts": 1764939584
     },
     {
+      "store": "UG台北石牌店",
+      "stars": 5,
+      "date": "228 天前",
+      "author": "Hsiang Yu Yu",
+      "text": "今天下班路過看到超多人排隊 之前聽朋友說過UG這個品牌但一直沒喝過想說剛好試試看 十五茉UG奶茶好喝不死甜 可愛的櫃台小姐說現在活動買兩杯還送保冷袋跟超可愛的UU菜瓜布 整個害我招架不住",
+      "ts": 1764861755
+    },
+    {
       "store": "UG台北西湖店",
       "stars": 4,
-      "date": "227 天前",
+      "date": "228 天前",
       "author": "多利 Yu",
       "text": "依舊是人很多，飲料也依舊是好喝。\n服務需要再加強.....\n店員丟了兩根吸管給我，沒說半句話...一圓一扁，我不知道哪杯是搭配哪一種吸管....\n能否請店員再說一句話也好，跟我說哪杯是用什麼吸管？或是都給我同一款也行。",
       "ts": 1764830006
@@ -2981,15 +3000,23 @@
     {
       "store": "UG台中東海店",
       "stars": 4,
-      "date": "229 天前",
+      "date": "230 天前",
       "author": "Grace",
       "text": "飲料好喝\n第一口就驚艷到 以為喝到毛\n吸管的品質有待加強",
       "ts": 1764675265
     },
     {
+      "store": "UG中山大直店",
+      "stars": 3,
+      "date": "233 天前",
+      "author": "Shihting Weng",
+      "text": "說真的，既然有封膜那就不要給杯蓋了，\n很不環保。",
+      "ts": 1764422794
+    },
+    {
       "store": "UG南投復興店",
       "stars": 5,
-      "date": "232 天前",
+      "date": "233 天前",
       "author": "Lin",
       "text": "南投店終於開啦🎉謝謝老闆特地外送來醫院😍以後一定大力支持❤️",
       "ts": 1764409334
@@ -2997,7 +3024,7 @@
     {
       "store": "UG高雄瑞隆店",
       "stars": 5,
-      "date": "232 天前",
+      "date": "233 天前",
       "author": "洪振詠",
       "text": "UG網路名店  瑞隆店剛開幕\n有送保冷袋  會員優惠買一送一\n來時不用排隊   稍微等一下\n點了三窨十五茉／鮮奶茶\n三窨十五茉無糖去冰買一送一\n\n第一次喝三窨十五茉\n感覺是清爽無負擔的茶\n茶味不重  我是喜歡茶味重一點的\n\n店員疏忽忘了給我一杯\n打電話過去態度不錯",
       "ts": 1764385724
@@ -3005,7 +3032,7 @@
     {
       "store": "UG士林捷運店",
       "stars": 5,
-      "date": "237 天前",
+      "date": "238 天前",
       "author": "SeaFood Father",
       "text": "Line搜尋UG tea，好友加起來，買一送一先用再說\n直接Line點餐自取，走過去5分鐘，茶已作好放在外帶架\n三窨十五茉茶香回甘，若可以再濃一點更佳\n純茶桂花輕烏龍更好喝/建議三分糖，青檸桂蜜建議五分糖\n目前喝過最好喝是UG奶茶\t-三窨十五茉/三分糖，跟蜜桃紅烏龍",
       "ts": 1763985942
@@ -3013,7 +3040,7 @@
     {
       "store": "UG信義永吉店",
       "stars": 5,
-      "date": "237 天前",
+      "date": "238 天前",
       "author": "White Lee",
       "text": "三窨十五茉奶茶跟純茶都很好喝！\n信義永吉店還有寬敞的等待區\n讚讚！",
       "ts": 1763976486
@@ -3021,7 +3048,7 @@
     {
       "store": "UG士林捷運店",
       "stars": 4,
-      "date": "239 天前",
+      "date": "240 天前",
       "author": "鄭阿嵐",
       "text": "點三窨十五茉無糖去冰加紅烏龍茶凍！\n有茶韻微甘及茉莉香。是好喝，但並不驚艷；杯子很美～",
       "ts": 1763806736
@@ -3029,7 +3056,7 @@
     {
       "store": "UG林口長庚店",
       "stars": 5,
-      "date": "241 天前",
+      "date": "242 天前",
       "author": "張米兒",
       "text": "每次只要經過一定要來買的UG手搖飲，而且是15 茉奶茶香味十足、再加上燕麥粒口感超好吃，真的大推❗️",
       "ts": 1763615665
@@ -3037,7 +3064,7 @@
     {
       "store": "UG桃園藝文店",
       "stars": 5,
-      "date": "245 天前",
+      "date": "246 天前",
       "author": "小豬皮",
       "text": "買一送一，最後一天購買\n9點半前到，沒人排，就先去全聯買東西\n\n快10點開門，才有一個人排，所以排第二位\n陸續才有人排隊，大概十幾個人以上\n\n買了3組，買一送一，分4杯袋跟2杯袋裝\n老婆，自己買1杯，1杯袋裝，因為會員沒折扣到，又去中正店買了一杯，超快拿到，沒人。\n\n號碼還是一樣的，#0172，很巧",
       "ts": 1763301855
@@ -3045,7 +3072,7 @@
     {
       "store": "UG桃園藝文店",
       "stars": 5,
-      "date": "246 天前",
+      "date": "247 天前",
       "author": "Jill Wang",
       "text": "點餐前告知需等20分鐘，\n開幕期間買一送一人潮多⋯\n實際10分鐘就拿到飲料了",
       "ts": 1763216977
@@ -3053,23 +3080,15 @@
     {
       "store": "UG台中逢甲店",
       "stars": 3,
-      "date": "246 天前",
+      "date": "247 天前",
       "author": "Cheryl Hsiao",
       "text": "茶味不苦澀，算是蠻有味道的茶飲，但是帶環保杯來買發現茶的容量很少，另外一杯用店裡杯子裝的也只有大概七份滿。",
       "ts": 1763183478
     },
     {
-      "store": "UG中山大直店",
-      "stars": 1,
-      "date": "247 天前",
-      "author": "TH",
-      "text": "全台灣最爛飲料店，沒有之一。線上訂了20杯飲料，過了快30分鐘系統上顯示製作已完成，開車到了店家才發現整間店大門深鎖。這種店家還值得存在在這個世界上嗎？趕快倒一倒吧。",
-      "ts": 1763101502
-    },
-    {
       "store": "UG彰化員林店",
       "stars": 4,
-      "date": "248 天前",
+      "date": "249 天前",
       "author": "Zoe Huang",
       "text": "剛開幕排隊排了不少時間\n杯子跟袋子很精美看了心情很好，茶普通\n但是店內整體感覺挺先進，都是觸控板跟機器主動搖的手搖，\n店門還有一個看板填寫大概來需要做幾杯等多久的預估，感覺很像麥當勞的看板😂\n但可能開幕有買一送一而且人多的關係，飲料4杯少做了1杯，但也還好盡快補上了\n目前剛開幕人氣旺，覺得可以過陣子人少了再來嚐鮮～告五人的歌好聽👍🏼",
       "ts": 1763038338
@@ -3077,23 +3096,15 @@
     {
       "store": "UG彰化員林店",
       "stars": 5,
-      "date": "251 天前",
+      "date": "252 天前",
       "author": "許赫宸",
       "text": "人多 飲料好喝\n\n價格合理 讚",
       "ts": 1762767596
     },
     {
-      "store": "UG台中北平店",
-      "stars": 5,
-      "date": "252 天前",
-      "author": "森奈月",
-      "text": "剛好有生日禮來喝喝看，點的是桂花輕烏龍ug奶茶，三分糖超剛好，桂花的香味剛好也不會到太重，下次還會想喝喝看別的。",
-      "ts": 1762668707
-    },
-    {
       "store": "UG信義通化店",
       "stars": 4,
-      "date": "257 天前",
+      "date": "258 天前",
       "author": "韓吉米（吉米）",
       "text": "只能外帶．沒有任何一張椅子．我個人不喜歡！",
       "ts": 1762263858
@@ -3101,7 +3112,7 @@
     {
       "store": "UG斗六中山店",
       "stars": 3,
-      "date": "260 天前",
+      "date": "261 天前",
       "author": "吃貨葛蕾絲[第10級在地嚮導]",
       "text": "跟風喝喝看\n三窖十五茉45，其實就是茉莉綠茶，是蠻香的，但就是偏貴，加奶變奶茶，就瞬間+30變75，超貴\n加入會員，馬上就有招牌買一送一券，當然就買這個\n杯子很美很厚很有質感，會不會杯子就佔一半成本\n可用載具和Line Pay\n聽說是大陸品牌，所有原料全來自大陸\n就買這次囉，滿足好奇心即可",
       "ts": 1762005807
@@ -3109,7 +3120,7 @@
     {
       "store": "UG台北大安店",
       "stars": 5,
-      "date": "266 天前",
+      "date": "267 天前",
       "author": "FOOD SKY",
       "text": "正EV+\n茶品重質、種類不多\n全新品牌經營加入會員有優惠",
       "ts": 1761471230
@@ -3117,7 +3128,7 @@
     {
       "store": "UG中山大直店",
       "stars": 5,
-      "date": "267 天前",
+      "date": "268 天前",
       "author": "Gina Pna",
       "text": "10月中新開幕，昨天才發現，大推桂花奶蓋好喝，店員服務親切，消費不限金額送保冰袋。",
       "ts": 1761374474
@@ -3125,7 +3136,7 @@
     {
       "store": "UG台北萬芳店",
       "stars": 5,
-      "date": "270 天前",
+      "date": "271 天前",
       "author": "劉芳玫",
       "text": "天熱啦！嚐鮮一下，8月開幕到現在10月才喝到，9月由同事口中才知道有萬芳UG店，錯過了開幕買一送一及送保冷袋的時間，但還是買了一杯三窨十五茉UG奶茶來喝，75元，外帶，微糖，去冰，剛開始喝有茶花加奶的味道，一直很熟悉的味道，後來快喝完總結一下，原來像是飲冰室茶集奶綠的味道，杯子外觀可愛文青，但是微甜去冰有點甜，建議喝無糖去冰，因為去冰冰塊不太多，奶茶會感覺更甜，花茶味重，希望下次再去嘗試點三窨十五茶來喝看看，大致這次喝完是花茶味比奶味重，喜歡花茶味濃的人，可以買來嚐鮮喝，值得回購喔！\nps:三孔扁平吸管，可細細品嘗飲品，不會一次喝太大口，也不會喝了扁掉，又可以拿來當攪拌棒，附有創新新點子，杯子上有封口膜，外加白色花型杯蓋，如果不用吸管，也可內封膜撕開，直接蓋上白色杯蓋直接喝，也可以喔！\nPs:加line 好友，有限期買一送一等折扣禮物卷可使用喔！也可線上訂，省去等候排隊的時間喔！",
       "ts": 1761108709
@@ -3133,7 +3144,7 @@
     {
       "store": "UG嘉義文化店",
       "stars": 5,
-      "date": "272 天前",
+      "date": "273 天前",
       "author": "Chenfang “警方”",
       "text": "您好，我是10/18號晚上快打烊前倒數第二位買的客人，那時候買了兩杯飲料回車上給老婆小孩喝，不小心飲料濺到了手，於是就向您們員工借洗手台洗手，您們也很好心的借我洗，本來已經上車要準備回高雄了，沒想到突然衝出一位男士，一開始我以為是要問路還是要來找碴的～哈哈，結果是您們UG的員工特地送了一杯一樣的飲品來給我，以為我是把這杯飲料都打翻，這個舉動實在是太貼心、太感動了，雖然您說您們都喝膩了，但這個善舉對我來說真的是大大的愛與遠播，謝謝UG嘉義文化店的您們、也謝謝送飲料來給我的先生，未來有機會去嘉義再去送給回禮給您們～真是太感謝了🙏🙏🙏\n（老闆記得要加薪水了啦，這員工太棒了）",
       "ts": 1760992393
@@ -3141,7 +3152,7 @@
     {
       "store": "UG高雄美麗島店",
       "stars": 5,
-      "date": "273 天前",
+      "date": "274 天前",
       "author": "蘇家和",
       "text": "第一次買UG還是要等候～還好美麗島附近很多咖啡廳所以等待還是可以接收的\n🌟三窨十五茉\n好喜歡這款綠茶，喝得出花香味！綠茶不會太甜也沒有苦澀味！喜歡花香的人會很愛\n-\n我是線上點餐還有加入會員！所以有買一送一超級開心的（剛好就是送這款綠茶🍵）",
       "ts": 1760885495
@@ -3149,7 +3160,7 @@
     {
       "store": "UG台中大里店",
       "stars": 5,
-      "date": "273 天前",
+      "date": "274 天前",
       "author": "張適璽（VICTOR）",
       "text": "服務態度禮貌親切，商品品質良好。值得推薦嘗試🥤讚讚讚👍🏻👏🏻💖",
       "ts": 1760864649
@@ -3157,7 +3168,7 @@
     {
       "store": "UG中壢中原店",
       "stars": 5,
-      "date": "273 天前",
+      "date": "274 天前",
       "author": "阿木",
       "text": "到訪時可能店內外都是人，看了看電子螢幕上還有滿滿的外送訂單，但由於還沒喝過就硬著頭皮去排隊點餐，出乎意料的沒等太久便輪到，似乎是店長的人在點餐，難怪效率十足，點完後抬頭一看竟然還有40組等待製作，幸好店家人手充足經驗豐富，讓我沒等太久，即使現場有點混亂，似乎是店長的人邊忙手上工作邊時時刻刻注意周遭，並提醒其他員工有立即要應對的部份。\n實際飲品到手，天氣炎熱沒幾下就一飲而盡，雖然說是微糖還是偏甜，茶味倒是滿香的，有注意到可以線上點餐，下次再來試試，節省等待時間。",
       "ts": 1760862224
@@ -3165,7 +3176,7 @@
     {
       "store": "UG新店民權店",
       "stars": 4,
-      "date": "275 天前",
+      "date": "276 天前",
       "author": "李昭賢",
       "text": "剛好到新店洽公，依照慣例用UG的Line官網點餐用Line Pay信用卡付費後到店自取，停好車走進去，跟店員告知取餐號碼後取餐，整個流程很順利不需要花太多時間，因應萬聖節的到來，店內有佈置萬聖節的氛圍還蠻應景的。\n這次點了米香玉露菁/UG奶茶3分糖去冰，杯外標籤說明前味：微甜斑斕葉、中味：純樸炊米香、後味：綿密芋香，一打開會先聞到斑斕葉的味道，喝一口下去反而嚐不到斑斕葉味，也沒有感受到炊米香，後韻則真的有芋頭的香味，是個人喜歡的奶綠口味，期待下次再試看看其它種味道的茶。",
       "ts": 1760697363
@@ -3173,7 +3184,7 @@
     {
       "store": "UG中壢新生店",
       "stars": 5,
-      "date": "275 天前",
+      "date": "276 天前",
       "author": "Shaotung Ou",
       "text": "最近超愛UG中壢新生店～桂花輕烏龍真的超讚！茶香很順又有淡淡桂花味，清爽不膩，超解渴～店員都很親切、手腳也快，每次去都心情很好，推爆這家！",
       "ts": 1760680451
@@ -3181,7 +3192,7 @@
     {
       "store": "UG土城學府店",
       "stars": 4,
-      "date": "277 天前",
+      "date": "278 天前",
       "author": "李昭賢",
       "text": "UG Line網路點餐自取，可用Line Pay連結信用卡付費，很方便又不用現場等，還可以看到各分店等待製作杯數及預計等候時間。\n喝過三窨十五茉的UG奶茶及鮮奶茶後，比較喜歡UG奶茶的濃郁香氣，於是就選了金杯蜜香紅/UG奶茶3分糖去冰，在杯外的標籤上說明前味：芳郁蜜香、中味：爐烤堅果香、後味：濃郁牛奶糖，實際喝起來茶味較重，喝不太到蜜香味，反而第一口真的有烤堅果香氣，只是後面再喝就喝不出來，至於濃郁牛奶糖不是很明顯，只會有淡淡的牛奶糖尾韻，喝完個人是還蠻喜歡的；同事是喝茶花紅烏龍，杯外的標籤上說明前味：芬芳山茶花、中味：熟成果香、後味：優雅淡甜香，同事蠻喜歡的說喝得到茶香跟果香味；琥珀鐵觀音/鮮奶茶由於是買給客人喝的，就沒有機會好好照相記錄，有機會會想再試試其它口味。",
       "ts": 1760538802
@@ -3189,7 +3200,7 @@
     {
       "store": "UG新店民權店",
       "stars": 5,
-      "date": "281 天前",
+      "date": "282 天前",
       "author": "鄭安茹",
       "text": "飲料蠻好喝的，味道很不錯，包裝很漂亮，但因為人蠻多訂單也很多😵‍💫",
       "ts": 1760161657
@@ -3197,23 +3208,15 @@
     {
       "store": "UG桃園南崁店",
       "stars": 4,
-      "date": "282 天前",
+      "date": "283 天前",
       "author": "李昭賢",
       "text": "整體設計看起來很漂亮的手搖飲料店，直接點了一杯三窨十五茉/UG奶茶半糖少冰，杯子上還會介紹飲料的前味：純淨茉莉香、中味：浪漫梔子花、後味優雅玉蘭香，店員也會清楚告知三窨十五茉就是綠茶，感覺標示跟告知還蠻清楚的，喝起來嘛還真的有喝到茉莉香跟玉蘭花香味，至於梔子花味個人就真的不是很熟悉了，喝起來是好喝的奶綠，下次想試試鮮奶的微糖去冰，喝看看其中的差異。\nUG手搖飲料店的包裝確實很漂亮，杯子上的圖畫設計很有味道，既復古又典雅，塑膠杯蓋也是一樣很有設計感，連吸管都做得與眾不同，是由三個很小直徑的吸管排列而成，店家取名為三品管：一品茶香、一品花香、一品奶香，可同時當吸管跟攪拌棒來用，讓人慢慢喝慢慢品茶。",
       "ts": 1760116244
     },
     {
-      "store": "UG汐止中興店",
-      "stars": 4,
-      "date": "287 天前",
-      "author": "Hsieh C.H",
-      "text": "生意很好，建議先透過Line的會員點餐\n招牌是三窨15茉 跟三窨15茉奶茶！",
-      "ts": 1759649832
-    },
-    {
       "store": "UG桃園中正店",
       "stars": 5,
-      "date": "294 天前",
+      "date": "295 天前",
       "author": "慶",
       "text": "UG桃園中正店環境乾淨明亮，給人舒適的感覺。店員服務態度親切，點單流程清楚，製作飲品的速度也蠻快，不需要等待太久。飲料選擇很多，茶香濃郁，甜度和冰量都能依照喜好調整，滿足不同需求。價格合理，份量也足夠，整體CP值不錯。店面位置方便，適合上班或逛街時順路外帶。整體來說，是一家值得再訪的手搖飲店，會推薦給朋友。",
       "ts": 1759050703
@@ -3221,23 +3224,15 @@
     {
       "store": "UG站前南陽店",
       "stars": 4,
-      "date": "296 天前",
+      "date": "297 天前",
       "author": "Wu JiaWei",
       "text": "UG 是歇腳亭集團推出的新品牌，初次購買三窨十五茉/UG奶茶，很好喝，茶味奶味都有出來，香氣十足，往後會想嘗試其它品項。\n可以使用行動支付和電子載具，很方便。",
       "ts": 1758906602
     },
     {
-      "store": "UG中壢新生店",
-      "stars": 1,
-      "date": "301 天前",
-      "author": "Chen Rebecca",
-      "text": "取餐亂七八糟，我的單被別人拿走了..\n線上點餐系統無法知道現在進度\n\n今天第一次去現場點餐，現場其實沒幾個人，但店員瘋狂做單，才知道可以先線上點餐\n看店員就是一直把飲料放到左邊櫃子，還有櫃檯上的位子，擺滿滿一堆飲料\n都沒店員在做確認取餐的明細跟號碼\n外送跟自取的人就自己看號碼找自己的飲料\n\n當時就在想，不會有人拿錯嗎？\n不會有人根本沒付錢，進來偷飲料嗎？\n\n因為當下螢幕顯示前面至少還有20個訂單，這條路很難停車，只好回車上顧車，用ug系統也看不到飲料現在做到幾號，客戶就是只能一直乾等\n\n大約15分鐘進店看\n我是0351，但櫃檯跟左邊櫃子都找不到，可是單子已經做到0356了....\n抓店員去找，店員也找不到，只好現場重新做給我\n\n我問：你們給飲料都不會對單嗎？\n店員說會對單對號碼\n我問：那我的飲料為何不見了？\n店員頓掉，說有些客人會直接拿走...\n(為什麼沒店員顧飲料，直接讓客人拿？)\n最後拿給我，店員也沒請我出示號碼牌或明細，我看其他人取餐，店員也沒做取餐明細確認(啊不是說會做確認？)\n\n所以ug老闆看到沒？\n你們飲料這樣管理，做好直接放桌上，放櫃子上，單多到店員顧不了飲料，有人是會進來偷飲料的！\n(開放大家來偷飲料？)\n然後飲料不見，又要重做繼續等..\n飲料不該直接放給大家亂自取吧\n很明顯管理上有問題\n\n線上系統點餐也不好\n看不到訂單進度\n要讓客人知道現在餐點做到幾號，客人才能抓時間去取餐啊\n\n最後，口味就茶啊\n要說有多好喝也真的都差不多\n請經營者好好改善",
-      "ts": 1758452193
-    },
-    {
       "store": "UG台中東山店",
       "stars": 2,
-      "date": "302 天前",
+      "date": "303 天前",
       "author": "ZY J",
       "text": "買了三杯，其中一杯點無糖去冰，當下拿到就覺得重量不太對，原本當下想要反應，但看現場忙碌就先帶回家靜置等消泡後再打開看，還真的沒有滿杯，店員飲料封杯後都不覺得重量不太對嗎？雖然現場很忙但品質還是要顧吧？",
       "ts": 1758389026
@@ -3245,7 +3240,7 @@
     {
       "store": "UG台中東山店",
       "stars": 3,
-      "date": "305 天前",
+      "date": "306 天前",
       "author": "汪星人",
       "text": "點了最貴的奶蓋⋯感覺沒有很好喝，還限中杯而已不如等星X克買一送一。沒送袋子應該不會再去買了。",
       "ts": 1758085147
@@ -3253,7 +3248,7 @@
     {
       "store": "UG台北大安店",
       "stars": 5,
-      "date": "307 天前",
+      "date": "308 天前",
       "author": "黃偉倫",
       "text": "路過來喝了UG的手搖飲，他們在飲料界算是有闖出一點小特色，像是AI製茶的概念就蠻有趣的，感覺每一杯都經過精準調配。最吸引我的是那根三孔吸管，第一次看到還以為是設計錯誤，結果一吸下去才發現是有巧思的！三孔可以同時喝到三種不同風味，前中後層次分明，完全是味覺上的小驚喜，我點的是奶茶系列，入口先是濃郁的茶香，接著奶香慢慢浮現，最後還有淡淡的花香收尾，整體口感很細緻，喝完真的會想再來一杯。店員蠻多的，出餐速度比想像中快，不像一開始要等好幾個小時。不過還是建議線上預約，會比較省時間。店內空間不算大，尖峰時段人潮多，要排隊取餐，整體來說，UG 是一家有創意又好喝的手搖飲店，值得一試！",
       "ts": 1757929857
@@ -3261,7 +3256,7 @@
     {
       "store": "UG蘆洲光華店",
       "stars": 5,
-      "date": "308 天前",
+      "date": "309 天前",
       "author": "丹丹陳",
       "text": "平日下午現場購買不會等太久～蜜香紅鮮奶茶還不錯喝～加入會員還有送折價券👍🏻\n保冰袋很美，忍不住加購了四杯袋，結果不是很耐用，提把當天就有裂開一點點，後來開口處黏貼也壞了🥹很可惜是這樣的品質",
       "ts": 1757862202
@@ -3269,7 +3264,7 @@
     {
       "store": "UG中和南勢角店",
       "stars": 5,
-      "date": "308 天前",
+      "date": "309 天前",
       "author": "Peggy Lee",
       "text": "時代在進步，連吸管設計也進步了，UG的鮮奶茶吸管很特別，是三個洞扁吸管，讓你一口喝到茶的三種韻味，我覺得這吸管研發的很棒，當然飲料也不錯喝，杯子、提袋、裝潢整體都很好看，走過路過都忍不住進去買一杯來喝呢😄",
       "ts": 1757827675
@@ -3277,7 +3272,7 @@
     {
       "store": "UG板橋中正店",
       "stars": 3,
-      "date": "309 天前",
+      "date": "310 天前",
       "author": "章珍綺",
       "text": "我點金杯蜜香紅鮮奶茶正常甜，結果發現店員幫我key五分糖而已，結果詢問之下發現五分糖已經是店裡最甜的選項了，實際喝起來就真的只有半糖的甜度，但不會讓我覺得難喝。\n\n茶本身不難喝但沒有讓我覺得驚艷到好喝的感覺。\n\n另外本來只想花一元買一般的飲料袋，結果店員說他們只有五元的保冰袋於是我買了。\n\n袋子非常精緻漂亮，而且沒有像評論上說的災情就是立刻就破掉斷掉。\n\n另外溫馨小提醒：在禮拜六的早上十點半去買，完全不用排隊就買到囉，開心～\n\n忘了說趕快加入會員有折五元優惠券可以使用，我今天就立刻用掉了😆",
       "ts": 1757734068
@@ -3285,7 +3280,7 @@
     {
       "store": "UG新莊幸福店",
       "stars": 5,
-      "date": "310 天前",
+      "date": "311 天前",
       "author": "Joyce Lin",
       "text": "🌿 UG UNI GREEN 新莊幸福店\n這次點的是米香玉露青，微糖、微冰。\n\n喝下去第一口，真的有驚喜：\n•\t前味：微甜帶點米香，像小時候喝到的米香飲料，但更清爽。\n•\t中味：茶香慢慢浮出來，順口不澀。\n•\t後味：奶香收尾很柔和，嘴巴裡會留下一種棉密的香氣。\n\n包裝超美，拿在手上有點文青感（我還忍不住拍了袋子跟杯身 😂）。現場裝潢主打綠色植栽，走進去就很清新舒服。\n\n唯一小缺點是人有點多，需要稍微排隊，但氣氛不會太吵。\n\n整體來說，算是很有特色的飲料店，下次想試試他們的其他限定款。✨",
       "ts": 1757685334
@@ -3293,7 +3288,7 @@
     {
       "store": "UG高雄美麗島店",
       "stars": 5,
-      "date": "315 天前",
+      "date": "316 天前",
       "author": "のぐちえいすけ",
       "text": "🧋南高雄終於開幕告五人的UG樂己（Unique Green）冷飲店～而且遇到剛開幕週末3天都是「三窨十五茉」買一送一活動，很開心。✨\n💫現在加入Line官方帳號，除了可以線上點餐免排隊，還能成為Ocard會員集點享免費兌換或折價優惠很方便。\n🛍️即日起到9/18（四）只要到店消費不限金額，直接贈送保冷袋ㄧ只。\n🍵每項茶品外包裝都會標示茶品的「前味」、「中味」、「後味」，例如UG招牌的「三窨十五茉」，尾韻能品嘗到淡淡的玉蘭花香氣，的確獨特Unique，令人印象深刻。\n🥛奶蓋系列雖然不平價，來都來了，值得品嚐看看。\n💁🏻‍♀️服務人員在裝杯蓋之前，還會貼心詢問客人是否對奶蓋裡的成分（堅果🌰）會過敏，才會現場製作奶蓋給客人看，並封蓋放入保冷袋，一次滿足視覺與味蕾雙重享受😋",
       "ts": 1757266262
@@ -3301,23 +3296,15 @@
     {
       "store": "UG台北西湖店",
       "stars": 5,
-      "date": "316 天前",
+      "date": "317 天前",
       "author": "Yang luya",
       "text": "Ug 的茶飲喝起來就是舒服😌😌\n\n是目前我喝過手搖飲裡茶的品質，\n感覺是最好的👌🏻\n\n不用考慮了，不管是哪間分店喝起來都沒有差別，品管上很優良～\n\n看評價上很多人說店員的態度不好等問題，個人覺得無所謂🤷🏻🤷🏻\n(因為Ug的生意都太好了，店員忙到沒辦法還要顧到那塊是非常可以理解的)\n\n每次我點的純茶或是鮮奶茶都是點無糖的，這次點了一杯3分糖的就覺得太甜～\n\n如果是飲料習慣喝有糖的，應該是會覺得還好😂請參考。\n\n他們的十五茉真的喝起來很回甘又有淡淡的茉莉香，推一個。",
       "ts": 1757144023
     },
     {
-      "store": "UG站前南陽店",
-      "stars": 2,
-      "date": "317 天前",
-      "author": "TONY TORNADO",
-      "text": "飲料是好喝的，點了一杯蜜桃紅烏龍。標榜喝了就有戀愛的感覺，真的喝了有戀愛的感覺，值得一試。但建議現場點，因為用Uber eats下午13:40點，收到時候已經16:20😵‍💫😵‍💫～等了兩小時多⋯所以東西是好喝的，但如果要點務必前三小時點～這樣才不會覺得等很久⋯⋯⋯",
-      "ts": 1757076369
-    },
-    {
       "store": "UG台中勤美店",
       "stars": 5,
-      "date": "317 天前",
+      "date": "318 天前",
       "author": "Bobosup music channel",
       "text": "新開幕的飲料店 人潮很多 要等一段時間\n可以加入會員拿折價券跟線上預點\n飲料是還不錯 茶香 底蘊都很足 價格高了一點點\n果汁系列感覺都是用果醬去調的",
       "ts": 1757057815
@@ -3325,7 +3312,7 @@
     {
       "store": "UG台北萬芳店",
       "stars": 5,
-      "date": "321 天前",
+      "date": "322 天前",
       "author": "Jewel",
       "text": "新開的手搖飲料店,只有外帶.\n蠻會作宣傳的,開幕活動有送保冷袋,還有品項買一送一.\n人潮蠻多的~\n\n這天晚上收銀員的可愛妹妹,真是值得誇獎.\n客人非常多,很忙了.\n但是詢問哈蜜瓜口味的奶茶,哈瓜和傻瓜有什麼差別時,非常親切仔細的回覆茶品口味的差別,還不怕麻煩的倒了試喝給我們.\n很謝謝她.\n\n其他店員服務態度也都很好,全都很忙,但是和客人有交集時,都很有禮貎.\n教育訓練作的蠻好的店家,會再次光臨.",
       "ts": 1756697086
@@ -3333,7 +3320,7 @@
     {
       "store": "UG新竹民生店",
       "stars": 5,
-      "date": "322 天前",
+      "date": "323 天前",
       "author": "睡神",
       "text": "新開的 手搖飲店，剛好有活動還會贈送保溫袋，所以特地過來試喝。\n\n我喝的是 三窖十五茉（名字真的挺難念的 😅），喝起來有明顯的 茉莉花茶香氣，口感獨特，確實配得上他們的招牌茶。如果想嘗試特別的茉莉茶，這裡值得一試。\n\n另外我也買了 烏龍茶，口感就一般，沒有特別突出。\n\n整體來說，茉莉茶表現亮眼，烏龍茶中規中矩，值得來嘗鮮看看。",
       "ts": 1756652285
@@ -3341,7 +3328,7 @@
     {
       "store": "UG台北萬芳店",
       "stars": 5,
-      "date": "322 天前",
+      "date": "323 天前",
       "author": "CHUN MEI TSAI (jennifer)",
       "text": "新開的來嚐鮮，還不錯喝。雖然開幕有買ㄧ送ㄧ，但飲料口感還是不錯喝，不像別家買ㄧ送一飲料味道就變得很淡，不夠濃。",
       "ts": 1756625364
@@ -3349,7 +3336,7 @@
     {
       "store": "UG三重正義店",
       "stars": 4,
-      "date": "324 天前",
+      "date": "325 天前",
       "author": "yangXdaily",
       "text": "1. 生意超級好，超熱門的店\n2. 8/29-8/31試營運，會送保冷袋\n3. 飲料還行\n4. 排隊大約10分鐘",
       "ts": 1756475831
@@ -3357,7 +3344,7 @@
     {
       "store": "UG信義通化店",
       "stars": 5,
-      "date": "325 天前",
+      "date": "326 天前",
       "author": "瑃鈐",
       "text": "真的非常感謝店家的幫忙🙏\n\n原本是用 UberEats 預約訂單，但等了一個多小時都沒有外送員接單🥲因為是活動需要，時間已經有延誤，只好打電話到店裡詢問\n店家很貼心，雖然這不是他們一定要做的事，還是願意直接幫我配送，真的非常感謝😭\n\n特別感謝🫶🏻\n- 送飲料的大哥很親切，還建議如果之後有要訂購外送，可以直接前一天打電話跟店裡預訂會比較好\n- 接電話的店員小姐也很耐心，雖然現場應該很忙，還是一起幫忙解決\n\n🥤飲料部分也想回饋一下：蜜桃紅烏龍喝起來很清爽，雖然點無糖，但因為有茶凍，喝起來還是有些許的甜味～",
       "ts": 1756363707
@@ -3365,7 +3352,7 @@
     {
       "store": "UG汐止中興店",
       "stars": 3,
-      "date": "330 天前",
+      "date": "331 天前",
       "author": "Ivy Lin",
       "text": "現在等候大約10分左右，可以線上點餐，馬上加入會員，就能立即使用會員禮。$45 三窨十五茉（少冰、3分糖），其實就是茉莉綠茶，茉莉味蠻重；$75 哈瓜UG奶茶（3分糖、少冰），此刻冰度無法更改，以三窨十五茉為基底，哈密瓜味蠻濃，蠻好喝。可以Line pay。",
       "ts": 1755915260
@@ -3373,7 +3360,7 @@
     {
       "store": "UG中壢中原店",
       "stars": 5,
-      "date": "335 天前",
+      "date": "336 天前",
       "author": "呂小臻",
       "text": "店家在包裝設計上相當用心，杯身與提袋質感兼具美感與實用性。桂花系列茶飲風味清爽高雅，令人印象深刻；蜜桃紅烏龍搭配茶凍更展現層次感與獨特口感。首次消費即可感受到品牌對品質與服務的重視，店員態度親切，整體體驗十分良好，值得信賴與推薦。",
       "ts": 1755502693
@@ -3381,7 +3368,7 @@
     {
       "store": "UG桃園南崁店",
       "stars": 4,
-      "date": "336 天前",
+      "date": "337 天前",
       "author": "WANG WANG",
       "text": "8/15，6點下班來買，第一天人很多，8/15-8/17有優惠三窨十五茉買一送一，8/15-8/28不限消費金額，贈送保冷袋 ，一整天人很多，我排隊40分鐘才點到飲料，店員口氣很好，也很有耐心，推推👍👍 預計等候取餐時間約50分鐘，回家一趟再來拿，排隊人潮還是很多，店員都很努力趕工做飲料🤣但飲料很吃個人口味，有的品項好喝，有的覺得一般般，有贈送保冷袋，覺得很實用～",
       "ts": 1755390853
@@ -3389,7 +3376,7 @@
     {
       "store": "UG桃園南崁店",
       "stars": 4,
-      "date": "337 天前",
+      "date": "338 天前",
       "author": "澤Taiwan",
       "text": "8/16晚上八點多去現場排隊、點了一杯哈瓜UG奶茶75元、等了20多分鐘終於等到了、跟朋友現場開喝、朋友說滿滿哈密瓜香料的味道⋯嗯我喝了也是、所以並無新創。只有送的那個提袋、可能成本滿高的～也不錯看。少的那顆星是價格可以在親民一些",
       "ts": 1755359936
@@ -3397,7 +3384,7 @@
     {
       "store": "UG信義虎林店",
       "stars": 4,
-      "date": "342 天前",
+      "date": "343 天前",
       "author": "CHUN MEI TSAI (jennifer)",
       "text": "每次路過都好多人買，所以也來嚐鮮，加上它的杯子、環保袋的設計都很有質感好看，加上拿著它都愛不釋手，而且飲料確實也不錯喝。",
       "ts": 1754873958
@@ -3405,7 +3392,7 @@
     {
       "store": "UG台中大里店",
       "stars": 1,
-      "date": "343 天前",
+      "date": "344 天前",
       "author": "王瑋成",
       "text": "2025.08.09  21：09點餐\n預計要等23分鐘，我願意等\n但隨著比我晚的點餐都逐漸做好，最後製作中只剩我一人\n便感到不對勁\n於是詢問工作人員我的單號，得到的是「不好意思找不到我的單，現在馬上幫我做」\n現場員工約七人，沒有人發現這單卡了很久不太對勁，會不會我沒有發現就一路等到關店..\n而我點了無糖去冰，喝起來和朋友的半糖一樣甜，還以為是我味覺出了問題\n\n我也做過餐飲服務，理解爆單的忙碌會讓人應接不暇，分工與交接要相當落實\n但「忘單與做錯」兩點，對餐廳是相當致命的\n而似乎也有不少評論出現類似的問題，同時店家也沒有現身說法\n只能請想要嘗鮮的人要衡量一下了",
       "ts": 1754797955
@@ -3413,7 +3400,7 @@
     {
       "store": "UG士林捷運店",
       "stars": 5,
-      "date": "352 天前",
+      "date": "353 天前",
       "author": "小蛙",
       "text": "新品哈密瓜口味不錯\n但只有m size價格偏高\n\n線上點餐可以避免久候\n新會員還有1杯折5元👍\n\n奶蓋系列跟玉露清好喝\n清烏龍偏淡有點水味",
       "ts": 1754080724
@@ -3421,7 +3408,7 @@
     {
       "store": "UG林口長庚店",
       "stars": 4,
-      "date": "354 天前",
+      "date": "355 天前",
       "author": "Xing He",
       "text": "Ig:food_and_foooood\n由告五人代言的UG推出新品啦😍以這次告五人的新專輯「我們就像那些要命的傻瓜」的概念來傳達這次的夏日限定飲品 復刻回歸的哈瓜奶茶及名為專輯名稱的傻瓜奶茶 凡購買指定商品 就能有機會獲得告五人的親簽專輯💿與參與告五人的live house 巡迴 全門市都能聽到告五人的口播 快來聽告五人與你悄悄話吧！\n\n🧋哈瓜奶茶（M)$75\n🧋傻瓜奶茶（M)$75\n\n超人氣商品哈瓜奶茶復刻回歸啦❗️今夏最清爽的飲品不能不錯過的 清甜的哈密瓜味搭配濃郁的奶香 帶點滑順口感 尾韻更有清雅的茉莉花香綻放開來 夏日限定飲料告五人粉必喝☺️\n\n以犬青最愛的米香玉露菁為基底 更是這次新專輯的聯名商品🤩 一樣帶有哈密瓜香氣搭配奶茶增添層次 以淡雅的炊米做收尾 再帶有淡淡的芋頭香 整體喝起來輕盈不膩口！\n\n活動報報🎉\n🍈全門市前200名購買哈瓜及傻瓜組合即贈新專輯聯名貼紙\n🍈UG會員買限定新品哈瓜或傻瓜奶茶、以及專屬組合 於7/21-8/31內購買指定商品 即可抽親筆簽名專輯或巡迴live house雙人門票（每週三18:00前公布中獎名單）購買哈瓜x傻瓜組合 中獎機率越大呦❗️",
       "ts": 1753883739
@@ -3429,7 +3416,7 @@
     {
       "store": "UG信義通化店",
       "stars": 4,
-      "date": "365 天前",
+      "date": "366 天前",
       "author": "拗寶",
       "text": "《UG信義通化店》\n台北市大安區信義路四段256號\n\n新開的飲料店，聽說很紅，所以來朝聖一下～排隊人潮沒有想像中的多，店員服務態度不錯，但可能新開的有點手忙腳亂。\n\n🌼純茶 三窨十五茉\n🌼雲頂奶蓋 桂花輕烏龍\n\n店面裝潢、飲料包裝給人很清新的感覺。飲料喝起來有花香味，還不錯、可以嚐鮮。\n新開幕～買飲料有送提袋～",
       "ts": 1752897108
@@ -3437,7 +3424,7 @@
     {
       "store": "UG蘆洲光華店",
       "stars": 2,
-      "date": "379 天前",
+      "date": "380 天前",
       "author": "林群弼",
       "text": "茶是不錯喝，很香\n但線上預估的時間很不準，到了還要等半小時\n那線上預訂就沒什麼意義\n\n另外螢幕上的製作中有些號碼根本沒出現，我自己號碼在那邊等30分鐘都沒出現，問了兩個店員都說不知道？？ 員工訓練也要加強\n\n然後在現場等，有一個客人只買一杯，店員就先當做他的（？？ 什麼意思\n那其他等的人（？？\n\n茶是不錯喝，但其他間也很好喝\n沒有必要一定要喝",
       "ts": 1751691136
@@ -3445,7 +3432,7 @@
     {
       "store": "UG新竹清大店",
       "stars": 4,
-      "date": "382 天前",
+      "date": "383 天前",
       "author": "虛殿",
       "text": "來朝聖～～～～～\n以為避開了蜜月期\n結果還是要等個半小時\n但可以感受到店員的辛苦\n所以就耐心等待⌛️\n但下次感覺可以去附近吃個飯再回來拿😳\n\n買了米香玉露菁\n很好喝耶\n無糖也很順不會澀\n剛好之前加入會員的折價卷蠻多張的\n來用一下\n\n有現金、賴pay可以付款～\n\n終於新竹也可以喝到\n幸福☺️欸欸欸欸欸",
       "ts": 1751417511
@@ -3453,7 +3440,7 @@
     {
       "store": "UG忠孝敦化店",
       "stars": 5,
-      "date": "382 天前",
+      "date": "383 天前",
       "author": "SARAH YU (莎莎的菈菈)",
       "text": "我喝的是都不難喝啦\n但也沒有好喝到要等這麼久\n前中後調不知道是不是香精之類的東西\n因為喝起來有點化學",
       "ts": 1751415809
@@ -3461,7 +3448,7 @@
     {
       "store": "UG中和南勢角店",
       "stars": 5,
-      "date": "383 天前",
+      "date": "384 天前",
       "author": "李冠儒",
       "text": "網路上看到的飲料店\n在手機上查詢到家附近就有一間\n從路上看到招牌感覺很普通的店家\n等入店感受到這是間精緻化的飲料店\n包裝精緻杯子設計與產品呈現到最後裝入提袋\n讓人有走入高檔飲料店的感覺\n而價錢卻比其他連鎖飲料店貴上一點\n購買感受是不錯的茶味也沒有苦澀好入口滑順\n鮮奶油部分也灑上堅果甜膩間帶點堅果微苦微甜與口感\n吸管是三個吸管組成的口徑很小不能大口豪飲\n好像是對自己飲料有信心要顧客慢慢細品",
       "ts": 1751388539
@@ -3469,7 +3456,7 @@
     {
       "store": "UG中壢新生店",
       "stars": 5,
-      "date": "385 天前",
+      "date": "386 天前",
       "author": "Ruru",
       "text": "6/27星期五下午有點毛毛雨去，進店撲鼻而來的濃濃茶香☺️，待取飲料牆讓同事ㄧ直讚嘆！\n下載Line有買一送一，點了推薦的十五茉(茉香綠茶)，本來想加紅茶凍忘了！😅少冰微糖喝起來滿香的，回家加牛奶也好喝😊\n加了保冷袋7元，結果回家不小心拉開就撕破！",
       "ts": 1751165106
@@ -3477,7 +3464,7 @@
     {
       "store": "UG信義虎林店",
       "stars": 3,
-      "date": "388 天前",
+      "date": "389 天前",
       "author": "PEI-HAN WANG",
       "text": "第二次購買此新品茶飲店飲料，看見叫號螢幕上的畫面，差一點點就退費離開，還好線上訂購與現場購買不衝突，今日點一杯 三窨（ㄧㄣˋ）十五茉的茶飲，還真不識字，現在點飲料還要點識字能力，茶飲口味淡淡茉莉香微甜口，還可以接受",
       "ts": 1750917027
@@ -3485,7 +3472,7 @@
     {
       "store": "UG中壢中原店",
       "stars": 5,
-      "date": "393 天前",
+      "date": "394 天前",
       "author": "K-Paul Lu",
       "text": "在中原大學正門口，人潮很多，需排隊，建議線上點餐後到號再取，首發日三窨十五茉買一送一，還送保冷袋，大家快來買。",
       "ts": 1750484759
@@ -3493,7 +3480,7 @@
     {
       "store": "UG站前南陽店",
       "stars": 3,
-      "date": "404 天前",
+      "date": "405 天前",
       "author": "Bruce",
       "text": "2025/06/02   內附菜單   LinePay🉑   95\n\nUG站前南陽店作為歇腳亭集團的新品牌，確實在台北車站周邊掀起不小話題 🔥 店內綠色系裝潢營造清新感，符合品牌形象。招牌三窨十五茉主打茉莉花香，茶香層次算是明顯，但整體表現中規中矩，沒有太大驚喜 😐 桂花輕烏龍奶蓋的視覺效果不錯，奶蓋綿密，但桂花香氣略顯平淡，與期待有些落差。\n\n倒是蜜桃紅烏龍值得一試 🍑 果香與茶韻搭配得宜，層次豐富且酸甜平衡。店家的三品管吸管設計特殊，確實能讓茶香在口中停留更久 👌 不過排隊人潮確實可觀，等候時間較長，建議避開尖峰時段。\n\n整體而言，UG的話題性大於實際口感表現，品質穩定但缺乏記憶點 💭 以台北手搖飲激烈競爭來看，還有進步空間。價格落在$45-95間算是合理，但CP值不算突出。想嚐鮮的話可以試試，但不會特別想回購 🤷‍♀️",
       "ts": 1749526497
@@ -3501,7 +3488,7 @@
     {
       "store": "UG新竹清大店",
       "stars": 3,
-      "date": "405 天前",
+      "date": "406 天前",
       "author": "nien",
       "text": "UG新竹清大店，位於小太陽診所旁邊，剛開幕沒多久，每天人潮都很多，這次排約40分鐘拿到飲品，店員動作其實算快，但好幾單都幾十杯在點，如果不想等候，建議等退燒再來嚐鮮。\n\n飲品包裝設計很漂亮， 除了封膜上面有附直接飲用式的杯蓋，還另外附贈手提保冷袋👍\n\n這次點了兩杯\n三窨十五茉  三分糖去冰   NT45\n\n三窨十五茉GU奶茶三分糖去冰   NT 75\n\n以純奶茶來說價格偏高，\n兩杯茶味都不會太重或澀，\n但整體口感就是一般手搖飲沒什麼記憶點，\n有可能是期望太大😅。",
       "ts": 1749495910
@@ -3509,7 +3496,7 @@
     {
       "store": "UG台北西湖店",
       "stars": 5,
-      "date": "415 天前",
+      "date": "416 天前",
       "author": "芸起食ʕ•̀д•́ʔノ",
       "text": "每一口都是綠意花香💚🥤\n先說，杯身和保冷袋設計的好美好有質感，剛好在活動期間內，有贈送袋子，我一定會重複使用😍👍🏻\n喜歡UG奶茶-三窨十五茉，喝起來好清爽，微糖剛剛好💚\n原來「三品管」是吸管，我以為是調棒，沒使用就丟棄了嗚嗚🤣\n我們是下午三點多去的，現場也不少人在排隊，加上下雨天，等候七分鐘，還蠻快的👍🏻👍🏻",
       "ts": 1748621591
@@ -3517,7 +3504,7 @@
     {
       "store": "UG新竹清大店",
       "stars": 2,
-      "date": "415 天前",
+      "date": "416 天前",
       "author": "君柔黃",
       "text": "排隊10:00多看完醫生才來等到快12:00多，才到我但動線能排2排主機在有第二個點餐機係統會比較流暢許多，希望往後能未來有第二台主機 推薦給你們 。\n買十五茉 家人說茶香不夠希望能在調整濃度 比較妥 ，喝起來很瑟的味道",
       "ts": 1748606861
@@ -3525,7 +3512,7 @@
     {
       "store": "UG信義虎林店",
       "stars": 5,
-      "date": "418 天前",
+      "date": "419 天前",
       "author": "Sunny Lin",
       "text": "若有大型訂單在員工教育訓練的時候，將其納入S O P，並先告知點餐客人預估的等待時間，選擇權落在客人是否繼續等待。\n\n走進店內願意消費的客人每ㄧ杯都是信任與期待，然而生硬而沒有彈性的製作流程，我們在旁被晾足20分鐘。\n\n最終我們仍拿到茶飲，沒有店員主動告知，等我們覺得等太久先詢問，是否要等到大單消化完才會做到我們的訂單，這時店員才回答是的，前面客人訂比較多，會依序做到我們這邊。\n\n大家都是因為過去歇腳亭的品牌成功慕名而來，然而服務流程的瑕疵，卻讓這個品牌在我心目中留下一個不好的經驗。\n\n拋開這些不談，整體的包裝以及視覺設計充滿新意，茶香與視覺設計互相呼應，桂花烏龍茶3分甜的甜度恰到好處，經營品牌不容易，我們也不願意雞蛋挑骨頭，但員工訓練確實得再加強。",
       "ts": 1748357078
@@ -3533,15 +3520,23 @@
     {
       "store": "UG中壢新生店",
       "stars": 5,
-      "date": "423 天前",
+      "date": "424 天前",
       "author": "嗨嗨",
       "text": "喝過台北店的奶蓋系列\n當時覺得還好\n\n這次中壢店終於開幕\n9：53到，10：00營業\n我10：32才進到店裡+到櫃檯前點飲料\n11點初頭才拿到飲料\n\n這次我點「三窨十五茉」\n和「桂花輕烏龍」\n喝習慣無糖茶+微冰（無法全去冰）\n不習慣的人\n建議可以喝看看微糖\n個人覺得蠻好喝的\n沒有想像中的有澀味\n\n店員服務態度也蠻親切+有耐心的說\n不過希望站櫃檯結帳的小姐\n聲音可以再大一點，因為店內音樂太大聲\n外加戴口罩，會聽不太清楚",
       "ts": 1747888984
     },
     {
+      "store": "UG台中勤美店",
+      "stars": 4,
+      "date": "432 天前",
+      "author": "Yuling Lin",
+      "text": "聽朋友說剛開幕時去排了3個小時才買到,今天11點時經過看沒什麼人潮就進去試試看,進門直接到點餐櫃台點了三杯飲料,被告知要等40分鐘,於是去附近先逛逛,半小時後回來,螢幕上出現製作中及可取餐之單號,等了約10分鐘聽到叫號已完成可取貨,但要取貨的人竟然排很長,不是叫號已完成了嗎？觀察後發現取貨處雖有人一直在打包但並無人發送已打包好之飲料,或是久久才給一位客戶取貨,又等了10幾分鐘才有一位服務人員過來發放,排隊人潮才開始移動,不知是否故意製造排隊人潮,否則理論上叫號後便應可直接取貨走人才是\n飲料不貴40元主打茶也挺順口,茶香濃甘醇,但雲頂95則不若一般其它家奶蓋好喝,建議喝一般茶飲便可\n整個店門面清爽,包裝袋也頗新颖好看,如果不用排很久是會再去買來喝的店家",
+      "ts": 1747200308
+    },
+    {
       "store": "UG台中逢甲店",
       "stars": 5,
-      "date": "441 天前",
+      "date": "442 天前",
       "author": "陳Judy",
       "text": "今天很幸運\n經過排隊人不多。\n室內冷氣很涼～\n店員服務態度很好,\n點餐取餐\n總共10分鐘。\n加會員買ㄧ送一，\n折價券\n也都主動告知消費者\n真好。\n茶也好喝\n整體給100分。",
       "ts": 1746366194
@@ -3549,7 +3544,7 @@
     {
       "store": "UG台中逢甲店",
       "stars": 4,
-      "date": "443 天前",
+      "date": "444 天前",
       "author": "Huong Giang Nguyen",
       "text": "今天剛好路過看到排隊沒有很多所以想說進去買喝看看～\n結果飲料還蠻不錯的！\n不過員工算多的但是速度還是有點慢、只有一台自動茶機所以很多被塞在那邊🧐\n保溫袋 單杯 5元、雙杯 7元\n價格落在40-95 算不便宜",
       "ts": 1746163230
@@ -3557,7 +3552,7 @@
     {
       "store": "UG新店民權店",
       "stars": 5,
-      "date": "445 天前",
+      "date": "446 天前",
       "author": "L T",
       "text": "有前中後三段不同的香味，是非常獨特的體驗，以點購飲料的介面而言，非常容易理解操作，以價格而言，並不算貴，唯一的缺點是，等待的時間還是太久了。",
       "ts": 1746022263
@@ -3565,7 +3560,7 @@
     {
       "store": "UG台中勤美店",
       "stars": 5,
-      "date": "454 天前",
+      "date": "455 天前",
       "author": "陳映蓉",
       "text": "🔍IG：@rr.foood_  歡迎追蹤❣️\n\n4/21（一）\n15:48到現場排隊\n16:48前後終於可以點餐\n兩個人直接卯起來點了七杯。\n18:35拿到\n三小時真的謝謝😍\n畫黃色底線的是我買的\n以下依照喜歡到不喜歡排序\n個人口味僅供參考\n\n🔅蜜桃紅烏龍 $75\n這杯我超愛！吃得到罐頭蜜桃果肉+果凍\n可以嚼料又不會像吃珍珠一樣要咬很久\n茶香有出來不會澀\n🔅桂花輕烏龍奶蓋 $95\n這杯是中杯還那麼貴😠\n排到一半去上班\n下班才喝到男友帶回家的\n奶蓋都溶了🥲\n喝起來很清爽，感覺原本的奶蓋應該不會油膩\n🔅米香玉露菁 $70\n最近台灣越來越多有糯米香氣的飲料\n很好喝很香！推！\n🔅蜜桃紅烏龍 $75\n味道很特別！在外面沒喝過的香氣\n有股果香&花香\n感覺這杯喜好很看人\n🔅琥珀鐵觀音 $75\n喝起來有我自己泡的焙茶鮮奶的味道\n是好喝的但對我來說比較普通（太常喝到一樣的味道）\n🔅三窨十五茉 $45（4/21買一送一最後一天❗️）\n好澀好難喝  味道好重\n（我沒很愛喝綠茶也沒很愛茉莉）\n明天加牛奶再試試",
       "ts": 1745259643
@@ -3573,7 +3568,7 @@
     {
       "store": "UG林口長庚店",
       "stars": 5,
-      "date": "469 天前",
+      "date": "470 天前",
       "author": "BROOK WU",
       "text": "聽說是現在台北的夯店，剛好經過沒有排隊人潮，但也要等20分鐘，所幸試試看。\n裝潢整體很有質感，聽說外帶加購的保冷袋很有質感，還有魔鬼氈和扣子呢！\n招牌的三窨十五茉的茶香很香水😆\n還有前中後味，真的蠻特別的😋",
       "ts": 1743927392
@@ -3595,94 +3590,52 @@
   },
   "buzzNews": [
     {
-      "title": "快訊／汐止可不可再增1店員確診　侯友宜：有南部旅遊史 - 三立新聞網SETN.com",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1kY2NMSmxfRkpzdWpEYjRNLXRSSVVULXNnRkpUVzhQOXdiRXpTUVFYV0VaMzdDamQycVNzQjFraVNLdW93SnRHUtIBTEFVX3lxTE1ITGFVbkI5eEE3d1V1ajhvdm5wUWduVDNCSE80QUF1ZnQ5aFlBd0M4RW5IdTN6UUR5d1MtdE1ab1dpZUdfMXg2WDd4NlI?oc=5",
-      "source": "三立新聞網SETN.com",
-      "brand": "可不可",
-      "date": "昨天"
-    },
-    {
-      "title": "全台僅20人! 50嵐店員「穿這件圍裙」調飲精準度驚呆眾人： 手搖飲精算師 - MSN",
-      "url": "https://news.google.com/rss/articles/CBMirANBVV95cUxNb2VqMzlDSmdKTkNnQjZRUVh3TnRyWU0tUzNTd2VXTTEtREhjeW02MEZtNy1KWmowSE56U0FDVzFuS0lId1VTMU9SOTVwdDFpOFJIaERpTXZKUWVLdkR0dDRtanAxWlMyRUh3LUxaVDdUQUI5OUQwZklBazMtMnVvOFozbjQ2ckN1OXl5REk3VkRfcVlUREZ0WGZLdFlNdmp4czRoTDg2STMtQVRtTzF0eVVFY0t4ZTVpd1NGNXd5b3ZIZmdiQjRXdkZXb0lWTlZmekNrUDRmZ1hWQ1JuaWdBNWx2d09IWGJrU2xrUUlzaWVOcE8wUmkzRW5SblI1c2QxWmNTdE5ORlJabFdOeTVtSnBWeWU3Z3c1Q0VCcFdyaHAzdFFSa3dMdVE1TmpmUnJBYlA2ek5mckYtdTdDU3RKMEpfcEdNR0ZrZ2NudEJ3dnBlRy05MGxhUmpENGFKS2RQekstYVJhb2F0ZDF1RUxObW9sX2MtZ3NkcXh4UTluZVdkVmhfTl9QUndjbUxpRkpJMzhFVWtteXpLMVpVV1NXZFpGa05EcF9VdEJHOQ?oc=5",
-      "source": "MSN",
-      "brand": "50嵐",
-      "date": "2 天前"
-    },
-    {
       "title": "Mister Donut × 一沐日聯名開賣！6款草仔粿甜甜圈售價、優惠一次看 - Yahoo新聞",
       "url": "https://news.google.com/rss/articles/CBMigwNBVV95cUxNVTU4dzl0aGc0Q3diendOWWdrZDYyY0I3UGlVM1FKNHhvUzVqYVZuR3hDSVhfZTg4djI3YkJLSjFZclQyRnRnMWxSN0RFX0V1U0dycUEzTElzM2tZV3pMMGJGM0JjZTRKV0VBU21EaFpaOURqSTRCcFYydEJyZnlDRTI5OS1Vck5sMng3RDUyaFNWMjNUbTlWSUVFVU5WTTdMZDVZYWIzLTRIUVpORXh2TXY3cnc5OUo4T05uZGphblBtZ2RJLWNQaDM4ZTlUdlZCem96cVJmYldUT2txTnBTeUtzaGE1ZHN3X0xWcFRwc1VtbmM0UUQwMjg2MnNMYkR6djJDSjE2cHZLX3pCRS1KcmVtZ3dvNFRaQ2RXeG1rTjJDWlZDY0toLUE3UDBiMmhsblU1NHJScDhoUmxoTTdEVDhBdzhxaUJaZElldUpQekNVbjl1a3NMZ1g4cmhsb3c4dXJiXzR4YjBmdGgyMVJpVkxVYkowMW9BU1ZlWUV5aWh2NGM?oc=5",
       "source": "Yahoo新聞",
       "brand": "一沐日",
-      "date": "3 天前"
+      "date": "4 天前"
     },
     {
-      "title": "50嵐、得正輸了！台灣最強飲料店TOP10「冠軍是它」：真材實料有茶香、 品質穩強到沒對手 - 風傳媒",
+      "title": "50嵐、得正輸了！台灣最強飲料店TOP10「冠軍是它」：真材實料有茶香、 品質穩強到沒對手 - Storm.mg",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9RLWxEZ0VURklaZFgyRlpxbnFKS05uOFBRd20yZDZpMG81M2x0QzFZZ19zaUVTR3RhSk1xUUtDNDA5N0JPVTRfNThrZGppbU5D?oc=5",
-      "source": "風傳媒",
+      "source": "Storm.mg",
       "brand": "50嵐",
-      "date": "3 天前"
+      "date": "4 天前"
+    },
+    {
+      "title": "手搖飲口味來了　肯德基X可不可期間限定「紅寶歐蕾蛋撻」 - 三立新聞網SETN.com",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5DMVdOaFRGWVo4MDJORnY0WjByUTM4N0Z6blZQN095YTJXZGNyakF4YmVzbzE2Xy1lcWw1bUlacjFTSWFiZUFYdtIBTEFVX3lxTFB3SHRtX1plN1lDMnh6bnJ2THhxRmhPTGdyVVBEMjlJOVhINzczZ1NRVzNaTmlySi01dTNsWmVFQ2JvMGt1Qm9oM0NqYmU?oc=5",
+      "source": "三立新聞網SETN.com",
+      "brand": "可不可",
+      "date": "5 天前"
     },
     {
       "title": "夏季手搖新品！麻古茶坊「酪梨芒果甘露」回歸、可不可聯名55688限定喝 - 造咖",
       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1rWFpUcHViTUt5RnlHYlQ5M0RycVJZaExYTHZCeXFBeTNNclhMaWRjY3Bob1QwNTFUQ1pCUm4wdXhaYTJjcFljUUdkcjhJNVlyUkxYXzVsSQ?oc=5",
       "source": "造咖",
       "brand": "可不可",
-      "date": "4 天前"
-    },
-    {
-      "title": "消暑優惠！CoCo飲料買一送一、迷客夏買就送甜點 - TVBS新聞網",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5FMEswWjE3aUZBZzVhcHJ6UmhUeWRBMlFzN1RnQ0lrZ0JSSDVkQ3NQY0p4VUdKakVwUkNBUk9OdzktV0hTNG51ZFQ0S2Z5UQ?oc=5",
-      "source": "TVBS新聞網",
-      "brand": "迷客夏",
-      "date": "4 天前"
-    },
-    {
-      "title": "CoCo買一送一！蜜桃映烏龍、粉角拿鐵4大優惠　迷客夏免費加奶酪 - NOWnews今日新聞",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFAxbS1GamZtbDY5Q3FyMmdvcEZqdnI3RkJpaVJfTVhtQzRsWXpmYmQyVDhDX1VzalgwNDFNZk5fZ1J2NjVNcVlORDlKVTLSAVJBVV95cUxOZ2kyYUhJSlVZemYwai14MzluNFpiS3lYZHA0S2I1SHJTSDBFcHVhcTZ2SFNQeVJYb2NwY25nZHRPaS1zajNXdlVPLWdZNllJOGF3?oc=5",
-      "source": "NOWnews今日新聞",
-      "brand": "迷客夏",
       "date": "5 天前"
-    },
-    {
-      "title": "自由時報娛樂頻道. . 張秀卿演媽祖老公「不敢親近」 清心寡慾2週：牽手都急道歉 #張秀卿 #戲說台灣 #媽祖 - facebook.com",
-      "url": "https://news.google.com/rss/articles/CBMi8wNBVV95cUxOMENKSzRuTXBFOEctU2JJV05adkItQ3p6OVRiYktDWUl3N2lUaW55OGRubWxzaDJtNUxDMGRJemhxY0N2SGN6YjZobkc3SFV6YXp5OGRrR0NUSDU4bXBOZXlTUWlHMnU3cmVyRHBIWmRmbGlBb2hDTXFZZWtPOTNaVVcta1pKNTZKSUh0UzRCTkUyczRTaE9McHIyTGRCMnpETGZkSGtreVNpOG5VdG9Sc1hyR3d3eXB3X0RLZ1drd2NEZ3NLYzFEeVQxZUEtS0Z0SWZ6UGVSR2RNRVdVeXd3N1o2TFk2UUN5M2NYdVpKc2JzeDZ0bWdfSXZCOHJuT2p2eDR6U0tod2FyNmwxVUZrSm00dXNEYzRfTkl1emhSQkpnYU1tNUo1SWhodVZnd2dBU25kaTF4WlAybndfOFNnMG15TjN4ZTk5RmZlbW5jdzFJR3NsZm90WDFwSmh1LUdtd3VjY050N1VGbi1TM1dYME42eXBBd1YtNVNFN0d4Y29Ra1F3RzFGZEZKNnlEbktfVjFkdGdrSjdhNXl6NVFFdGVLQ3ZiYklOdC1KTGRDQ252Mld2V2N5Sy02QVJ6NUtJVGYzbjNZVENOQTlodTRiTGtFSFlCM01rUk1FSGNaaU12cG9XbkZidHYwdEZ0Szc1YVFZ?oc=5",
-      "source": "facebook.com",
-      "brand": "清心",
-      "date": "6 天前"
     },
     {
       "title": "（影）張秀卿演媽祖老公「不敢親近」 清心寡慾2週：牽手都急道歉 - 自由娛樂",
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBFWDBVSzVyVEd1ZG1fUnYyUnZ4eUZMV1BDcmhiMG52Wk5SX0U0Wk0tX21weDI1NE9fbEpJZUhVUGc5RUJ6WWVIVkNqV2Mxdk1DUW1ZWkxWajhnRDlX0gFiQVVfeXFMTTNxNW9hckFzc2hhU0hNNzBvRGtsZkZ4cDlmdmpPcWhoeFlUWlRsNnhJWXJLZTQ0VFVmRjdlclg2UFBHZDVWQm1Pd0xwYW9HeE5WQ3QyS21VMXpnNkdfOWd5cFE?oc=5",
       "source": "自由娛樂",
       "brand": "清心",
-      "date": "6 天前"
+      "date": "7 天前"
     },
     {
       "title": "募集三千張發票！中區50嵐首辦嵐星達人秀，產藝聯手見證基督恩典 - 基督教今日報",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBUc1labGlaWlZTUmZxckJWX3JnQktQN0ZpYlpSRlhjb2l4LU5TTEEtY2Rxb0R6OGxQNVVQQ0Jfd3VlbnA0ZndqYUk2ZE9Zdw?oc=5",
       "source": "基督教今日報",
       "brand": "50嵐",
-      "date": "10 天前"
+      "date": "11 天前"
     },
     {
       "title": "百合蓮子清心茶的組成與主要功效為何？ - Bella.tw儂儂",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPamhKUU1xYkxKaTNQOVlJUHVSc2xyQ3ZiQ0ZKNEt0emd3enBwSFI2dkVFRXFvaklWSVNqbHIxZjUxSG1XcHh1MUU5QmhHQlhKOE16Y2pPejVhOFozVm5iYVZ0TFV6ZUZBRkF3MUNlMENvOTZtaUhNTFdjT0d6U1ptdDI1UElFaVJXTVlUUXpWLW1tY0liMFVBN3dYMVZySVh3RXFOZ2Uxeng?oc=5",
       "source": "Bella.tw儂儂",
       "brand": "清心",
-      "date": "10 天前"
-    },
-    {
-      "title": "4544 春日 - 可不可「柚檸紅茶」夏季開喝！跨界聯名55688台灣大車隊，限定專屬紙杯藏驚喜優惠- 股市爆料同學會 - CMoney",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE55RXYxaV95aURGak14NmhIWjR0SXZWd1gwWm0tcHlUVEZpOU1XcG01cUdKQTFzZEYwTE5EUjE0YjBwQ3JLSy1yeG9Kd20yWnM1TjFYRGdJSHE?oc=5",
-      "source": "CMoney",
-      "brand": "可不可",
-      "date": "11 天前"
-    },
-    {
-      "title": "可不可「柚檸紅茶」夏季開喝！跨界聯名55688台灣大車隊，限定專屬紙杯藏驚喜優惠 - 妞新聞",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE4wRFBybVFFcGZUYWlGdUY1c1lhdHVSUEZRWTJBeHNhdDVWOHN2MHFuc215dlpidEpFMFJGV0NBWERrRkdMZHlKT09zdw?oc=5",
-      "source": "妞新聞",
-      "brand": "可不可",
       "date": "11 天前"
     },
     {
@@ -3690,123 +3643,165 @@
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5NMlBicnhfR1lEY1BTSHBydk5qT1ktRTh6XzdrdlFOUGRtbjFEVUxBZzFyODVZUGRYMGJ4QldSVnBGOFhVWU8tOQ?oc=5",
       "source": "三立新聞網SETN.com",
       "brand": "一沐日",
-      "date": "12 天前"
+      "date": "13 天前"
     },
     {
       "title": "買一送一！最新手搖優惠：50嵐、可不可、CoCo、UG、丘森茶室都有，迷客夏&得正推新品 - BEAUTY美人圈",
       "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9Oa3NZRVA0aXU3QVdENzJnRVhqN2lFNU9Tc3doQzhnR2VESVFHZVpWN18wNGFEOERKbzdiR292a3UxcEpnVkctNldyV1PSAVJBVV95cUxNLWJ0V1I2T3dLMlBTZUR1R29nUnVNdlNzbTVjQmVXT3lfenNKNXNJa3E5VXRyUzNWVnpMcGdjZTVYLXhzelh3Y1IxcFV2SkRFZUhB?oc=5",
       "source": "BEAUTY美人圈",
       "brand": "50嵐",
-      "date": "13 天前"
+      "date": "14 天前"
     },
     {
       "title": "可不可ｘ55688推「柚檸紅茶」！CoCo買一送一到８月、清心巧克力日現折10元 - 食尚玩家",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1BMkNIMUlUNU42dGZhQlB1MnpyZ3dpN1dpdmRjbXFWdHl6Yk4xNU5DNEVGOG44b3BjaXIycEFMUWMtSG81em8zbmZ2S01RbTN0Q2xpSNIBWkFVX3lxTFA5SmVwU0h5T1pfZmNCeWF3MmNicEN4N0FMUnlvMjZRZzByYldwSUFXX3JrSW5UdGJvRmxWMVlSeEZ4eEZ5Zko3RHl1TGZhVDdGNHhrUTJLN3BVQQ?oc=5",
       "source": "食尚玩家",
       "brand": "可不可",
-      "date": "13 天前"
+      "date": "14 天前"
+    },
+    {
+      "title": "CoCo「楊枝甘露買1送1」現省90元！清心「可可拿鐵」最高現折10元 - UDN",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1UMXRNMTQ2Smh0aUpVUnFxSUNGMnhKWXFFNWQ2cDNkT3ItODlsc0JPdmdHY0hFMlZwRE5pUDJzeU5IeVZtakFCTDhuZmZlcl8yTHhr0gFYQVVfeXFMTWZkdU1ZbGtzclRuaWRnX1dabm1XdnhSaUFybEdQZER1cUw1WDlua2Zpd0U4a1U4SUNwdmEzOXItU2R2bi1rNDFDOFZhb3JwRU9CbnpUeG5PLQ?oc=5",
+      "source": "UDN",
+      "brand": "清心",
+      "date": "14 天前"
     },
     {
       "title": "最高折10元｜清心福全｜最新優惠 - 食尚玩家",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB6NG9PUjFZWkhRTXlCZjJoaE9TWWN4NWtxSmFqSlVkS1lSN2J5N1Mya1M2T1RHM0hMWUI3b0ZnLTlaWldYZ0NVT0Nhakgzbl9VQW9ZVHJn?oc=5",
       "source": "食尚玩家",
       "brand": "清心",
-      "date": "14 天前"
+      "date": "15 天前"
     },
     {
       "title": "【車勢星聞】55688聯手可不可推出夏日限定調飲致敬經典電影《Taxi Driver》 - CARTURE 車勢文化",
       "url": "https://news.google.com/rss/articles/CBMiugNBVV95cUxOSkN1T0ZSWE5iMGlyc1hvUmhYN08tNWF3U3hTTzh6elUtVXN4NmljOWo2OGxOVUpjenpDaTdoOTBoZ3l3bFhGMGYxV3QtMTRMWkwwZzJyWmdSR3ExWGFQY2xpcEc1aG1sa1FaTExodFhXTEZYWjZhczZzSTQ1dGp5d19mYUc0bDRMbGRlQ0lqUlFhZ3BDT3ppcGtWY0c4X19ObnNBV0h2OFRXSGdyS0RtSjJ6TmQ0TzVMMmtCNVoxLXUxRkRRVm5xcnltUUFuemY0NHo3T1NoSDQyWnduZnZ3aVNFbDlhWFllamkwY1dUdEF5ODlXN25jUGpCbFhmbnYxSFRpQlRSMHhqQnM3eGRPbVFlWEk5STBFWHRHejBBMTAyMjUxMzJxamlKdS1hQmQ1YXFZVXc2dUpYaFU2VU9jMjJGc0dRUE5rQWo3Skkza0ZNc1U3dmJid0hnSUlRekMxTm9fUW9BOTJxWVU0M1NiRW5hYlI1Yy01a3ZvbjdwWXNaRHZ5Y0Y0WnZZRDdEaU4zbW5DMkE3Wm5lRzJxTE1jRVE3cTNjMTNnLVFvTmRlZnBCWmM4OTF6MGNB?oc=5",
       "source": "CARTURE 車勢文化",
       "brand": "可不可",
-      "date": "16 天前"
+      "date": "17 天前"
     },
     {
       "title": "最強消暑對策！ 55688聯手可不可「沁涼中繼站」撒百萬好康 - 中央社 CNA",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5VTTZQbUdRVm42N09QZjNvRDI0WWNkVXZxWktzVHlVdlUzTlVSOHRLei1NVUxIcHRnZnJLSF9MOVRIckZ0ZzVuaVE3UWtzbFk0Tk5ZSTh3?oc=5",
       "source": "中央社 CNA",
       "brand": "可不可",
-      "date": "16 天前"
+      "date": "17 天前"
     },
     {
-      "title": "50嵐傳進駐南港車站！一票宜蘭人嗨翻：又獲得救贖了 - 三立新聞網SETN.com",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBZMS1SQW9CNHc0bWxSNDBBOXdiUEstUy1ud0ZmcTZlc2ZFb3EtN04tS1RmMDNRRGdXTnIzUXVzNGFWRVYtckgzMtIBTEFVX3lxTE0zVF9DbVhPTkJHdkg4U2t6eG5EeEp6dWlfb3ZQZVhGbXh2OHBvdkkwSENYanM5NlZDLTU4QU9uZXBnVTdnbnR0U1ZnYzk?oc=5",
-      "source": "三立新聞網SETN.com",
-      "brand": "50嵐",
-      "date": "17 天前"
+      "title": "清心福全世界巧克力日檔期開跑　「頂級可可拿鐵」限時降價 - 立報傳媒",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBZZWQ2Y09QeFJNbkl1Vlk3TjRDQy1zaVI3aFAxOUQ0cHN5eWNyMlpyNkhROE9pbDZIMmotWU5lQUliLVhRcDdTZGRXT1JCNXdu0gFQQVVfeXFMUFllZDZjT1B4Uk1uSXVWWTdONENDLXNpUjdoUDE5RDRwc3l5Y3IyWnI2SFE4T2lsNkgyai1ZTmVBSWItWFFwN1NkZFdPUkI1d24?oc=5",
+      "source": "立報傳媒",
+      "brand": "清心",
+      "date": "18 天前"
     },
     {
       "title": "50嵐傳進駐南港車站！一票宜蘭人嗨翻：又獲得救贖了 - Yahoo新聞",
       "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxPbkpPTHhTRFJQMzNfWjVSN3BiM0twM19SUW84eXg5aHFTWW1uM0RjRUp1UlN4eFFNSVRqYjQ4UTBEdER2bzJ6RnZhSWNEVjBSZmtvNWRJdWdMb21SZDdiTFZQeWJvVHJBTTlsX0N3VHFiN3IxMkxXWkdqSUJFbXFBdkxiTXRTQVhTS09SUnUwdHhQSVRZd0hWdHNablhjSmh5LXFUT2ZTVnkzQUNTTkhuWV9qa2FBVDIwbU1rRlkwVGphR2lJM3UtSUZPdU9wb2ZvQ01INXdqeXlwdGtGRGYwOGZJQkJNS3JFNWpxTl93OExVTDZIMjROUS1iN2tIazVpbkRsRXEzVTV2OTcwS0IzcDk2RVc2R1VKQ0lSckRQSTltcGdISEduOFhNeVlkQWVvbEg1S0pGWDlteDNVYzdUSk4xLTZRV3Nq?oc=5",
       "source": "Yahoo新聞",
       "brand": "50嵐",
-      "date": "18 天前"
+      "date": "19 天前"
     },
     {
       "title": "2026「可不可」菜單推薦怎麼點？最新必喝TOP10大公開，全新仲夏莓果系列衝進前三 - Marie Claire 美麗佳人",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBiQk03UlV3NDlXVDljMTFka0lzb2o0R0JxWUE3SUo5NnQ4cDJFenV1OFA2U05raWNYM0hoOEJ6Sm51TWZodVNIdkhiNkpBUjRUN2d1WE5QdDA1bTVKRWNoWHFR?oc=5",
       "source": "Marie Claire 美麗佳人",
       "brand": "可不可",
-      "date": "18 天前"
+      "date": "19 天前"
     },
     {
       "title": "爺爺泡芙、小小兵變手搖杯！ 迷客夏×beard papa's「爆量卡士達拿鐵」必喝、Mr.WISH×小小兵「造型罐」吸睛度爆表 - UDN",
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBJZnJEUGlsS1hDS0dTRENQWEEteTZYU3U2bTVHODhaWnNHWkNNaTdRMjBvQ2tRdnhsb1lTa25pODA2SHNDVWpLZjhqWlZ5bjNFUlB3MjlLdjJCd1JF?oc=5",
       "source": "UDN",
       "brand": "迷客夏",
-      "date": "19 天前"
+      "date": "20 天前"
     },
     {
-      "title": "手搖飲買1送1爽喝CoCo！茶湯會plantica玫瑰醋75折、迷客夏聯名beard papa’s免費加料 - 玩咖Playing",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ZZGFzdnltMkdpdWdvSmhfRW5kN3Q1d3dDRjQxODl0eXA4TUJTdW9INlpRV0ZTSWVvTGt3Qi0wRnljZS12UEg4WDQyNFVGbVVqQ0HSAVdBVV95cUxPQnJNSU95N1Mydl94bUVadVpRcklmdVRDTlNXTzltOW55aGRsNGlXZ19VMWVLcmVrYTVpaEpXWkxRbE4tc2EzSk5OVXBuYjJ3TERBNld2d2M?oc=5",
-      "source": "玩咖Playing",
+      "title": "迷客夏beard papa’s香草雲朵季！夾心拿鐵、娜杯紅茶泡芙7/1開賣 - NOWnews今日新聞",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBMcVNqNGFHZUY3b2ZTUThpbS1qVmx1NERXS1BjMS1hWTI4SE0zVlNmTHdMcUItSG9RMEJoVlFYUEJiQl9BQVFvY1VVVXfSAVJBVV95cUxNMHNlOWpCQ1FQbXViS1NlcGRHTWpwYnU2WGpPN29Kc0NMY0RSQzlkTDFOZVByOVpYTkdORFlCUjB4LXc5MHgxaWJaNWVnQ1h0UllR?oc=5",
+      "source": "NOWnews今日新聞",
       "brand": "迷客夏",
-      "date": "19 天前"
+      "date": "20 天前"
     },
     {
       "title": "迷客夏攜手日本第一泡芙 beard papas 推出「香草雲朵季」甜點系飲品 連四波限定優惠7月1日同步登場！ - 工商時報",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9QWU1EMmFtYTFXZkJERTBlR0FNNDdCXy1mYnJOMS1BQjFtRXl3NmQ5M3hIQXZqWm5BeVQ3cjB0WjJyOTZmU2RTSTFpRjdIUEU5TFNmdE83WTR3b0puT09F?oc=5",
       "source": "工商時報",
       "brand": "迷客夏",
-      "date": "20 天前"
+      "date": "21 天前"
     },
     {
       "title": "迷客夏Ｘbeard papa’s「香草雲朵季」新登場：夏日卡士達紅茶、娜杯紅茶拿鐵泡芙必吃 - BEAUTY美人圈",
       "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE11S080RVc0Y0hGWmxSZzdmVGRzNEtveFVzVl9keW5SZTFiLTVwUGRCR3FZamotM1AxcHdvM2h6SDNIMW81VUZqYm9xaTbSAVJBVV95cUxNODN6WVZNcUZ1YjJoYlRmSTN2RGN4X1RXS2JDOHBXcEViSjBTZ1ZOQkRmNnhNa1VEUzZ2U19yNlB5a1ViUWpWZFhKZFdINktJRGdn?oc=5",
       "source": "BEAUTY美人圈",
       "brand": "迷客夏",
-      "date": "20 天前"
-    },
-    {
-      "title": "迷客夏聯名beard papa's推「香草雲朵季」　還有卡士達奶酪新配料 - ETtoday旅遊雲",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE44Vm42T2dXSEIyV3NZd0JfTnAzbjRjQUp6SmVTZjVObU1DZmVyZTQ4QXh1STIyaFFpUXhMNXZxWHNldU9UMENzTGZtbHVQNlpnaml6MlhiWVVVZ9IBbEFVX3lxTE9sR3RhYndXVzZsRTV5VVI2S1BDTlV3a1BYZ1ltTEplOU9YcmNoR3o4bVliR2Nucl9LSlZzRDdfdDJUMlJrX19vTnE0MURfRWFwM1FXRFl6LWppQmVDYUtTTlFXMlV1bE1XT0l3aA?oc=5",
-      "source": "ETtoday旅遊雲",
-      "brand": "迷客夏",
-      "date": "20 天前"
+      "date": "21 天前"
     },
     {
       "title": "鬍子爺爺X迷客夏聯名！必吃限定娜杯紅茶拿鐵泡芙 還有加料券 - Yahoo新聞",
       "url": "https://news.google.com/rss/articles/CBMijwNBVV95cUxPZ2dKVXpIb0g1c2JrVG02bnNzSHc0TUpjMVVlTjlMT0JBQmN4RHdDUTlDbDdpaTZEZGFMSWItQnViWjhTbHVrVjBER3pHcEJnWXJvQnRxaUlyOHV0enZEVEw3Q3FGd0EtUTlkclpwcDd5UXAwR2VrY01qeHZSbmRSMHlrUE1oYkFWanlDUGVQMm5kcG1mdXVMT05ySUlldVRZUVp6MG51MG1JczlqbTBXOHM5bmlTdVBJX2RDR2RENkM0RFR3azVsWm5HWjc2ZmVqY2VlcElKYnlJclNIZ3JraHBGa3BNckJmSk1ycXNpMUxaaVF2WVdXWFh0OVZtMGs1WmZldmkzeHl5ZjRwMXZ4M2RYdmRaNkQ2dlBLejAxZGVuWDhkOTVtRWhKVkY3dTFXdEJ4ekVfcUFEdHQ4UHNGanItaGNCTF82SDdvWGNLRHRnbldReVp5X1JuS0ExMTE4c3RqdFllZ3BFanRfcXI3bVd2cU0xRV9lTURUU3hnUHBXS0w3aGdaUmxlVmhRVEU?oc=5",
       "source": "Yahoo新聞",
       "brand": "迷客夏",
-      "date": "20 天前"
+      "date": "21 天前"
+    },
+    {
+      "title": "迷客夏聯名beard papa's推「香草雲朵季」　還有卡士達奶酪新配料 - ETtoday旅遊雲",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE44Vm42T2dXSEIyV3NZd0JfTnAzbjRjQUp6SmVTZjVObU1DZmVyZTQ4QXh1STIyaFFpUXhMNXZxWHNldU9UMENzTGZtbHVQNlpnaml6MlhiWVVVZ9IBbEFVX3lxTE9sR3RhYndXVzZsRTV5VVI2S1BDTlV3a1BYZ1ltTEplOU9YcmNoR3o4bVliR2Nucl9LSlZzRDdfdDJUMlJrX19vTnE0MURfRWFwM1FXRFl6LWppQmVDYUtTTlFXMlV1bE1XT0l3aA?oc=5",
+      "source": "ETtoday旅遊雲",
+      "brand": "迷客夏",
+      "date": "21 天前"
+    },
+    {
+      "title": "迷客夏「香草雲朵季」開跑！攜手beard papa’s推3款手搖新品，獨家「娜杯紅茶拿鐵泡芙」必吃 - 妞新聞",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5XZF8xN0I2M3JjYi1HRW1Ca2pnNzBkRWxLcDYzeE90cjhFVkNjTERoaDB4OExTcFo3UmtENnZCOEo4VWZYQW9wZ0xnQQ?oc=5",
+      "source": "妞新聞",
+      "brand": "迷客夏",
+      "date": "21 天前"
+    },
+    {
+      "title": "迷客夏「香草卡士達飲」罪惡開喝！首聯名beard papa’s推卡士達奶酪、免費送泡芙 - 食尚玩家",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8xako4UWNZYUZGM3gtUUdIbUZ0eGFoYTNPUkU3RDRxNVdTOWc2cmJJR1d0Y0I3SE9HZEJpWVljVXVacmlBcnhNUUw4T2JIVmJPNnMzYtIBWkFVX3lxTE1PbE45WHJKcU9KN2tNRXBJcUpOZlY2ZGpDTnFGZUV2TlFrTTY0cTU1dXczMEVOOG9fWU94QmNRcFVheVlXV1RiNDB2ZTVNTUZpT2h5VkdEb0xEZw?oc=5",
+      "source": "食尚玩家",
+      "brand": "迷客夏",
+      "date": "22 天前"
     },
     {
       "title": "UG菜單怎麼點不踩雷？2026必喝飲料推薦：三窨十五茉、桂花輕烏龍奶蓋人氣最高 - ELLE",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9NTmdNMHY0Zk8xS1FUSDM2dWUwYWJoQkZyemwzRTdvcTQ1WUVDd1ZSZUR2ZDZRLV9JN0dWaG8xbjZoYU9kRld3VG82N0RldDBBQlotNUhvV2JzRUVxV243aVJPM1EtN1RaaHpyVU5SelZrbGpVNUJNaDNjZEZTYWc?oc=5",
       "source": "ELLE",
       "brand": "UG 聯發",
-      "date": "26 天前"
+      "date": "27 天前"
     },
     {
       "title": "網傳UG Tea原料致胃食道逆流 公司提告捍衛商譽 - Yahoo新聞",
       "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxNTllxSldUUGNyU3pjN0RseHVWUG1FS09BLS1TWm15LVFIWVpxd2kyU1dLd0l6WDF1d2w2UlZKdlRLT2tYd2swRDVqbDZ6Vm96TkZKSmhydmZZblN4M3A2Z0x2T1otX0xfLXpXSHRzcmhDMnF0VmQ0WnVTYWlPcmN3ZHRIbUpvQm5ybnNCNUZMVzdjNEJBMlVxek03TzBHTW1hdlNndnZxaC1KRFVxUEJuaTRjdGRnanhCU0d2T0R2eE5mVkhUWGVUN09jSnFnYThNcldXRlFKeTZnRlZ6b2MwZFdpRlpGTEVCWmZSN1ZobXV2ZmpFcUZES0NkSkE3VzZmUWh4OHQ0aEt2YkhkYUpqQlE0TEN3QTZOSVpLRm40bHVMVVB1U1pCWTRocEVVWE9ZbUpReQ?oc=5",
       "source": "Yahoo新聞",
       "brand": "UG 聯發",
-      "date": "26 天前"
+      "date": "27 天前"
+    },
+    {
+      "title": "全台首創「草仔粿甜甜圈」！「Mister Donut x 一沐日」把逮丸奶茶變甜甜圈6款台味限定限時「買5送1」先衝 - UDN",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9Vckh1OGxyVW5uYURjNjZSUGlKQjFjTTBWeWJ0UlF3UzVVcElhNnJMd3FfRUpueFRRYkZ1VDRJd09QZFhZNVkxdmc2OXdxa29TVFhHY01VV2s0dlVk?oc=5",
+      "source": "UDN",
+      "brand": "一沐日",
+      "date": "27 天前"
+    },
+    {
+      "title": "逮丸奶茶變波堤！「Mister Donutｘ一沐日」６款新品，草仔粿、粉粿甜甜圈登場 - 食尚玩家",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBxa28yUzJLekptX0dXaDU3ZThrU1ZHU3dLc2tVRUpFaGlZZ1d3QXhQak50dlhXSWN3R0hrSkY5MHlyMGZrbFhTUlVuSlhtSnZseDZmSNIBWkFVX3lxTFBWTXZkOWNPS3ozMUVvamdTbjZNTVhYMndOR292MHJhQ0hyalptRlNsSTVkbV9IcmRWcTFtdjlBS21FWmF3c3MxQ1U5a1ZpcEtGbzhiYUlqWGlPUQ?oc=5",
+      "source": "食尚玩家",
+      "brand": "一沐日",
+      "date": "28 天前"
+    },
+    {
+      "title": "逮丸奶茶變甜甜圈！Mister DonutＸ一沐日：草仔粿系列甜甜圈，再推買5送1、買6送2優惠 - BEAUTY美人圈",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFA2SUFZMWVUaUIxX3QxZk90OGE4MlF1VWRkajVBQVpvTkstMXFFdkdiQlZyd0dGS3F4WUxBWjJ3ZWViZkE3V2QyOFZIVlPSAVJBVV95cUxONkVmcm1TV2lXZEdRcThqZUpBUm1fQ0RQbk1CR1NGc1FUblQ0eG1iQ1FGMVkwMHI4N0tCdGlsajZzNFQ5cUFEOWJrNWRCbHM2S2F3?oc=5",
+      "source": "BEAUTY美人圈",
+      "brand": "一沐日",
+      "date": "28 天前"
     }
   ],
   "buzzMeta": {
-    "generatedAt": "2026-07-19 04:25",
+    "generatedAt": "2026-07-20 04:41",
     "news": 360,
     "ptt": 13,
     "threads": 38,
