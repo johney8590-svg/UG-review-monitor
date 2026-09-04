@@ -201,11 +201,23 @@ def collect_google():
     return {"stores": stores_out, "gReviews": reviews_out}
 
 
+def _collect_reviews():
+    """來源優先序：GBP（有 refresh token → 抓每一則、含最新 1 星）> Places/Outscraper/Playwright。"""
+    if os.environ.get("GBP_REFRESH_TOKEN"):
+        print("▶ 使用 Google Business Profile API（抓完整評論）", flush=True)
+        try:
+            from gbp_reviews import collect_gbp
+        except ImportError:
+            from collector.gbp_reviews import collect_gbp
+        return collect_gbp()
+    return collect_google()
+
+
 def merge_into_dashboard():
     """獨立執行：把 google 段併進現有 dashboard.json。"""
     dash_path = ROOT / "docs" / "data" / "dashboard.json"
     dash = json.loads(dash_path.read_text(encoding="utf-8")) if dash_path.exists() else {}
-    dash.update(collect_google())
+    dash.update(_collect_reviews())
     dash["today"] = datetime.datetime.now().strftime("%Y年%m月%d日")
     dash_path.write_text(json.dumps(dash, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"已更新 {dash_path}")

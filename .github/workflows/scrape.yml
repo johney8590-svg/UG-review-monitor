@@ -26,8 +26,12 @@ jobs:
 
       - name: 抓 Google 商家評論
         env:
-          # 優先序：GOOGLE_MAPS_API_KEY（官方 Places API，評論數最準）
-          #   → OUTSCRAPER_API_KEY（付費）→ 都沒設則用免費 Playwright 爬蟲
+          # 優先序：GBP（Business Profile API，抓每一則含最新1星）
+          #   → GOOGLE_MAPS_API_KEY（Places，評論數準但每店限5則）
+          #   → OUTSCRAPER_API_KEY（付費）→ 都沒設則免費 Playwright 爬蟲
+          GBP_CLIENT_ID: ${{ secrets.GBP_CLIENT_ID }}
+          GBP_CLIENT_SECRET: ${{ secrets.GBP_CLIENT_SECRET }}
+          GBP_REFRESH_TOKEN: ${{ secrets.GBP_REFRESH_TOKEN }}
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
           OUTSCRAPER_API_KEY: ${{ secrets.OUTSCRAPER_API_KEY }}
         run: python collector/google_reviews.py
